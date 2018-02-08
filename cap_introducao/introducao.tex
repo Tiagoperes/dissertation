@@ -1,0 +1,55 @@
+\chapter[Introdução]{Introdução}
+
+Qual o menor caminho para atingir um destino? Qual o melhor carro para se comprar dado um orçamento? Qual a forma mais rápida de se executar uma tarefa? Enfim, dado um conjunto de soluções possíveis, qual melhor resolve um dado problema? A pergunta é simples, mas encontrar a resposta correta em um tempo viável é complexo e configura um dos principais campos de pesquisa da computação: busca e otimização.
+
+Só há uma forma de se saber qual é, indubitavelmente, a melhor solução para um problema: gerando e comparando todas as possibilidades. Para a maioria dos problemas interessantes, essa é uma tarefa difícil, se não impossível. Para um grafo com muitas arestas, por exemplo, combinar e testar todas as possibilidades é um problema NP-completo, ou seja, não será resolvido em tempo hábil considerando o atual estado da arte da computação. Sendo assim, a busca e otimização se concentra em desenvolver meios para se encontrar soluções suficientemente próximas à melhor possível, ou seja, trabalha-se com estratégias de aproximação. Dentre as estratégias de aproximação, destacam-se os algoritmos gulosos [] e os algoritmos evolutivos [].
+
+Os problemas de otimização se tornam ainda mais complexos quando deseja-se otimizar múltiplas métricas, por exemplo, ao comprar um carro, não deseja-se apenas o mais barato ou o mais potente, mas considera-se preço, potência, aparência, eficiência, quilometragem, etc. Isto é, não basta otimizar um único objetivo, mas sim, vários. A maneira mais simples de se contornar este problema é transformar as diversas métricas em uma única função, fazendo uma média ponderada dos objetivos. Infelizmente, reduzir os múltiplos objetivos em uma única função não é ideal, pois é necessário ter um conhecimento prévio do problema para se decidir os pesos de cada métrica e um único peso mal escolhido pode impedir as melhores soluções de serem encontradas. Na realidade, se todos os objetivos são considerados igualmente importantes, existirão várias soluções possíveis, algumas terão melhor desempenho em uma métrica enquanto outras se darão melhor em outras. Devido à natureza dos problemas multiobjetivos (PMOs) de envolverem diversas soluções, se tornou natural a escolha dos algoritmos genéticos, já que envolvem evoluir uma população de soluções de acordo com um objetivo.
+
+Neste trabalho investigou-se diversos algoritmos genéticos para os PMOs e afim de colocá-los à prova utilizou-se dois problemas discretos bem conhecidos na literatura de busca e otimização multiobjetivo: o problema da mochila multiobjetivo (PMM) e o problema do roteamento multicast (PRM). O primeiro é uma versão multiobjetivo do clássico problema da mochila 0/1, onde ao invés de um único valor de lucro, todo item possui $m$ valores, onde $m$ é o número de objetivos. O PMM é uma abordagem teórica e apesar de testar os algoritmos em seus extremos devido a seu enorme espaço de busca, nem sempre reflete a realidade dos problemas cotidianos. O PRM, por sua vez, é um problema prático geralmente encontrado em comunicações de rede, nele deseja-se transmitir uma mensagem de um dispositivo fonte para múltiplos dispositivos em uma rede de computadores de forma a utilizar os recursos disponíveis da forma mais eficiente possível, o que é de extrema importância considerando o grande número de transmissões multimídia e aplicações em tempo real que se beneficiariam muito de algoritmos eficientes para cálculos de rota.
+
+Problemas com dois e três objetivos são considerados bem resolvidos, mas a partir de quatro, torna-se difícil encontrar boas soluções com os algoritmos evolutivos multiobjetivos (AEMOs) clássicos. Chama-se de "many-objectives" os problemas com 4 ou mais funções de otimização e, para resolvê-los, necessita-se de métodos mais robustos que consideram o acréscimo no número de objetivos com estratégias de decomposição em funções escalares, evolução de indicadores, cálculos de distância mais eficientes, etc. Neste trabalho testamos vários algoritmos em diversas formulações de objetivos, variando entre 2 e 6 funções, analisando a qualidade das soluções obtidas em cada um dos casos e discutindo as características que permitem um ou outro atingir determinado resultado.
+
+A maior parte dos trabalhos em busca e otimização multiobjetivo utilizam algoritmos genéticos, mas na mesma linha existem os métodos baseados em colônias de formigas (ACO) e os algoritmos inspirados em inteligência de enxame (PSO). Os PSO's são indicados especialmente para problemas contínuos e a utilização de seus cálculos vetoriais se torna difícil em problemas discretos. Por outro lado, os ACOs lidam especialmente com problemas discretos e representações em grafos. Como ambos os problemas estudados neste trabalho (PMM e PRM) são discretos, decidiu-se concentrar apenas nos algoritmos genéticos e nas colônias de formigas, dando prioridade a este último a fim de se propor um novo modelo para a resolução de problemas many-objectives que fugisse um pouco da já extensa lista de proposições baseadas em algorítimos genéticos. Com uma proposta que utiliza uma metodologia relativamente pouco explorada, surge a esperança de se desenvolver um modelo único que aborda de forma diferente o espaço de busca, possibilitando tanto ganhos de desempenho em tempo quanto em qualidade das soluções.
+
+O modelo baseado em ACO proposto foi chamado de Many-Objective Ant Colony Optimization Based on Decomposed Pheromones (MACO/D), em português, otimização para muitos objetivos com colônia de formigas baseada em decomposição de feromônios. O algoritmo proposto foi comparado tanto com algoritmos genéticos quanto outros ACOs encontrados na literatura. A partir dos resultados dos experimentos mostrados mais adiante no texto, foi possível comprovar a eficácia do método na maior parte dos cenários e analisar possíveis melhorias para pesquisas futuras.
+ 
+
+%\section{Motivação}
+%Introduza o leitor ao assunto, descreva os fatores motivadores para o desenvolvimento do seu trabalho.   Descreva brevemente o estado da arte e indique os problemas que ainda não foram resolvidos. Faça um gancho para a próxima sub-seção em que você descreve os  objetivos do seu trabalho. 
+
+\section{Objetivos}
+Esta dissertação tem como objetivo principal estender os trabalhos de [Fialho] e [Bueno] sobre o problema do roteamento multicast (PRM), mas dando ênfase maior nos algoritmos e modelos multiobjetivos em sí, utilizando o PRM como exemplo de aplicação. Afim de enriquecer o estudo, introduz-se uma nova aplicação, o problema da mochila multiobjetivo. Em linhas gerais, esta pesquisa objetiva:
+ 
+\begin{itemize}  
+	\item Adotar de um novo problema suficientemente diferente do roteamento multicast a fim de melhor suportar os resultados até então obtidos para os algoritmos estudados e propostos. o novo problema introduzido por este trabalho é o Problema da Mochila Multiobjetivo (PMM) e, apesar de ter aplicações mais restritas, apresenta diferenças interessantes em sua formulação capazes de aprofundar a análise do comportamento dos vários algoritmos.
+	\item Introduzir e estudar os resultados obtidos pelo hipervolume, uma métrica de desempenho de algoritmos multiobjetivos até então não explorada pelo grupo de pesquisa.
+	\item Analisar em ambos PMM e PRM o comportamento de cada algoritmo em relação à complexidade do espaço de busca e ao número de objetivos.
+	\item Propor um modelo para a construção de soluções em algoritmos baseados em colônias de formigas para ambos os problemas da mochila e do roteamento multicast.
+\end{itemize}
+
+
+%\section{Hipótese}
+%Descreva claramente quais são as hipóteses da sua pesquisa (Uma hipótese é uma suposição para a solução do problema que você pretende desenvolver). Indique quais perguntas estão associadas a sua hipótese. Lembre-se que as hipóteses deverão ser comprovadas via os experimentos que serão descritos no capítulo \ref{experimentos}.
+
+\section{Contribuições}
+Este trabalho contribui para os campos de busca e otimização multiobjetivo e comunicações em rede (através do problema do roteamento multicast). os principais resultados desta pesquisa são resumidos nos seguintes tópicos:
+
+\begin{itemize}  
+	\item O AEMMT foi proposto originalmente para sequenciamento de proteínas [] e em [] foi utilizado para resolver o problema do roteamento multicast (PRM). Neste trabalho exploramos uma terceira aplicação do algoritmo, aplicando-no sobre o problema da mochila objetivo.
+	\item O AEMMD foi proposto e analisado em [] para resolver o PRM. Sua eficácia como algoritmo multiobjetivo separado do problema do roteamento ainda não havia sido comprovada. Neste trabalho mostramos como é possível aplicar o AEMMD ao PMM e fazemos uma análise sobre os limites do algoritmo em relação ao tamanho do espaço de busca.
+	\item Através da execução de vários algoritmos multi e many-objectives sobre 2 problemas diferentes em diversos níveis de complexidade, foi feita uma análise sobre o comportamento desses algoritmos à medida em que se aumenta o número de objetivos e a complexidade do espaço de busca, desta forma, possibilitando uma comparação profunda entre os principais algoritmos da literatura multi-objetivo.
+	\item Neste trabalho propõe-se um algoritmo eficiente para a construção de soluções para o PRM a partir de uma tabela de feromônios, parte essencial de qualquer algoritmo embasado em colônia de formigas. A fim de propor tal estratégia, apresenta-se mais a frente no texto outros métodos e diversos testes que permitiram o desenvolvimento do algoritmo proposto. 
+	\item A principal contribuição desta dissertação está no novo algoritmo proposto Many-objective Ant Colony Optimization with Decomposed Pheromones (MACO/D). Uma estratégia baseada em colônia de formigas e decomposição de objetivos para de forma rápida e eficiente resolver problemas com muitos objetivos. O novo método foi aplicado aos problemas PPM e PRM e comparado com os demais algoritmos.
+\end{itemize}
+
+\section{Organização do texto}
+Este trabalho está dividido em capítulos divididos da seguinte forma:
+
+\begin{itemize}  
+	\item Capítulo 2: ...
+	\item Capítulo 3: ...
+	\item Capítulo 4: ...
+	\item Capítulo 5: ...
+	\item Capítulo 6: ... \ldots
+\end{itemize}
