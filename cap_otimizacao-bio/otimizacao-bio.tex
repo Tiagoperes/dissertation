@@ -65,5 +65,44 @@ O primeiro passo de um ACO é inicializar as arestas do grafo com quantidade zer
 No ACO, a solução é representada pelo caminho feito pela formiga no grafo, normalmente uma lista de vértices, uma árvore ou um subgrafo do grafo de entrada. No caso onde o problema é encontrar o menor caminho, o indivíduo pode ser uma lista de vértices. Caso deseja-se encontrar caminhos entre a raiz e diversos destinos, pode-se representar a solução como uma árvore. Nem sempre é claro decidir a codificação da solução, como, por exemplo, no problema da mochila, onde não é trivial a visualização de um grafo no processo da construção da solução.
 
 \subsection{Construção da solução}
-Independente da representação escolhida, deve-se ser possível relacionar cada partícula da solução à um depósito de feromônio na estrutura principal. Por exemplo, no caso de grafos, as arestas escolhidas para montar a solução, devem ter seus feromônios incrementados a fim de guiar a próxima geração de formigas. Em cada época (iteração do laço principal) constrói-se um número pré-determinado de soluções, onde cada formiga, a partir dos valores de feromônios, decide as partículas que vão compor a solução. De forma geral, dado um grafo $G$ e um nó inicial, o processo de construção da solução sempre verifica todos os movimentos possíveis para a formiga, tomando sua decisão de acordo com os feromônios e as heurísticas de cada uma das possibilidades. 
+Independente da representação escolhida, deve-se ser possível relacionar cada partícula da solução a um depósito de feromônio na estrutura principal. Por exemplo, no caso de grafos, as arestas escolhidas para montar a solução devem ter seus feromônios incrementados a fim de guiar a próxima geração de formigas. Em cada época (iteração do laço principal) constrói-se um número pré-determinado de soluções, onde cada formiga, a partir dos valores de feromônios, decide as partículas que vão compor sua solução. De forma geral, dado um grafo $G$ e um nó inicial, o processo de construção da solução sempre verifica todos os movimentos possíveis para a formiga, tomando sua decisão de acordo com os feromônios e as heurísticas de cada uma das possibilidades. 
+
+Além dos feromônios, as formigas ainda utilizam as informações de heurística para decidir o próximo passo. Uma heurística é uma função que estima a qualidade do caminho e normalmente representa o peso de uma aresta. Estando em um vértice $i$ de um grafo $G$, uma formiga tem probabilidade $p(i,j)$ de escolher a aresta que leva ao vértice $j$.
+
+\[ p(i,j) = \frac{\tau_{i,j}^\alpha * \eta_{i,j}^\beta}{\sum_{v \in vizinhança(i)} \tau_{i,v}^\alpha * \eta_{i,v}^\beta} \]
+
+Onde:
+
+\begin{itemize}  
+	\item $\tau_{i,j}^\alpha$: feromônio na aresta $(i,j)$ elevado à constante pré-determinada $\alpha$. $\alpha$ representa a importância que deve ser dada ao valor do feromônio.
+	\item $\eta_{i,j}^\beta$: heurística da aresta $(i,j)$ elevada à constante pré-determinada $\beta$. $\beta$ representa a importância que deve ser dada à heurística. A heurística de uma aresta é dada em função do peso, normalmente 1/peso.
+	\item $vizinhança(i)$: todo vértice em $G$ para o qual é possível construir um caminho para $i$ com apenas uma aresta.
+\end{itemize}
+
+\subsection{Atualização dos feromônios}
+Existem duas ocasiões onde o feromônio das arestas pode ser atualizado: no momento em que a formiga passa pela aresta e no fim de cada iteração. A maioria das implementações considera apenas o segundo caso, pois assim é possível que se avalie as soluções e que se incremente o feromônio de acordo com os desempenhos. Ao fim de cada época, utiliza-se a seguinte fórmula para atualizar a estrutura de feromônios $\tau$:
+
+\[ \tau_{i,j} = (1 - \rho) * \tau_{i,j} + \sum_{k \in formigas} \Delta\tau_{i,j}(k)\]
+
+Onde:
+
+\begin{itemize}  
+	\item $\rho$: coeficiente de evaporação. Determina o quão rápido o feromônio deve desaparecer das arestas após depositado.
+	\item $formigas$: conjunto de todas as formigas na iteração.
+	\item $\Delta\tau_{i,j}(k)$: quantidade de feromônio depositada pela formiga $k$ na aresta $i,j$.
+\end{itemize}
+
+A quantidade de feromônio depositada por uma formiga $k$ em uma aresta $i,j$ é dada por:
+
+\[ \Delta\tau_{i,j}(k) = \begin{cases} \frac{Q}{L_k},& \text{if } x\geq 1\\ 0,& \text{otherwise} \end{cases} \]
+
+Onde:
+
+\begin{itemize}  
+	\item $Q$: Quantidade máxima de feromônio que pode ser depositada por uma formiga.
+	\item $L_k$: Custo da solução gerada pela formiga  $k$.
+\end{itemize}
+
+O ACO é normalmente utilizado para encontrar o menor caminho ou árvore de menor custo em um grafo. A esperança é que após várias gerações, as formigas percorram sempre o melhor caminho possível.
+
 
