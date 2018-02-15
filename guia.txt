@@ -23,16 +23,16 @@
 		2.4.2. SPEA2 -> 12/02
 		2.4.3. MOEA/D -> 13/02
 		2.4.4. NSGA-III -> 13/02
-		2.4.5. MEAMT -> 14/02
-		2.4.6. MEANDS -> 14/02
+		2.4.5. MEAMT -> 15/02
+		2.4.6. MEANDS -> 16/02
 	2.5. Algoritmos multiobjetivos baseados em colônias de formigas
-		Texto geral -> 15/02
-		2.5.1. MOACS -> 15/02
+		Texto geral -> 16/02
+		2.5.1. MOACS -> 16/02
 		...
 
 3. Problemas de teste
 	Texto geral
-	3.1 Problema da Mochila multiobjetivo -> 16/02
+	3.1 Problema da Mochila multiobjetivo -> 17/02
 		Texto geral
 		3.1.1. Formulação multiobjetivo (PMM)
 		3.1.2. Trabalhos relacionados
@@ -61,22 +61,22 @@
 6. Algoritmo proposto
 	Texto geral-> 23/02
 	6.1. Algoritmo geral -> 23/02
-	6.2. Construção da solução -> 24/02
-	6.3. Atualização dos feromônios -> 26/02
+	6.2. Construção da solução -> 23/02
+	6.3. Atualização dos feromônios -> 23/02
 
 7. Experimentos
-	7.1. Ambiente de experimentos -> 27/02
+	7.1. Ambiente de experimentos -> 24/02
 		7.1.1. Problemas, instâncias e formulações de objetivos
 		7.1.2. Métricas de desempenho
 		7.1.3. Teste de hipótese
 	7.2. Experimentos
-		7.2.1. Avaliação em problemas com espaço de busca simples -> 28,29/02
-		7.2.2. Avaliação em problemas com espaço de busca complexos -> 01/03
-		7.2.3. Impondo limites sobre o Paretos -> 02/03
+		7.2.1. Avaliação em problemas com espaço de busca simples -> 24/02
+		7.2.2. Avaliação em problemas com espaço de busca complexos -> 25/02
+		7.2.3. Impondo limites sobre o Paretos -> 25/02
 
-8. Conclusão -> 03/03
+8. Conclusão -> 26/02
 	Texto
 	8.1. Consideraçõe finais
 	8.2. Trabalhos futuros
 	
-9. Referências bibliográficas -> 04/03
+9. Referências bibliográficas -> 26/02

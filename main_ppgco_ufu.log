@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  12 FEB 2018 14:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  15 FEB 2018 15:37
 entering extended mode
 **./main_ppgco_ufu.tex
 (main_ppgco_ufu.tex
@@ -1114,9 +1114,42 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\lipsum\lipsum.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty"
+Package: algpseudocode 
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty"
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count187
+\c@ALG@rem=\count188
+\c@ALG@nested=\count189
+\ALG@tlm=\skip272
+\ALG@thistlm=\skip273
+\c@ALG@Lnr=\count190
+\c@ALG@blocknr=\count191
+\c@ALG@storecount=\count192
+\c@ALG@tmpcounter=\count193
+\ALG@tmplength=\skip274
+
+! LaTeX Error: Command \algorithmic already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112    }
+          %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\lipsum\lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count187
+\c@lips@count=\count194
 )
 (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\acronym\acronym.sty
 Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
@@ -1127,8 +1160,8 @@ Package: suffix 2006/07/15 1.5a Variant command support
 (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty
 (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex
 \@xs@message=\write4
-\integerpart=\count188
-\decimalpart=\count189
+\integerpart=\count266
+\decimalpart=\count267
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
@@ -1145,10 +1178,10 @@ Package xcolor Info: Driver file: pdftex.def on input line 225.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks38
-\minrowclearance=\skip272
+\minrowclearance=\skip275
 )
 LaTeX Info: Redefining \color on input line 709.
-\rownum=\count190
+\rownum=\count268
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -1175,27 +1208,27 @@ Writing nomenclature file main_ppgco_ufu.nlo
 (ape_comandos/abntex2-modelo-include-comandos.aux))
 \openout1 = `main_ppgco_ufu.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 124.
-LaTeX Font Info:    ... okay on input line 124.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 124.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 127.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<t1.cmap>>
 \AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring ON on input line 124.
+Package hyperref Info: Link coloring ON on input line 127.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1203,28 +1236,28 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count191
+\c@section@level=\count269
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 124.
-LaTeX Info: Redefining \ref on input line 124.
-LaTeX Info: Redefining \pageref on input line 124.
-LaTeX Info: Redefining \nameref on input line 124.
+LaTeX Info: Redefining \nameref on input line 127.
+LaTeX Info: Redefining \ref on input line 127.
+LaTeX Info: Redefining \pageref on input line 127.
+LaTeX Info: Redefining \nameref on input line 127.
 \myptabbox=\box37
-\myptabboxwidth=\skip273
+\myptabboxwidth=\skip276
 (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count192
+\scratchcounter=\count270
 \scratchdimen=\dimen170
 \scratchbox=\box38
-\nofMPsegments=\count193
-\nofMParguments=\count194
+\nofMPsegments=\count271
+\nofMParguments=\count272
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count266
+\MPscratchCnt=\count273
 \MPscratchDim=\dimen171
-\MPnumerator=\count267
-\makeMPintoPDFobject=\count268
+\MPnumerator=\count274
+\makeMPintoPDFobject=\count275
 \everyMPtoPDFconversion=\toks40
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1241,7 +1274,7 @@ G,.JBIG2,.JB2,.eps]
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 124.
+(lastpage)             ! on input line 127.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
@@ -1254,41 +1287,41 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 <figs/logo-ufu2.png, id=4, 160.6pt x 160.6pt>
 File: figs/logo-ufu2.png Graphic file (type png)
  <use figs/logo-ufu2.png>
-Package pdftex.def Info: figs/logo-ufu2.png used on input line 135.
+Package pdftex.def Info: figs/logo-ufu2.png used on input line 138.
 (pdftex.def)             Requested size: 144.54pt x 144.54355pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 135.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 138.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<ot1.cmap>>
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 135.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 138.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oml.cmap>>
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 135
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 138
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oms.cmap>>
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 135
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 138
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 135.
+(Font)              <12> on input line 138.
 <<omx.cmap>>
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 135.
+(Font)              <8> on input line 138.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 135.
+(Font)              <6> on input line 138.
 
-Overfull \vbox (73.68982pt too high) detected at line 135
+Overfull \vbox (73.68982pt too high) detected at line 138
  []
 
 [1
@@ -1297,27 +1330,27 @@ Overfull \vbox (73.68982pt too high) detected at line 135
 -ufu2.png>] [2
 
 ]
-\tampar=\skip274
-\tamconcetracao=\skip275
-\tamorientador=\skip276
-\tamcoorientador=\skip277
+\tampar=\skip277
+\tamconcetracao=\skip278
+\tamorientador=\skip279
+\tamcoorientador=\skip280
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []\T1/lmr/m/n/12 Disserta��o de mes-trado apre-sen-tada ao
  []
 
 
-Underfull \hbox (badness 3333) in paragraph at lines 135--135
+Underfull \hbox (badness 3333) in paragraph at lines 138--138
 \T1/lmr/m/n/12 Pro-grama de P�s-gradua��o da Fa-cul-dade
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 
  []
 
@@ -1325,7 +1358,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.135 \maketitle
+l.138 \maketitle
                  [1
 
 
@@ -1334,77 +1367,77 @@ l.135 \maketitle
 File: fichaCatalografica.pdf Graphic file (type pdf)
 
 <use fichaCatalografica.pdf>
-Package pdftex.def Info: fichaCatalografica.pdf used on input line 135.
+Package pdftex.def Info: fichaCatalografica.pdf used on input line 138.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: fichaCatalografica.pdf Graphic file (type pdf)
  <use fichaCatalografica.pdf>
-Package pdftex.def Info: fichaCatalografica.pdf used on input line 135.
+Package pdftex.def Info: fichaCatalografica.pdf used on input line 138.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 <fichaCatalografica.pdf, id=29, page=1, 597.55246pt x 845.07718pt>
 File: fichaCatalografica.pdf Graphic file (type pdf)
 
 <use fichaCatalografica.pdf, page 1>
-Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 135.
+Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: fichaCatalografica.pdf Graphic file (type pdf)
  <use fichaCatalografica.pdf, page 1>
-Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 135.
+Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: fichaCatalografica.pdf Graphic file (type pdf)
 
 <use fichaCatalografica.pdf, page 1>
-Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 135.
+Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: fichaCatalografica.pdf Graphic file (type pdf)
  <use fichaCatalografica.pdf, page 1>
-Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 135.
+Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.135 \maketitle
+l.138 \maketitle
                 
 File: fichaCatalografica.pdf Graphic file (type pdf)
  <use fichaCatalografica.pdf, page 1>
-Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 135.
+Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [2 <./fichaCatalografica.pdf>] <folhaAprovacao.pdf, id=42, 614.295pt x 794.97p
 t>
 File: folhaAprovacao.pdf Graphic file (type pdf)
 
 <use folhaAprovacao.pdf>
-Package pdftex.def Info: folhaAprovacao.pdf used on input line 135.
+Package pdftex.def Info: folhaAprovacao.pdf used on input line 138.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: folhaAprovacao.pdf Graphic file (type pdf)
  <use folhaAprovacao.pdf>
-Package pdftex.def Info: folhaAprovacao.pdf used on input line 135.
+Package pdftex.def Info: folhaAprovacao.pdf used on input line 138.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 <folhaAprovacao.pdf, id=45, page=1, 614.295pt x 794.97pt>
 File: folhaAprovacao.pdf Graphic file (type pdf)
 
 <use folhaAprovacao.pdf, page 1>
-Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 135.
+Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: folhaAprovacao.pdf Graphic file (type pdf)
  <use folhaAprovacao.pdf, page 1>
-Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 135.
+Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: folhaAprovacao.pdf Graphic file (type pdf)
 
 <use folhaAprovacao.pdf, page 1>
-Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 135.
+Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: folhaAprovacao.pdf Graphic file (type pdf)
  <use folhaAprovacao.pdf, page 1>
-Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 135.
+Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: folhaAprovacao.pdf Graphic file (type pdf)
 
 <use folhaAprovacao.pdf, page 1>
-Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 135.
+Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [3
 
@@ -1415,16 +1448,16 @@ Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 135.
 ]
 
 LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
-(Font)              using `T1/lmr/bx/n' instead on input line 150.
+(Font)              using `T1/lmr/bx/n' instead on input line 153.
 
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 150.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 153.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmss/bx/sc' undefined
-(Font)              using `T1/lmss/bx/n' instead on input line 150.
+(Font)              using `T1/lmss/bx/n' instead on input line 153.
 
 [7
 
@@ -1451,15 +1484,21 @@ LaTeX Font Warning: Font shape `T1/lmss/bx/sc' undefined
 
 ]
 (main_ppgco_ufu.toc
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 30.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 30.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 30.
- [21
+Overfull \hbox (1.5372pt too wide) in paragraph at lines 21--21
+ [][] [][][]\T1/lmr/m/n/12 Multiobjective evo-lu-ti-o-nary al-go-rithm ba-sed o
+n de-com-po-si-tion (MOEA/D)[][] []  
+ []
 
-]) [22]
+[21
+
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 37.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 37.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 37.
+) [22]
 \openout2 = `cap_introducao/introducao.aux'.
 
  (cap_introducao/introducao.tex [23
@@ -1493,44 +1532,169 @@ LaTeX Warning: Command \c invalid in math mode on input line 79.
 
 
 ]
-<cap_otimizacao-multi/figs/pareto.png, id=333, 279.0425pt x 280.04625pt>
+<cap_otimizacao-multi/figs/pareto.png, id=349, 279.0425pt x 280.04625pt>
 File: cap_otimizacao-multi/figs/pareto.png Graphic file (type png)
 
 <use cap_otimizacao-multi/figs/pareto.png>
 Package pdftex.def Info: cap_otimizacao-multi/figs/pareto.png used on input lin
 e 22.
 (pdftex.def)             Requested size: 181.99722pt x 182.65604pt.
-) [35] [36pdfTeX warning (ext4): destination with the same identifier (name{fig
-ure.3.1}) has been already used, duplicate ignored
+ [35] [36pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.226 ...de{cap_otimizacao-multi/otimizacao-multi}
+l.32 	\item M
+             étricas de avaliação se tornam difíceis de se calcular: a a...
+ <./cap_otimizacao-multi/figs/pareto.png>]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 46.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.49 		\While
+              {número máximo de gerações não for atingido}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.49 		\While
+              {número máximo de gerações não for atingido}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.57 	\end{algorithmic}
+                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.57 	\end{algorithmic}
+                       
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.57 	\end{algorithmic}
+                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+[37]
+
+LaTeX Warning: Command \c invalid in math mode on input line 71.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 71.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 72.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 72.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 72.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 72.
+
+[38] [39]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.116 		\While
+               {número máximo de gerações não for atingido}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.116 		\While
+               {número máximo de gerações não for atingido}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.123 	\end{algorithmic}
+                        
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.123 	\end{algorithmic}
+                        
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.123 	\end{algorithmic}
+                        
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Underfull \vbox (badness 3158) has occurred while \output is active []
+
+ [40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+<cap_otimizacao-multi/figs/aeemt-tabelas.png, id=392, 993.7125pt x 650.43pt>
+File: cap_otimizacao-multi/figs/aeemt-tabelas.png Graphic file (type png)
+
+<use cap_otimizacao-multi/figs/aeemt-tabelas.png>
+Package pdftex.def Info: cap_otimizacao-multi/figs/aeemt-tabelas.png used on in
+put line 152.
+(pdftex.def)             Requested size: 455.0pt x 297.82188pt.
+ [42]) [43pdfTeX warning (ext4): destination with the same identifier (name{fig
+ure.3.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.229 ...de{cap_otimizacao-multi/otimizacao-multi}
                                                    <./cap_otimizacao-multi/figs
-/pareto.png>]
+/aeemt-tabelas.png>]
 \openout2 = `cap_proposta/proposta.aux'.
 
- (cap_proposta/proposta.tex) [37
+ (cap_proposta/proposta.tex [44
 
 
 
-]
+]) [45]
 \openout2 = `cap_experimentos/experimentos.aux'.
 
 
-(cap_experimentos/experimentos.tex [38
+(cap_experimentos/experimentos.tex [46
 
 
 
-]) [39]
+]) [47]
 \openout2 = `cap_conclusao/conclusao.aux'.
 
  (cap_conclusao/conclusao.tex
-[40
+[48
 
 
 
-]) [41] (main_ppgco_ufu.bbl [42
+]) [49] (main_ppgco_ufu.bbl [50
 
 
 ]
@@ -1540,18 +1704,18 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 bibitemlist
 
-LaTeX Warning: Citation `NBR14724:2005' on page 43 undefined on input line 40.
+LaTeX Warning: Citation `NBR14724:2005' on page 51 undefined on input line 40.
 
-) [43] [44
+) [51] [52
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 285.
+(hyperref)                removing `\uppercase' on input line 288.
 
-[45
+[53
 
-] [46]
+] [54]
 \openout2 = `ape_comandos/abntex2-modelo-include-comandos.aux'.
 
  (ape_comandos/abntex2-modelo-include-comandos.tex
@@ -1567,37 +1731,37 @@ Underfull \hbox (badness 1721) in paragraph at lines 76--76
 []|\T1/lmr/bx/n/10 Sistemas de
  []
 
-[47
+[55
 
 
-] [48pdfTeX warning (ext4): destination with the same identifier (name{table.A.
+] [56pdfTeX warning (ext4): destination with the same identifier (name{table.A.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.176 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-A.2}) has been already used, duplicate ignored
+A.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.176 
       ]
-<ape_comandos/abntex2-modelo-img-grafico.pdf, id=432, 847.165pt x 314.17375pt>
+<ape_comandos/abntex2-modelo-img-grafico.pdf, id=495, 847.165pt x 314.17375pt>
 File: ape_comandos/abntex2-modelo-img-grafico.pdf Graphic file (type pdf)
 
 <use ape_comandos/abntex2-modelo-img-grafico.pdf>
 Package pdftex.def Info: ape_comandos/abntex2-modelo-img-grafico.pdf used on in
 put line 179.
 (pdftex.def)             Requested size: 423.58145pt x 157.08649pt.
- [49pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
-3}) has been already used, duplicate ignored
+ [57pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
+4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.204   \item a
                s alíneas devem ser indicadas alfabeticamente, em letra min�...
- <./ape_comandos/abntex2-modelo-img-grafico.pdf>] [50]
+ <./ape_comandos/abntex2-modelo-img-grafico.pdf>] [58]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <17.28> on input line 276.
 
@@ -1606,44 +1770,44 @@ Overfull \hbox (1.95023pt too wide) in paragraph at lines 293--293
 PRINCIPAL.nls[] 
  []
 
-[51]
+[59]
 Package acronym Info: Label `acro:NBR' newly defined as it shall be overridden
 although it is yet undefined on input line 343.
-) [52]
+) [60]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 302.
+(hyperref)                removing `\uppercase' on input line 305.
 
-[53
+[61
 
 
 
-] [54] [55
+] [62] [63
 
 ]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
- [56]
+ [64]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
- [57]
+ [65]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
- [58]
+ [66]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
- [59]
-[60]
+ [67]
+[68]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
- [61]
-[62]
+ [69]
+[70]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
- [63]
+ [71]
 
 AED: lastpage setting LastPage
-[64]
+[72]
 \tf@lof=\write7
 \openout7 = `main_ppgco_ufu.lof'.
 
@@ -1653,15 +1817,15 @@ AED: lastpage setting LastPage
 \tf@toc=\write9
 \openout9 = `main_ppgco_ufu.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
  (main_ppgco_ufu.aux (cap_introducao/introducao.aux)
 (cap_otimizacao-bio/otimizacao-bio.aux)
 (cap_otimizacao-multi/otimizacao-multi.aux) (cap_proposta/proposta.aux)
 (cap_experimentos/experimentos.aux) (cap_conclusao/conclusao.aux)
 (ape_comandos/abntex2-modelo-include-comandos.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 313.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 313.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 316.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 316.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1672,16 +1836,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
  ) 
 Here is how much of TeX's memory you used:
- 14725 strings out of 493323
- 210674 string characters out of 3139066
- 461352 words of memory out of 3000000
- 17679 multiletter control sequences out of 15000+200000
+ 15261 strings out of 493323
+ 218262 string characters out of 3139066
+ 469542 words of memory out of 3000000
+ 18182 multiletter control sequences out of 15000+200000
  107230 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,18n,45p,1315b,693s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,18n,45p,1315b,691s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
@@ -1704,9 +1868,9 @@ public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx1
  Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/z
 apfding/uzdr.pfb>
-Output written on main_ppgco_ufu.pdf (66 pages, 697720 bytes).
+Output written on main_ppgco_ufu.pdf (74 pages, 741270 bytes).
 PDF statistics:
- 857 PDF objects out of 1000 (max. 8388607)
- 173 named destinations out of 1000 (max. 500000)
- 524 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 951 PDF objects out of 1000 (max. 8388607)
+ 198 named destinations out of 1000 (max. 500000)
+ 593 words of extra memory for PDF output out of 10000 (max. 10000000)
 
