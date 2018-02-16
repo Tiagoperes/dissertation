@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  15 FEB 2018 15:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  16 FEB 2018 17:44
 entering extended mode
 **./main_ppgco_ufu.tex
 (main_ppgco_ufu.tex
@@ -1489,15 +1489,21 @@ Overfull \hbox (1.5372pt too wide) in paragraph at lines 21--21
 n de-com-po-si-tion (MOEA/D)[][] []  
  []
 
+
+Overfull \hbox (1.1957pt too wide) in paragraph at lines 24--24
+ [][] [][][]\T1/lmr/m/n/12 Algoritmo Evo-lu-tivo Mul-ti-ob-je-tivo com M˙l-ti-p
+las Do-mi-n‚n-cias (AEMMD)[][] []  
+ []
+
 [21
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 37.
+(Font)              <14.4> on input line 40.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 37.
+(Font)              <10> on input line 40.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 37.
+(Font)              <7> on input line 40.
 ) [22]
 \openout2 = `cap_introducao/introducao.aux'.
 
@@ -1532,7 +1538,7 @@ LaTeX Warning: Command \c invalid in math mode on input line 79.
 
 
 ]
-<cap_otimizacao-multi/figs/pareto.png, id=349, 279.0425pt x 280.04625pt>
+<cap_otimizacao-multi/figs/pareto.png, id=357, 279.0425pt x 280.04625pt>
 File: cap_otimizacao-multi/figs/pareto.png Graphic file (type png)
 
 <use cap_otimizacao-multi/figs/pareto.png>
@@ -1657,44 +1663,236 @@ Underfull \vbox (badness 3158) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41]
-<cap_otimizacao-multi/figs/aeemt-tabelas.png, id=392, 993.7125pt x 650.43pt>
+<cap_otimizacao-multi/figs/aeemt-tabelas.png, id=400, 993.7125pt x 650.43pt>
 File: cap_otimizacao-multi/figs/aeemt-tabelas.png Graphic file (type png)
 
 <use cap_otimizacao-multi/figs/aeemt-tabelas.png>
 Package pdftex.def Info: cap_otimizacao-multi/figs/aeemt-tabelas.png used on in
 put line 152.
 (pdftex.def)             Requested size: 455.0pt x 297.82188pt.
- [42]) [43pdfTeX warning (ext4): destination with the same identifier (name{fig
-ure.3.2}) has been already used, duplicate ignored
+ [42] [43pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.3.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.229 ...de{cap_otimizacao-multi/otimizacao-multi}
-                                                   <./cap_otimizacao-multi/figs
-/aeemt-tabelas.png>]
+l.162 
+       <./cap_otimizacao-multi/figs/aeemt-tabelas.png>]
+<cap_otimizacao-multi/figs/aeemd-tabelas.png, id=411, 993.7125pt x 387.4475pt>
+File: cap_otimizacao-multi/figs/aeemd-tabelas.png Graphic file (type png)
+
+<use cap_otimizacao-multi/figs/aeemd-tabelas.png>
+Package pdftex.def Info: cap_otimizacao-multi/figs/aeemd-tabelas.png used on in
+put line 169.
+(pdftex.def)             Requested size: 455.0pt x 177.40625pt.
+
+Overfull \hbox (24.20482pt too wide) in paragraph at lines 172--173
+[]\T1/lmr/m/n/12 Com as ta-be-las cri-a-das, gera-se um n˙-mero prÈ-definido de
+ so-lu-Áıes ale-a-tÛ-rias, distribuindo-
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.176 ...po de problema. Como explicado em [secao_
+                                                  formigas], ao inv√©s de ut...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 176.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 176.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.177 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (1372.21619pt too wide) in paragraph at lines 176--177
+\T1/lmr/m/n/12 Como ex-pli-cado em [secao$[]\OML/lmm/m/it/12 ormigas\OT1/lmr/m/
+n/12 ]\OML/lmm/m/it/12 ; aoinv\OT1/lmr/m/n/12 È\OML/lmm/m/it/12 sdeutilizaremos
+operadoresgen\OT1/lmr/m/n/12 È\OML/lmm/m/it/12 ticosparageraremeevolu\OT1/lmr/m
+/n/12 Ì\OML/lmm/m/it/12 remapopula\OT1/lmr/m/n/12 Á„\OML/lmm/m/it/12 o; osACOsl
+an\OT1/lmr/m/n/12 Á\OML/lmm/m/it/12 amm\OT1/lmr/m/n/12 „\OML/lmm/m/it/12 odeump
+rocessodeconstru\OT1/lmr/m/n/12 Á„\OML/lmm/m/it/12 odesolu\OT1/lmr/m/n/12 Á„\OM
+L/lmm/m/it/12 obaseadoemferom\OT1/lmr/m/n/12 Ù\OML/lmm/m/it/12 nios; oqualdecid
+e; acadapasso; umapart\OT1/lmr/m/n/12 Ì\OML/lmm/m/it/12 culadasolu\OT1/lmr/m/n/
+12 Á„\OML/lmm/m/it/12 odeacordoseuvalordeferom\OT1/lmr/m/n/12 Ù\OML/lmm/m/it/12
+ nioeheur\OT1/lmr/m/n/12 Ì\OML/lmm/m/it/12 stica:DentreosACOsmultiobjetivosprop
+ostosnaliteratura; destacam \OMS/lmsy/m/n/12  
+ []
+
+[44pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.177 
+       <./cap_otimizacao-multi/figs/aeemd-tabelas.png>]
+Overfull \hbox (6.62552pt too wide) in paragraph at lines 178--178
+[]\T1/lmr/bx/n/14.4 Multi-Objective Ant Co-lony Op-ti-mi-za-tion Al-go-rithm (M
+O-
+ []
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.186 		\State
+               Inicialize a estrutura de ferom√¥nios $\tau_{ij}$ com $\tau_0...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.186 		\State
+               Inicialize a estrutura de ferom√¥nios $\tau_{ij}$ com $\tau_0...
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.187 		\State
+               Crie um conjunto vazio de solu√ß√µes n√£o-dominadas $ND$
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.187 		\State
+               Crie um conjunto vazio de solu√ß√µes n√£o-dominadas $ND$
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.188 		\While
+               {N√∫mero m√°ximo de itera√ß√µes n√£o for atingido}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.188 		\While
+               {N√∫mero m√°ximo de itera√ß√µes n√£o for atingido}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.200 		\State
+               \Return $ND$
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.200 		\State
+               \Return $ND$
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.201 	\end{algorithmic}
+                        
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.201 	\end{algorithmic}
+                        
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.201 	\end{algorithmic}
+                        
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+[45] [46]) [47]
 \openout2 = `cap_proposta/proposta.aux'.
 
- (cap_proposta/proposta.tex [44
+ (cap_proposta/proposta.tex [48
 
 
 
-]) [45]
+]) [49]
 \openout2 = `cap_experimentos/experimentos.aux'.
 
 
-(cap_experimentos/experimentos.tex [46
+(cap_experimentos/experimentos.tex [50
 
 
 
-]) [47]
+]) [51]
 \openout2 = `cap_conclusao/conclusao.aux'.
 
  (cap_conclusao/conclusao.tex
-[48
+[52
 
 
 
-]) [49] (main_ppgco_ufu.bbl [50
+]) [53] (main_ppgco_ufu.bbl [54
 
 
 ]
@@ -1704,18 +1902,18 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 bibitemlist
 
-LaTeX Warning: Citation `NBR14724:2005' on page 51 undefined on input line 40.
+LaTeX Warning: Citation `NBR14724:2005' on page 55 undefined on input line 40.
 
-) [51] [52
+) [55] [56
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 288.
 
-[53
+[57
 
-] [54]
+] [58]
 \openout2 = `ape_comandos/abntex2-modelo-include-comandos.aux'.
 
  (ape_comandos/abntex2-modelo-include-comandos.tex
@@ -1731,37 +1929,37 @@ Underfull \hbox (badness 1721) in paragraph at lines 76--76
 []|\T1/lmr/bx/n/10 Sistemas de
  []
 
-[55
+[59
 
 
-] [56pdfTeX warning (ext4): destination with the same identifier (name{table.A.
+] [60pdfTeX warning (ext4): destination with the same identifier (name{table.A.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.176 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-A.3}) has been already used, duplicate ignored
+A.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.176 
       ]
-<ape_comandos/abntex2-modelo-img-grafico.pdf, id=495, 847.165pt x 314.17375pt>
+<ape_comandos/abntex2-modelo-img-grafico.pdf, id=524, 847.165pt x 314.17375pt>
 File: ape_comandos/abntex2-modelo-img-grafico.pdf Graphic file (type pdf)
 
 <use ape_comandos/abntex2-modelo-img-grafico.pdf>
 Package pdftex.def Info: ape_comandos/abntex2-modelo-img-grafico.pdf used on in
 put line 179.
 (pdftex.def)             Requested size: 423.58145pt x 157.08649pt.
- [57pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
-4}) has been already used, duplicate ignored
+ [61pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
+5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.204   \item a
                s al√≠neas devem ser indicadas alfabeticamente, em letra min√...
- <./ape_comandos/abntex2-modelo-img-grafico.pdf>] [58]
+ <./ape_comandos/abntex2-modelo-img-grafico.pdf>] [62]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <17.28> on input line 276.
 
@@ -1770,44 +1968,44 @@ Overfull \hbox (1.95023pt too wide) in paragraph at lines 293--293
 PRINCIPAL.nls[] 
  []
 
-[59]
+[63]
 Package acronym Info: Label `acro:NBR' newly defined as it shall be overridden
 although it is yet undefined on input line 343.
-) [60]
+) [64]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 305.
 
-[61
+[65
 
 
 
-] [62] [63
+] [66] [67
 
 ]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
- [64]
-Underfull \vbox (badness 1454) has occurred while \output is active []
-
- [65]
-Underfull \vbox (badness 1454) has occurred while \output is active []
-
- [66]
-Underfull \vbox (badness 1454) has occurred while \output is active []
-
- [67]
-[68]
+ [68]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
  [69]
-[70]
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [70]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
  [71]
+[72]
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [73]
+[74]
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [75]
 
 AED: lastpage setting LastPage
-[72]
+[76]
 \tf@lof=\write7
 \openout7 = `main_ppgco_ufu.lof'.
 
@@ -1839,10 +2037,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 316.
  ) 
 Here is how much of TeX's memory you used:
- 15261 strings out of 493323
- 218262 string characters out of 3139066
- 469542 words of memory out of 3000000
- 18182 multiletter control sequences out of 15000+200000
+ 15296 strings out of 493323
+ 218855 string characters out of 3139066
+ 469871 words of memory out of 3000000
+ 18208 multiletter control sequences out of 15000+200000
  107230 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,18n,45p,1315b,691s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1868,9 +2066,9 @@ public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx1
  Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/z
 apfding/uzdr.pfb>
-Output written on main_ppgco_ufu.pdf (74 pages, 741270 bytes).
+Output written on main_ppgco_ufu.pdf (78 pages, 762992 bytes).
 PDF statistics:
- 951 PDF objects out of 1000 (max. 8388607)
- 198 named destinations out of 1000 (max. 500000)
- 593 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 987 PDF objects out of 1000 (max. 8388607)
+ 206 named destinations out of 1000 (max. 500000)
+ 614 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -158,5 +158,78 @@ O primeiro passo do AEMMT é gerar as tabelas e preenchê-las com soluções ale
 
 \subsection{Algoritmo Evolutivo Multiobjetivo com Múltiplas Dominâncias (AEMMD)}
 
-O AEMMD é uma modificação do AEMMT que, apesar de usar o mesmo processo de de divisão do problema multi-objetivo, abandona a ideia de escalarização e volta a utilizar o conceito de dominância dos métodos mais antigos (e.g. NSGA-II e SPEA2). No AEMMD, ao invés de se utilizar a média dos objetivos da tabela para avaliar o indivíduo, lança-se mão da relação de dominância de Pareto, um indivíduo novo $s$ só entra na tabela $t$, se $s$ não for dominado por nenhuma solução em $t$. Além disso, se $s$ entra em $t$, todas as soluções em $t$ dominadas por $s$ são removidas.
+O AEMMD é uma modificação do AEMMT que, apesar de usar o mesmo processo de divisão do problema multi-objetivo, abandona a ideia de escalarização e volta a utilizar o conceito de dominância dos métodos mais antigos (e.g. NSGA-II e SPEA2). No AEMMD, ao invés de se utilizar a média dos objetivos da tabela para avaliar o indivíduo, lança-se mão da relação de dominância de Pareto, um indivíduo novo $s$ só entra na tabela $t$, se $s$ não for dominado por nenhuma solução em $t$ considerando apenas os objetivos de $t$. Além disso, se $s$ entra em $t$, todas as soluções em $t$ dominadas por $s$ são removidas.
 
+O primeiro passo do AEMMD é gerar o conjunto de tabelas, que é composto por todas as combinações de objetivos possíveis a partir de dois a dois. Combinações de um único objetivo não são criadas, pois o conceito de dominância é válido apenas para a partir de dois valores. Diferentemente do AEMMT, as tabelas não possuem limite de tamanho e podem crescer indefinidamente. Para um problema de quatro objetivos ($f_1, f_2, f_3, f_4$), por exemplo, 11 tabelas seriam geradas, veja a figura \ref{fig_aemmd_tabelas}.
+
+\begin{figure}
+	\label{fig_aemmd_tabelas}
+	\caption{Tabelas do AEMMD}
+	\centering
+	\includegraphics[width=1\textwidth]{cap_otimizacao-multi/figs/aeemd-tabelas}
+\end{figure}
+
+Com as tabelas criadas, gera-se um número pré-definido de soluções aleatórias, distribuindo-nas pelas tabelas de acordo com a relação de dominância de Pareto. O próximo passo é o laço principal, onde a cada iteração, através de um torneio duplo, sorteia-se duas tabelas de acordo com suas pontuações. A pontuação das tabelas no AEMMD é diferente do AEMMT, ao invés de conceder um ponto sempre que se gera um indivíduo sobrevivente, pontua-se quando uma tabela recebe um indivíduo. Tendo escolhido as duas populações pais, sorteia-se um representante de cada e gera-se um único filho, o qual é comparado tabela à tabela e entra naquelas onde representa uma solução não dominada. Outra diferença em relação ao método original, é que o AEMMD não reinicia as pontuações em momento algum do algoritmo. Espera-se que ao final das gerações, a população da tabela principal, com todos os objetivos, tenha convergido para a fronteira de Pareto. 
+
+\section{Algoritmos many-objectives baseados em colônias de formigas}
+
+A maior parte dos métodos de busca multiobjetivo são baseados em algoritmos genéticos, mas uma boa alternativa pouco explorada é a inteligência coletiva, representada por estratégias como as colônias de formigas (ACOs) e enxame de partículas (PSOs). Neste trabalho, devido ao fato de explorar-se dois problemas discretos (problema da mochila multiobjetivo e problema do roteamento multicast), optou-se por utilizar as colônias de formigas, que foram desenvolvidas especialmente para lidar com esse tipo de problema. Como explicado em [secao_formigas], ao invés de utilizarem os operadores genéticos para gerarem e evoluírem a população, os ACOs lançam mão de um processo de construção de solução baseado em feromônios, o qual decide, a cada passo, uma partícula da solução de acordo seu valor de feromônio e heurística. Dentre os ACOs multiobjetivos propostos na literatura, destacam-se o MOACS, ...
+
+\subsection{Multi-Objective Ant Colony Optimization Algorithm (MOACS)}
+
+O MOACS foi proposto pela primeira vez em [Baran 2003] para o problema de roteamento de veículos com janelas de tempo e posteriormente foi aplicado no problema do roteamento multicast [Baran 2005]. A última versão do algoritmo foi proposta em [Baran 2016] e essa é a variação utilizada neste trabalho. O MOACS é uma adaptação do ACO original que torna possível a otimização de múltiplos objetivos utilizando uma única estrutura de feromônios, múltiplas heurísticas e um arquivo de soluções não dominadas. Veja o código do algoritmo \ref{alg_moacs}.
+
+\begin{algorithm}
+	\caption{Algoritmo MOACS}
+	\label{alg_moacs}
+	\begin{algorithmic}[1]
+		\State Inicialize a estrutura de feromônios $\tau_{ij}$ com $\tau_0$ /* $\tau_{0}$ é o valor inicial */
+		\State Crie um conjunto vazio de soluções não-dominadas $ND$
+		\While {Número máximo de iterações não for atingido}
+		\For {$i = 0$ até $i = tamanho\_populacao$}
+		\State Sorteie valores no intervalo $[0, w_{max}[$ para formar um vetor de pesos $W$ com $|H|$ posições
+		\State Construa uma solução de acordo com a tabela de feromônios $\tau_{ij}$, as heurísticas ($H$) e os pesos $W$
+		\State Atualize $ND$ com a nova solução
+		\EndFor
+		\If {$ND$ foi modificado}
+		\State Reinicie a estrutura de feromônios fazendo $\tau_{ij} = \tau_0 \forall(i,j)$
+		\Else
+		\State Atualize a estrutura de feromônios com todas as soluções em $ND$
+		\EndIf
+		\EndWhile
+		\State \Return $ND$
+	\end{algorithmic}
+\end{algorithm}
+
+O processo de construção da solução depende do problema e, no MOACS, os principais componentes para o processo são:
+
+\begin{itemize}  
+	\item Feromônios ($\tau_{ij}$): estrutura que guarda a quantidade de feromônios em cada partícula que pode formar a solução. No caso de problemas em grafos, representa a quantidade da substância em cada uma das arestas;
+	\item Heurísticas ($H$): conjunto de funções que estimam a qualidade de uma dada partícula que pode formar a solução. No caso de problemas em grafos, representa os vários pesos em uma aresta. Por exemplo, num grafo que representa uma rede de computadores com informações de custo, distância e tráfego, $H$ poderia ser formado de três funções que recebem uma aresta $(i,j)$ e devolvem, respectivamente, os valores de peso, distância e tráfego na aresta.
+	\item Peso máximo de uma heurística ($w_{max}$): representa o valor máximo que o peso de uma heurística pode atingir. Em [Baran 2016], propõe-se $w_{max} = 3$, de forma que cada função possa ser classificada como 0 (não importante), 1 (importante), 2 (muito importante).
+	\item Vetor de pesos ($W$): O vetor de pesos atribui a importância de cada heurística e é gerado aleatoriamente em cada iteração. Cada função de heurística recebe um peso variando no intervalo $[0, w_{max}[$.
+\end{itemize}
+
+Ao construir uma solução, utiliza-se o mesmo processo de decisão do ACO original, explicado na seção [secao aco]. A única diferença é que as múltiplas heurísticas do MOACS ($H$) deve ser unificada em uma única função $h(x)$, para isso utiliza-se o vetor de pesos $W$ para se aplicar uma média ponderada. Veja a equação a seguir:
+
+\[h(x) = \frac{\sum_{i \gets 0}^{size(H)}\ H_i(x) * W_i}{\sum_{w \in W} w}\]
+
+Em cada época (iteração do laço principal), atualiza-se o arquivo de soluções não dominadas com as novas soluções geradas. Se o arquivo foi atualizado após criar-se todas as soluções, reinicia-se as informações de feromônio, redefinindo todos os valores na estrutura $\tau_{ij}$ para o valor inicial de feromônio $\tau_0$. Caso o arquivo tenha se mantido estável, ou seja, nenhuma das novas soluções seja não-dominada, atualiza-se as quantidades de feromônio na estrutura de acordo com as soluções no arquivo.
+
+Considerando um problema em grafos, para atualizar a estrutura $\tau_{ij}$ com uma solução $s$, faz-se:
+
+\[\tau_{ij} = (1 - \rho) * \tau_{ij} + \rho * \Delta\tau(s) \forall(i,j) \in s\]
+
+Onde:
+\begin{itemize} 
+	\item $\rho$: coeficiente de evaporação;
+	\item $\Delta\tau(s)$: Quantidade de feromônios depositados pela solução $s$.
+\end{itemize}
+
+A quantidade de feromônio depositado pela solução $s$ ($\Delta\tau(s)$) é definida por:
+
+\[\Delta\tau(s) = \frac{1}{performance(s)}\]
+
+Na fórmula anterior, $performance(s)$, é dado pela soma dos valores de $s$ no espaço de objetivos. Neste caso, considera-se um problema de minimização, para problemas de maximização, basta inverter a equação. Se os objetivos são reduzir o custo, o tráfego e o delay de uma rede, por exemplo, $performance(s) = custo(s) + trafego(s) + delay(s)$.
+
+Após todas as iterações do laço principal, espera-se obter no arquivo uma boa aproximação da fronteira de Pareto. 
