@@ -24,42 +24,45 @@
 \contentsline {subsection}{\numberline {3.2.4}Algoritmo Evolutivo Multiobjetivo com M\IeC {\'u}ltiplas Domin\IeC {\^a}ncias (AEMMD)}{43}{subsection.3.2.4}
 \contentsline {section}{\numberline {3.3}Algoritmos many-objectives baseados em col\IeC {\^o}nias de formigas}{44}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Multi-Objective Ant Colony Optimization Algorithm (MOACS)}{45}{subsection.3.3.1}
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {A Sua Proposta}}{49}{chapter.4}
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Experimentos e An\IeC {\'a}lise dos Resultados}}{51}{chapter.5}
-\contentsline {section}{\numberline {5.1}M\IeC {\'e}todo para a Avalia\IeC {\c c}\IeC {\~a}o}{51}{section.5.1}
-\contentsline {section}{\numberline {5.2}Experimentos}{51}{section.5.2}
-\contentsline {section}{\numberline {5.3}Avalia\IeC {\c c}\IeC {\~a}o dos Resultados}{51}{section.5.3}
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{53}{chapter.6}
-\contentsline {section}{\numberline {6.1}Principais Contribui\IeC {\c c}\IeC {\~o}es}{53}{section.6.1}
-\contentsline {section}{\numberline {6.2}Trabalhos Futuros}{53}{section.6.2}
-\contentsline {section}{\numberline {6.3}Contribui\IeC {\c c}\IeC {\~o}es em Produ\IeC {\c c}\IeC {\~a}o Bibliogr\IeC {\'a}fica}{53}{section.6.3}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{55}{section*.12}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Problemas de teste}}{49}{chapter.4}
+\contentsline {section}{\numberline {4.1}Problema da mochila multiobjetivo}{49}{section.4.1}
+\contentsline {section}{\numberline {4.2}Problema do roteamento multicast (PRM)}{50}{section.4.2}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {A Sua Proposta}}{55}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Experimentos e An\IeC {\'a}lise dos Resultados}}{57}{chapter.6}
+\contentsline {section}{\numberline {6.1}M\IeC {\'e}todo para a Avalia\IeC {\c c}\IeC {\~a}o}{57}{section.6.1}
+\contentsline {section}{\numberline {6.2}Experimentos}{57}{section.6.2}
+\contentsline {section}{\numberline {6.3}Avalia\IeC {\c c}\IeC {\~a}o dos Resultados}{57}{section.6.3}
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{59}{chapter.7}
+\contentsline {section}{\numberline {7.1}Principais Contribui\IeC {\c c}\IeC {\~o}es}{59}{section.7.1}
+\contentsline {section}{\numberline {7.2}Trabalhos Futuros}{59}{section.7.2}
+\contentsline {section}{\numberline {7.3}Contribui\IeC {\c c}\IeC {\~o}es em Produ\IeC {\c c}\IeC {\~a}o Bibliogr\IeC {\'a}fica}{59}{section.7.3}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{61}{section*.12}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{57}{section*.13}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Resultados de comandos}}{59}{appendix.A}
-\contentsline {section}{\numberline {A.1}Cita\IeC {\c c}\IeC {\~o}es}{59}{section.A.1}
-\contentsline {section}{\numberline {A.2}Remiss\IeC {\~o}es internas}{59}{section.A.2}
-\contentsline {section}{\numberline {A.3}Tabelas}{59}{section.A.3}
-\contentsline {section}{\numberline {A.4}Express\IeC {\~o}es matem\IeC {\'a}ticas}{60}{section.A.4}
-\contentsline {section}{\numberline {A.5}Figuras}{60}{section.A.5}
-\contentsline {section}{\numberline {A.6}Enumera\IeC {\c c}\IeC {\~o}es: al\IeC {\'\i }neas e subal\IeC {\'\i }neas}{61}{section.A.6}
-\contentsline {section}{\numberline {A.7}Inclu\IeC {\c c}\IeC {\~a}o de outros arquivos}{62}{section.A.7}
-\contentsline {section}{\numberline {A.8}Compilar o documento \LaTeX }{63}{section.A.8}
-\contentsline {section}{\numberline {A.9}Divis\IeC {\~o}es do documento: se\IeC {\c c}\IeC {\~a}o}{63}{section.A.9}
-\contentsline {subsection}{\numberline {A.9.1}Divis\IeC {\~o}es do documento: subse\IeC {\c c}\IeC {\~a}o}{63}{subsection.A.9.1}
-\contentsline {subsubsection}{\numberline {A.9.1.1}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{63}{subsubsection.A.9.1.1}
-\contentsline {subsubsection}{\numberline {A.9.1.2}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{63}{subsubsection.A.9.1.2}
-\contentsline {subsection}{\numberline {A.9.2}Divis\IeC {\~o}es do documento: subse\IeC {\c c}\IeC {\~a}o}{63}{subsection.A.9.2}
-\contentsline {subsubsection}{\numberline {A.9.2.1}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{63}{subsubsection.A.9.2.1}
-\contentsline {section}{\numberline {A.10}Este \IeC {\'e} um exemplo de nome de se\IeC {\c c}\IeC {\~a}o longo. Ele deve estar alinhado \IeC {\`a} esquerda e a segunda e demais linhas devem iniciar logo abaixo da primeira palavra da primeira linha}{64}{section.A.10}
-\contentsline {section}{\numberline {A.11}Consulte o manual da classe \textsf {abntex2}}{64}{section.A.11}
-\contentsline {section}{\numberline {A.12}Refer\IeC {\^e}ncia a Acr\IeC {\^o}nimos}{64}{section.A.12}
+\contentsline {part}{\uppercase {Ap\^endices}}{63}{section*.13}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Resultados de comandos}}{65}{appendix.A}
+\contentsline {section}{\numberline {A.1}Cita\IeC {\c c}\IeC {\~o}es}{65}{section.A.1}
+\contentsline {section}{\numberline {A.2}Remiss\IeC {\~o}es internas}{65}{section.A.2}
+\contentsline {section}{\numberline {A.3}Tabelas}{65}{section.A.3}
+\contentsline {section}{\numberline {A.4}Express\IeC {\~o}es matem\IeC {\'a}ticas}{66}{section.A.4}
+\contentsline {section}{\numberline {A.5}Figuras}{66}{section.A.5}
+\contentsline {section}{\numberline {A.6}Enumera\IeC {\c c}\IeC {\~o}es: al\IeC {\'\i }neas e subal\IeC {\'\i }neas}{67}{section.A.6}
+\contentsline {section}{\numberline {A.7}Inclu\IeC {\c c}\IeC {\~a}o de outros arquivos}{68}{section.A.7}
+\contentsline {section}{\numberline {A.8}Compilar o documento \LaTeX }{69}{section.A.8}
+\contentsline {section}{\numberline {A.9}Divis\IeC {\~o}es do documento: se\IeC {\c c}\IeC {\~a}o}{69}{section.A.9}
+\contentsline {subsection}{\numberline {A.9.1}Divis\IeC {\~o}es do documento: subse\IeC {\c c}\IeC {\~a}o}{69}{subsection.A.9.1}
+\contentsline {subsubsection}{\numberline {A.9.1.1}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{69}{subsubsection.A.9.1.1}
+\contentsline {subsubsection}{\numberline {A.9.1.2}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{69}{subsubsection.A.9.1.2}
+\contentsline {subsection}{\numberline {A.9.2}Divis\IeC {\~o}es do documento: subse\IeC {\c c}\IeC {\~a}o}{69}{subsection.A.9.2}
+\contentsline {subsubsection}{\numberline {A.9.2.1}Divis\IeC {\~o}es do documento: subsubse\IeC {\c c}\IeC {\~a}o}{69}{subsubsection.A.9.2.1}
+\contentsline {section}{\numberline {A.10}Este \IeC {\'e} um exemplo de nome de se\IeC {\c c}\IeC {\~a}o longo. Ele deve estar alinhado \IeC {\`a} esquerda e a segunda e demais linhas devem iniciar logo abaixo da primeira palavra da primeira linha}{70}{section.A.10}
+\contentsline {section}{\numberline {A.11}Consulte o manual da classe \textsf {abntex2}}{70}{section.A.11}
+\contentsline {section}{\numberline {A.12}Refer\IeC {\^e}ncia a Acr\IeC {\^o}nimos}{70}{section.A.12}
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{ANEXO \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Anexos}}{65}{section*.15}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Morbi ultrices rutrum lorem.}}{67}{appendix.anexochapback.1}
-\contentsline {section}{\numberline {A.1}Test}{72}{section.anexochapback.1.1}
+\contentsline {part}{\uppercase {Anexos}}{71}{section*.15}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Morbi ultrices rutrum lorem.}}{73}{appendix.anexochapback.1}
+\contentsline {section}{\numberline {A.1}Test}{78}{section.anexochapback.1.1}
