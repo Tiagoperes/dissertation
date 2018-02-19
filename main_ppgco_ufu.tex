@@ -31,6 +31,8 @@
 % ---
 % Pacotes fundamentais 
 % ---
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 \usepackage{cmap}				% Mapear caracteres especiais no PDF
 \usepackage{lmodern}				% Usa a fonte Latin Modern			
 \usepackage{makeidx}            	% Cria o indice
@@ -40,8 +42,8 @@
 \usepackage{nomencl} 			% Lista de simbolos
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{amsmath}
-\usepackage{algorithm}
-\usepackage{algpseudocode}
+%\usepackage{placeins}
+
 
 % ---
 
@@ -232,6 +234,11 @@ This is the english abstract.
 % Problemas de teste
 % ----------------------------------------------------------
 \include{cap_problemas/problemas}
+
+% ----------------------------------------------------------
+% Estratégias evolutivas para o PMM
+% ----------------------------------------------------------
+\include{cap_estrategias-pmm/estrategias-pmm}
 
 % ----------------------------------------------------------
 % Proposta de pesquisa
