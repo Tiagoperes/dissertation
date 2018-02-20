@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  19 FEB 2018 16:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  20 FEB 2018 15:26
 entering extended mode
 **./main_ppgco_ufu.tex
 (main_ppgco_ufu.tex
@@ -1203,14 +1203,9 @@ Writing index file main_ppgco_ufu.idx
 Writing nomenclature file main_ppgco_ufu.nlo
 (main_ppgco_ufu.aux (cap_introducao/introducao.aux)
 (cap_otimizacao-bio/otimizacao-bio.aux)
-(cap_otimizacao-multi/otimizacao-multi.aux) (cap_problemas/problemas.aux
-
-LaTeX Warning: Label `fig_prm_grafo' multiply defined.
-
-
-LaTeX Warning: Label `fig_prm_grafo' multiply defined.
-
-) (cap_estrategias-pmm/estrategias-pmm.aux) (cap_proposta/proposta.aux)
+(cap_otimizacao-multi/otimizacao-multi.aux) (cap_problemas/problemas.aux)
+(cap_estrategias-pmm/estrategias-pmm.aux)
+(cap_estrategias-prm/estrategias-prm.aux) (cap_proposta/proposta.aux)
 (cap_experimentos/experimentos.aux) (cap_conclusao/conclusao.aux)
 (ape_comandos/abntex2-modelo-include-comandos.aux))
 \openout1 = `main_ppgco_ufu.aux'.
@@ -1506,11 +1501,11 @@ las Do-mi-n�n-cias (AEMMD)[][] []
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 47.
+(Font)              <14.4> on input line 53.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 47.
+(Font)              <10> on input line 53.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 47.
+(Font)              <7> on input line 53.
  [22]) [23] [24
 
 ]
@@ -1546,7 +1541,7 @@ LaTeX Warning: Command \c invalid in math mode on input line 79.
 
 
 ]
-<cap_otimizacao-multi/figs/pareto.png, id=390, 279.0425pt x 280.04625pt>
+<cap_otimizacao-multi/figs/pareto.png, id=404, 279.0425pt x 280.04625pt>
 File: cap_otimizacao-multi/figs/pareto.png Graphic file (type png)
 
 <use cap_otimizacao-multi/figs/pareto.png>
@@ -1671,7 +1666,7 @@ Underfull \vbox (badness 3158) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [43]
-<cap_otimizacao-multi/figs/aeemt-tabelas.png, id=432, 993.7125pt x 650.43pt>
+<cap_otimizacao-multi/figs/aeemt-tabelas.png, id=446, 993.7125pt x 650.43pt>
 File: cap_otimizacao-multi/figs/aeemt-tabelas.png Graphic file (type png)
 
 <use cap_otimizacao-multi/figs/aeemt-tabelas.png>
@@ -1685,7 +1680,7 @@ re.3.2}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.162 
        <./cap_otimizacao-multi/figs/aeemt-tabelas.png>]
-<cap_otimizacao-multi/figs/aeemd-tabelas.png, id=443, 993.7125pt x 387.4475pt>
+<cap_otimizacao-multi/figs/aeemd-tabelas.png, id=457, 993.7125pt x 387.4475pt>
 File: cap_otimizacao-multi/figs/aeemd-tabelas.png Graphic file (type png)
 
 <use cap_otimizacao-multi/figs/aeemd-tabelas.png>
@@ -1885,10 +1880,7 @@ look up `weird error' in the index to The TeXbook.)
 
 
 ] [51]
-
-LaTeX Warning: Reference `fig_prm_mono' on page 52 undefined on input line 21.
-
-<cap_problemas/figs/prm_grafo.png, id=472, 696.6025pt x 258.9675pt>
+<cap_problemas/figs/prm_grafo.png, id=487, 696.6025pt x 258.9675pt>
 File: cap_problemas/figs/prm_grafo.png Graphic file (type png)
 
 <use cap_problemas/figs/prm_grafo.png>
@@ -1896,19 +1888,15 @@ Package pdftex.def Info: cap_problemas/figs/prm_grafo.png used on input line 27
 .
 (pdftex.def)             Requested size: 455.0pt x 169.14877pt.
 
-<cap_problemas/figs/prm_mono.png, id=476, 583.17876pt x 613.29124pt>
+<cap_problemas/figs/prm_mono.png, id=491, 583.17876pt x 613.29124pt>
 File: cap_problemas/figs/prm_mono.png Graphic file (type png)
 
 <use cap_problemas/figs/prm_mono.png>
 Package pdftex.def Info: cap_problemas/figs/prm_mono.png used on input line 34.
 
 (pdftex.def)             Requested size: 364.00139pt x 382.8101pt.
-
-
-LaTeX Warning: Reference `fig_prm_mono' on page 52 undefined on input line 37.
-
-[52] [53pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.4.4}) has been already used, duplicate ignored
+ [52] [53pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.4.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1920,7 +1908,7 @@ l.38
                                                   \fi \fi 
 l.38 
       <./cap_problemas/figs/prm_grafo.png> <./cap_problemas/figs/prm_mono.png>]
-<cap_problemas/figs/prm_multi.png, id=489, 429.73973pt x 225.05557pt>
+<cap_problemas/figs/prm_multi.png, id=506, 429.73973pt x 225.05557pt>
 File: cap_problemas/figs/prm_multi.png Graphic file (type png)
 
 <use cap_problemas/figs/prm_multi.png>
@@ -1960,28 +1948,196 @@ item\OT1/lmr/m/n/12 ) =
  []
 
 ) [59]
+\openout2 = `cap_estrategias-prm/estrategias-prm.aux'.
+
+ (cap_estrategias-prm/estrategias-prm.tex [60
+
+
+
+] [61]
+<cap_estrategias-prm/figs/prm-cruzamento-caminho.png, id=559, 1346.02875pt x 60
+9.27625pt>
+File: cap_estrategias-prm/figs/prm-cruzamento-caminho.png Graphic file (type pn
+g)
+ <use cap_estrategias-prm/figs/prm-cruzamento-caminho.png>
+Package pdftex.def Info: cap_estrategias-prm/figs/prm-cruzamento-caminho.png us
+ed on input line 30.
+(pdftex.def)             Requested size: 455.0pt x 205.95189pt.
+ [62pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.34 
+      <./cap_estrategias-prm/figs/prm-cruzamento-caminho.png>]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.45 		\State
+              Selecione aleatoriamente $qte_{arestas}$ e remova-as de $A$
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.45 		\State
+              Selecione aleatoriamente $qte_{arestas}$ e remova-as de $A$
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.46 		\State
+              Retire de $A$ a componente conexa que contém a raiz e chame-a...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.46 		\State
+              Retire de $A$ a componente conexa que contém a raiz e chame-a...
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.47 		\State
+              Crie um grafo vazio $M$ para guardar o resultado da mutação
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.47 		\State
+              Crie um grafo vazio $M$ para guardar o resultado da mutação
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.48 		\State
+              Adicione todas as arestas de $C$ a $M$
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.48 		\State
+              Adicione todas as arestas de $C$ a $M$
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.49 		\While
+             {$|D| > 0$}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.49 		\While
+             {$|D| > 0$}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.58 		\State
+              Remova os ciclos em $M$, caso existam
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.58 		\State
+              Remova os ciclos em $M$, caso existam
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.59 		\State
+              Pode a árvore $M$, removendo todos os nós folhas que não s�...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.59 		\State
+              Pode a árvore $M$, removendo todos os nós folhas que não s�...
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.60 		\State
+              \Return $M$
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.60 		\State
+              \Return $M$
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.61 	\end{algorithmic}
+                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.61 	\end{algorithmic}
+                       
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.61 	\end{algorithmic}
+                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+) [63]
 \openout2 = `cap_proposta/proposta.aux'.
 
- (cap_proposta/proposta.tex [60
+ (cap_proposta/proposta.tex [64
 
 
 
-]) [61]
+]) [65]
 \openout2 = `cap_experimentos/experimentos.aux'.
 
- (cap_experimentos/experimentos.tex [62
+ (cap_experimentos/experimentos.tex [66
 
 
 
-]) [63]
+]) [67]
 \openout2 = `cap_conclusao/conclusao.aux'.
 
- (cap_conclusao/conclusao.tex [64
+ (cap_conclusao/conclusao.tex [68
 
 
 
-]) [65] (main_ppgco_ufu.bbl
-[66
+]) [69] (main_ppgco_ufu.bbl
+[70
 
 
 ]
@@ -1991,18 +2147,18 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 bibitemlist
 
-LaTeX Warning: Citation `NBR14724:2005' on page 67 undefined on input line 40.
+LaTeX Warning: Citation `NBR14724:2005' on page 71 undefined on input line 40.
 
-) [67] [68
+) [71] [72
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 300.
+(hyperref)                removing `\uppercase' on input line 305.
 
-[69
+[73
 
-] [70]
+] [74]
 \openout2 = `ape_comandos/abntex2-modelo-include-comandos.aux'.
 
  (ape_comandos/abntex2-modelo-include-comandos.tex
@@ -2018,37 +2174,37 @@ Underfull \hbox (badness 1721) in paragraph at lines 76--76
 []|\T1/lmr/bx/n/10 Sistemas de
  []
 
-[71
+[75
 
 
-] [72pdfTeX warning (ext4): destination with the same identifier (name{table.A.
+] [76pdfTeX warning (ext4): destination with the same identifier (name{table.A.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.176 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-A.8}) has been already used, duplicate ignored
+A.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.176 
       ]
-<ape_comandos/abntex2-modelo-img-grafico.pdf, id=624, 847.165pt x 314.17375pt>
+<ape_comandos/abntex2-modelo-img-grafico.pdf, id=665, 847.165pt x 314.17375pt>
 File: ape_comandos/abntex2-modelo-img-grafico.pdf Graphic file (type pdf)
 
 <use ape_comandos/abntex2-modelo-img-grafico.pdf>
 Package pdftex.def Info: ape_comandos/abntex2-modelo-img-grafico.pdf used on in
 put line 179.
 (pdftex.def)             Requested size: 423.58145pt x 157.08649pt.
- [73pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
-9}) has been already used, duplicate ignored
+ [77pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
+10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.204   \item a
                s alíneas devem ser indicadas alfabeticamente, em letra min�...
- <./ape_comandos/abntex2-modelo-img-grafico.pdf>] [74]
+ <./ape_comandos/abntex2-modelo-img-grafico.pdf>] [78]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <17.28> on input line 276.
 
@@ -2057,44 +2213,44 @@ Overfull \hbox (1.95023pt too wide) in paragraph at lines 293--293
 PRINCIPAL.nls[] 
  []
 
-[75]
+[79]
 Package acronym Info: Label `acro:NBR' newly defined as it shall be overridden
 although it is yet undefined on input line 343.
-) [76]
+) [80]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 317.
+(hyperref)                removing `\uppercase' on input line 322.
 
-[77
+[81
 
 
 
-] [78] [79
+] [82] [83
 
 ]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
- [80]
-Underfull \vbox (badness 1454) has occurred while \output is active []
-
- [81]
-Underfull \vbox (badness 1454) has occurred while \output is active []
-
- [82]
-Underfull \vbox (badness 1454) has occurred while \output is active []
-
- [83]
-[84]
+ [84]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
  [85]
-[86]
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [86]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
  [87]
+[88]
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [89]
+[90]
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [91]
 
 AED: lastpage setting LastPage
-[88]
+[92]
 \tf@lof=\write7
 \openout7 = `main_ppgco_ufu.lof'.
 
@@ -2104,16 +2260,17 @@ AED: lastpage setting LastPage
 \tf@toc=\write9
 \openout9 = `main_ppgco_ufu.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 328.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 328.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 333.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 333.
  (main_ppgco_ufu.aux (cap_introducao/introducao.aux)
 (cap_otimizacao-bio/otimizacao-bio.aux)
 (cap_otimizacao-multi/otimizacao-multi.aux) (cap_problemas/problemas.aux)
-(cap_estrategias-pmm/estrategias-pmm.aux) (cap_proposta/proposta.aux)
+(cap_estrategias-pmm/estrategias-pmm.aux)
+(cap_estrategias-prm/estrategias-prm.aux) (cap_proposta/proposta.aux)
 (cap_experimentos/experimentos.aux) (cap_conclusao/conclusao.aux)
 (ape_comandos/abntex2-modelo-include-comandos.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 328.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 328.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 333.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 333.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2122,15 +2279,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 328.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 333.
  ) 
 Here is how much of TeX's memory you used:
- 15384 strings out of 493323
- 220467 string characters out of 3139066
- 472965 words of memory out of 3000000
- 18240 multiletter control sequences out of 15000+200000
+ 15427 strings out of 493323
+ 221418 string characters out of 3139066
+ 474538 words of memory out of 3000000
+ 18259 multiletter control sequences out of 15000+200000
  107230 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,18n,45p,1315b,691s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2156,9 +2313,9 @@ public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx1
  Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/z
 apfding/uzdr.pfb>
-Output written on main_ppgco_ufu.pdf (90 pages, 867436 bytes).
+Output written on main_ppgco_ufu.pdf (94 pages, 914951 bytes).
 PDF statistics:
- 1117 PDF objects out of 1200 (max. 8388607)
- 242 named destinations out of 1000 (max. 500000)
- 685 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1179 PDF objects out of 1200 (max. 8388607)
+ 256 named destinations out of 1000 (max. 500000)
+ 738 words of extra memory for PDF output out of 10000 (max. 10000000)
 

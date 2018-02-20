@@ -28,13 +28,13 @@ O PRM é um problema além de ser um problema prático, é muito importante, poi
 \end{figure}
 
 \begin{figure}
-	\label{fig_prm_grafo}
+	\label{fig_prm_mono}
 	\caption{Exemplos de árvores multicast relativos ao grafo da figura \ref{fig_prm_grafo}. Retirado do trabalho de [2-plano]}
 	\centering
 	\includegraphics[width=0.8\textwidth]{cap_problemas/figs/prm_mono}
 \end{figure}
 
-Na figura \ref{fig_prm_mono} apresenta-se exemplos de árvores multicast criadas a partir do grafo mostrado na figura \label{fig_prm_grafo} considerando a raiz ($r$) como sendo o vértice 0 e os nós destinos ($D$) igual a {1, 8, 12, 13}. O custo de cada árvore é dado pela soma dos custos de suas arestas, dentre os exemplos, a árvore mais à direita possui o menor custo total: 65.
+Na figura \ref{fig_prm_mono} apresenta-se exemplos de árvores multicast criadas a partir do grafo mostrado na figura \ref{fig_prm_grafo} considerando a raiz ($r$) como sendo o vértice 0 e os nós destinos ($D$) igual a {1, 8, 12, 13}. O custo de cada árvore é dado pela soma dos custos de suas arestas, dentre os exemplos, a árvore mais à direita possui o menor custo total: 65.
 
 O PRM original é proposto com apenas um objetivo a se otimizar, mas o intuito deste trabalho é utilizar uma versão mais realista do problema. A qualidade de um enlace de rede não pode ser medida através de uma única métrica, um custo genérico não é capaz de dizer se um link é bom ou ruim, características como distância, delay, capacidade de tráfego e uso do tráfego são melhores indicadores, portanto, propõe-se como objeto de estudo deste trabalho, o problema do roteamento multicast multiobjetivo. Nesta versão do problema, as árvores apresentadas como solução devem representar o melhor compromisso entre as métricas utilizadas. Veja um exemplo para a otimização de ``custo'' e ``delay'' na figura \ref{fig_prm_multi}.
 
