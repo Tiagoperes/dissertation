@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  20 FEB 2018 15:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  21 FEB 2018 15:46
 entering extended mode
 **./main_ppgco_ufu.tex
 (main_ppgco_ufu.tex
@@ -2115,29 +2115,169 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-) [63]
+
+Underfull \vbox (badness 4726) has occurred while \output is active []
+
+ [63]
+[64]
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.87 		\State
+              Inicie uma árvore vazia $T$
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.87 		\State
+              Inicie uma árvore vazia $T$
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.88 		\State
+              Inicie $E$ com todas as arestas que possuem alguma extremidade...
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.88 		\State
+              Inicie $E$ com todas as arestas que possuem alguma extremidade...
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.89 		\State
+              Marque $r$ como visitado
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.89 		\State
+              Marque $r$ como visitado
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.90 		\While
+             {$T$ não incluir todos os vértices em $D$}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.90 		\While
+             {$T$ não incluir todos os vértices em $D$}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Undefined control sequence.
+<recently read> \ElseIf 
+                        
+l.103 				\ElseIf
+                 {$v$ não tiver sido visitado}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \ALG@b@2@EndIf@0 
+l.105 				\EndIf
+                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.108 		\State
+               Pode a árvore $T$
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.108 		\State
+               Pode a árvore $T$
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.109 		\State
+               \Return $T$
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.109 		\State
+               \Return $T$
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.110 	\end{algorithmic}
+                        
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.110 	\end{algorithmic}
+                        
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.110 	\end{algorithmic}
+                        
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+[65]) [66]
 \openout2 = `cap_proposta/proposta.aux'.
 
- (cap_proposta/proposta.tex [64
+ (cap_proposta/proposta.tex) [67
 
 
 
-]) [65]
+]
 \openout2 = `cap_experimentos/experimentos.aux'.
 
- (cap_experimentos/experimentos.tex [66
+ (cap_experimentos/experimentos.tex
+[68
 
 
 
-]) [67]
+]) [69]
 \openout2 = `cap_conclusao/conclusao.aux'.
 
- (cap_conclusao/conclusao.tex [68
+ (cap_conclusao/conclusao.tex [70
 
 
 
-]) [69] (main_ppgco_ufu.bbl
-[70
+]) [71] (main_ppgco_ufu.bbl [72
 
 
 ]
@@ -2147,18 +2287,18 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 bibitemlist
 
-LaTeX Warning: Citation `NBR14724:2005' on page 71 undefined on input line 40.
+LaTeX Warning: Citation `NBR14724:2005' on page 73 undefined on input line 40.
 
-) [71] [72
+) [73] [74
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 305.
 
-[73
+[75
 
-] [74]
+] [76]
 \openout2 = `ape_comandos/abntex2-modelo-include-comandos.aux'.
 
  (ape_comandos/abntex2-modelo-include-comandos.tex
@@ -2174,10 +2314,10 @@ Underfull \hbox (badness 1721) in paragraph at lines 76--76
 []|\T1/lmr/bx/n/10 Sistemas de
  []
 
-[75
+[77
 
 
-] [76pdfTeX warning (ext4): destination with the same identifier (name{table.A.
+] [78pdfTeX warning (ext4): destination with the same identifier (name{table.A.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2190,21 +2330,21 @@ A.9}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.176 
       ]
-<ape_comandos/abntex2-modelo-img-grafico.pdf, id=665, 847.165pt x 314.17375pt>
+<ape_comandos/abntex2-modelo-img-grafico.pdf, id=681, 847.165pt x 314.17375pt>
 File: ape_comandos/abntex2-modelo-img-grafico.pdf Graphic file (type pdf)
 
 <use ape_comandos/abntex2-modelo-img-grafico.pdf>
 Package pdftex.def Info: ape_comandos/abntex2-modelo-img-grafico.pdf used on in
 put line 179.
 (pdftex.def)             Requested size: 423.58145pt x 157.08649pt.
- [77pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
+ [79pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.204   \item a
                s alíneas devem ser indicadas alfabeticamente, em letra min�...
- <./ape_comandos/abntex2-modelo-img-grafico.pdf>] [78]
+ <./ape_comandos/abntex2-modelo-img-grafico.pdf>] [80]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <17.28> on input line 276.
 
@@ -2213,34 +2353,30 @@ Overfull \hbox (1.95023pt too wide) in paragraph at lines 293--293
 PRINCIPAL.nls[] 
  []
 
-[79]
+[81]
 Package acronym Info: Label `acro:NBR' newly defined as it shall be overridden
 although it is yet undefined on input line 343.
-) [80]
+) [82]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 322.
 
-[81
+[83
 
 
 
-] [82] [83
+] [84] [85
 
 ]
-Underfull \vbox (badness 1454) has occurred while \output is active []
-
- [84]
-Underfull \vbox (badness 1454) has occurred while \output is active []
-
- [85]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
  [86]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
  [87]
-[88]
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [88]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
  [89]
@@ -2248,9 +2384,13 @@ Underfull \vbox (badness 1454) has occurred while \output is active []
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
  [91]
+[92]
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [93]
 
 AED: lastpage setting LastPage
-[92]
+[94]
 \tf@lof=\write7
 \openout7 = `main_ppgco_ufu.lof'.
 
@@ -2284,13 +2424,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 333.
  ) 
 Here is how much of TeX's memory you used:
- 15427 strings out of 493323
- 221418 string characters out of 3139066
- 474538 words of memory out of 3000000
- 18259 multiletter control sequences out of 15000+200000
+ 15444 strings out of 493323
+ 221642 string characters out of 3139066
+ 474643 words of memory out of 3000000
+ 18269 multiletter control sequences out of 15000+200000
  107230 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,18n,45p,1315b,691s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,18n,45p,1555b,691s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
 iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
@@ -2313,9 +2453,9 @@ public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx1
  Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/z
 apfding/uzdr.pfb>
-Output written on main_ppgco_ufu.pdf (94 pages, 914951 bytes).
+Output written on main_ppgco_ufu.pdf (96 pages, 925159 bytes).
 PDF statistics:
- 1179 PDF objects out of 1200 (max. 8388607)
- 256 named destinations out of 1000 (max. 500000)
+ 1195 PDF objects out of 1200 (max. 8388607)
+ 263 named destinations out of 1000 (max. 500000)
  738 words of extra memory for PDF output out of 10000 (max. 10000000)
 
