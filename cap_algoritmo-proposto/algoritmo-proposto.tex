@@ -1,0 +1,122 @@
+\chapter[Algoritmo proposto]{Algoritmo proposto}
+
+O algoritmo proposto neste trabalho é baseado em colônia de formigas (ACO) e foi chamado de \textit{Many-objective Ant Colony Optimization based on Decomposed Pheromone} (MACO/D), em português, otimização em colônia de formigas para muitos objetivos baseada em decomposição de feromônios. A proposição envolve os seguintes módulos:
+
+\begin{itemize}
+	\item Framework ACO: algoritmo geral desenvolvido para se trabalhar com qualquer problema discreto;
+	\item Modelo PMM: construção da solução para o problema da mochila multiobjetivo, apresentado na seção [seção pmm-aco];
+	\item Modelo PRM: construção da solução para o problema do roteamento multicast, apresentado na seção [seção prm-aco].
+\end{itemize}
+
+Esta seção apresenta o módulo principal do algoritmo, o framework. O MACO/D se baseia na ideia do AEMMD de se criar tabelas de dominância para diferentes combinações possíveis de objetivos, adaptando-na para um modelo de colônia de formigas.
+
+A multiplicidade de objetivos impõe que algumas mudanças sejam feitas na ideia original do ACO. Como representar os diferentes objetivos no depósito de feromônio? Como compor as múltiplas heurísticas em uma única função? De acordo com [Alaya], essas questões podem ser resolvidas através de uma das seguintes opções:
+
+\begin{enumerate}
+	\item $(m+1, m)$: considerando $m$ o número de objetivos, este modelo utiliza $m + 1$ colônias de formigas e $m$ estruturas de feromônios. Cada colônia é associada a um único objetivo e otimiza apenas esse objetivo através de sua própria estrutura de feromônios. Uma colônia adicional, que representa o conjunto de todos os objetivos, utiliza os feromônios das outras colônias de forma aleatória: ao criar uma solução, a cada passo, sorteia-se alguma das estruturas de feromônios para se utilizar. Outra proposta, no modelo $(m+1, m)$ é utilizar a soma de todas as estruturas de feromônios ao criar uma solução na colônia extra. Quanto as heurísticas, cada colônia utiliza a função referente a seu objetivo, enquanto a colônia extra utiliza o somatório de todas as funções de heurística.
+	\item $(1,1)$: este modelo utiliza apenas uma colônia de formigas e uma estrutura de feromônios. Assim como no modelo 1, as heurísticas são somadas para montar uma solução. A única estrutura de feromônios representa todos os objetivos. A atualização dos feromônios se dá através de um arquivo que mantém todas as soluções não dominadas encontradas. Toda solução não-dominada contribui com a mesma quantidade de feromônios para arquivo, já que, de fato, são indiferenciáveis em termos de qualidade.
+	\item $(1,m)$: considerando $m$ o número de objetivos, este modelo utiliza 1 colônia de formigas e $m$ estruturas de feromônios. Assim como nos outros modelos, as heurísticas são somadas para montar uma solução. A cada passo da construção da solução, sorteia-se aleatoriamente a estrutura de feromônios a se utilizar. Cada estrutura de feromônios representa um objetivo e sua atualização é feita a cada época conforme a melhor solução encontrada para o mesmo.
+\end{enumerate}
+
+Em [Alaya], os experimentos mostraram que o terceiro modelo ($1,m$) gera os melhores resultados quando aplicado ao problema da mochila multiobjetivo. Dentre os ACO's vistos na seção [secao aco-multiobjetivo], o MOACS se encaixa na segunda categoria, adaptando apenas o modo de lidar com a heurística. (...). O algoritmo aqui proposto, não pertence a nenhuma das categorias apontadas por Alaya, mas se assemelha a proposição número três, pois lida com uma única colônia e múltiplos feromônios. A grande diferença é que o número de estruturas de feromônio não é igual a quantidade de objetivos, mas sim ao número de combinações de objetivo possíveis, de forma semelhante ao que ocorre no AEMMD. Além disso, o processo de cálculo da heurística e de atualização dos feromônios se difere substancialmente da ideia original do algoritmo $(1,m)$.
+
+O MACO/D, se baseia na ideia de decomposição, ou seja, ao invés de trabalhar-se diretamente com todos os objetivos, o problema é atacado em várias frentes com quantidades reduzidas de funções. Desta forma, evita-se o problema onde não é possível classificar a população devido ao alto número de soluções não-dominadas em espaços de dimensionalidade alta.
+
+O primeiro passo do MACO/D é criar as estruturas de feromônio $P = \{p_1, p_2, ..., p_i, ..., p_n\}$, uma para cada combinação possível de objetivos. Para um problema de seis objetivos, por exemplo, são criadas 57 estruturas ($|P| = 57$). Cada $p_i \in P$ é responsável por um subproblema e guarda as seguintes informações:
+
+\begin{itemize}
+	\item Valores: os valores dos feromônios em sí. São inicializados com o menor valor possível;
+	\item Objetivos: determina os objetivos do subproblema em questão. É um vetor binário de tamanho $m$ (número de objetivos), onde cada posição 1 representa um objetivo que faz parte do problema e 0 que não faz parte;
+	\item Arquivo: conjunto de soluções não-dominadas que apareceram até o momento para o subproblema em questão;
+	\item Convergência: indica a convergência do arquivo. Começa em 0 e incrementa em 1 sempre que o arquivo sofre alterações durante uma iteração (época).
+\end{itemize}
+
+As estruturas de feromônios são utilizadas no processo de construção da solução e devem ser atualizadas em toda iteração do algoritmo. trabalhar com totalidade da lista $P$ (57 estruturas, no caso de seis objetivos) é computacionalmente caro e inviável. Por essa razão, define-se um número máximo de estruturas para se trabalhar em um dado momento. Em ambas as aplicações do MACO/D utilizadas nesta pesquisa (PMM e PRM), foi utilizado um limite de cinco estruturas de feromônios ativas simultaneamente. A ordem de ativação dos elementos de $P$ é determinada pela própria ordem dos itens em $P$, por isso, é importante a sequência em que as estruturas são criadas: os primeiros subproblemas instanciados são aqueles que representam um menor número de  objetivos, ou seja, combinações 2 a 2, em seguida instancia-se os subproblemas de 3 objetivos e assim por diante, até que a última estrutura de feromônios com o número total de objetivos seja criada.
+
+Inicialmente, os cinco subproblemas mais simples são ativados ($P_{ativo} = \{p_1, p_2, ..., p_5\}$). Assim que algum deles passa a não contribuir satisfatoriamente para o conjunto de soluções, é desativado em favor do próximo problema mais complexo ainda não utilizado. Dessa forma, o conjunto de soluções do MACO/D cresce gradualmente, partindo das decomposições mais simples em direção às mais complexas. O desafio principal em uma otimização com muitos objetivos é diferenciar soluções não dominadas e é nesse ponto que se utiliza o auxílio da decomposição. Em cada iteração do laço principal, após gerar o conjunto de soluções $S$, extrai-se todas as que são não-dominadas de acordo com a totalidade dos objetivos e partir desse subconjunto de soluções $S_{nd}$, alimenta-se as cinco estruturas ativas em $P_{ativo}$. A distribuição das soluções não-dominadas $S_{nd}$ entre as estruturas ativas se dá de acordo com o algoritmo \ref{alg_macod_dist}.
+
+\begin{algorithm}
+	\caption{Distribuição de soluções não dominadas entre as estruturas de feromônios}
+	\label{alg_macod_dist}
+	\begin{algorithmic}[1]
+		\For{$a$ \in $P_{ativo}$}
+			\State atualize o arquivo de $a$ com as soluções em $S_{nd}$
+			\State crie um conjunto $A$ com as soluções de $S_{nd}$ que foram adicionadas ao arquivo
+			\State crie um conjunto $R$ com as soluções do arquivo que foram removidas
+			\If{|A| > 0}
+				\State incremente os valores de feromônio de $a$ de acordo com as soluções em $A$
+				\State decremente os valores de feromônio de $a$ de acordo com as soluções em $R$
+			\Else
+				\State incremente a convergência de $a$ em 1
+				\If{convergência de $a$ atingiu o valor máximo}
+					\State em $P_{ativo}$, substitua a estrutura $a$ pelo próximo $p_i \in P$
+					\State reinicie a convergência de $a$
+				\EndIf
+			\EndIf
+		\EndFor
+	\end{algorithmic}
+\end{algorithm}
+
+O laço principal, que consiste em gerar soluções e atualizar as estruturas de feromônios ativas, termina quando o número máximo de iterações é atingido. Se todo $p \in P$ se torna ativo antes do término do programa, de maneira circular, volta-se a explorar o início da lista.  O valor máximo de convergência para cada estrutura utilizado neste trabalho foi 10. Ao final, retorna-se como solução o arquivo de $p_n$, ou seja, todas as soluções não-dominadas encontradas para o problema completo de $m$ objetivos. O algoritmo \ref{alg_macod_geral} apresenta uma visão geral do MACO/D.
+
+\begin{algorithm}
+	\caption{Algoritmo geral do MACO/D}
+	\label{alg_macod_geral}
+	\begin{algorithmic}[1]
+		\State crie as estruturas de feromônios $P = \{p_1, p_2, ..., p_i, ..., p_n\}$ em ordem crescente de número de objetivos
+		\State $P_{ativo} \gets \{p_1, p_2, ..., p_5\}$
+		\While{número máximo de iterações não for atingido}
+			\State construa o conjunto de soluções $S$ de acordo com os feromônios em $P_{ativo}$
+			\State atualize o arquivo de $p_n$ com as soluções em $S$, chame-o de $S_{nd}$
+			\State distribua as soluções em $S_{nd}$ entre as estruturas em $P_{ativo}$ (algoritmo \ref{alg_macod_dist})
+		\EndWhile
+		\State \Return arquivo de $p_n$
+	\end{algorithmic}
+\end{algorithm}
+
+No algoritmo \ref{alg_macod_dist}, as linhas 6 e 7 fazem parte do processo de atualização de feromônios, explicado mais a frente neste capítulo. No algoritmo \ref{alg_macod_geral}, a linha 4 representa a construção das soluções, tema da seção seguinte.
+
+\section{Construção das soluções}
+
+As soluções em colônias de formigas são construídas a partir dos feromônios ($P{ativo}$), das heurísticas ($H$) e dos valores de $\alpha$ e $\beta$. Os feromônios são criados e atualizados no decorrer do algoritmo, enquanto os demais são parâmetros de entrada. A heurística é uma função que estima a qualidade de uma parcela da solução (arestas, em caso de grafos e itens em caso de vetores), $\alpha$ determina a importância do feromônio ao tomar uma decisão a respeito da composição da solução, e $\beta$ representa a importância da heurística.
+
+No MACO/D existem múltiplas estruturas de feromônios e heurísticas, portanto, para que se possa construir uma solução, é necessário antes escolher quais valores de feromônio e qual função de heurística serão utilizados. 
+
+Os feromônios são recebidos pelo processo de construção das soluções através da lista de estruturas ativas do MACO/D ($P_{ativo}$), ou seja, 5 conjuntos de feromônios são recebidos. De maneira circular, cada solução utiliza uma única estrutura de feromônios para ser construída, ou seja, a primeira solução é criada a partir do primeiro elemento de $P_{ativo}$, a segunda a partir do segundo elemento de $P_{ativo}$, e assim por diante, até a sexta solução que utiliza novamente o primeiro elemento de $P_{ativo}$.
+
+Com relação às heurísticas, o MACO/D utiliza o mesmo processo proposto em [Baran 2016]. Admite-se um grau de importância para cada função: 0 (não importante), 1 (importante) ou 2 (muito importante). O valor de importância é sorteado para cada heurística e funciona como um peso. A função única utilizada para construir a solução é a soma ponderada das heurísticas com os pesos sorteados.
+
+O processo geral para se construir as soluções é exposto no algoritmo \ref{alg_macod_solucao}. No pseudo-código, a primeira posição de um array é 0.
+
+\begin{algorithm}
+	\caption{Construção das soluções}
+	\label{alg_macod_solucao}
+	\begin{algorithmic}[1]
+		\State $S \gets \emptyset$
+		\For{$i \gets 0$ até nº máximo de soluções}
+			\State sorteie valores entre 0 e 2 (inclusive) para um vetor $W$ de $|H|$ posições
+			\State defina $h$ como a função a seguir: $h(x) = \sum_{i \gets 0}^{|H|-1}\frac{H[i](x) * W[i]}{\sum\limits_{w \in W}w}$
+			\State chame de $f$ os valores de feromônio da estrutura $P_{ativo}[i \pmod{|P_{ativo}|}]$
+			\State gere uma solução $s$ de acordo com os valores de feromônio $f$, a heurística $h$, $\alpha$ e $\beta$
+			\State $S \gets S \cup \{s\}$
+		\EndFor
+		\State \Return $S$
+	\end{algorithmic}
+\end{algorithm}
+
+Na linha 6 do algoritmo \ref{alg_macod_solucao} constrói-se a solução em sí. Esse processo depende exclusivamente do problema em questão e representa a principal parte na elaboração do modelo para um algoritmo baseado em colônia de formigas. No caso do problema da mochila multiobjetivo, a estratégia utilizada é aquela descrita em [secao pmm construcao da solucao]. Para o problema do roteamento multicast, a estratégia de construção da solução foi apresentada em [secao prm construcao da solucao].
+
+\section{Atualização dos feromônios}
+
+A atualização dos feromônios no MACO/D pode ser de dois tipos:
+
+\begin{enumerate}
+	\item Depósito: a partir de uma solução, adiciona-se uma quantidade $\delta$ ao feromônio correspondente à cada partícula da solução. No caso de um problema em grafos, por exemplo, para cada aresta da solução, incrementa-se em $\delta$ o feromônio da mesma aresta no grafo.
+	\item Evaporação: similar ao depósito, mais ao invés de incrementar o feromônio em $\Delta\tau$, decrementa-se.
+\end{enumerate}
+
+O depósito de feromônio ocorre quando novas soluções não-dominadas são encontradas e, diferentemente da maioria dos algoritmos baseados em ACO, o MACO/D não evapora todos os feromônios em todas as iterações, ao invés disso, o feromônio só é decrementado quando uma solução deixa de ser não-dominada (ver algoritmo \ref{alg_macod_geral}).
+
+Dada uma solução $s$ do problema do roteamento multicast (PRM), se $s$ deve ser reforçada (depósito), cada aresta $e$ da árvore $s$ incrementa o valor correspondente na estrutura de feromônios em um fator $\delta$. $\delta(e) = (1 - pesos(e)) * \rho$, onde $pesos(e)$ é a média dos pesos normalizados na aresta $e$, e $\rho$ é a taxa de evaporação, parâmetro do MACO/D. Se $s$ deve ser desencorajada (evaporação), os valores na matriz de feromônios correspondentes às arestas de $s$ devem ser decrementados em $\delta$.
+
+Dada uma solução $s$ do problema da mochila multiobjetivo (PMM), se $s$ deve ser reforçada (depósito), cada item $i$ da lista de itens $s$ incrementa o valor correspondente na estrutura de feromônios em um fator $\delta$. $\delta(i) = lucros(i) * (1 - peso(i) / peso\_{max}) * \rho$, onde $lucros(i)$ é a média dos valores normalizados de lucro do item $i$, e $peso\_{max}$ é o maior peso dentre todos os itens. Se $s$ deve ser desencorajada (evaporação), os valores no array de feromônios correspondentes aos itens de $s$ devem ser decrementados em $\delta$.

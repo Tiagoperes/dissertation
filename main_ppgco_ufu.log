@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  21 FEB 2018 15:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  23 FEB 2018 16:18
 entering extended mode
 **./main_ppgco_ufu.tex
 (main_ppgco_ufu.tex
@@ -973,45 +973,6 @@ File: pppdftex.def 2017/08/14 v0.5k Pdfpages driver for pdfTeX (AM)
 Package: etoolbox 2018/02/04 v2.5b e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count167
 )
-(C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
-nment
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count168
-\float@exts=\toks29
-\float@box=\box32
-\@float@everytoks=\toks30
-\@floatcapt=\box33
-)
-\@float@every@algorithm=\toks31
-\c@algorithm=\count169
-)
-(C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithmic.sty
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count170
-\c@ALC@line=\count171
-\c@ALC@rem=\count172
-\c@ALC@depth=\count173
-\ALC@tlm=\skip260
-\algorithmicindent=\skip261
-) (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\nomencl\nomencl.sty
-Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
-\nomlabelwidth=\dimen159
-\nom@tempdim=\dimen160
-\nomitemsep=\skip262
-)
-\c@subfigure=\count174
-\cftbeforesubfigureskip=\skip263
-\cftsubfigureindent=\skip264
-\cftsubfigurenumwidth=\skip265
-Package color Info: Redefining color blue on input line 95.
-Package hyperref Info: Option `colorlinks' set `true' on input line 114.
-\titlepagewinwidth=\skip266
-\titlepagewinheight=\skip267
-\titlepagewinvoffset=\skip268
-)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty"
 Package: algpseudocode 
 
@@ -1019,33 +980,49 @@ Package: algpseudocode
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count175
-\c@ALG@rem=\count176
-\c@ALG@nested=\count177
-\ALG@tlm=\skip269
-\ALG@thistlm=\skip270
-\c@ALG@Lnr=\count178
-\c@ALG@blocknr=\count179
-\c@ALG@storecount=\count180
-\c@ALG@tmpcounter=\count181
-\ALG@tmplength=\skip271
-
-! LaTeX Error: Command \algorithmic already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.112    }
-          %
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+\c@ALG@line=\count168
+\c@ALG@rem=\count169
+\c@ALG@nested=\count170
+\ALG@tlm=\skip260
+\ALG@thistlm=\skip261
+\c@ALG@Lnr=\count171
+\c@ALG@blocknr=\count172
+\c@ALG@storecount=\count173
+\c@ALG@tmpcounter=\count174
+\ALG@tmplength=\skip262
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\cmap\cmap.sty
+) (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count175
+\float@exts=\toks29
+\float@box=\box32
+\@float@everytoks=\toks30
+\@floatcapt=\box33
+)
+\@float@every@algorithm=\toks31
+\c@algorithm=\count176
+)
+(C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\nomencl\nomencl.sty
+Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
+\nomlabelwidth=\dimen159
+\nom@tempdim=\dimen160
+\nomitemsep=\skip263
+)
+\c@subfigure=\count177
+\cftbeforesubfigureskip=\skip264
+\cftsubfigureindent=\skip265
+\cftsubfigurenumwidth=\skip266
+Package color Info: Redefining color blue on input line 112.
+Package hyperref Info: Option `colorlinks' set `true' on input line 131.
+\titlepagewinwidth=\skip267
+\titlepagewinheight=\skip268
+\titlepagewinvoffset=\skip269
+)
+(C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\cmap\cmap.sty
 Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
 
 
@@ -1091,7 +1068,7 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2016/11/05 v2.16a AMS math features
-\@mathmargin=\skip272
+\@mathmargin=\skip270
 
 For additional information on amsmath, use the `?' option.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
@@ -1109,13 +1086,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count182
+\inf@bad=\count178
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count183
-\leftroot@=\count184
+\uproot@=\count179
+\leftroot@=\count180
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count185
-\DOTSCASE@=\count186
+\classnum@=\count181
+\DOTSCASE@=\count182
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -1124,15 +1101,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen163
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count187
-\c@MaxMatrixCols=\count188
+\macc@depth=\count183
+\c@MaxMatrixCols=\count184
 \dotsspace@=\muskip11
-\c@parentequation=\count189
-\dspbrk@lvl=\count190
+\c@parentequation=\count185
+\dspbrk@lvl=\count186
 \tag@help=\toks33
-\row@=\count191
-\column@=\count192
-\maxfields@=\count193
+\row@=\count187
+\column@=\count188
+\maxfields@=\count189
 \andhelp@=\toks34
 \eqnshift@=\dimen164
 \alignsep@=\dimen165
@@ -1141,15 +1118,15 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \totwidth@=\dimen168
 \lineht@=\dimen169
 \@envbody=\toks35
-\multlinegap=\skip273
-\multlinetaggap=\skip274
+\multlinegap=\skip271
+\multlinetaggap=\skip272
 \mathdisplay@stack=\toks36
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
 (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\lipsum\lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count194
+\c@lips@count=\count190
 )
 (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\acronym\acronym.sty
 Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
@@ -1160,8 +1137,8 @@ Package: suffix 2006/07/15 1.5a Variant command support
 (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty
 (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex
 \@xs@message=\write4
-\integerpart=\count266
-\decimalpart=\count267
+\integerpart=\count191
+\decimalpart=\count192
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
@@ -1178,10 +1155,10 @@ Package xcolor Info: Driver file: pdftex.def on input line 225.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks38
-\minrowclearance=\skip275
+\minrowclearance=\skip273
 )
 LaTeX Info: Redefining \color on input line 709.
-\rownum=\count268
+\rownum=\count193
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -1205,32 +1182,33 @@ Writing nomenclature file main_ppgco_ufu.nlo
 (cap_otimizacao-bio/otimizacao-bio.aux)
 (cap_otimizacao-multi/otimizacao-multi.aux) (cap_problemas/problemas.aux)
 (cap_estrategias-pmm/estrategias-pmm.aux)
-(cap_estrategias-prm/estrategias-prm.aux) (cap_proposta/proposta.aux)
+(cap_estrategias-prm/estrategias-prm.aux)
+(cap_algoritmo-proposto/algoritmo-proposto.aux)
 (cap_experimentos/experimentos.aux) (cap_conclusao/conclusao.aux)
 (ape_comandos/abntex2-modelo-include-comandos.aux))
 \openout1 = `main_ppgco_ufu.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 129.
-LaTeX Font Info:    ... okay on input line 129.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 129.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 123.
+LaTeX Font Info:    ... okay on input line 123.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 123.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<t1.cmap>>
 \AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring ON on input line 129.
+Package hyperref Info: Link coloring ON on input line 123.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1238,28 +1216,28 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count269
+\c@section@level=\count194
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 129.
-LaTeX Info: Redefining \ref on input line 129.
-LaTeX Info: Redefining \pageref on input line 129.
-LaTeX Info: Redefining \nameref on input line 129.
+LaTeX Info: Redefining \nameref on input line 123.
+LaTeX Info: Redefining \ref on input line 123.
+LaTeX Info: Redefining \pageref on input line 123.
+LaTeX Info: Redefining \nameref on input line 123.
 \myptabbox=\box37
-\myptabboxwidth=\skip276
+\myptabboxwidth=\skip274
 (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count270
+\scratchcounter=\count266
 \scratchdimen=\dimen170
 \scratchbox=\box38
-\nofMPsegments=\count271
-\nofMParguments=\count272
+\nofMPsegments=\count267
+\nofMParguments=\count268
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count273
+\MPscratchCnt=\count269
 \MPscratchDim=\dimen171
-\MPnumerator=\count274
-\makeMPintoPDFobject=\count275
+\MPnumerator=\count270
+\makeMPintoPDFobject=\count271
 \everyMPtoPDFconversion=\toks40
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1276,7 +1254,7 @@ G,.JBIG2,.JB2,.eps]
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 129.
+(lastpage)             ! on input line 123.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
@@ -1289,41 +1267,41 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 <figs/logo-ufu2.png, id=4, 160.6pt x 160.6pt>
 File: figs/logo-ufu2.png Graphic file (type png)
  <use figs/logo-ufu2.png>
-Package pdftex.def Info: figs/logo-ufu2.png used on input line 140.
+Package pdftex.def Info: figs/logo-ufu2.png used on input line 134.
 (pdftex.def)             Requested size: 144.54pt x 144.54355pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 140.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 134.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<ot1.cmap>>
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 140.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 134.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oml.cmap>>
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 140
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 134
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oms.cmap>>
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 140
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 134
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 140.
+(Font)              <12> on input line 134.
 <<omx.cmap>>
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 140.
+(Font)              <8> on input line 134.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 140.
+(Font)              <6> on input line 134.
 
-Overfull \vbox (73.68982pt too high) detected at line 140
+Overfull \vbox (73.68982pt too high) detected at line 134
  []
 
 [1
@@ -1332,27 +1310,27 @@ Overfull \vbox (73.68982pt too high) detected at line 140
 -ufu2.png>] [2
 
 ]
-\tampar=\skip277
-\tamconcetracao=\skip278
-\tamorientador=\skip279
-\tamcoorientador=\skip280
+\tampar=\skip275
+\tamconcetracao=\skip276
+\tamorientador=\skip277
+\tamcoorientador=\skip278
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 []\T1/lmr/m/n/12 DissertaÁ„o de mes-trado apre-sen-tada ao
  []
 
 
-Underfull \hbox (badness 3333) in paragraph at lines 140--140
+Underfull \hbox (badness 3333) in paragraph at lines 134--134
 \T1/lmr/m/n/12 Pro-grama de PÛs-graduaÁ„o da Fa-cul-dade
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+Underfull \hbox (badness 10000) in paragraph at lines 134--134
 
  []
 
@@ -1360,7 +1338,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \maketitle
+l.134 \maketitle
                  [1
 
 
@@ -1369,77 +1347,77 @@ l.140 \maketitle
 File: fichaCatalografica.pdf Graphic file (type pdf)
 
 <use fichaCatalografica.pdf>
-Package pdftex.def Info: fichaCatalografica.pdf used on input line 140.
+Package pdftex.def Info: fichaCatalografica.pdf used on input line 134.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: fichaCatalografica.pdf Graphic file (type pdf)
  <use fichaCatalografica.pdf>
-Package pdftex.def Info: fichaCatalografica.pdf used on input line 140.
+Package pdftex.def Info: fichaCatalografica.pdf used on input line 134.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 <fichaCatalografica.pdf, id=29, page=1, 597.55246pt x 845.07718pt>
 File: fichaCatalografica.pdf Graphic file (type pdf)
 
 <use fichaCatalografica.pdf, page 1>
-Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 140.
+Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 134.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: fichaCatalografica.pdf Graphic file (type pdf)
  <use fichaCatalografica.pdf, page 1>
-Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 140.
+Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 134.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: fichaCatalografica.pdf Graphic file (type pdf)
 
 <use fichaCatalografica.pdf, page 1>
-Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 140.
+Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 134.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: fichaCatalografica.pdf Graphic file (type pdf)
  <use fichaCatalografica.pdf, page 1>
-Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 140.
+Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 134.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 \maketitle
+l.134 \maketitle
                 
 File: fichaCatalografica.pdf Graphic file (type pdf)
  <use fichaCatalografica.pdf, page 1>
-Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 140.
+Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 134.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [2 <./fichaCatalografica.pdf>] <folhaAprovacao.pdf, id=42, 614.295pt x 794.97p
 t>
 File: folhaAprovacao.pdf Graphic file (type pdf)
 
 <use folhaAprovacao.pdf>
-Package pdftex.def Info: folhaAprovacao.pdf used on input line 140.
+Package pdftex.def Info: folhaAprovacao.pdf used on input line 134.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: folhaAprovacao.pdf Graphic file (type pdf)
  <use folhaAprovacao.pdf>
-Package pdftex.def Info: folhaAprovacao.pdf used on input line 140.
+Package pdftex.def Info: folhaAprovacao.pdf used on input line 134.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 <folhaAprovacao.pdf, id=45, page=1, 614.295pt x 794.97pt>
 File: folhaAprovacao.pdf Graphic file (type pdf)
 
 <use folhaAprovacao.pdf, page 1>
-Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 140.
+Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 134.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: folhaAprovacao.pdf Graphic file (type pdf)
  <use folhaAprovacao.pdf, page 1>
-Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 140.
+Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 134.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: folhaAprovacao.pdf Graphic file (type pdf)
 
 <use folhaAprovacao.pdf, page 1>
-Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 140.
+Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 134.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: folhaAprovacao.pdf Graphic file (type pdf)
  <use folhaAprovacao.pdf, page 1>
-Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 140.
+Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 134.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: folhaAprovacao.pdf Graphic file (type pdf)
 
 <use folhaAprovacao.pdf, page 1>
-Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 140.
+Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 134.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [3
 
@@ -1450,16 +1428,16 @@ Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 140.
 ]
 
 LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
-(Font)              using `T1/lmr/bx/n' instead on input line 155.
+(Font)              using `T1/lmr/bx/n' instead on input line 149.
 
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 155.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 149.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmss/bx/sc' undefined
-(Font)              using `T1/lmss/bx/n' instead on input line 155.
+(Font)              using `T1/lmss/bx/n' instead on input line 149.
 
 [7
 
@@ -1501,11 +1479,11 @@ las Do-mi-n‚n-cias (AEMMD)[][] []
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 53.
+(Font)              <14.4> on input line 55.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 53.
+(Font)              <10> on input line 55.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 53.
+(Font)              <7> on input line 55.
  [22]) [23] [24
 
 ]
@@ -1541,7 +1519,7 @@ LaTeX Warning: Command \c invalid in math mode on input line 79.
 
 
 ]
-<cap_otimizacao-multi/figs/pareto.png, id=404, 279.0425pt x 280.04625pt>
+<cap_otimizacao-multi/figs/pareto.png, id=408, 279.0425pt x 280.04625pt>
 File: cap_otimizacao-multi/figs/pareto.png Graphic file (type png)
 
 <use cap_otimizacao-multi/figs/pareto.png>
@@ -1558,48 +1536,7 @@ l.32 	\item M
  <./cap_otimizacao-multi/figs/pareto.png>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 46.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.49 		\While
-              {n√∫mero m√°ximo de gera√ß√µes n√£o for atingido}
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.49 		\While
-              {n√∫mero m√°ximo de gera√ß√µes n√£o for atingido}
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.57 	\end{algorithmic}
-                       
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing = inserted for \ifnum.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.57 	\end{algorithmic}
-                       
-I was expecting to see `<', `=', or `>'. Didn't.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.57 	\end{algorithmic}
-                       
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-[39]
+ [39]
 
 LaTeX Warning: Command \c invalid in math mode on input line 71.
 
@@ -1619,54 +1556,13 @@ LaTeX Warning: Command \c invalid in math mode on input line 72.
 LaTeX Warning: Command \~ invalid in math mode on input line 72.
 
 [40] [41]
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.116 		\While
-               {n√∫mero m√°ximo de gera√ß√µes n√£o for atingido}
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.116 		\While
-               {n√∫mero m√°ximo de gera√ß√µes n√£o for atingido}
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.123 	\end{algorithmic}
-                        
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing = inserted for \ifnum.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.123 	\end{algorithmic}
-                        
-I was expecting to see `<', `=', or `>'. Didn't.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.123 	\end{algorithmic}
-                        
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-
-Underfull \vbox (badness 3158) has occurred while \output is active []
+Underfull \vbox (badness 2951) has occurred while \output is active []
 
  [42]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [43]
-<cap_otimizacao-multi/figs/aeemt-tabelas.png, id=446, 993.7125pt x 650.43pt>
+<cap_otimizacao-multi/figs/aeemt-tabelas.png, id=450, 993.7125pt x 650.43pt>
 File: cap_otimizacao-multi/figs/aeemt-tabelas.png Graphic file (type png)
 
 <use cap_otimizacao-multi/figs/aeemt-tabelas.png>
@@ -1680,7 +1576,7 @@ re.3.2}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.162 
        <./cap_otimizacao-multi/figs/aeemt-tabelas.png>]
-<cap_otimizacao-multi/figs/aeemd-tabelas.png, id=457, 993.7125pt x 387.4475pt>
+<cap_otimizacao-multi/figs/aeemd-tabelas.png, id=461, 993.7125pt x 387.4475pt>
 File: cap_otimizacao-multi/figs/aeemd-tabelas.png Graphic file (type png)
 
 <use cap_otimizacao-multi/figs/aeemd-tabelas.png>
@@ -1691,88 +1587,6 @@ put line 169.
 Overfull \hbox (24.20482pt too wide) in paragraph at lines 172--173
 []\T1/lmr/m/n/12 Com as ta-be-las cri-a-das, gera-se um n˙-mero prÈ-definido de
  so-lu-Áıes ale-a-tÛ-rias, distribuindo-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.176 ...po de problema. Como explicado em [secao_
-                                                  formigas], ao inv√©s de ut...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \c invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \c invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \c invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \c invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \^ invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \c invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \^ invalid in math mode on input line 176.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 176.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.177 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (1372.21619pt too wide) in paragraph at lines 176--177
-\T1/lmr/m/n/12 Como ex-pli-cado em [secao$[]\OML/lmm/m/it/12 ormigas\OT1/lmr/m/
-n/12 ]\OML/lmm/m/it/12 ; aoinv\OT1/lmr/m/n/12 È\OML/lmm/m/it/12 sdeutilizaremos
-operadoresgen\OT1/lmr/m/n/12 È\OML/lmm/m/it/12 ticosparageraremeevolu\OT1/lmr/m
-/n/12 Ì\OML/lmm/m/it/12 remapopula\OT1/lmr/m/n/12 Á„\OML/lmm/m/it/12 o; osACOsl
-an\OT1/lmr/m/n/12 Á\OML/lmm/m/it/12 amm\OT1/lmr/m/n/12 „\OML/lmm/m/it/12 odeump
-rocessodeconstru\OT1/lmr/m/n/12 Á„\OML/lmm/m/it/12 odesolu\OT1/lmr/m/n/12 Á„\OM
-L/lmm/m/it/12 obaseadoemferom\OT1/lmr/m/n/12 Ù\OML/lmm/m/it/12 nios; oqualdecid
-e; acadapasso; umapart\OT1/lmr/m/n/12 Ì\OML/lmm/m/it/12 culadasolu\OT1/lmr/m/n/
-12 Á„\OML/lmm/m/it/12 odeacordoseuvalordeferom\OT1/lmr/m/n/12 Ù\OML/lmm/m/it/12
- nioeheur\OT1/lmr/m/n/12 Ì\OML/lmm/m/it/12 stica:DentreosACOsmultiobjetivosprop
-ostosnaliteratura; destacam \OMS/lmsy/m/n/12  
  []
 
 [46pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
@@ -1787,91 +1601,6 @@ Overfull \hbox (6.62552pt too wide) in paragraph at lines 178--178
 O-
  []
 
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.186 		\State
-               Inicialize a estrutura de ferom√¥nios $\tau_{ij}$ com $\tau_0...
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.186 		\State
-               Inicialize a estrutura de ferom√¥nios $\tau_{ij}$ com $\tau_0...
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.187 		\State
-               Crie um conjunto vazio de solu√ß√µes n√£o-dominadas $ND$
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.187 		\State
-               Crie um conjunto vazio de solu√ß√µes n√£o-dominadas $ND$
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.188 		\While
-               {N√∫mero m√°ximo de itera√ß√µes n√£o for atingido}
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.188 		\While
-               {N√∫mero m√°ximo de itera√ß√µes n√£o for atingido}
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.200 		\State
-               \Return $ND$
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.200 		\State
-               \Return $ND$
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.201 	\end{algorithmic}
-                        
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing = inserted for \ifnum.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.201 	\end{algorithmic}
-                        
-I was expecting to see `<', `=', or `>'. Didn't.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.201 	\end{algorithmic}
-                        
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
 [47] [48]) [49]
 \openout2 = `cap_problemas/problemas.aux'.
 
@@ -1880,7 +1609,7 @@ look up `weird error' in the index to The TeXbook.)
 
 
 ] [51]
-<cap_problemas/figs/prm_grafo.png, id=487, 696.6025pt x 258.9675pt>
+<cap_problemas/figs/prm_grafo.png, id=491, 696.6025pt x 258.9675pt>
 File: cap_problemas/figs/prm_grafo.png Graphic file (type png)
 
 <use cap_problemas/figs/prm_grafo.png>
@@ -1888,7 +1617,7 @@ Package pdftex.def Info: cap_problemas/figs/prm_grafo.png used on input line 27
 .
 (pdftex.def)             Requested size: 455.0pt x 169.14877pt.
 
-<cap_problemas/figs/prm_mono.png, id=491, 583.17876pt x 613.29124pt>
+<cap_problemas/figs/prm_mono.png, id=495, 583.17876pt x 613.29124pt>
 File: cap_problemas/figs/prm_mono.png Graphic file (type png)
 
 <use cap_problemas/figs/prm_mono.png>
@@ -1908,7 +1637,7 @@ l.38
                                                   \fi \fi 
 l.38 
       <./cap_problemas/figs/prm_grafo.png> <./cap_problemas/figs/prm_mono.png>]
-<cap_problemas/figs/prm_multi.png, id=506, 429.73973pt x 225.05557pt>
+<cap_problemas/figs/prm_multi.png, id=510, 429.73973pt x 225.05557pt>
 File: cap_problemas/figs/prm_multi.png Graphic file (type png)
 
 <use cap_problemas/figs/prm_multi.png>
@@ -1955,7 +1684,7 @@ item\OT1/lmr/m/n/12 ) =
 
 
 ] [61]
-<cap_estrategias-prm/figs/prm-cruzamento-caminho.png, id=559, 1346.02875pt x 60
+<cap_estrategias-prm/figs/prm-cruzamento-caminho.png, id=563, 1346.02875pt x 60
 9.27625pt>
 File: cap_estrategias-prm/figs/prm-cruzamento-caminho.png Graphic file (type pn
 g)
@@ -1970,314 +1699,62 @@ ed on input line 30.
                                                   \fi \fi 
 l.34 
       <./cap_estrategias-prm/figs/prm-cruzamento-caminho.png>]
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.45 		\State
-              Selecione aleatoriamente $qte_{arestas}$ e remova-as de $A$
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.45 		\State
-              Selecione aleatoriamente $qte_{arestas}$ e remova-as de $A$
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.46 		\State
-              Retire de $A$ a componente conexa que cont√©m a raiz e chame-a...
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.46 		\State
-              Retire de $A$ a componente conexa que cont√©m a raiz e chame-a...
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.47 		\State
-              Crie um grafo vazio $M$ para guardar o resultado da muta√ß√£o
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.47 		\State
-              Crie um grafo vazio $M$ para guardar o resultado da muta√ß√£o
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.48 		\State
-              Adicione todas as arestas de $C$ a $M$
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.48 		\State
-              Adicione todas as arestas de $C$ a $M$
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.49 		\While
-             {$|D| > 0$}
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.49 		\While
-             {$|D| > 0$}
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.58 		\State
-              Remova os ciclos em $M$, caso existam
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.58 		\State
-              Remova os ciclos em $M$, caso existam
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.59 		\State
-              Pode a √°rvore $M$, removendo todos os n√≥s folhas que n√£o s√...
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.59 		\State
-              Pode a √°rvore $M$, removendo todos os n√≥s folhas que n√£o s√...
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.60 		\State
-              \Return $M$
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.60 		\State
-              \Return $M$
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.61 	\end{algorithmic}
-                       
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing = inserted for \ifnum.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.61 	\end{algorithmic}
-                       
-I was expecting to see `<', `=', or `>'. Didn't.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.61 	\end{algorithmic}
-                       
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-
 Underfull \vbox (badness 4726) has occurred while \output is active []
 
  [63]
-[64]
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.87 		\State
-              Inicie uma √°rvore vazia $T$
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
+[64] [65]) [66]
+\openout2 = `cap_algoritmo-proposto/algoritmo-proposto.aux'.
 
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.87 		\State
-              Inicie uma √°rvore vazia $T$
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.88 		\State
-              Inicie $E$ com todas as arestas que possuem alguma extremidade...
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.88 		\State
-              Inicie $E$ com todas as arestas que possuem alguma extremidade...
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.89 		\State
-              Marque $r$ como visitado
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.89 		\State
-              Marque $r$ como visitado
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.90 		\While
-             {$T$ n√£o incluir todos os v√©rtices em $D$}
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.90 		\While
-             {$T$ n√£o incluir todos os v√©rtices em $D$}
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Undefined control sequence.
-<recently read> \ElseIf 
-                        
-l.103 				\ElseIf
-                 {$v$ n√£o tiver sido visitado}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@b@2@EndIf@0 
-l.105 				\EndIf
-                
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.108 		\State
-               Pode a √°rvore $T$
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.108 		\State
-               Pode a √°rvore $T$
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.109 		\State
-               \Return $T$
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
-                                                  \relax \def \ALG@thisblock...
-l.109 		\State
-               \Return $T$
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.110 	\end{algorithmic}
-                        
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing = inserted for \ifnum.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.110 	\end{algorithmic}
-                        
-I was expecting to see `<', `=', or `>'. Didn't.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \ALG@currentblock@0 
-l.110 	\end{algorithmic}
-                        
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-[65]) [66]
-\openout2 = `cap_proposta/proposta.aux'.
-
- (cap_proposta/proposta.tex) [67
+ (cap_algoritmo-proposto/algoritmo-proposto.tex [67
 
 
 
 ]
+Overfull \hbox (16.82826pt too wide) in paragraph at lines 25--26
+[]\T1/lmr/m/n/12 O pri-meiro passo do MACO/D È criar as es-tru-tu-ras de fe-rom
+Ù-nio $\OML/lmm/m/it/12 P \OT1/lmr/m/n/12 = \OMS/lmsy/m/n/12 f\OML/lmm/m/it/12 
+p[]; p[]; :::; p[]; :::; p[]\OMS/lmsy/m/n/12 g$\T1/lmr/m/n/12 ,
+ []
+
+[68]
+Overfull \hbox (0.57877pt too wide) in paragraph at lines 36--37
+[]\T1/lmr/m/n/12 Inicialmente, os cinco sub-pro-ble-mas mais sim-ples s„o ati-v
+a-dos ($\OML/lmm/m/it/12 P[] \OT1/lmr/m/n/12 = \OMS/lmsy/m/n/12 f\OML/lmm/m/it/
+12 p[]; p[]; :::; p[]\OMS/lmsy/m/n/12 g$\T1/lmr/m/n/12 ).
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.42 		\For{$a$ \in $P_{ativo}$}
+                                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.42 		\For{$a$ \in $P_{ativo}$}
+                                
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[69] [70] [71]) [72]
 \openout2 = `cap_experimentos/experimentos.aux'.
 
- (cap_experimentos/experimentos.tex
-[68
+ (cap_experimentos/experimentos.tex) [73
 
 
 
-]) [69]
+]
 \openout2 = `cap_conclusao/conclusao.aux'.
 
- (cap_conclusao/conclusao.tex [70
+
+(cap_conclusao/conclusao.tex [74
 
 
 
-]) [71] (main_ppgco_ufu.bbl [72
+]) [75] (main_ppgco_ufu.bbl [76
 
 
 ]
@@ -2287,18 +1764,18 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 bibitemlist
 
-LaTeX Warning: Citation `NBR14724:2005' on page 73 undefined on input line 40.
+LaTeX Warning: Citation `NBR14724:2005' on page 77 undefined on input line 40.
 
-) [73] [74
+) [77] [78
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 305.
+(hyperref)                removing `\uppercase' on input line 299.
 
-[75
+[79
 
-] [76]
+] [80]
 \openout2 = `ape_comandos/abntex2-modelo-include-comandos.aux'.
 
  (ape_comandos/abntex2-modelo-include-comandos.tex
@@ -2314,10 +1791,10 @@ Underfull \hbox (badness 1721) in paragraph at lines 76--76
 []|\T1/lmr/bx/n/10 Sistemas de
  []
 
-[77
+[81
 
 
-] [78pdfTeX warning (ext4): destination with the same identifier (name{table.A.
+] [82pdfTeX warning (ext4): destination with the same identifier (name{table.A.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2330,21 +1807,21 @@ A.9}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.176 
       ]
-<ape_comandos/abntex2-modelo-img-grafico.pdf, id=681, 847.165pt x 314.17375pt>
+<ape_comandos/abntex2-modelo-img-grafico.pdf, id=718, 847.165pt x 314.17375pt>
 File: ape_comandos/abntex2-modelo-img-grafico.pdf Graphic file (type pdf)
 
 <use ape_comandos/abntex2-modelo-img-grafico.pdf>
 Package pdftex.def Info: ape_comandos/abntex2-modelo-img-grafico.pdf used on in
 put line 179.
 (pdftex.def)             Requested size: 423.58145pt x 157.08649pt.
- [79pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
+ [83pdfTeX warning (ext4): destination with the same identifier (name{figure.A.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.204   \item a
                s al√≠neas devem ser indicadas alfabeticamente, em letra min√...
- <./ape_comandos/abntex2-modelo-img-grafico.pdf>] [80]
+ <./ape_comandos/abntex2-modelo-img-grafico.pdf>] [84]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <17.28> on input line 276.
 
@@ -2353,44 +1830,44 @@ Overfull \hbox (1.95023pt too wide) in paragraph at lines 293--293
 PRINCIPAL.nls[] 
  []
 
-[81]
+[85]
 Package acronym Info: Label `acro:NBR' newly defined as it shall be overridden
 although it is yet undefined on input line 343.
-) [82]
+) [86]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 322.
+(hyperref)                removing `\uppercase' on input line 316.
 
-[83
+[87
 
 
 
-] [84] [85
+] [88] [89
 
 ]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
- [86]
-Underfull \vbox (badness 1454) has occurred while \output is active []
-
- [87]
-Underfull \vbox (badness 1454) has occurred while \output is active []
-
- [88]
-Underfull \vbox (badness 1454) has occurred while \output is active []
-
- [89]
-[90]
+ [90]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
  [91]
-[92]
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [92]
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
  [93]
+[94]
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [95]
+[96]
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [97]
 
 AED: lastpage setting LastPage
-[94]
+[98]
 \tf@lof=\write7
 \openout7 = `main_ppgco_ufu.lof'.
 
@@ -2400,17 +1877,18 @@ AED: lastpage setting LastPage
 \tf@toc=\write9
 \openout9 = `main_ppgco_ufu.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 333.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 333.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 327.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 327.
  (main_ppgco_ufu.aux (cap_introducao/introducao.aux)
 (cap_otimizacao-bio/otimizacao-bio.aux)
 (cap_otimizacao-multi/otimizacao-multi.aux) (cap_problemas/problemas.aux)
 (cap_estrategias-pmm/estrategias-pmm.aux)
-(cap_estrategias-prm/estrategias-prm.aux) (cap_proposta/proposta.aux)
+(cap_estrategias-prm/estrategias-prm.aux)
+(cap_algoritmo-proposto/algoritmo-proposto.aux)
 (cap_experimentos/experimentos.aux) (cap_conclusao/conclusao.aux)
 (ape_comandos/abntex2-modelo-include-comandos.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 333.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 333.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 327.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 327.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2421,19 +1899,19 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 333.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 327.
  ) 
 Here is how much of TeX's memory you used:
- 15444 strings out of 493323
- 221642 string characters out of 3139066
- 474643 words of memory out of 3000000
- 18269 multiletter control sequences out of 15000+200000
+ 15343 strings out of 493323
+ 220714 string characters out of 3139066
+ 472776 words of memory out of 3000000
+ 18157 multiletter control sequences out of 15000+200000
  107230 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  47i,18n,45p,1555b,691s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm
 .enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fo
@@ -2450,12 +1928,12 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/lm/lmri7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx1
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/z
-apfding/uzdr.pfb>
-Output written on main_ppgco_ufu.pdf (96 pages, 925159 bytes).
+ Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/lm/lmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on main_ppgco_ufu.pdf (100 pages, 952219 bytes).
 PDF statistics:
- 1195 PDF objects out of 1200 (max. 8388607)
- 263 named destinations out of 1000 (max. 500000)
- 738 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1245 PDF objects out of 1440 (max. 8388607)
+ 277 named destinations out of 1000 (max. 500000)
+ 754 words of extra memory for PDF output out of 10000 (max. 10000000)
 

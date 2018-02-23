@@ -73,7 +73,7 @@
 \RequirePackage{pdfpages}
 \RequirePackage{calc,graphicx}
 \RequirePackage{etoolbox}
-\RequirePackage{algorithm,algorithmic}
+\RequirePackage{algpseudocode,algorithm}
 \RequirePackage{nomencl}
 
 
@@ -83,10 +83,27 @@
 
 \newsubfloat{figure}
 
+% traduções para os algoritmos
+% Declaracoes em Português
+\algrenewcommand\algorithmicend{\textbf{fim}}
+\algrenewcommand\algorithmicdo{\textbf{faça}}
+\algrenewcommand\algorithmicwhile{\textbf{enquanto}}
+\algrenewcommand\algorithmicfor{\textbf{para}}
+\algrenewcommand\algorithmicif{\textbf{se}}
+\algrenewcommand\algorithmicthen{\textbf{então}}
+\algrenewcommand\algorithmicelse{\textbf{senão}}
+\algrenewcommand\algorithmicreturn{\textbf{retorne}}
+\algrenewcommand\algorithmicfunction{\textbf{função}}
 
+% Rearranja os finais de cada estrutura
+\algrenewtext{EndWhile}{\algorithmicend\ \algorithmicwhile}
+\algrenewtext{EndFor}{\algorithmicend\ \algorithmicfor}
+\algrenewtext{EndIf}{\algorithmicend\ \algorithmicif}
+\algrenewtext{EndFunction}{\algorithmicend\ \algorithmicfunction}
 
-
-
+% O comando For, a seguir, retorna 'para #1 faça'
+\algrenewtext{For}[1]%
+{\algorithmicfor\ #1 \algorithmicdo}
 
 % ---
 % Configurações de aparência do PDF final

@@ -173,7 +173,7 @@ Com as tabelas criadas, gera-se um número pré-definido de soluções aleatóri
 
 \section{Algoritmos many-objectives baseados em colônias de formigas}
 
-A maior parte dos métodos de busca multiobjetivo são baseados em algoritmos genéticos, mas uma boa alternativa pouco explorada é a inteligência coletiva, representada por estratégias como as colônias de formigas (ACOs) e enxame de partículas (PSOs). Neste trabalho, devido ao fato de explorar-se dois problemas discretos (problema da mochila multiobjetivo e problema do roteamento multicast), optou-se por utilizar as colônias de formigas, que foram desenvolvidas especialmente para lidar com esse tipo de problema. Como explicado em [secao_formigas], ao invés de utilizarem os operadores genéticos para gerarem e evoluírem a população, os ACOs lançam mão de um processo de construção de solução baseado em feromônios, o qual decide, a cada passo, uma partícula da solução de acordo seu valor de feromônio e heurística. Dentre os ACOs multiobjetivos propostos na literatura, destacam-se o MOACS, ...
+A maior parte dos métodos de busca multiobjetivo são baseados em algoritmos genéticos, mas uma boa alternativa pouco explorada é a inteligência coletiva, representada por estratégias como as colônias de formigas (ACOs) e enxame de partículas (PSOs). Neste trabalho, devido ao fato de explorar-se dois problemas discretos (problema da mochila multiobjetivo e problema do roteamento multicast), optou-se por utilizar as colônias de formigas, que foram desenvolvidas especialmente para lidar com esse tipo de problema. Como explicado em [secao\_formigas], ao invés de utilizarem os operadores genéticos para gerarem e evoluírem a população, os ACOs lançam mão de um processo de construção de solução baseado em feromônios, o qual decide, a cada passo, uma partícula da solução de acordo seu valor de feromônio e heurística. Dentre os ACOs multiobjetivos propostos na literatura, destacam-se o MOACS, ...
 
 \subsection{Multi-Objective Ant Colony Optimization Algorithm (MOACS)}
 
@@ -186,7 +186,7 @@ O MOACS foi proposto pela primeira vez em [Baran 2003] para o problema de roteam
 		\State Inicialize a estrutura de feromônios $\tau_{ij}$ com $\tau_0$ /* $\tau_{0}$ é o valor inicial */
 		\State Crie um conjunto vazio de soluções não-dominadas $ND$
 		\While {Número máximo de iterações não for atingido}
-		\For {$i = 0$ até $i = tamanho\_populacao$}
+		\For {$i \gets 0$ até $tamanho\_populacao$}
 		\State Sorteie valores no intervalo $[0, w_{max}[$ para formar um vetor de pesos $W$ com $|H|$ posições
 		\State Construa uma solução de acordo com a tabela de feromônios $\tau_{ij}$, as heurísticas ($H$) e os pesos $W$
 		\State Atualize $ND$ com a nova solução
