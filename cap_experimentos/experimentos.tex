@@ -50,7 +50,7 @@ Para cada um dos cenários foi extraído um Pareto através de múltiplas execu�
 
 Na tabela \ref{table_exp1_paretos}, a quantidade de elementos nos paretos do PMM é demasiadamente grande para as formulações de objetivos com 100 itens, isso acontece, pois o espaço de busca do problema da mochila cresce exponencialmente com o número de itens. Além disso, a situação é pior quando o número de objetivos é alto, pois, naturalmente, quanto maior a quantidade de funções objetivos, maior o número de soluções que serão não-dominadas. O asterisco ao lado de alguns valores no PMM significa que não foi possível estabilizar o Pareto, ou seja, cada rodada de execuções dos algoritmos encontrava novas soluções. Principalmente por essa razão, julgou-se necessária a execução da etapa 3 de experimentos, onde não se usa um Pareto pré-calculado para se avaliar os algoritmos. Apesar de não serem perfeitos, os resultados para o problema de 100 itens ainda são relevantes, pois ainda que os Paretos não sejam estáveis, compara-se as execuções de todos algoritmos contra as melhores soluções encontradas por todos eles, o que indica o algoritmo com melhor potencial para encontrar boas soluções em problemas multiobjetivos.
 
-Para compilar os resultados através das medidas de desempenho $ER$, $GD$ e $PS$, foram feitas 100 execuções de cada algoritmo com os parâmetros listados na tabela \ref{table_exp1_parametros}. As figuras \ref{fig_exp1_prm_r1}, \ref{fig_exp1_prm_r2} e \ref{fig_exp1_prm_r3} mostram respectivamente os resultados para o PRM aplicado às redes $R_1$, $R_2$ e $R_3$. As figuras \ref{fig_exp1_pmm_30}, \ref{fig_exp1_pmm_50} e \ref{fig_exp1_pmm_100} revelam respectivamente os resultados para o PMM de 30, 50 e 100 itens. Uma análise conjunta, com uma média entre as três instâncias de cada problema é apresenta nas figuras \ref{fig_exp1_prm_todos} (PRM) e \ref{fig_exp1_pmm_todos} (PMM).
+Para compilar os resultados através das medidas de desempenho $ER$, $GD$ e $PS$, foram feitas 100 execuções de cada algoritmo com os parâmetros listados na tabela \ref{table_exp1_parametros}. As figuras \ref{fig_exp1_pmm_30}, \ref{fig_exp1_pmm_50} e \ref{fig_exp1_pmm_100} mostram respectivamente os resultados para o PMM de 30, 50 e 100 itens. As figuras \ref{fig_exp1_prm_r1}, \ref{fig_exp1_prm_r2} e \ref{fig_exp1_prm_r3} revelam respectivamente os resultados para o PRM aplicado às redes $R_1$, $R_2$ e $R_3$. Uma análise conjunta, com uma média entre as três instâncias de cada problema é apresenta nas figuras \ref{fig_exp1_prm_todos} (PRM) e \ref{fig_exp1_pmm_todos} (PMM).
 
 \begin{table}[!htbp]
 	\caption{Parâmetros utilizados pelos algoritmos no PRM e PMM.}
@@ -75,81 +75,81 @@ Para compilar os resultados através das medidas de desempenho $ER$, $GD$ e $PS$
 Na tabela \ref{table_exp1_parametros}, o asterisco em ``número de gerações'' é para dizer que nem todos os algoritmos seguem esse parâmetro. o AEMMT executa 9 mil gerações para o PRM e 7500 para o PMM. Isso acontece, pois esse algoritmo gera apenas 1 filho por ciclo no PRM e apenas 2 no PMM necessitando, portanto, de mais gerações para fazer o mesmo número de comparações. No problema da mochila com 100 itens, devido à complexidade do problema, dobrou-se a quantidade de gerações. Ainda na tabela \ref{table_exp1_parametros}, ``variável'' quer dizer que a taxa de mutação foi de 6\% para o PMM de 30 itens, 4\% para o de 50 itens e 2\% para o de 100 itens, similar aos valores utilizados em [12-Bracis].
 
 \begin{figure*}[!htbp]
-	\caption{Resultados para o PMM com 30 itens}
+	\caption{Etapa 1: resultados para o PMM com 30 itens}
 	\label{fig_exp1_mkp_30}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/er-mkp-30}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/gd-mkp-30}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/ps-mkp-30}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mkp-30}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mkp-30}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mkp-30}
 \end{figure*}
 
 Análise do MKP-30
 
 \begin{figure*}[!htbp]
-	\caption{Resultados para o PMM com 50 itens}
+	\caption{Etapa 1: resultados para o PMM com 50 itens}
 	\label{fig_exp1_mkp_50}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/er-mkp-50}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/gd-mkp-50}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/ps-mkp-50}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mkp-50}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mkp-50}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mkp-50}
 \end{figure*}
 
 Análise do MKP-50
 
 \begin{figure*}[!htbp]
-	\caption{Resultados para o PMM com 100 itens}
+	\caption{Etapa 1: resultados para o PMM com 100 itens}
 	\label{fig_exp1_mkp_100}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/er-mkp-100}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/gd-mkp-100}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/ps-mkp-100}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mkp-100}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mkp-100}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mkp-100}
 \end{figure*}
 
 Análise do MKP-100
 
 \begin{figure*}[!htbp]
-	\caption{Resultados agrupados para o PMM com 30, 50 e 100 itens}
+	\caption{Etapa 1: resultados agrupados para o PMM com 30, 50 e 100 itens}
 	\label{fig_exp1_mkp_todos}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/er-mkp-todos}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/gd-mkp-todos}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/ps-mkp-todos}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mkp-todos}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mkp-todos}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mkp-todos}
 \end{figure*}
 
 Análise geral do MKP
 
 \begin{figure*}[!htbp]
-	\caption{Resultados para o PRM na rede $R_1$}
+	\caption{Etapa 1: resultados para o PRM na rede $R_1$}
 	\label{fig_exp1_mrp_r1}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/er-mrp-r1}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/gd-mrp-r1}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/ps-mrp-r1}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mrp-r1}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mrp-r1}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mrp-r1}
 \end{figure*}
 
 Análise do PRM-R1
 
 \begin{figure*}[!htbp]
-	\caption{Resultados para o PRM na rede $R_2$}
+	\caption{Etapa 1: resultados para o PRM na rede $R_2$}
 	\label{fig_exp1_mrp_r2}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/er-mrp-r2}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/gd-mrp-r2}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/ps-mrp-r2}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mrp-r2}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mrp-r2}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mrp-r2}
 \end{figure*}
 
 Análise do PRM-R2
 
 \begin{figure*}[!htbp]
-	\caption{Resultados para o PRM na rede $R_3$}
+	\caption{Etapa 1: resultados para o PRM na rede $R_3$}
 	\label{fig_exp1_mrp_r3}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/er-mrp-r3}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/gd-mrp-r3}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/ps-mrp-r3}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mrp-r3}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mrp-r3}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mrp-r3}
 \end{figure*}
 
 Análise do PRM-R3
 
 \begin{figure*}[!htbp]
-	\caption{Resultados agrupados para o PRM nas redes $R_1$, $R_2$ e $R_3$}
+	\caption{Etapa 1: resultados agrupados para o PRM nas redes $R_1$, $R_2$ e $R_3$}
 	\label{fig_exp1_mrp_todos}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/er-mrp-todos}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/gd-mrp-todos}
-	\includegraphics[width=1\textwidth]{cap_experimentos/figs/ps-mrp-todos}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mrp-todos}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mrp-todos}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mrp-todos}
 \end{figure*}
 
 Análise geral do PRM
@@ -191,7 +191,7 @@ A tabela \ref{table_exp2_parametros} apresenta os parâmetros dos algoritmos uti
 			\textbf{Parâmetro} & \textbf{PRM} &  \textbf{PMM} \\ %\hline
 			\hline
 			Tamanho da população               &    90 &      150 \\ %\hline
-			Número de gerações        &   100 &      100 \\ %\hline
+			Número de gerações*        &   100 &      100 \\ %\hline
 			Taxa de crossover                & 100\% &    100\% \\ %\hline
 			Taxa de mutação                 &  20\% &      5\% \\ %\hline
 			Tamanho da vizinhança (MOEA/D)    &    10 &       10 \\ %\hline
@@ -207,3 +207,108 @@ A tabela \ref{table_exp2_parametros} apresenta os parâmetros dos algoritmos uti
 	\end{center}
 \end{table}
 
+As figuras \ref{fig_exp2_pmm_30}, \ref{fig_exp2_pmm_40} e \ref{fig_exp2_pmm_50} mostram respectivamente os resultados para o PMM de 30, 40 e 50 itens. As figuras \ref{fig_exp2_prm_r1}, \ref{fig_exp2_prm_r2} e \ref{fig_exp2_prm_r3} revelam respectivamente os resultados para o PRM aplicado às redes $R_1$, $R_2$ e $R_3$. Uma análise conjunta, com uma média entre as três instâncias de cada problema é apresenta nas figuras \ref{fig_exp2_prm_todos} (PRM) e \ref{fig_exp2_pmm_todos} (PMM).
+
+\begin{figure*}[!htbp]
+	\caption{Etapa 2: resultados para o PMM com 30 itens}
+	\label{fig_exp2_mkp_30}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mkp-30}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mkp-30}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mkp-30}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mkp-30}
+\end{figure*}
+
+Análise do MKP-30
+
+\begin{figure*}[!htbp]
+	\caption{Etapa 2: resultados para o PMM com 50 itens}
+	\label{fig_exp2_mkp_50}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mkp-40}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mkp-40}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mkp-40}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mkp-40}
+\end{figure*}
+
+Análise do MKP-40
+
+\begin{figure*}[!htbp]
+	\caption{Etapa 2: resultados para o PMM com 100 itens}
+	\label{fig_exp2_mkp_100}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mkp-50}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mkp-50}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mkp-50}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mkp-50}
+\end{figure*}
+
+Análise do MKP-50
+
+\begin{figure*}[!htbp]
+	\caption{Etapa 2: resultados agrupados para o PMM com 30, 40 e 50 itens}
+	\label{fig_exp2_mkp_todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mkp-todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mkp-todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mkp-todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mkp-todos}
+\end{figure*}
+
+Análise geral do MKP
+
+\begin{figure*}[!htbp]
+	\caption{Etapa 2: resultados para o PRM na rede $R_1$}
+	\label{fig_exp2_mrp_r1}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mrp-r1}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mrp-r1}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mrp-r1}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mrp-r1}
+\end{figure*}
+
+Análise do PRM-R1
+
+\begin{figure*}[!htbp]
+	\caption{Etapa 2: resultados para o PRM na rede $R_2$}
+	\label{fig_exp2_mrp_r2}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mrp-r2}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mrp-r2}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mrp-r2}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mrp-r2}
+\end{figure*}
+
+Análise do PRM-R2
+
+\begin{figure*}[!htbp]
+	\caption{Etapa 2: resultados para o PRM na rede $R_3$}
+	\label{fig_exp2_mrp_r3}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mrp-r3}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mrp-r3}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mrp-r3}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mrp-r3}
+\end{figure*}
+
+Análise do PRM-R3
+
+\begin{figure*}[!htbp]
+	\caption{Etapa 2: resultados agrupados para o PRM nas redes $R_1$, $R_2$ e $R_3$}
+	\label{fig_exp2_mrp_todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mrp-todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mrp-todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mrp-todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mrp-todos}
+\end{figure*}
+
+Análise geral do PRM
+
+Análise geral dos resultados comparando os dois problemas.
+
+\section{Etapa 3: Análise com hipervolume}
+
+A fim de testar propriamente o comportamento dos algoritmos em espaços de busca mais complexos que os utilizados nos experimentos das etapas 1 e 2, lançou-se mão de três novas redes e instâncias do problema da mochila com 100 e 200 itens. Como não é possível extrair Paretos estáveis para as redes $R_4$, $R_5$ e $R_6$, nem para os problemas da mochila com 50, 100 e 200 itens, não é interessante basear-se em métricas dependentes de tais Paretos para se tirar conclusões. Por isso, nesta etapa, testa-se unicamente a métrica hipervolume, independente do Pareto.
+
+O hipervolume foi utilizado pela primeira vez em [] e desde então, junto a \textit{inverse generational distance} $(IDG)$ [], é a métrica mais utilizada na literatura para se avaliar algoritmos many-objectives. O hipervolume, como explicado no início deste capítulo, calcula o volume da figura geométrica formada pelas distâncias das soluções a um ponto de referência pré-definido. Os pontos de referência utilizados em cada cenário são apresentados na tabela [].
+
+Tabela de pontos de referência.
+
+Nesta etapa testou-se os algoritmos NSGA-III, SPEA2-SDE, MOEA/D, AEMMT, AEMMD, MOACS e MACO/D. Foram 3 formulações de objetivo para cada problema (4, 5 e 6 objetivos) e 3 instâncias, totalizando 18 cenários de teste. Foram realizadas 10 execuções para cada algoritmo em cada cenário e os resultados foram calculados através das médias dos hivervolumes de cada execução.
+
+Falar sobre figuras.
+Exibir figuras.
+Discutir resultados.
