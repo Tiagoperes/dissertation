@@ -10,12 +10,13 @@ Como mostrado na seção [seção do prm], considerando que em cada nó da rede 
 
 \begin{enumerate}
 	\item Representação em árvore: o AG evolui a própria árvore que se deseja encontrar como solução. É um processo mais complicado que a alternativa a seguir, mas nenhum pós-processamento é necessário.
-	\item Representação em conjunto: o AG evolui um conjunto de caminhos $C$, ou seja, para cada nó destino $d$ no problema deve existir uma lista de nós $L \in C$ que contém a sequência de nós, onde o primeiro elemento é o servidor e o último é $d$. A representação em conjuntos é mais fácil de se gerenciar, mas exige a transformação em árvore ao final do processo. Como diferentes árvores podem ser formadas a partir de um conjunto de caminhos, essa representação não é tão eficiente quanto a anterior ao explorar o espaço de busca.
+	\item Representação em conjunto: o AG evolui um conjunto de caminhos $C$, ou seja, para cada nó destino $d$ no problema deve existir uma lista de nós $L \in C$ que contém a sequência de nós, onde o primeiro elemento é o servidor e o último é $d$. A representação em conjuntos é mais fácil de se gerenciar, mas exige a transformação em árvore ao final do processo. Como diferentes árvores podem ser formadas a partir de um único conjunto de caminhos, essa representação não é tão eficiente quanto a anterior ao explorar o espaço de busca.
 \end{enumerate}
 
 Neste trabalho optou-se por utilizar a representação 1, árvores.
 
 \section{Inicialização dos indivíduos}
+Explicar o processo de inicialização das árvores.
 
 \section{Cruzamento (AG)}
 
@@ -30,7 +31,7 @@ O cruzamento por caminho é realizado entre duas árvores $P_1$ e $P_2$ e produz
 	\includegraphics[width=1\textwidth]{cap_estrategias-prm/figs/prm-cruzamento-caminho}
 \end{figure}
 
-A figura \ref{fig_prm-cruzamento-caminho}, retirada do trabalho de [dissertacao Fialho], representa o processo de cruzamento por caminho entre duas árvores (Pai 1 e Pai 2). No exemplo, o nó raiz (servidor) é o vértice 0 e os destinos são o conjunto $\{1, 8, 11\}$. As setas em ``ramos do pai 1'' e ``ramos do pai 2'' representam os caminhos escolhidos em cada um dos pais para compor a árvore filha. O grafo nomeado ``reconexão'' representa o filho após a inclusão de todos os ramos, e como foi gerado um ciclo, deve-se removê-lo afim de obter-se uma árvore válida. Em ``tratando factibilidade'' apresenta-se o filho após a remoção dos ciclos, como o nó folha ``5'' não é um destino, deve-se podá-lo, resultando na última árvore, ``poda'', que é o filho retornado pelo processo.
+A figura \ref{fig_prm-cruzamento-caminho}, retirada do trabalho de [dissertacao Fialho], representa o processo de cruzamento por caminho entre duas árvores (Pai 1 e Pai 2). No exemplo, o nó raiz (servidor) é o vértice 0 e os destinos são o conjunto $\{1, 8, 11\}$. As setas em ``ramos do pai 1'' e ``ramos do pai 2'' representam os caminhos escolhidos em cada um dos pais para compor a árvore filha. O grafo nomeado ``reconexão'' representa o filho após a inclusão de todos os ramos, e como foi gerado um ciclo, deve-se removê-lo afim de se obter uma árvore válida. Em ``tratando factibilidade'' apresenta-se o filho após a remoção dos ciclos, como o nó folha ``5'' não é um destino, deve-se podá-lo, resultando na última árvore, ``poda'', que é o filho retornado pelo processo.
 
 Durante o processo de cruzamento por caminho, para remover os ciclos, percorre-se a árvore em largura removendo qualquer aresta que adicione ciclo. No processo de poda, verifica-se todas as folhas, se alguma não for um destino, remove-se o nó, repetindo o processo até que todos os nós folhas sejam destinos.
 
@@ -65,7 +66,7 @@ No algoritmo \ref{alg_prm_mutacao} recebe-se como parâmetros a árvore a se mut
 
 \section{Construção da solução (ACO)}
 
-O processo de construção da solução por um ACO no PRM deve gerar a árvore multicast com base no grafo da rede, da estrutura de feromônios e da heurística. Existem diversas maneiras de se criar tal árvore. A fim de estudar o comportamento das diferentes estratégias possíveis, aprimorá-las e determinar o melhor modelo para se utilizar no PRM, analisou-se o comportamento de cada ideia no caso mais básico possível: o PRM mono-objetivo. As ideias consideradas neste trabalho são listadas a seguir:
+O processo de construção da solução por um ACO no PRM deve gerar a árvore \textit{multicast} com base no grafo da rede, da estrutura de feromônios e da heurística. Existem diversas maneiras de se criar tal árvore. A fim de estudar o comportamento das diferentes estratégias possíveis, aprimorá-las e determinar o melhor modelo para se utilizar no PRM, analisou-se o comportamento de cada ideia no caso mais básico possível: o PRM mono-objetivo. As ideias consideradas neste trabalho são listadas a seguir:
 
 \begin{enumerate}
 	\item A primeira estratégia, apresentada em [Baran PRM], pode ser vista como uma formiga que caminha pelo grafo até encontrar todos os destinos. A análise é feita passo a passo, considerando apenas a vizinhança do vértice corrente como possibilidades para compor a solução. O processo inicia com uma lista de exploração ($E$) que contém um único elemento: a raiz. Sorteia-se um vértice $i \in E$ e atribui-se probabilidades a todas as arestas $(i, j)$, onde $j$ é qualquer vértice não-visitado na vizinhança de $i$. $i$ é removido de $E$ caso não possua vizinhos factíveis. Um vértice $v$ é escolhido de acordo com as probabilidades calculadas, a aresta $(i, v)$ é adicionada à solução e $v$ é inserido na lista de exploração $E$. O processo é repetido até que todos os destinos tenham sido alcançados. Como etapa final, poda-se a árvore, eliminando as folhas que não representam destinos.
