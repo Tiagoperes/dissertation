@@ -42,10 +42,10 @@
 \contentsline {section}{\numberline {7.2}Atualiza\IeC {\c c}\IeC {\~a}o dos ferom\IeC {\^o}nios}{69}{section.7.2}
 \contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {Experimentos}}{71}{chapter.8}
 \contentsline {section}{\numberline {8.1}Etapa 1: AG's multiobjetivos}{73}{section.8.1}
-\contentsline {section}{\numberline {8.2}Etapa 2: AG's many-objectives vs. MACO/D}{83}{section.8.2}
-\contentsline {section}{\numberline {8.3}Etapa 3: An\IeC {\'a}lise com hipervolume}{88}{section.8.3}
-\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase {Conclus\IeC {\~a}o}}{89}{chapter.9}
-\contentsline {section}{\numberline {9.1}Principais Contribui\IeC {\c c}\IeC {\~o}es}{89}{section.9.1}
-\contentsline {section}{\numberline {9.2}Trabalhos Futuros}{89}{section.9.2}
-\contentsline {section}{\numberline {9.3}Contribui\IeC {\c c}\IeC {\~o}es em Produ\IeC {\c c}\IeC {\~a}o Bibliogr\IeC {\'a}fica}{89}{section.9.3}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{91}{section*.12}
+\contentsline {section}{\numberline {8.2}Etapa 2: AG's many-objectives vs. MACO/D}{84}{section.8.2}
+\contentsline {section}{\numberline {8.3}Etapa 3: An\IeC {\'a}lise com hipervolume}{90}{section.8.3}
+\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase {Conclus\IeC {\~a}o}}{91}{chapter.9}
+\contentsline {section}{\numberline {9.1}Principais Contribui\IeC {\c c}\IeC {\~o}es}{91}{section.9.1}
+\contentsline {section}{\numberline {9.2}Trabalhos Futuros}{91}{section.9.2}
+\contentsline {section}{\numberline {9.3}Contribui\IeC {\c c}\IeC {\~o}es em Produ\IeC {\c c}\IeC {\~a}o Bibliogr\IeC {\'a}fica}{91}{section.9.3}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{93}{section*.12}
