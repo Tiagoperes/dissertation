@@ -1,22 +1,24 @@
 \chapter[Experimentos]{Experimentos}
+\label{chapter_experimentos}
 
-Os experimentos realizados neste trabalho compreendem os algoritmos NSGA-II [], NSGA-III [], SPEA2 [], MOEA/D [], AEMMT [], AEMMD [], MOACS e o ACO proposto: MACO/D. Todos os métodos são testados em dois problemas discretos multiobjetivos: o PMM e o PRM. A fim  de verificar o comportamento dos algoritmos em relação ao número de objetivos, diversas formulações foram consideradas, avaliando-se problemas desde dois até seis objetivos. Assim como o número de funções objetivos, a topologia da rede (PRM) e a quantidade de itens (PMM) também afetam a complexidade, portanto elaborou-se instâncias diferentes para cada problema: no PRM, considerou-se seis redes de diferentes complexidades e no PMM variou-se a quantidade de itens em 30, 40, 50, 100 e 200.
+Os experimentos realizados neste trabalho compreendem os algoritmos NSGA-II \cite{Deb2002}, NSGA-III \cite{Deb2014}, SPEA2 \cite{Zitzler2002}, MOEA/D \cite{Zhang2007}, AEMMT \cite{Brasil2013}, AEMMD \cite{Lafeta2016}, MOACS \cite{Riveros2016} e o ACO proposto: MACO/D. Todos os métodos são testados em dois problemas discretos multiobjetivos: o PMM e o PRM. A fim  de verificar o comportamento dos algoritmos em relação ao número de objetivos, diversas formulações foram consideradas, avaliando-se problemas desde dois até seis objetivos. Assim como o número de funções objetivos, a topologia da rede (PRM) e a quantidade de itens (PMM) também afetam a complexidade, portanto elaborou-se instâncias diferentes para cada problema: no PRM, são consideradas seis redes de diferentes complexidades e no PMM variou-se a quantidade de itens em 30, 40, 50, 100 e 200.
 
-Os experimentos podem ser divididos em três etapas distintas:
+Os experimentos podem ser divididos em quatro etapas distintas:
 
 \begin{enumerate}
-	\item Teste dos AG's multiobjetivos NSGA-II, NSGA-III, SPEA2, MOEA/D e AEMMT nos problemas da mochila e do roteamento multicast. O número de objetivos varia entre dois e seis e, no PRM, três redes são testadas, enquanto o PMM lida com instâncias de 30, 50 e 100 itens. Esses experimentos compuseram o primeiro artigo gerado neste trabalho intitulado \textit{``A Comparative Analysis of MOEAs Considering Two Discrete Optimization Problems''} [], em português, uma análise comparativa entre algoritmos evolutivos multiobjetivos considerando dois problemas de otimização discretos. Além dos cinco algoritmos mencionados, avalia-se também uma pequena modificação no AEMMT chamada de AEMMT-f que remove o limite no tamanho do arquivo de soluções não-dominadas. As avaliações dos algoritmos são feitas com base em métricas relacionadas ao Pareto conhecido e permitem um melhor entendimento sobre o comportamento dos algoritmos, o que facilita a identificação de pontos fortes e fracos de cada estratégia, ajudando na elaboração de um novo modelo melhor adequado aos problemas em questão (PMM e PRM).
-	\item Teste dos métodos de otimização many-objective NSGA-III, MOEA/D, AEMMT, AEMMD e do algoritmo proposto, MACO/D, nos problemas da mochila e do roteamento multicast. São testadas formulações com 4, 5 e 6 objetivos, avaliando-se 3 redes no PRM e problemas com 30, 40 e 50 itens no PMM. Esses experimentos foram responsáveis pela publicação do segundo artigo intitulado \textit{``MACO/D: Many-objective Ant Colony Optimization based on Decomposed Pheromone''} [], em português, MACO/D: otimização por colônia de formigas com muitos objetivos baseada em decomposição de feromônios. Os experimentos colocam à prova pela primeira vez o algoritmo proposto neste trabalho e revelam suas vantagens e fraquezas, possibilitando a identificação dos casos em que se é uma boa ideia utilizá-lo e as formas em que se pode melhorá-lo em cenários onde que os resultados foram desfavoráveis.
-	\item Teste dos algoritmos de otimização many-objective NSGA-III, MOEA/D, AEMMT, AEMMD e MACO/D em instâncias complexas do PMM e PRM utilizando a métrica hipervolume, independente do Pareto. Esses experimentos são necessários, pois as duas etapas anteriores testaram apenas problemas com complexidade razoável onde se é possível estimar o Pareto. A inclusão de mais itens no PMM ou o uso de redes mais complexas no PRM torna inviável a obtenção da fronteira de Pareto e faz necessária a utilização do hipervolume para avaliar os algoritmos. Nesses experimentos são testadas duas novas redes para o PRM e duas novas instâncias do PMM, com 100 e 200 itens.
+	\item Teste dos AG's multiobjetivos NSGA-II, NSGA-III, SPEA2, MOEA/D e AEMMT nos problemas da mochila e do roteamento multicast. O número de objetivos varia entre dois e seis e, no PRM, três redes são testadas, enquanto o PMM lida com instâncias de 30, 50 e 100 itens. Esses experimentos compuseram o primeiro artigo gerado neste trabalho intitulado \textit{``A Comparative Analysis of MOEAs Considering Two Discrete Optimization Problems''} \cite{Franca2017}, em português, uma análise comparativa entre algoritmos evolutivos multiobjetivos considerando dois problemas de otimização discretos. Além dos cinco algoritmos mencionados, avalia-se também uma pequena modificação no AEMMT chamada de AEMMT-f que remove o limite no tamanho do arquivo de soluções não-dominadas. As avaliações dos algoritmos são feitas com base em métricas relacionadas ao Pareto conhecido e permitem um melhor entendimento sobre o comportamento dos algoritmos, o que facilita a identificação de pontos fortes e fracos de cada estratégia, ajudando na elaboração de um novo modelo melhor adequado aos problemas em questão (PMM e PRM).
+	\item Com um novo algoritmo ACO em mente, o MACO/D, fez-se necessário um estudo sobre os métodos para a construção das soluções no PRM. Além disso, foi também preciso testar modelos de atualização de feromônio e ideias sobre os parâmetros de entrada $\alpha$ e $\beta$ do algoritmo. A fim de propor o novo método de otimização \textit{many-objective} e um modelo de aplicação para o PRM, realizou-se a segunda etapa de experimentos, onde várias configurações possíveis do algoritmo e do modelo foram testadas.
+	\item Teste dos métodos de otimização many-objective NSGA-III, MOEA/D, AEMMT, AEMMD e do algoritmo proposto, MACO/D, nos problemas da mochila e do roteamento multicast. São testadas formulações com 4, 5 e 6 objetivos, avaliando-se 3 redes no PRM e problemas com 30, 40 e 50 itens no PMM. Esses experimentos foram responsáveis pela publicação do segundo artigo intitulado \textit{``MACO/D: Many-objective Ant Colony Optimization based on Decomposed Pheromone''} [!todo!], em português, MACO/D: otimização por colônia de formigas com muitos objetivos baseada em decomposição de feromônios. Os experimentos colocam à prova pela primeira vez o algoritmo proposto neste trabalho e revelam suas vantagens e fraquezas, possibilitando a identificação dos casos em que se é uma boa ideia utilizá-lo e as formas em que se pode melhorá-lo em cenários onde que os resultados foram desfavoráveis.
+	\item Teste dos algoritmos de otimização many-objective NSGA-III, MOEA/D, AEMMT, AEMMD e MACO/D em instâncias complexas do PMM e PRM utilizando a métrica hipervolume, independente do Pareto. Esses experimentos são necessários, pois as etapas anteriores testaram apenas problemas com complexidade razoável, onde se é possível estimar o Pareto. A inclusão de mais itens no PMM ou o uso de redes mais complexas no PRM torna inviável a obtenção da fronteira de Pareto e faz necessária a utilização do hipervolume para avaliar os algoritmos. Nesses experimentos são testadas duas novas redes para o PRM e uma nova instância do PMM, com 200 itens.
 \end{enumerate}
 
-Considerando as três etapas de experimentos, foram usadas 5 métricas diferentes para se avaliar os algoritmos, são elas:
+Considerando as quatro etapas de experimentos, foram usadas 5 métricas diferentes para se avaliar os algoritmos, são elas:
 
 \begin{itemize}
 	\item Taxa de erro ($ER$): porcentagem das soluções encontradas que não fazem parte do Pareto aproximado;
-	\item \textit{Generational distance} ($GD$): distância entre das soluções incorretas para a solução mais próxima no Pareto aproximado. Mede o quão distantes as soluções erradas encontradas estão de uma solução correta.
+	\item \textit{Generational distance} ($GD$): distância das soluções incorretas para a solução mais próxima no Pareto aproximado. Mede o quão distantes as soluções erradas encontradas estão de uma solução correta.
 	\item \textit{Pareto subset} ($PS$): número absoluto de soluções encontradas que fazem parte do Pareto aproximado.
-	\item Hipervolume ($HV$): Única métrica, além do tempo, utilizada que independe de um Pareto pré-conhecido. Mede o volume da figura geométrica m-dimensional (m é o número de objetivos) formada pelas distâncias entre as soluções encontradas e um ponto de referência $p_{ref}$. As coordenadas de $p_{ref}$ são diferentes para cada cenário (problema, formulação de objetivos e instância) e são determinadas pelo pior valor encontrado em cada um dos objetivos considerando a união das soluções dos Paretos obtidos em cada execução. Se o PMM de 5 objetivos e 100 itens é executado 10 vezes, por exemplo, extrai-se os 10 resultados e coloca-se soluções em um único conjunto $S_{todos}$. Varre-se $S_{todos}$ procurando pelo pior valor em cada uma das 5 coordenadas e cria-se uma solução fictícia $p_{ref}$ para os valores encontrados. $p_{ref}$ é então utilizado como ponto de referência para o PMM de 5 objetivos e 100 itens. Para os experimentos deste trabalho foi utilizada a implementação oficial do cálculo de hipervolume em [].
+	\item Hiper-volume ($HV$): Única métrica, além do tempo, utilizada que independe de um Pareto pré-conhecido. Mede o volume da figura geométrica $m$-dimensional ($m$ é o número de objetivos) formada pelas distâncias entre as soluções encontradas e um ponto de referência $p_{ref}$. As coordenadas de $p_{ref}$ são diferentes para cada cenário (problema, formulação de objetivos e instância) e são determinadas pelo pior valor encontrado em cada um dos objetivos considerando a união das soluções dos Paretos obtidos em cada execução. Se o PMM de 5 objetivos e 100 itens é executado 10 vezes, por exemplo, extrai-se os 10 resultados e coloca-se soluções em um único conjunto $S_{todos}$. Varre-se $S_{todos}$ procurando pelo pior valor em cada uma das 5 coordenadas e cria-se uma solução fictícia $p_{ref}$ para os valores encontrados. $p_{ref}$ é então utilizado como ponto de referência para o PMM de 5 objetivos e 100 itens. Para os experimentos deste trabalho foi utilizada a implementação oficial do cálculo de hiper-volume descrito em \cite{Bradstreet2012}.
 	\item Tempo: tempo em segundos necessário para se executar o algoritmo.
 \end{itemize}
 
@@ -27,7 +29,7 @@ As seções a seguir apresentam os experimentos e seus resultados em cada uma da
 Neste etapa testou-se os algoritmos NSGA-II, NSGA-III, SPEA2, MOEA/D e AEMMT. Ao todo, 30 cenários de teste foram considerados:
 
 \begin{itemize}
-	\item PRM: 5 formulações de objetivos ($P_2$, $P_3$, $P_4$, $P_5$ e $P_6$) e 3 redes ($R_1$, $R_2$ e $R_3$). Tanto as formulações quanto às redes foram descritas na seção correspondente ao problema do roteamento multicast [].
+	\item PRM: 5 formulações de objetivos ($P_2$, $P_3$, $P_4$, $P_5$ e $P_6$) e 3 redes ($R_1$, $R_2$ e $R_3$). Tanto as formulações quanto às redes foram descritas na seção correspondente ao problema do roteamento multicast (\ref{section_problemas_prm}).
 	\item PMM: 5 formulações de objetivos (2 a 6) e 3 instâncias (30, 50 e 100 itens).
 \end{itemize}
 
@@ -48,15 +50,16 @@ Para cada um dos cenários foi extraído um Pareto através de múltiplas execu�
 	\end{tabular}
 \end{table}
 
-Na tabela \ref{table_exp1_paretos}, a quantidade de elementos nos paretos do PMM é demasiadamente grande para as formulações de objetivos com 100 itens, isso acontece, pois o espaço de busca do problema da mochila cresce exponencialmente com o número de itens. Além disso, a situação é pior quando o número de objetivos é alto, pois, naturalmente, quanto maior a quantidade de funções objetivos, maior o número de soluções que serão não-dominadas. O asterisco ao lado de alguns valores no PMM significa que não foi possível estabilizar o Pareto, ou seja, cada rodada de execuções dos algoritmos encontrava novas soluções. Principalmente por essa razão, julgou-se necessária a execução da etapa 3 de experimentos, onde não se usa um Pareto pré-calculado para se avaliar os algoritmos. Apesar de não serem perfeitos, os resultados para o problema de 100 itens ainda são relevantes, pois ainda que os Paretos não sejam estáveis, compara-se as execuções de todos algoritmos contra as melhores soluções encontradas por todos eles, o que indica o algoritmo com melhor potencial para encontrar boas soluções em problemas multiobjetivos.
+Na tabela \ref{table_exp1_paretos}, a quantidade de elementos nos paretos do PMM é demasiadamente grande para as formulações de objetivos com 100 itens, isso acontece, pois o espaço de busca do problema da mochila cresce exponencialmente com o número de itens. Além disso, a situação é pior quando o número de objetivos é alto, pois, naturalmente, quanto maior a quantidade de funções objetivos, maior o número de soluções que serão não-dominadas. O asterisco ao lado de alguns valores no PMM significa que não foi possível estabilizar o Pareto, ou seja, cada rodada de execuções dos algoritmos encontrava novas soluções. Principalmente por essa razão, julgou-se necessária a execução da etapa 4 de experimentos, onde não se usa um Pareto pré-calculado para se avaliar os algoritmos. Apesar de não serem perfeitos, os resultados para o problema de 100 itens ainda são relevantes, pois ainda que os Paretos não sejam estáveis, compara-se as execuções de todos algoritmos contra as melhores soluções encontradas por todos eles, o que indica o algoritmo com melhor potencial para encontrar boas soluções em problemas multiobjetivos.
 
-Para compilar os resultados através das medidas de desempenho $ER$, $GD$ e $PS$, foram feitas 100 execuções de cada algoritmo com os parâmetros listados na tabela \ref{table_exp1_parametros}. As figuras \ref{fig_exp1_pmm_30}, \ref{fig_exp1_pmm_50} e \ref{fig_exp1_pmm_100} mostram respectivamente os resultados para o PMM de 30, 50 e 100 itens. As figuras \ref{fig_exp1_prm_r1}, \ref{fig_exp1_prm_r2} e \ref{fig_exp1_prm_r3} revelam respectivamente os resultados para o PRM aplicado às redes $R_1$, $R_2$ e $R_3$. Uma análise conjunta, com uma média entre as três instâncias de cada problema é apresenta nas figuras \ref{fig_exp1_prm_todos} (PRM) e \ref{fig_exp1_pmm_todos} (PMM).
+Para compilar os resultados através das medidas de desempenho $ER$, $GD$ e $PS$, foram feitas 100 execuções de cada algoritmo com os parâmetros listados na tabela \ref{table_exp1_parametros}. As figuras \ref{fig_exp1_pmm_30}, \ref{fig_exp1_pmm_50} e \ref{fig_exp1_pmm_100} mostram respectivamente os resultados para o PMM de 30, 50 e 100 itens. As figuras \ref{fig_exp1_prm_r1}, \ref{fig_exp1_prm_r2} e \ref{fig_exp1_prm_r3} revelam respectivamente os resultados para o PRM aplicado às redes $R_1$, $R_2$ e $R_3$. Uma análise conjunta, através de uma média entre as três instâncias de cada problema, é apresenta nas figuras \ref{fig_exp1_prm_todos} (PRM) e \ref{fig_exp1_pmm_todos} (PMM).
 
 \begin{table}[!htbp]
 	\caption{Parâmetros utilizados pelos algoritmos no PRM e PMM.}
+	\label{table_exp1_parametros}
 	\begin{center}
 		\begin{tabular}{c|r|r}
-			\textbf{Parameter} & \textbf{(A) MRP} &  \textbf{(B) MKP} \\ %\hline
+			\textbf{Parâmetro} & \textbf{(A) PRM} &  \textbf{(B) PMM} \\ %\hline
 			\hline
 			Tamanho da população                    &    90 &      150 \\ %\hline
 			Número de gerações*                     &   100 &      100 \\ %\hline
@@ -68,102 +71,221 @@ Para compilar os resultados através das medidas de desempenho $ER$, $GD$ e $PS$
 			Número de subdivisões (NSGA-III)        &     8 &        8 \\
 			\hline
 		\end{tabular}
-		\label{tab_Params}
 	\end{center}
 \end{table}
 
-Na tabela \ref{table_exp1_parametros}, o asterisco em ``número de gerações'' é para dizer que nem todos os algoritmos seguem esse parâmetro. o AEMMT executa 9 mil gerações para o PRM e 7500 para o PMM. Isso acontece, pois esse algoritmo gera apenas 1 filho por ciclo no PRM e apenas 2 no PMM necessitando, portanto, de mais gerações para fazer o mesmo número de comparações. No problema da mochila com 100 itens, devido à complexidade do problema, dobrou-se a quantidade de gerações. Ainda na tabela \ref{table_exp1_parametros}, ``variável'' quer dizer que a taxa de mutação foi de 6\% para o PMM de 30 itens, 4\% para o de 50 itens e 2\% para o de 100 itens, similar aos valores utilizados em [12-Bracis].
+Na tabela \ref{table_exp1_parametros}, o asterisco em ``número de gerações'' é para dizer que nem todos os algoritmos seguem esse parâmetro. o AEMMT executa 9 mil gerações para o PRM e 7500 para o PMM. Isso acontece, pois esse algoritmo gera apenas 1 filho por ciclo no PRM e apenas 2 no PMM necessitando, portanto, de mais gerações para fazer o mesmo número de comparações. No problema da mochila com 100 itens, devido à complexidade do problema, dobrou-se a quantidade de gerações. Ainda na tabela \ref{table_exp1_parametros}, ``variável'' quer dizer que a taxa de mutação foi de 6\% para o PMM de 30 itens, 4\% para o de 50 itens e 2\% para o de 100 itens, similar aos valores utilizados em \cite{Ishibuchi2015}.
 
 \begin{figure*}[!htbp]
 	\caption{Etapa 1: resultados para o PMM com 30 itens}
-	\label{fig_exp1_mkp_30}
+	\label{fig_exp1_pmm_30}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mkp-30}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mkp-30}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mkp-30}
 \end{figure*}
 
-O PMM com 30 itens (figura \ref{fig_exp1_mkp_30}) é um problema simples e geralmente qualquer método de otimização multiobjetivo atinge bons resultados. Até 4 objetivos, apenas o MOEA/D passou a marca de 20\% de erro. Para 2 e 3 objetivos, o NSGA-II, o SPEA2 e o AEMMT são indistinguíveis e possuem erro muito baixo. A partir de 4 objetivos é possível notar uma piora considerável nos algoritmos clássicos NSGA-II e SPEA-2. Considerando todas as formulações de objetivo, os melhores resultados foram obtidos pelo AEMMT que manteve o erro abaixo de 6\% em todos os casos. O $GD$ acompanha as conclusões tiradas a partir do $ER$, o AEMMT gera, globalmente, os melhores resultados enquanto, apesar de terem ótimo desempenho nos problemas de 2 e 3 objetivos, o NSGA-II e o SPEA2 sofrem a partir de 4 objetivos. O tamanho da fronteira de Pareto encontrada, medida pelo $PS$, é maior nos algoritmos MOEA/D e AEMMT, o que é esperado, pois diferentemente dos demais, esses dois algoritmos não aplicam uma limitação muito grande sobre o tamanho do Pareto. Para o PMM de 30 itens está claro que, em qualquer situação, o AEMMT é o melhor dentre os métodos testados.
+O PMM com 30 itens (figura \ref{fig_exp1_pmm_30}) é um problema simples e geralmente qualquer método de otimização multiobjetivo atinge bons resultados. Até 4 objetivos, apenas o MOEA/D passou a marca de 20\% de erro. Para 2 e 3 objetivos, o NSGA-II, o SPEA2 e o AEMMT são indistinguíveis e possuem erro muito baixo. A partir de 4 objetivos é possível notar uma piora considerável nos algoritmos clássicos NSGA-II e SPEA-2. Considerando todas as formulações de objetivo, os melhores resultados foram obtidos pelo AEMMT que manteve o erro abaixo de 6\% em todos os casos. O $GD$ acompanha as conclusões tiradas a partir do $ER$, o AEMMT gera, globalmente, os melhores resultados enquanto, apesar de terem ótimo desempenho nos problemas de 2 e 3 objetivos, o NSGA-II e o SPEA2 sofrem a partir de 4 objetivos. O tamanho da fronteira de Pareto encontrada, medida pelo $PS$, é maior nos algoritmos MOEA/D e AEMMT, o que é esperado, pois diferentemente dos demais, esses dois algoritmos não aplicam uma limitação muito grande sobre o tamanho do Pareto. Para o PMM de 30 itens está claro que, em qualquer situação, o AEMMT é o melhor dentre os métodos testados.
 
 \begin{figure*}[!htbp]
 	\caption{Etapa 1: resultados para o PMM com 50 itens}
-	\label{fig_exp1_mkp_50}
+	\label{fig_exp1_pmm_50}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mkp-50}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mkp-50}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mkp-50}
 \end{figure*}
 
-O PMM com 50 itens (figura \ref{fig_exp1_mkp_50}) é um problema bem mais complexo que o PMM de 30 itens e já permite visualizar bem o comportamento de cada algoritmo nos diferentes cenários. Considerando as três métricas ($ER$, $GD$ e $PS$) os algoritmos clássicos (NSGA-II e SPEA2) são imbatíveis nas formulações com 2 e 3 objetivos. A partir de 4 objetivos a situação muda e o AEMMT passa a apresentar melhores resultados, ao aumentar os objetivos, o NSGA-II e o SPEA2 pioram enquanto o AEMMT mantém o $ER$ e o $GD$ estáveis enquanto melhora o $PS$. O MOEA/D é o segundo melhor algoritmo para problemas \textit{many-objectives} e o NSGA-III é o terceiro. Para o PMM de 50 itens, o AEMMT é claramente a melhor opção.
+O PMM com 50 itens (figura \ref{fig_exp1_pmm_50}) é um problema bem mais complexo que o PMM de 30 itens e já permite visualizar bem o comportamento de cada algoritmo nos diferentes cenários. Considerando as três métricas ($ER$, $GD$ e $PS$) os algoritmos clássicos (NSGA-II e SPEA2) são imbatíveis nas formulações com 2 e 3 objetivos. A partir de 4 objetivos a situação muda e o AEMMT passa a apresentar melhores resultados, ao aumentar os objetivos, o NSGA-II e o SPEA2 pioram enquanto o AEMMT mantém o $ER$ e o $GD$ estáveis e melhora o $PS$. O MOEA/D é o segundo melhor algoritmo para problemas \textit{many-objectives} e o NSGA-III é o terceiro. Para o PMM de 50 itens, o AEMMT é claramente a melhor opção.
 
 \begin{figure*}[!htbp]
 	\caption{Etapa 1: resultados para o PMM com 100 itens}
-	\label{fig_exp1_mkp_100}
+	\label{fig_exp1_pmm_100}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mkp-100}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mkp-100}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mkp-100}
 \end{figure*}
 
-O tamanho do espaço de busca no problema da mochila pode ser medido através da equação $2^n$, onde $n$ é o número de itens. Portanto, a complexidade do PMM com 100 itens (figura \ref{fig_exp1_mkp_100}) é absurdamente maior que os anteriores. Por essa razão, não foi possível encontrar um Pareto estável para as formulações de 4, 5 e 6 objetivos. Dessa forma, apesar de as métricas $ER$, $GD$ e $PS$ serem um bom indicativo da performance entre os algoritmos, a melhor forma de avaliação seria o hiper-volume. Um experimento parecido com este, mas utilizando o hiper-volume é apresentado na seção []. É difícil avaliar o problema de 100 itens, pois, já no erro é possível perceber que poucos algoritmos conseguiram encontrar boas soluções, a menor taxa de erro está acima de 50\%. No PMM de 100 itens o NSGA-III apresentou o menor $ER$ nos cenários de 2, 3, 4 e 5 objetivos, e na formulação de 6, foi ultrapassado pelos AEMMT e MOEA/D. Com relação ao $GD$, para 2 objetivos, o NSGA-II e o SPEA2 apresentaram os melhores resultados. Na formulação de 3 objetivos em diante o MOEA/D foi o algoritmo com menor $GD$, sendo que em 4, 5 e 6 objetivos o AEMMT obteve desempenho similar. A situação de repete ao analisar o $PS$, a partir de 3 objetivos, o MOEA/D traz um conjunto maior de soluções na fronteira de Pareto, seguido pelo AEMMT a partir de 4 objetivos.
+O tamanho do espaço de busca no problema da mochila pode ser medido através da equação $2^n$, onde $n$ é o número de itens. Portanto, a complexidade do PMM com 100 itens (figura \ref{fig_exp1_pmm_100}) é absurdamente maior que os anteriores. Por essa razão, não foi possível encontrar um Pareto estável para as formulações de 4, 5 e 6 objetivos. Dessa forma, apesar de as métricas $ER$, $GD$ e $PS$ serem um bom indicativo da performance entre os algoritmos, a melhor forma de avaliação seria o hiper-volume. Um experimento parecido com este, mas utilizando o hiper-volume é apresentado na seção \ref{section_experiments_3}. É difícil avaliar o problema de 100 itens, pois, já no erro é possível perceber que poucos algoritmos conseguiram encontrar boas soluções, a menor taxa de erro está acima de 50\%. No PMM de 100 itens o NSGA-III apresentou o menor $ER$ nos cenários de 2, 3, 4 e 5 objetivos, e na formulação de 6, foi ultrapassado pelos AEMMT e MOEA/D. Com relação ao $GD$, para 2 objetivos, o NSGA-II e o SPEA2 apresentaram os melhores resultados. Na formulação de 3 objetivos em diante, o MOEA/D foi o algoritmo com menor $GD$, sendo que em 4, 5 e 6 objetivos o AEMMT obteve desempenho similar. A situação se repete ao analisar o $PS$: a partir de 3 objetivos, o MOEA/D traz um conjunto maior de soluções na fronteira de Pareto, seguido pelo AEMMT a partir de 4 objetivos.
 
 \begin{figure*}[!htbp]
 	\caption{Etapa 1: resultados agrupados para o PMM com 30, 50 e 100 itens}
-	\label{fig_exp1_mkp_todos}
+	\label{fig_exp1_pmm_todos}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mkp-todos}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mkp-todos}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mkp-todos}
 \end{figure*}
 
-A figura \ref{fig_exp1_mkp_100} apresenta os resultados do PMM de 30, 50 e 100 itens de forma condensada para que se possa ver, de forma geral, o comportamento dos algoritmos nas diferentes formulações de objetivo. Os gráficos representam as médias entre os três cenários de dificuldade (30, 50 e 100 itens). Como esperado, considerando a literatura correlata, o NSGA-II e o SPEA2 são os melhores algoritmos para as formulações de 2 e 3 objetivos, apresentam melhor $ER$, $GD$ e $PS$. Por outro lado, a partir de 4 objetivos, o desempenho de ambos os algoritmos cai consideravelmente, enquanto o AEMMT assume a liderança. O NSGA-III, no problema de 4 objetivos, apresenta um erro quase tão baixo quento o AEMMT, mas seu $GD$ e $PS$ são piores. o MOEA/D, para 5 e 6 objetivos, apresenta o segundo melhor resultado em qualquer uma das métricas. Em resumo, o NSGA-III não parece uma boa opção em nenhum dos casos, pois sempre há outro algoritmo que obtém um melhor resultado. O NSGA-II e o SPEA2 são igualmente bons e os melhores em problemas com poucos objetivos. O AEMMT e o MOEA/D são ótimas opções para problemas a partir de 4 objetivos, sendo que o MOEA/D confere um melhor $PS$ enquanto o AEMMT providencia menor taxa de erro.
+A figura \ref{fig_exp1_pmm_100} apresenta os resultados do PMM de 30, 50 e 100 itens de forma condensada para que se possa ver, de forma geral, o comportamento dos algoritmos nas diferentes formulações de objetivo. Os gráficos representam as médias entre os três cenários de dificuldade (30, 50 e 100 itens). Como esperado, considerando a literatura correlata, o NSGA-II e o SPEA2 são os melhores algoritmos para as formulações de 2 e 3 objetivos, apresentam melhor $ER$, $GD$ e $PS$. Por outro lado, a partir de 4 objetivos, o desempenho de ambos os algoritmos cai consideravelmente, enquanto o AEMMT assume a liderança. O NSGA-III, no problema de 4 objetivos, apresenta um erro quase tão baixo quanto o AEMMT, mas seu $GD$ e $PS$ são piores. o MOEA/D, para 5 e 6 objetivos, apresenta o segundo melhor resultado em qualquer uma das métricas. Em resumo, o NSGA-III não parece uma boa opção em nenhum dos casos, pois sempre há outro algoritmo que o supera. O NSGA-II e o SPEA2 são igualmente bons e os melhores em problemas com poucos objetivos. O AEMMT e o MOEA/D são ótimas opções para problemas a partir de 4 objetivos, sendo que o MOEA/D confere um melhor $PS$ enquanto o AEMMT providencia menor taxa de erro.
 
 \begin{figure*}[!htbp]
 	\caption{Etapa 1: resultados para o PRM na rede $R_1$}
-	\label{fig_exp1_mrp_r1}
+	\label{fig_exp1_prm_r1}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mrp-r1}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mrp-r1}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mrp-r1}
 \end{figure*}
 
-O PRM sobre a rede 1 (figura \ref{fig_exp1_mrp_r1}), a mais simples dentre elas, mostrou bons resultados para todos os algoritmos. Diferente do esperado, o NSGA-III mostrou o melhor resultado ($ER$, $GD$ e $PS$) para os problemas com 2, 3 e 4 objetivos. A partir de 5 objetivos, o AEMMT e o MOEA/D são os dois melhores métodos, o primeiro apresenta uma menor taxa de erro, enquanto o segundo obtém um Pareto de maior cardinalidade. Para poucos objetivos, o NSGA-III é claramente o melhor método, para 5 ou mais critérios de otimização, ambos AEMMT e MOEA/D são boas opções.
+O PRM sobre a rede 1 (figura \ref{fig_exp1_prm_r1}), a mais simples dentre elas, mostrou bons resultados para todos os algoritmos. Diferente do esperado, o NSGA-III mostrou o melhor resultado ($ER$, $GD$ e $PS$) para os problemas com 2, 3 e 4 objetivos. A partir de 5 objetivos, o AEMMT e o MOEA/D são os dois melhores métodos, o primeiro apresenta uma menor taxa de erro, enquanto o segundo obtém um Pareto de maior cardinalidade. Para poucos objetivos, o NSGA-III é claramente o melhor método, para 5 ou mais critérios de otimização, ambos AEMMT e MOEA/D são boas opções.
 
 \begin{figure*}[!htbp]
 	\caption{Etapa 1: resultados para o PRM na rede $R_2$}
-	\label{fig_exp1_mrp_r2}
+	\label{fig_exp1_prm_r2}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mrp-r2}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mrp-r2}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mrp-r2}
 \end{figure*}
 
-Na rede 2 (figura \ref{fig_exp1_mrp_r2}), o NSGA-III é o melhor algoritmo nos problemas com 2, 3, 4 e 5 objetivos, perdendo, por pouco, apenas em $PS$ para o AEMMT e o MOEA/D no problema de 5 objetivos. Com 6 objetivos, o AEMMT é o melhor algoritmo quando se considera o erro e o $GD$, mas se um maior $PS$ é mais desejável, então o MOEA/D é o método mais adequado.
+Na rede 2 (figura \ref{fig_exp1_prm_r2}), o NSGA-III é o melhor algoritmo nos problemas com 2, 3, 4 e 5 objetivos, perdendo, por pouco, apenas em $PS$ para o AEMMT e o MOEA/D no problema de 5 objetivos. Com 6 objetivos, o AEMMT é o melhor algoritmo quando se considera o erro e o $GD$, mas se um maior $PS$ é mais desejável, então o MOEA/D é o método mais adequado.
 
 \begin{figure*}[!htbp]
 	\caption{Etapa 1: resultados para o PRM na rede $R_3$}
-	\label{fig_exp1_mrp_r3}
+	\label{fig_exp1_prm_r3}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mrp-r3}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mrp-r3}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mrp-r3}
 \end{figure*}
 
-A rede 3 (figura \ref{fig_exp1_mrp_r3}) é a mais complexa analisada nesta etapa dos experimentos. Nela, a tendência já observada do NSGA-III de ser o melhor método para poucos objetivos continua. Até 4 objetivos, em todas as métricas, o NSGA-III apresenta os melhores resultados. Para 5 e 6 critérios de otimização, o AEMMT apresenta menor $ER$ e $GD$, enquanto o MOEA/D consegue maior $PS$.
+A rede 3 (figura \ref{fig_exp1_prm_r3}) é a mais complexa analisada nesta etapa dos experimentos. Nela, a tendência já observada do NSGA-III de ser o melhor método para poucos objetivos continua. Até 4 objetivos, em todas as métricas, o NSGA-III apresenta os melhores resultados. Para 5 e 6 critérios de otimização, o AEMMT apresenta menor $ER$ e $GD$, enquanto o MOEA/D consegue maior $PS$.
 
 \begin{figure*}[!htbp]
 	\caption{Etapa 1: resultados agrupados para o PRM nas redes $R_1$, $R_2$ e $R_3$}
-	\label{fig_exp1_mrp_todos}
+	\label{fig_exp1_prm_todos}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/er-mrp-todos}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/gd-mrp-todos}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mrp-todos}
 \end{figure*}
 
-Afim de fazer uma análise geral do PRM, na figura \ref{fig_exp1_mrp_todos}, todos os cenários (redes 1, 2 e 3) são combinados num único gráfico através de uma média aritmética dos resultados. Observa-se que, apesar de ser esperado que o NSGA-II e o SPEA2 fossem os melhores métodos para poucos objetivos, na verdade, o NSGA-III foi o algoritmo que obteve melhor resultado para problemas com, 2, 3 e 4 objetivos. O NSGA-II também produz bons resultados para problemas com 2 e 3 objetivos, mas o SPEA2 apresenta um $GD$ relativamente ruim. Considerando problemas de 5 e 6 objetivos, a escolha do algoritmo dependerá do intuito da busca, se é preferível uma maior quantidade de soluções, o MOEA/D é mais indicado, caso contrário, se um menor erro é preferível, então o AEMMT é a melhor opção.
+Afim de fazer uma análise geral do PRM, na figura \ref{fig_exp1_prm_todos}, todos os cenários (redes 1, 2 e 3) são combinados num único gráfico através de uma média aritmética dos resultados. Observa-se que, apesar de ser esperado que o NSGA-II e o SPEA2 fossem os melhores métodos para poucos objetivos, na verdade, o NSGA-III foi o algoritmo que obteve melhor resultado para problemas com, 2, 3 e 4 objetivos. O NSGA-II também produz bons resultados para problemas com 2 e 3 objetivos, mas o SPEA2 apresenta um $GD$ relativamente ruim. Considerando problemas de 5 e 6 objetivos, a escolha do algoritmo dependerá do intuito da busca, se é preferível uma maior quantidade de soluções, o MOEA/D é mais indicado, caso contrário, se um menor erro é preferível, então o AEMMT é a melhor opção.
 
 Considerando ambos os problemas, PMM e PRM, os algoritmos NSGA-II, SPEA2 e NSGA-III são os que geram melhores resultados para problemas com poucos objetivos. A performance dos algoritmos clássicos (NSGA-II e SPEA2) cai consideravelmente a medida que se aumenta o número de objetivos, enquanto o desempenho dos métodos AEMMT e MOEA/D melhora a partir de quatro objetivos, tornando-nos os mais indicados para problemas \textit{many-objectives}.
 
-Uma outra observação que pôde ser feita a partir dos experimentos nesta etapa é que o AEMMT perde apenas em $PS$ para o MOEA/D. Uma das características do AEMMT é a limitação no tamanho do arquivo, por isso surge a dúvida: se não houvesse um limite, seria possível que o AEMMT obtivesse um melhor resultado em todas as métricas. Pensando nisso, executou-se os mesmos testes para uma variação do AEMMT (AEMMT-F) onde o limite não foi aplicado. Na maioria dos resultados, o AEMMT-F apresentou erro maior que sua versão original, mas ainda sim $ER$ e $PS$ melhores que o MOEA/D. Dessa forma, através de um teste de hipótese z-teste com 0,1\% de significância ($\alpha = 0.1$), confirmou-se a superioridade do AEMMT-F em relação ao MOEA/D nos cenários com 5 e 6 objetivos.
+Uma outra observação que pôde ser feita a partir dos experimentos nesta etapa é que o AEMMT perde apenas em $PS$ para o MOEA/D. Uma das características do AEMMT é a limitação no tamanho do arquivo, por isso surge a dúvida: se não houvesse um limite, seria possível que o AEMMT obtivesse um melhor resultado em todas as métricas? Pensando nisso, executou-se os mesmos testes para uma variação do AEMMT (AEMMT-F), onde o limite não foi aplicado. Na maioria dos resultados, o AEMMT-F apresentou erro maior que sua versão original, mas ainda sim $ER$ e $PS$ melhores que o MOEA/D. Dessa forma, através de um teste de hipótese z-teste com 0,1\% de significância ($\alpha = 0.1$), confirmou-se a superioridade do AEMMT-F em relação ao MOEA/D nos cenários com 5 e 6 objetivos.
 
-\section{Etapa 2: AG's many-objectives vs. MACO/D}
+\section{Etapa 2: MACO/D}
+\label{section_experimentos_macod}
 
-Na segunda etapa de experimentos descartam-se os AEMOs clássicos NSGA-II e SPEA2 e inclui-se o AEMMD e o MACO/D, algoritmo proposto neste trabalho. Uma nova métrica de desempenho é utilizada, o tempo, e as demais continuam sendo o erro ($ER$), a distância ($GD$) e o número de soluções corretas ($PS$). Assim como na etapa 1, o Pareto aproximado foi pré-calculado a partir de múltiplas execuções dos algoritmos e é apresentado na tabela \ref{table_exp2_paretos}. Enfim, os resultados (com exceção do tempo) foram obtidos através das médias entre 100 execuções dos 30 cenários descritos na lista a seguir. A medida de tempo considerou apenas 3 execuções de cada algoritmo em cada cenário.
+O algoritmo responsável pela construção das soluções do PRM no MACO/D foi concebido de acordo com os experimentos realizados nesta etapa. O mesmo processo não foi realizado para o PMM, pois já havia um modelo bem conceituado que funcionava bem com o algoritmo MACO/D. Além disso, aproveitou-se esse conjunto de experimentos para variar aspectos sobre a atualização de feromônios e parâmetros de entrada no ACO, resultando em particularidades do algoritmo descrito no capítulo \ref{chapter_macod}.
+
+Como visto na seção \ref{section_estrategias_prm_aco}, foram estudadas quatro estratégias para se construir soluções no PRM. Primeiramente, foram implementados os dois algoritmos mais simples: estratégia 1 (formiga única) e 2 (múltiplas formigas). Infelizmente ambos os métodos não produziram resultados satisfatórios no problema do roteamento multicast multiobjetivo. Portanto, com a finalidade de se obter um problema mais simples e testar de maneira isolada o processo de construção da solução, decidiu-se elaborar um cenário do PRM com um único objetivo. As estratégias de construção da solução são apresentadas, em resumo, a seguir. Consulte a seção \ref{section_estrategias_prm_aco} para mais detalhes.
+
+\begin{enumerate}
+	\item Formiga única: o espaço de busca é explorado de forma aleatória, mas sempre considerando apenas a vizinhança da posição atual da formiga.
+	\item Múltiplas formigas: uma formiga para cada destino. Une-se os caminhos produzidos por cada agente em uma árvore.
+	\item Formiga com super-posição: uma formiga explora o espaço de busca de forma aleatória, mas pode estar em vários nós ao mesmo tempo, excluindo o problema de localidade na busca.
+	\item Formigas invertidas: uma formiga para cada destino, mas ao invés de percorrerem o caminho da raiz ao destino, fazem o contrário, partem do destino e tentam encontrar a raiz.
+\end{enumerate}
+
+O problema mono-objetivo criado consiste em minimizar o valor de $custo * delay$ de uma árvore, portanto, quanto menor esse valor, melhor a árvore obtida. As quatro estratégias testadas são aquelas mencionadas na seção \ref{section_estrategias_prm_aco}. Além dos quatro algoritmos, é incluído um resultado novo, obtido a partir de uma modificação do algoritmo de Prim \cite{Prim1957}, para servir como referência de uma boa solução possível de ser encontrada. Cada estratégia foi executada cinco vezes e a tabela \ref{tab_exp2_estrategias} mostra o resultado da melhor execução de cada estratégia.
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Resultados para as estratégias de construção de solução do PRM}
+	\label{tab_exp2_estrategias}
+	\begin{tabular}{rrrr}
+		Estratégia & Rede & Resultado   & Tempo (s)    \\ \hline
+		Prim       & $R_1$   & 3.285714286 & 0.021     \\
+		1          & $R_1$   & 3.047619048 & 2.496     \\
+		2          & $R_1$   & 3.031746032 & 5.94      \\
+		\rowcolor{table-green} 
+		3          & $R_1$   & 3.007936508 & 3.88      \\
+		\rowcolor{table-green} 
+		4          & $R_1$   & 3.007936508 & 3.16      \\ \hline
+		Prim       & $R_2$   & 3.134920635 & 0.016     \\
+		1          & $R_2$   & 3.341269841 & 4.947     \\
+		2          & $R_2$   & 3.261904762 & 13.22     \\
+		\rowcolor{table-green} 
+		3          & $R_2$   & 3.134920635 & 10.694    \\
+		4          & $R_2$   & 3.301587302 & 5.549     \\ \hline
+		Prim       & $R_3$   & 7.968253968 & 0.024     \\
+		1          & $R_3$   & 8.134920635 & 4.212     \\
+		2          & $R_3$   & 8.238095238 & 25.606    \\
+		\rowcolor{table-green} 
+		3          & $R_3$   & 7.484126984 & 9.821     \\
+		4          & $R_3$   & 8.111111111 & 6.939     \\ \hline
+		Prim       & $R_4$   & 1.801587302 & 0.025     \\
+		1          & $R_4$   & 2.341269841 & 4.715     \\
+		2          & $R_4$   & 2.325396825 & 12.471    \\
+		\rowcolor{table-green} 
+		3          & $R_4$   & 1.857142857 & 11.015    \\
+		4          & $R_4$   & 1.976190476 & 4.935     \\ \hline
+		Prim       & $R_5$   & 6.341269841 & 0.015     \\
+		1          & $R_5$   & 6.126984127 & 6.87      \\
+		2          & $R_5$   & 6.333333333 & 17.38     \\
+		\rowcolor{table-green} 
+		3          & $R_5$   & 5.857142857 & 14.767    \\
+		\rowcolor{table-green} 
+		4          & $R_5$   & 5.857142857 & 8.423     \\ \hline
+	\end{tabular}
+\end{table}
+
+Na tabela \ref{tab_exp2_estrategias}, a coluna ``resultado'' representa a soma dos valores de $custo * delay$ das arestas da árvore obtida como solução, ou seja, quanto menor esse valor, melhor a solução obtida. Dessa forma, a estratégia número 3, que usa a ideia de formiga com super-posição, obteve melhor performance. Em termos de tempo, ela infelizmente leva mais tempo que a maioria das demais. Por essa razão propõe-se a ideia de amostragem explicada na seção \ref{section_estrategias_prm_aco}. Ao construir a solução, ao invés de se utilizar a totalidade do conjunto de exploração, toma-se uma amostra desse. Em nossos testes para o PRM, a amostragem é sempre de 10 elementos. A tabela \ref{tab_exp2_amostragem} mostra uma comparação da estratégia 3 com e sem a amostragem.
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Comparação entre da estratégia 3 na técnica de amostragem}
+	\label{tab_exp2_amostragem}
+	\begin{tabular}{rrrr}
+		Amostragem    & Rede & Resultado   & Tempo (s) \\ \hline
+		s/ amostragem & $R_1$    & 3.007936508 & 3.88      \\
+		\rowcolor{table-green}
+		c/ amostragem & $R_1$    & 3.007936508 & 3.41      \\ \hline
+		s/ amostragem & $R_2$    & 3.134920635 & 10.694    \\
+		\rowcolor{table-green}
+		c/ amostragem & $R_2$    & 3.134920635 & 7.602     \\ \hline
+		s/ amostragem & $R_3$    & 7.484126984 & 9.821     \\
+		\rowcolor{table-green}
+		c/ amostragem & $R_3$    & 7.484126984 & 7.26      \\ \hline
+		s/ amostragem & $R_4$    & 1.857142857 & 11.015    \\
+		\rowcolor{table-green}
+		c/ amostragem & $R_4$    & 1.785714286 & 7.28      \\ \hline
+		s/ amostragem & $R_5$    & 5.857142857 & 14.767    \\
+		\rowcolor{table-green}
+		c/ amostragem & $R_5$    & 5.76984127  & 10.037    \\ \hline
+	\end{tabular}
+\end{table}
+
+Como pode ser observado na tabela \ref{tab_exp2_amostragem}, a amostragem não só diminuiu o tempo do algoritmo como também melhorou o resultado. A melhora na qualidade da solução pode ser atribuída ao maior grau de aleatoriedade dada ao algoritmo, similar ao que acontece nos algoritmos genéticos quando se lança mão de operações como a mutação ou seleções por torneio.
+
+Ao implementar a estratégia 1 (uma formiga e super-posição) com amostragem no PRM many-objetive, percebeu-se que o AEMMD conseguia resultados muitos superiores (tabela \ref{tab_exp2_macod_simples}) ao novo algoritmo. A fim de reduzir essa diferença, propôs-se as seguintes mudanças para o MACO/D:
 
 \begin{itemize}
-	\item PRM: 3 formulações de objetivos ($P_4$, $P_5$ e $P_6$) e 3 redes ($R_1$, $R_2$ e $R_3$). Tanto as formulações quanto às redes foram descritas na seção correspondente ao problema do roteamento multicast [].
+	\item Depósito de feromônio baseado na qualidade da aresta (ou do item, no caso do PMM): num problema multi-objetivo, ao depositar feromônios sobre as arestas correspondentes às soluções não-dominadas, sempre deposita-se a mesma quantidade independente da solução e da aresta, pois, segundo a relação de não-dominância, ambas opções são igualmente boas. Esta proposta muda esse conceito ligando a quantidade de feromônios depositados à qualidade da aresta, i.e., a quantidade passa a ser inversamente proporcional à soma dos pesos da aresta (considerando um problema de minimização).
+	\item Dinamização do parâmetro de entrada $\beta$: $\beta$ é o valor que controla a importância da heurística ao calcular as probabilidades de cada aresta (ou item, no PMM) de fazer parte da solução. A proposta é diminuir um pouco a importância da heurística, dando maior peso à informação de feromônio sempre que, após uma iteração, não for encontrada uma nova solução. Assim que uma nova solução é encontrada, o valor de beta é reiniciado para o padrão.
+\end{itemize}
+
+Tomando como referência o problema $P_6$, com seis objetivos, construiu-se a tabela \ref{tab_exp2_macod_simples} que mostra as diferenças entre os desempenhos dos algoritmos AEMMD, MACO/D antes das alterações no depósito de feromônios e do parâmetro $\beta$ (MACO/D-pré) e o algoritmo final proposto no capítulo \ref{chapter_macod} (MACO/D).
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Desempenho do AEMMD, MACO/D pré-alterações e MACO/D final}
+	\label{tab_exp2_macod_simples}
+	\begin{tabular}{rrrrr}
+		Algoritmo  & Rede  & $ER$  & $GD$ & $PS$  \\ \hline
+		AEMMD      & $R_1$ & 6.59  & 0.38 & 502.8 \\
+		MACO/D-pré & $R_1$ & 18.42 & 0.30 & 337.6 \\
+		MACO/D     & $R_1$ & 11.57 & 0.36 & 424.2 \\ \hline
+		AEMMD      & $R_2$ & 7.58  & 0.49 & 296.6 \\
+		MACO/D-pré & $R_2$ & 11.75 & 0.47 & 284.4 \\
+		MACO/D     & $R_2$ & 11.18 & 0.37 & 300   \\ \hline
+		AEMMD      & $R_3$ & 11.73 & 0.19 & 388.6 \\
+		MACO/D-pré & $R_3$ & 36.47 & 0.16 & 206   \\
+		MACO/D     & $R_3$ & 30.20 & 0.25 & 232.4 \\ \hline
+		AEMMD      & $R_4$ & 35.88 & 0.17 & 234   \\
+		MACO/D-pré & $R_4$ & 54.48 & 0.11 & 150.2 \\
+		MACO/D     & $R_4$ & 50.57 & 0.15 & 186.6 \\ \hline
+		AEMMD      & $R_5$ & 32.67 & 0.20 & 181.2 \\
+		MACO/D-pré & $R_5$ & 32.95 & 0.22 & 168.6 \\
+		MACO/D     & $R_5$ & 32.67 & 0.30 & 160.8
+	\end{tabular}
+\end{table}
+
+Na tabela \ref{tab_exp2_macod_simples} pode-se observar que na maioria dos casos as duas alterações propostas melhoraram o resultado do MACO/D, portanto, o algoritmo final proposto inclui essas duas pequenas alterações. O AEMMD ainda apresenta melhores resultados, mas como será visto nas etapas 3 e 4 de experimentos, o MACO/D leva até 5 vezes menos tempo para executar.
+
+\section{Etapa 3: AG's \textit{many-objectives} vs. MACO/D}
+
+Na terceira etapa de experimentos descartam-se os AEMOs clássicos NSGA-II e SPEA2 e inclui-se o AEMMD e o MACO/D, algoritmo proposto neste trabalho. Uma nova métrica de desempenho é utilizada, o tempo, e as demais continuam sendo o erro ($ER$), a distância ($GD$) e o número de soluções corretas ($PS$). Assim como na etapa 1, o Pareto aproximado foi pré-calculado a partir de múltiplas execuções dos algoritmos e é apresentado na tabela \ref{table_exp3_paretos}. Enfim, os resultados (com exceção do tempo) foram obtidos através das médias entre 100 execuções dos 30 cenários descritos na lista a seguir. À medida de tempo considerou apenas 3 execuções de cada algoritmo em cada cenário.
+
+\begin{itemize}
+	\item PRM: 3 formulações de objetivos ($P_4$, $P_5$ e $P_6$) e 3 redes ($R_1$, $R_2$ e $R_3$). Tanto as formulações quanto às redes foram descritas na seção correspondente ao problema do roteamento multicast \ref{section_problemas_prm}.
 	\item PMM: 3 formulações de objetivos (4 a 6) e 3 instâncias (30, 40 e 50 itens).
 \end{itemize}
 
@@ -171,21 +293,21 @@ Na segunda etapa de experimentos descartam-se os AEMOs clássicos NSGA-II e SPEA
 \begin{table}[!htbp]
 	\centering
 	\caption{Cardinalidade dos Paretos encontrados para a primeira etapa de experimentos}
-	\label{table_exp2_paretos}
+	\label{table_exp3_paretos}
 	\begin{tabular}{c|rrr|rrr}
 		& \multicolumn{3}{c|}{\textbf{PRM}} & \multicolumn{3}{c}{\textbf{PMM}} \\ \hline
-		Objetivos & R1         & R2       & R3        & 30 itens  & 50 itens & 100 itens \\ \hline
+		Objetivos & R1         & R2       & R3        & 30 itens  & 40 itens & 50 itens \\ \hline
 		4         & 122        & 553       & 1349        & 425       & 1199      & 1012    \\
 		5         & 75        & 372      & 712       & 1769      & 3862     & 5467   \\
-		6         & 70       & 660      & 1283      & 5828      & 6491   & 55471   \\ \hline
+		6         & 60       & 660      & 1283      & 5828      & 6491   & 55471   \\ \hline
 	\end{tabular}
 \end{table}
 
-A tabela \ref{table_exp2_parametros} apresenta os parâmetros dos algoritmos utilizados neste experimento. Note que o número de gerações (marcado com asterisco) deve ser multiplicado pelo tamanho da população no AEMMT e AEMMD devido ao fato de realizarem apenas um crossover por geração.
+A tabela \ref{table_exp3_parametros} apresenta os parâmetros dos algoritmos utilizados neste experimento. Note que o número de gerações (marcado com asterisco) deve ser multiplicado pelo tamanho da população no AEMMT e AEMMD devido ao fato de realizarem apenas um crossover por geração.
 
 \begin{table}[!htbp]
 	\caption{Parâmetros utilizados para o PRM e o PMM.}
-	\label{table_exp2_parametros}
+	\label{table_exp3_parametros}
 	\begin{center}
 		\begin{tabular}{c|r|r}
 			\textbf{Parâmetro} & \textbf{PRM} &  \textbf{PMM} \\ %\hline
@@ -207,103 +329,144 @@ A tabela \ref{table_exp2_parametros} apresenta os parâmetros dos algoritmos uti
 	\end{center}
 \end{table}
 
-As figuras \ref{fig_exp2_pmm_30}, \ref{fig_exp2_pmm_40} e \ref{fig_exp2_pmm_50} mostram respectivamente os resultados para o PMM de 30, 40 e 50 itens. As figuras \ref{fig_exp2_prm_r1}, \ref{fig_exp2_prm_r2} e \ref{fig_exp2_prm_r3} revelam respectivamente os resultados para o PRM aplicado às redes $R_1$, $R_2$ e $R_3$. Uma análise conjunta, com uma média entre as três instâncias de cada problema é apresenta nas figuras \ref{fig_exp2_prm_todos} (PRM) e \ref{fig_exp2_pmm_todos} (PMM).
+As figuras \ref{fig_exp3_pmm_30}, \ref{fig_exp3_pmm_40} e \ref{fig_exp3_pmm_50} mostram respectivamente os resultados para o PMM de 30, 40 e 50 itens. As figuras \ref{fig_exp3_prm_r1}, \ref{fig_exp3_prm_r2} e \ref{fig_exp3_prm_r3} revelam respectivamente os resultados para o PRM aplicado às redes $R_1$, $R_2$ e $R_3$. Uma análise conjunta, com uma média entre as três instâncias de cada problema é apresenta nas figuras \ref{fig_exp3_prm_todos} (PRM) e \ref{fig_exp3_pmm_todos} (PMM).
 
 \begin{figure*}[!htbp]
-	\caption{Etapa 2: resultados para o PMM com 30 itens}
-	\label{fig_exp2_mkp_30}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mkp-30}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mkp-30}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mkp-30}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mkp-30}
+	\caption{Etapa 3: resultados para o PMM com 30 itens}
+	\label{fig_exp3_pmm_30}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/er-mkp-30}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/gd-mkp-30}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/ps-mkp-30}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/time-mkp-30}
 \end{figure*}
 
-No problema da mochila mais simples, de 30 itens (figura \ref{fig_exp2_mkp_30}), o AEMMT apresenta a menor taxa de erro dentre os algoritmos \textit{many-objectives}, em segundo lugar está o MACO/D e em terceiro o AEMMD. Com relação ao $GD$, com 4 objetivos, os melhores resultados são encontrados pelo MOEA/D seguido pelo MACO/D. O Em 5 e 6 objetivos, o AEMMD produz o menor $GD$, e o MACO/D, bem próximo, aparece em segundo lugar. Na métrica $PS$, o MACO/D é melhor que os demais em todos as formulações de objetivo, seguido, em ordem pelo AEMMD, AEMMT, MOEA/D e NSGA-III. Destre esses algoritmos, o único com um limite fixo no tamanho do Pareto é o NSGA-III, portanto, é esperado que possua um valor de $PS$ menor. Quanto ao tempo, o MOEA/D é o algoritmo mais rápido dentre os 5.
+No problema da mochila mais simples, de 30 itens (figura \ref{fig_exp3_pmm_30}), o AEMMT apresenta a menor taxa de erro dentre os algoritmos \textit{many-objectives}, em segundo lugar está o MACO/D e em terceiro o AEMMD. Com relação ao $GD$, com 4 objetivos, os melhores resultados são encontrados pelo MOEA/D seguido pelo MACO/D. O Em 5 e 6 objetivos, o AEMMD produz o menor $GD$, e o MACO/D, bem próximo, aparece em segundo lugar. Na métrica $PS$, o MACO/D é melhor que os demais em todos as formulações de objetivo, seguido, em ordem pelo AEMMD, AEMMT, MOEA/D e NSGA-III. Destre esses algoritmos, o único com um limite fixo no tamanho do Pareto é o NSGA-III, portanto, é esperado que possua um valor de $PS$ menor. Quanto ao tempo, o MOEA/D é o algoritmo mais rápido dentre os 5.
 
 \begin{figure*}[!htbp]
-	\caption{Etapa 2: resultados para o PMM com 40 itens}
-	\label{fig_exp2_mkp_50}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mkp-40}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mkp-40}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mkp-40}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mkp-40}
+	\caption{Etapa 3: resultados para o PMM com 40 itens}
+	\label{fig_exp3_pmm_40}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/er-mkp-40}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/gd-mkp-40}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/ps-mkp-40}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/time-mkp-40}
 \end{figure*}
 
-O PMM de 40 itens é analisado na figura \ref{fig_exp2_mkp_40}. O AEMMT e o MACO/D apresentam a menor taxa de erro, sendo que o MACO/D é melhor para 4 e 5 objetivos, enquanto o AEMMT obtém o melhor resultado para 6 objetivos. Os melhores valores de $GD$ foram encontrados pelo AEMMD e MACO/D, sendo que o AEMMD é um pouco melhor no problema com 4 objetivos. Uma característica negativa do AEMMD em relação ao MACO/D no que se refere ao $GD$ é sua alta variação nos resultados, o que diz que algumas execuções produz soluções muito próximas do Pareto enquanto outras nem tanto. A respeito do tamanho dos Paretos encontrados, novamente o MACO/D lidera independente da formulação de objetivos. O MOEA/D é o algoritmo mais rápido, enquanto o AEMMT e o MACO/D são os mais lentos.
+O PMM de 40 itens é analisado na figura \ref{fig_exp3_pmm_40}. O AEMMT e o MACO/D apresentam a menor taxa de erro, sendo que o MACO/D é melhor para 4 e 5 objetivos, enquanto o AEMMT obtém o melhor resultado para 6 objetivos. Os melhores valores de $GD$ foram encontrados pelo AEMMD e MACO/D, sendo que o AEMMD é um pouco melhor no problema com 4 objetivos. Uma característica negativa do AEMMD em relação ao MACO/D no que se refere ao $GD$ é sua alta variação nos resultados, o que diz que algumas execuções produz soluções muito próximas do Pareto enquanto outras nem tanto. A respeito do tamanho dos Paretos encontrados, novamente o MACO/D lidera independente da formulação de objetivos. O MOEA/D é o algoritmo mais rápido, enquanto o AEMMT e o MACO/D são os mais lentos.
 
 \begin{figure*}[!htbp]
-	\caption{Etapa 2: resultados para o PMM com 50 itens}
-	\label{fig_exp2_mkp_100}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mkp-50}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mkp-50}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mkp-50}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mkp-50}
+	\caption{Etapa 3: resultados para o PMM com 50 itens}
+	\label{fig_exp3_pmm_50}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/er-mkp-50}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/gd-mkp-50}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/ps-mkp-50}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/time-mkp-50}
 \end{figure*}
 
-O PMM com 50 itens (figura \ref{fig_exp2_mkp_50}) apresenta comportamento similar às instâncias anteriores. O MACO/D e o AEMMT se revezam em menores taxas de erro, o MACO/D consegue menor $ER$ em 4 e 5 objetivos, enquanto o AEMMT apresenta melhor resultado em 6 objetivos. O MACO/D obtém os melhores valores de $GD$ e $PS$, e o MOEA/D é o algoritmo mais rápido.
+O PMM com 50 itens (figura \ref{fig_exp3_pmm_50}) apresenta comportamento similar às instâncias anteriores. O MACO/D e o AEMMT se revezam em menores taxas de erro, o MACO/D consegue menor $ER$ em 4 e 5 objetivos, enquanto o AEMMT apresenta melhor resultado em 6 objetivos. O MACO/D obtém os melhores valores de $GD$ e $PS$, e o MOEA/D é o algoritmo mais rápido.
 
 \begin{figure*}[!htbp]
-	\caption{Etapa 2: resultados agrupados para o PMM com 30, 40 e 50 itens}
-	\label{fig_exp2_mkp_todos}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mkp-todos}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mkp-todos}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mkp-todos}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mkp-todos}
+	\caption{Etapa 3: resultados agrupados para o PMM com 30, 40 e 50 itens}
+	\label{fig_exp3_pmm_todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/er-mkp-todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/gd-mkp-todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/ps-mkp-todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/time-mkp-todos}
 \end{figure*}
 
-A fim de se fazer uma análise conjunta dos resultados, a média entre os 3 cenários é apresentada nos gráficos da figura \ref{fig_exp2_mkp_todos}. As taxas de erro são muito baixas para ambos AEMMT e MACO/D quando comparados aos demais algoritmos. Os resultados em $GD$ são bons para a maioria dos métodos, apenas o AEMMD apresenta um valor ruim de GD no problema de 4 objetivos. O MOEA/D produz o melhor $GD$ no problema de 4 objetivos, enquanto que em 5 e 6 objetivos, o MACO/D e o AEMMD consegue valores bem similares. É importante notar que os desvio padrões no AEMMD são altos, o que pode representar uma certa inconsistência do método em gerar boas soluções. O $PS$ é , de longe, dominado pelo MACO/D. Em questão de tempo de execução, o AEMMT, o AEMMD e o MACO/S variam bastante com o número de objetivos, enquanto os demais são estáveis. O MOEA/D é o algoritmo mais rápido entre os avaliados nesta etapa dos experimentos. O NSGA-III não é pior método em nenhuma das formulações de objetivo, mas também não se destaca em nenhum dos critérios de avaliação.
+A fim de se fazer uma análise conjunta dos resultados, a média entre os 3 cenários é apresentada nos gráficos da figura \ref{fig_exp3_pmm_todos}. As taxas de erro são muito baixas para ambos AEMMT e MACO/D quando comparados aos demais algoritmos. Os resultados em $GD$ são bons para a maioria dos métodos, apenas o AEMMD apresenta um valor ruim de GD no problema de 4 objetivos. O MOEA/D produz o melhor $GD$ no problema de 4 objetivos, enquanto que em 5 e 6 objetivos, o MACO/D e o AEMMD consegue valores bem similares. É importante notar que os desvio padrões no AEMMD são altos, o que pode representar uma certa inconsistência do método em gerar boas soluções. O $PS$ é , de longe, dominado pelo MACO/D. Em questão de tempo de execução, o AEMMT, o AEMMD e o MACO/S variam bastante com o número de objetivos, enquanto os demais são estáveis. O MOEA/D é o algoritmo mais rápido entre os avaliados nesta etapa dos experimentos. O NSGA-III não é pior método em nenhuma das formulações de objetivo, mas também não se destaca em nenhum dos critérios de avaliação.
 
 \begin{figure*}[!htbp]
-	\caption{Etapa 2: resultados para o PRM na rede $R_1$}
-	\label{fig_exp2_mrp_r1}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mrp-r1}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mrp-r1}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mrp-r1}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mrp-r1}
+	\caption{Etapa 3: resultados para o PRM na rede $R_1$}
+	\label{fig_exp3_prm_r1}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/er-mrp-r1}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/gd-mrp-r1}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/ps-mrp-r1}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/time-mrp-r1}
 \end{figure*}
 
-Análise do PRM-R1
+Os gráficos correspondentes ao PRM na rede 1 (figura \ref{fig_exp3_prm_r1}) mostram uma vantagem em relação à taxa de erro pelo algoritmo AEMMD. O AEMMT e o MACO/D aparecem, respectivamente, em terceiro e quarto lugar, enquanto o MOEA/D apresenta o maior $ER$. Com relação ao $GD$, é possível observar que o MACO/D e o MOEA/D atingem desempenhos bem próximos, sendo o MACO/D o melhor entre os dois. Considerando-se o tamanho das fronteiras de Pareto encontrada ($PS$), o AEMMD é o melhor algoritmo, seguido pelo MACO/D, AEMMT, MOEA/D e NSGA-III, nessa ordem. O MACO/D e o MOEA/D são os algoritmos mais rápidos, enquanto o AEMMT e o AEMMD são os mais lentos.
 
 \begin{figure*}[!htbp]
-	\caption{Etapa 2: resultados para o PRM na rede $R_2$}
-	\label{fig_exp2_mrp_r2}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mrp-r2}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mrp-r2}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mrp-r2}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mrp-r2}
+	\caption{Etapa 3: resultados para o PRM na rede $R_2$}
+	\label{fig_exp3_prm_r2}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/er-mrp-r2}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/gd-mrp-r2}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/ps-mrp-r2}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/time-mrp-r2}
 \end{figure*}
 
-Análise do PRM-R2
+A rede 2 (figura \ref{fig_exp3_prm_r2}), apesar de mais complexa que a primeira, apresenta comportamento bem parecido à instância anterior. O AEMMD produz as menores taxas de erro, seguido pelo AEMMT e MACO/D. Dentre as soluções incorretas encontradas, o MACO/D é o algoritmo que chega mais perto das soluções corretas ($GD$), sendo que os MOEAD, AEMMT e AEMMD conseguem resultados bem próximos. Com relação ao $PS$, os melhores valores foram encontrados pelo AEMMD, mas com vantagem muito pequena para o segundo lugar: MACO/D. Em último, aparece o NSGA-III, que é um algoritmo limitado no crescimento do Pareto. O método mais rápido é o MACO/D e o mais lento é o AEMMT.
 
 \begin{figure*}[!htbp]
-	\caption{Etapa 2: resultados para o PRM na rede $R_3$}
-	\label{fig_exp2_mrp_r3}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mrp-r3}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mrp-r3}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mrp-r3}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mrp-r3}
+	\caption{Etapa 3: resultados para o PRM na rede $R_3$}
+	\label{fig_exp3_prm_r3}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/er-mrp-r3}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/gd-mrp-r3}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/ps-mrp-r3}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/time-mrp-r3}
 \end{figure*}
 
-Análise do PRM-R3
+No PRM aplicado à rede 3 (figura \ref{fig_exp3_prm_r3}), o AEMMT encontra as melhores taxas de erro para 4 e 5 objetivos, enquanto que para 6 objetivos, o AEMMD consegue um resultado ligeiramente melhor. O NSGA-III produz o segundo menor $ER$ no problema de 4 objetivos e o terceiro melhor no problema de 5. Com 6 objetivos, o AEMMD, AEMMT e MACO/D produzem taxa de erro bem menor que os demais. O menor $GD$ no problema com 4 objetivos é dado pelo MACO/D. Com 5 objetivos, o MOEA/D apresenta o melhor $GD$, enquanto que na formulação de 6 objetivos, o AEMMD consegue o menor valor. As maiores fronteiras de Pareto são encontradas pelo AEMMD e MACO/D, sendo o AEMMD o melhor entre os dois. O algoritmo mais rápido é o MACO/D, executando em tempo 5 vezes menor que o método mais lento: AEMMT.
 
 \begin{figure*}[!htbp]
-	\caption{Etapa 2: resultados agrupados para o PRM nas redes $R_1$, $R_2$ e $R_3$}
-	\label{fig_exp2_mrp_todos}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/er-mrp-todos}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/gd-mrp-todos}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/ps-mrp-todos}
-	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa2/time-mrp-todos}
+	\caption{Etapa 3: resultados agrupados para o PRM nas redes $R_1$, $R_2$ e $R_3$}
+	\label{fig_exp3_prm_todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/er-mrp-todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/gd-mrp-todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/ps-mrp-todos}
+	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/time-mrp-todos}
 \end{figure*}
 
-Análise geral do PRM
+Para analisar de forma conjunta os resultados das três redes, na figura \ref{fig_exp3_prm_todos} compila-se todos os experimentos através da média aritmética dos resultados. De maneira geral, o NSGA-III consegue soluções de qualidade razoável, mas apresenta baixo $PS$ e apesar de não ser um algoritmo lento, também não é o mais rápido. O MOEA/D obtém as piores taxas de erro entre todos os algoritmos, seu $GD$ é compatível com os demais métodos e seu $PS$ é baixo. A velocidade de execução do MOEA/D é a segunda melhor, mas como seus resultados nas outras métricas não foram bons, não é possível recomendá-lo para este problema. Os melhores resultados foram obtidos pelo AEMMT, AEMMD e o método proposto: MACO/D. Com relação ao erro, o AEMMD consegue as melhores taxas, seguido pelo AEMMT em segundo lugar e MACO/D em terceiro. Analisando o $GD$, observa-se que não há muita diferença entre os três métodos, mas o MACO/D gera melhores soluções que os outros dois, além disso, o desvio padrão do MACO/D é consideravelmente menor, o que o revela ser um método mais estável no que se refere à qualidade das soluções. O AEMMT apresenta um valor de $PS$ bem menor que o AEMMD e o MACO/D nas formulações com 5 e 6 objetivos. O AEMMD produz as maiores fronteiras de Pareto, mas o MACO/D apresenta resultado bem próximo. O mais interessante nesta análise é o tempo de execução, por mais que o AEMMD gere soluções razoavelmente melhores que o MACO/D considerando as métricas $ER$ e $GD$, o segundo é consideravelmente mais rápido, chegando a executar em quase 5 vezes menos tempo.
 
-Análise geral dos resultados comparando os dois problemas.
+A primeira diferença que se nota entre os resultados dos dois problemas é o tempo de execução do algoritmo proposto, o MACO/D. considerando os gráficos da figura \ref{fig_exp3_pmm_todos}, o MACO/D é o segundo algoritmo mais lento e seu tempo de execução está altamente relacionado ao número de objetivos. Na figura \ref{fig_exp3_prm_todos}, que representa o comportamento geral dos algoritmos no PRM, vê-se o oposto: o MACO/D é o algoritmo mais rápido e seu tempo de execução se mantém estável independente da formulação de objetivos. O processo de maior custo computacional no MACO/D é a atualização dos feromônios, onde é necessário recalcular o conjunto de soluções não-dominadas $nd$. A cada iteração, para toda solução criada, é necessário passar por todos elementos em $nd$ verificando a relação de não-dominância. Naturalmente, quanto maior o conjunto $nd$ mais caro se torna o processo. No PRM, foram encontradas fronteiras de Pareto de tamanho razoavelmente pequenos, todas com menos de 350 elementos, ou seja, foi necessário, para cada solução criada, fazer no máximo 350 comparações. No caso do PMM, as fronteiras de Pareto são muito grandes, no problema com 6 objetivos e 50 itens, por exemplo, a cardinalidade do conjunto $nd$ chega a ser maior que 4500. Quanto maior a quantidade de objetivos do problema, maior o número de soluções no Pareto e mais lento será a classificação de soluções não dominadas. Se o conjunto $nd$ é pequeno até mesmo para a maior quantidade de objetivos (caso do PRM), o processo será rápido e o tempo de execução não será muito diferente entre as formulações de objetivos. Por outro lado, se a cardinalidade de $nd$ é muito grande e cresce muito com o aumento da quantidade de objetivos, o tempo necessário para se atualizar os feromônios será muito alto e terá grande variação conforme a formulação de objetivos.
 
-\section{Etapa 3: Análise com hipervolume}
+A fim de melhor comparar o MACO/D aos algoritmos AEMMT e AEMMD realizou-se o teste de hipótese z-teste com 5\% de significância ($\alpha=0.05$). Os resultados são mostrados nas tabelas \ref{tab_ztest_meamt} e \ref{tab_ztest_meams}. Em ambas as tabelas, uma célula de fundo verde representa uma ocasião onde o MOACS obteve melhor resultado que seu adversário, vermelho significa pior e branco empate.
 
-A fim de testar propriamente o comportamento dos algoritmos em espaços de busca mais complexos que os utilizados nos experimentos das etapas 1 e 2, lançou-se mão de três novas redes e instâncias do problema da mochila com 100 e 200 itens. Como não é possível extrair Paretos estáveis para as redes $R_4$, $R_5$ e $R_6$, nem para os problemas da mochila com 50, 100 e 200 itens, não é interessante basear-se em métricas dependentes de tais Paretos para se tirar conclusões. Por isso, nesta etapa, testa-se unicamente a métrica hipervolume, independente do Pareto.
+\begin{table}[htb]
+	\centering
+	\def\arraystretch{1.0}
+	\caption{Testes de hipótese para: MACO/D vs. AEMMT nos problemas PMM and PRM}
+	\label{tab_ztest_meamt}
+	\begin{tabular}{llllllllll}
+		& \multicolumn{3}{l}{\textbf{4 objectives}} & \multicolumn{3}{l}{\textbf{5 objectives}} & \multicolumn{3}{l}{\textbf{6 objectives
+		}} \\
+		\textbf{Instance} & \textbf{ER} & \textbf{GD} & \textbf{PS} & \textbf{ER} & \textbf{GD} & \textbf{PS} & \textbf{ER} & \textbf{GD} & \textbf{PS} \\ \hline
+		30 items & \cellcolor{white} $=$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ \\
+		40 items & \cellcolor{table-green} $<$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ \\
+		50 items & \cellcolor{table-green} $<$ & \cellcolor{white} $=$ & \cellcolor{table-green} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ \\  \hline 
+		Rede 1 & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-red} $<$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ \\
+		Rede 2 & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ \\
+		Rede 3 & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-red} $<$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ & \cellcolor{table-red} $>$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $>$ \\  \hline 
+	\end{tabular}
+\end{table}
 
-O hipervolume foi utilizado pela primeira vez em [] e desde então, junto a \textit{inverse generational distance} $(IDG)$ [], é a métrica mais utilizada na literatura para se avaliar algoritmos many-objectives. O hipervolume, como explicado no início deste capítulo, calcula o volume da figura geométrica formada pelas distâncias das soluções a um ponto de referência pré-definido. Os pontos de referência utilizados em cada cenário são apresentados na tabela [].
+\begin{table}[htb]
+	\centering
+	\def\arraystretch{1.0}
+	\caption{Testes de hipótese para: MACO/D vs. AEMMD nos problemas PMM and PRM}
+	\label{tab_ztest_meams}
+	\begin{tabular}{llllllllll}
+		& \multicolumn{3}{l}{\textbf{4 objectives}} & \multicolumn{3}{l}{\textbf{5 objectives}} & \multicolumn{3}{l}{\textbf{6 objectives
+		}} \\
+		\textbf{Instance} & \textbf{ER} & \textbf{GD} & \textbf{PS} & \textbf{ER} & \textbf{GD} & \textbf{PS} & \textbf{ER} & \textbf{GD} & \textbf{PS} \\ \hline
+		30 items & \cellcolor{table-green} $<$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $>$ \\
+		40 items & \cellcolor{table-green} $<$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $>$ \\
+		50 items & \cellcolor{table-green} $<$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ \\  \hline 
+		Rede 1 & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-red} $<$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-red} $<$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-red} $<$ \\
+		Rede 2 & \cellcolor{table-red} $>$ & \cellcolor{white} $=$ & \cellcolor{table-green} $>$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-red} $<$ & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-green} $>$ \\
+		Rede 3 & \cellcolor{table-red} $>$ & \cellcolor{table-green} $<$ & \cellcolor{table-red} $<$ & \cellcolor{table-red} $>$ & \cellcolor{white} $=$ & \cellcolor{table-red} $<$ & \cellcolor{table-red} $>$ & \cellcolor{table-red} $>$ & \cellcolor{table-red} $<$ \\  \hline 
+	\end{tabular}
+\end{table}
+
+No PMM, se o tempo de execução é uma preocupação, a melhor alternativa é o algoritmo MOEA/D, que executa em tempo recorde e produz bons resultados. Se a rapidez do algoritmo não é tão importante e deseja-se encontrar um conjunto de soluções mais próximo do Pareto real, o MACO/D é o algoritmo mais indicado. No PRM, o método que representa melhor relação entre qualidade e tempo é o MACO/D, mas se tempo não é importante, o AEMMD pode ser preferível. Ao mesmo tempo, seria interessante testar se, dada a mesma quantidade de tempo, o MACO/D não supera o AEMMD.
+
+\section{Etapa 4: Análise com hipervolume}
+\label{section_experiments_3}
+
+A fim de testar propriamente o comportamento dos algoritmos em espaços de busca mais complexos que os utilizados nos experimentos das etapas 1 e 3, lançou-se mão de três novas redes e instâncias do problema da mochila com 100 e 200 itens. Como não é possível extrair Paretos estáveis para as redes $R_4$, $R_5$ e $R_6$, nem para os problemas da mochila com 50, 100 e 200 itens, não é interessante basear-se em métricas dependentes de tais Paretos para se tirar conclusões. Por isso, nesta etapa, testa-se unicamente a métrica hipervolume, independente do Pareto.
+
+O hiper-volume, junto ao \textit{inverse generational distance} $(IDG)$, é a métrica mais utilizada na literatura para se avaliar algoritmos many-objectives. O hipervolume, como explicado no início deste capítulo, calcula o volume da figura geométrica formada pelas distâncias das soluções a um ponto de referência pré-definido. Os pontos de referência utilizados em cada cenário são apresentados na tabela [!todo!].
 
 Tabela de pontos de referência.
 

@@ -1,5 +1,11 @@
 \select@language {brazil}
-\contentsline {table}{\numberline {1}{\ignorespaces Cardinalidade dos Paretos encontrados para a primeira etapa de experimentos}}{73}{table.8.1}
-\contentsline {table}{\numberline {2}{\ignorespaces Par\IeC {\^a}metros utilizados pelos algoritmos no PRM e PMM.}}{74}{table.8.2}
-\contentsline {table}{\numberline {3}{\ignorespaces Cardinalidade dos Paretos encontrados para a primeira etapa de experimentos}}{85}{table.8.3}
-\contentsline {table}{\numberline {4}{\ignorespaces Par\IeC {\^a}metros utilizados para o PRM e o PMM.}}{85}{table.8.4}
+\contentsline {table}{\numberline {1}{\ignorespaces Defini\IeC {\c c}\IeC {\~o}es das redes utilizadas pelo PRM}}{54}{table.4.1}
+\contentsline {table}{\numberline {2}{\ignorespaces Cardinalidade dos Paretos encontrados para a primeira etapa de experimentos}}{76}{table.8.2}
+\contentsline {table}{\numberline {3}{\ignorespaces Par\IeC {\^a}metros utilizados pelos algoritmos no PRM e PMM.}}{76}{table.8.3}
+\contentsline {table}{\numberline {4}{\ignorespaces Resultados para as estrat\IeC {\'e}gias de constru\IeC {\c c}\IeC {\~a}o de solu\IeC {\c c}\IeC {\~a}o do PRM}}{88}{table.8.4}
+\contentsline {table}{\numberline {5}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre da estrat\IeC {\'e}gia 3 na t\IeC {\'e}cnica de amostragem}}{89}{table.8.5}
+\contentsline {table}{\numberline {6}{\ignorespaces Desempenho do AEMMD, MACO/D pr\IeC {\'e}-altera\IeC {\c c}\IeC {\~o}es e MACO/D final}}{90}{table.8.6}
+\contentsline {table}{\numberline {7}{\ignorespaces Cardinalidade dos Paretos encontrados para a primeira etapa de experimentos}}{91}{table.8.7}
+\contentsline {table}{\numberline {8}{\ignorespaces Par\IeC {\^a}metros utilizados para o PRM e o PMM.}}{91}{table.8.8}
+\contentsline {table}{\numberline {9}{\ignorespaces Testes de hip\IeC {\'o}tese para: MACO/D vs. AEMMT nos problemas PMM and PRM}}{97}{table.8.9}
+\contentsline {table}{\numberline {10}{\ignorespaces Testes de hip\IeC {\'o}tese para: MACO/D vs. AEMMD nos problemas PMM and PRM}}{98}{table.8.10}

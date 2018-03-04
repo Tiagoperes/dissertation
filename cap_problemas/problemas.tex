@@ -1,6 +1,6 @@
 \chapter[Problemas de teste]{Problemas de teste}
 
-São vários os problemas em que se pode aplicar os algoritmos multiobjetivos e pode-se dividi-los em duas categorias: contínuos ou discretos. O comportamento e até a própria possibilidade de se aplicar o algoritmo depende dessa classificação. A fim de avaliar os métodos multiobjetivos, normalmente se utiliza problemas de teste, dentre os contínuos, destacam-se: SCH [], FON [], POL [], KUT [] e ZDT []. Os problemas contínuos são funções contínuas e não necessariamente representam um problema real. Os problemas discretos, por outro lado, possuem um enunciado bem definido e nem todas as soluções possíveis são válidas, ou seja, existem buracos no contradomínio das funções. Exemplos de problemas discretos comummente usados na literatura multiobjetivo são: cacheiro viajante, roteamento de veículos com janelas de tempo, problema da mochila, sequenciamento de proteínas e problemas de roteamento em redes. Neste trabalho focou-se em dois problemas discretos: o problema da mochila multiobjetivo (PMM) e o problema do roteamento multicast (PRM).
+São vários os problemas em que se pode aplicar os algoritmos multiobjetivos e pode-se dividi-los em duas categorias: contínuos ou discretos. O comportamento e até a própria possibilidade de se aplicar o algoritmo depende dessa classificação. A fim de avaliar os métodos multiobjetivos, normalmente se utiliza problemas de teste, dentre os contínuos, destacam-se: SCH, FON, POL, KUR e ZDT, todos podem ser encontrados no artigo original do NSGA-II \cite{Deb2002}. Os problemas contínuos são funções contínuas e não necessariamente representam um problema real. Os problemas discretos, por outro lado, possuem um enunciado bem definido e nem todas as soluções possíveis são válidas, ou seja, existem buracos no contradomínio das funções. Exemplos de problemas discretos comummente usados na literatura multiobjetivo são: cacheiro viajante, roteamento de veículos com janelas de tempo, problema da mochila, sequenciamento de proteínas e problemas de roteamento em redes. Neste trabalho focou-se em dois problemas discretos: o problema da mochila multiobjetivo (PMM) e o problema do roteamento multicast (PRM).
 
 \section{Problema da mochila multiobjetivo}
 
@@ -8,28 +8,29 @@ O problema da mochila (PM) é um problema teórico muito conhecido na computaç�
 
 O problema da mochila consiste em arranjar um conjunto de itens em uma mochila de forma a não exceder a capacidade da mesma e ao mesmo tempo maximizar o valor (lucro) dos objetos carregados. Matematicamente, dado uma mochila de capacidade $C$ e um conjunto de itens $O$, onde cada $O_i \in O$ possui um peso $peso(O_i)$ e um lucro $lucro(O_i)$, encontrar o conjunto $S \subset O$, tal que $\sum_{o \in S} peso(o) <= C$ e $\sum_{o \in S} lucro(o)$ seja o maior possível.
 
-Existem diversas estratégias para se resolver o problema da mochila (PM), dentre elas as mais usadas são os algoritmos gulosos e os algoritmos genéticos. Uma coletânea de algoritmos gulosos para o PM são explicados, implementados e analisados em [Bracis 15].  Em [Bracis 21], um AG é proposto, mostrando o potencial da estratégia para a resolução de problemas de otimização NP-completos com restrições. Apesar de existirem múltiplas estratégias, os algoritmos gulosos são os mais rápidos e eficientes para resolver o PM mono-objetivo, em contra-partida, a complexidade adicionada pela versão multiobjetivo (PMM) inviabiliza a utilização dos mesmos, tornando os AG's e demais métodos bio-inspirados as melhores opções.
+Existem diversas estratégias para se resolver o problema da mochila (PM), dentre elas as mais usadas são os algoritmos gulosos e os algoritmos genéticos. Uma coletânea de algoritmos gulosos para o PM são explicados, implementados e analisados em \cite{Martello1990}.  Em \cite{Khuri1994}, um AG é proposto, mostrando o potencial da estratégia para a resolução de problemas de otimização NP-completos com restrições. Apesar de existirem múltiplas estratégias, os algoritmos gulosos são os mais rápidos e eficientes para resolver o PM mono-objetivo, em contra-partida, a complexidade adicionada pela versão multiobjetivo (PMM) inviabiliza a utilização dos mesmos, tornando os AG's e demais métodos bio-inspirados as melhores opções.
 
 O problema da mochila multiobjetivo (PMM) é similar ao original, sua única diferença está no fato de que cada item, ao invés de possuir um único valor (lucro), é composto de múltiplos valores. No PMM, a função $lucro(O_i)$ retorna um vetor ao invés de um escalar, onde cada componente representa o valor do item $O_i$ em um dos objetivos. Por exemplo, no PMM de 3 objetivos, cada $O_i \in O$ possui um vetor tri-dimensional de lucros. O objetivo do problema passa a ser maximizar todos os lucros ao invés de um único valor.
 
-O PMM já foi utilizado várias vezes para avaliar algoritmos multi-objetivos, podendo-se destacar os trabalhos de [SPEA] [SPEA2] [MOEA/D].
+O PMM já foi utilizado várias vezes para avaliar algoritmos multi-objetivos, podendo-se destacar os trabalhos de \cite{Zitzler1999}, \cite{Zitzler2002} e \cite{Zhang2007}. As instância do PMM utilizadas no decorrer deste trabalho foram geradas de forma aleatória e compreendem problemas da mochila com 30, 40, 50, 100 e 200 itens. Para gerar as instâncias, sorteou-se valores no intervalo (0, 1000) para os lucros e para os pesos. A capacidade da mochila foi sempre definida como 60\% da soma dos pesos.  
 
 \section{Problema do roteamento multicast (PRM)}
+\label{section_problemas_prm}
 
-O problema do roteamento multicast aparece na engenharia de tráfego em redes de computadores e consiste em transmitir uma mensagem multicast. Uma transmissão de rede pode ser do tipo unicast, multicast ou broadcast. Em transmissões unicast conecta-se um ponto da rede a um outro ponto qualquer, para fazer isso de forma eficiente basta encontrar o melhor caminho entre os dois pontos. As comunicações broadcast caracterizam-se pelo fato de um nó da rede (servidor) enviar o conteúdo a todos os demais, para obter as melhores rotas para trafegar os dados, basta verificar a árvore geradora de custo mínimo. As transmissões multicast desejam, a partir de um nó da rede, transmitir o conteúdo para alguns outros, o que apresenta maior complexidade, pois é necessário obter uma árvore de Steiner de custo mínimo, o que é mais difícil que calcular uma única rota ou construir a árvore geradora de custo mínimo [1-plano].
+O problema do roteamento multicast aparece na engenharia de tráfego em redes de computadores e consiste em transmitir uma mensagem multicast. Uma transmissão de rede pode ser do tipo unicast, multicast ou broadcast. Em transmissões unicast conecta-se um ponto da rede a um outro ponto qualquer, para fazer isso de forma eficiente basta encontrar o melhor caminho entre os dois pontos. As comunicações broadcast caracterizam-se pelo fato de um nó da rede (servidor) enviar o conteúdo a todos os demais, para obter as melhores rotas para trafegar os dados, basta verificar a árvore geradora de custo mínimo. As transmissões multicast desejam, a partir de um nó da rede, transmitir o conteúdo para alguns outros, o que apresenta maior complexidade, pois é necessário obter uma árvore de Steiner de custo mínimo, o que é mais difícil que calcular uma única rota ou construir a árvore geradora de custo mínimo \cite{Bueno2010}.
 
 O PRM, além de ser um problema prático, é muito importante, pois significaria um grande avanço na geração de rotas em redes de computadores, proporcionando uma comunicação mais rápida, menos custosa e mais confiável entre dispositivos, o que é essencial em uma era onde a maioria das pessoas consomem informação e entretenimento pela Internet. Dado que deseja-se transmitir um conteúdo via uma rede de computadores, o problema consiste em encontrar a melhor rota possível entre a fonte de dados e os destinos. Matematicamente, dado uma rede representada pelo grafo $G=(V,E)$, um nó raiz $s \in V$ (nó transmissor) e um conjunto de nós destinos $D \subset V$ (nós receptores), o PRM consiste em determinar a subárvore $T$ de $G$ enraizada em $r$ que inclui todos os vértices em $D$ e apresenta o menor custo possível. Veja o exemplo da figura \ref{fig_prm_mono}.
 
 \begin{figure}
 	\label{fig_prm_grafo}
-	\caption{Exemplo de rede retirado de [1-plano]}
+	\caption{Exemplo de rede retirado de \cite{Bueno2010}}
 	\centering
 	\includegraphics[width=1\textwidth]{cap_problemas/figs/prm_grafo}
 \end{figure}
 
 \begin{figure}
 	\label{fig_prm_mono}
-	\caption{Exemplos de árvores multicast relativos ao grafo da figura \ref{fig_prm_grafo}. Retirado do trabalho de [2-plano]}
+	\caption{Exemplos de árvores multicast relativos ao grafo da figura \ref{fig_prm_grafo}. Retirado do trabalho de \cite{Lafeta2016}}
 	\centering
 	\includegraphics[width=0.8\textwidth]{cap_problemas/figs/prm_mono}
 \end{figure}
@@ -72,3 +73,19 @@ Afim de possibilitar diversos cenários de teste para o PRM, os objetivos acima 
 	\item $P_5$: formado pelos objetivos 1, 3, 4, 5 e 6;
 	\item $P_6$: formado pelos objetivos 1, 2, 3, 4, 5 e 6.
 \end{enumerate}
+
+O PRM foi trabalhado sobre 5 redes diferentes variando a complexidade em termos de quantidade de nós destinos, vértices e arestas. Essas redes foram retiradas do trabalho de \cite{Lafeta2016} e suas caraterísticas são apresentadas na tabela \ref{tab_prm_redes}.
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Definições das redes utilizadas pelo PRM}
+	\label{tab_prm_redes}
+	\begin{tabular}{r|rrr}
+		Nome        & Destinos & Vértices & Arestas \\ \hline
+		Rede 1 (R1) & 10       & 33       & 106     \\
+		Rede 2 (R2) & 18       & 75       & 188     \\
+		Rede 3 (R3) & 37       & 75       & 188     \\
+		Rede 4 (R5) & 12       & 75       & 300     \\
+		Rede 5 (R5) & 16       & 100      & 250     \\ \hline
+	\end{tabular}
+\end{table}

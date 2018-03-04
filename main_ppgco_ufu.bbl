@@ -5,50 +5,184 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
-\bibitem[abnTeX2 2013]{abntex2classe}
-\abntrefinfo{abnTeX2}{ABNTEX2}{2013}
-{ABNTEX2. \textbf{A classe abntex2: Modelo can{\^o}nico de trabalhos
-  acad{\^e}micos brasileiros compat{\'\i}vel com as normas ABNT NBR 14724:2011,
-  ABNT NBR 6024:2012 e outras}.
-[S.l.], 2013. Dispon{\'\i}vel em: \url{http://code.google.com/p/abntex2/}.}
+\bibitem[Alaya, Solnon e Ghedira]{Alaya2004}
+\abntrefinfo{Alaya, Solnon e Ghedira}{ALAYA; SOLNON; GHEDIRA}{}
+{ALAYA, I.; SOLNON, C.; GHEDIRA, K. Ant algorithm for the multi-dimensional
+  knapsack problem.}
 
-\bibitem[Araujo 2012]{araujo2012}
-\abntrefinfo{Araujo}{ARAUJO}{2012}
-{ARAUJO, L.~C.
-\textbf{Configura{\c c}{\~a}o: uma perspectiva de Arquitetura da Informa{\c
-  c}{\~a}o da Escola de Bras{\'\i}lia}.
-Disserta\c{c}\~{a}o (Mestrado) --- Universidade de Bras{\'\i}lia,
-  Bras{\'\i}lia, Mar{\c c}o 2012.}
+\bibitem[Alaya, Solnon e Ghedira 2007]{Alaya2007}
+\abntrefinfo{Alaya, Solnon e Ghedira}{ALAYA; SOLNON; GHEDIRA}{2007}
+{\underline{\ \ \ \ \ \ \ \ }. Ant colony optimization for multi-objective
+  optimization problems. In:  \textbf{IEEE Int. Conf. on Tools with Artificial
+  Intelligence}. [S.l.: s.n.], 2007. v.~1, p. 450--457.}
 
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2002]{NBR10520:2002}
-\abntrefinfo{ABNT}{ABNT}{2002}
-{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \textbf{{NBR} 10520}:
-  Informa{\c c}\~ao e documenta{\c c}\~ao --- apresenta{\c c}\~ao de cita{\c
-  c}\~oes em documentos.
-Rio de Janeiro, 2002. 7~p.}
+\bibitem[Baran e Schaerer 2003]{Baran2003}
+\abntrefinfo{Baran e Schaerer}{BARAN; SCHAERER}{2003}
+{BARAN, B.; SCHAERER, M. \textbf{A Multiobjective Ant Colony System for Vehicle
+  Routing Problem with Time Windows.} 2003. 97-102~p.}
 
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2003]{NBR6028:2003}
-\abntrefinfo{ABNT}{ABNT}{2003}
-{\underline{\ \ \ \ \ \ \ \ }. \textbf{{NBR} 6028}: Resumo - apresenta{\c
-  c}{\~a}o.
-Rio de Janeiro, 2003. 2~p.}
+\bibitem[Brasil, Delbem e Silva 2013]{Brasil2013}
+\abntrefinfo{Brasil, Delbem e Silva}{BRASIL; DELBEM; SILVA}{2013}
+{BRASIL, C. R.~S.; DELBEM, A. C.~B.; SILVA, F. L.~B. da. Multiobjective
+  evolutionary algorithm with many tables for purely ab initio protein
+  structure prediction.
+\textbf{Comput. Chem.}, v. 34(20), p. 1719--1734, 2013.}
 
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2011]{NBR14724:2011}
-\abntrefinfo{ABNT}{ABNT}{2011}
-{\underline{\ \ \ \ \ \ \ \ }. \textbf{{NBR} 14724}: Informa{\c c}\~ao e
-  documenta{\c c}\~ao --- trabalhos acad\^emicos --- apresenta{\c c}\~ao.
-Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
+\bibitem[Bueno e Oliveira 2010]{Bueno2010}
+\abntrefinfo{Bueno e Oliveira}{BUENO; OLIVEIRA}{2010}
+{BUENO, M. L.~P.; OLIVEIRA, G. M.~B. Multicast flow routing: Evaluation of
+  heuristics and multiobjective evolutionary algorithms. In:  \textbf{Congress
+  Evol. Comput.} [S.l.: s.n.], 2010. p.~1--8.}
 
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2012]{NBR6024:2012}
-\abntrefinfo{ABNT}{ABNT}{2012}
-{\underline{\ \ \ \ \ \ \ \ }. \textbf{{NBR} 6024}: Numera{\c c}\~ao
-  progressiva das se{\c c}\~oes de um documento.
-Rio de Janeiro, 2012. 4~p.}
+\bibitem[Changdar, Mahapatra e Pal 2013]{changdar2013}
+\abntrefinfo{Changdar, Mahapatra e Pal}{CHANGDAR; MAHAPATRA; PAL}{2013}
+{CHANGDAR, C.; MAHAPATRA, G.; PAL, R. An ant colony optimization approach for
+  binary knapsack problem under fuzziness.
+\textbf{Applied Mathematics and Computation}, v.~223, p. 243 -- 253, 2013.
+ISSN 0096-3003.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0096300313008278}.}
 
-\bibitem[{van} Gigch e Pipino 1986]{van86}
-\abntrefinfo{{van} Gigch e Pipino}{{van} GIGCH; PIPINO}{1986}
-{{van} GIGCH, J.~P.; PIPINO, L.~L. In search for a paradigm for the discipline
-  of information systems.
-\textbf{Future Computing Systems}, v.~1, n.~1, p. 71--97, 1986.}
+\bibitem[Charles 1859]{Darwin1859}
+\abntrefinfo{Charles}{CHARLES}{1859}
+{CHARLES, D. \textbf{On the origin of species by means of natural selection, or
+  preservation of favoured races in the struggle for life}. [s.n.], 1859.
+  Dispon{\'\i}vel em:
+  \url{https://search.library.wisc.edu/catalog/9934839413602122}.}
+
+\bibitem[Deb e Jain 2014]{Deb2014}
+\abntrefinfo{Deb e Jain}{DEB; JAIN}{2014}
+{DEB, K.; JAIN, H. An evolutionary many-objective optimization algorithm using
+  reference-point-based nondominated sorting approach, part i: Solving problems
+  with box constraints.
+\textbf{Trans. Evol. Comput.}, v. 18(4), p. 577--601, 2014.}
+
+\bibitem[Deb et al. 2002]{Deb2002}
+\abntrefinfo{Deb et al.}{DEB et al.}{2002}
+{DEB, K. et al. A fast and elitist multiobjective genetic algorithm: Nsga-ii.
+\textbf{Trans. Evol. Comput.}, v.~6(2), p. 182--197, 2002.}
+
+\bibitem[Dorigo, Maniezzo e Colorni 1996]{Dorigo1996}
+\abntrefinfo{Dorigo, Maniezzo e Colorni}{DORIGO; MANIEZZO; COLORNI}{1996}
+{DORIGO, M.; MANIEZZO, V.; COLORNI, A. Ant system: optimization by a colony of
+  cooperating agents.
+\textbf{IEEE Trans. on Systems, Man, and Cybernetics, Part B}, v.~26, n.~1, p.
+  29--41, 1996.}
+
+\bibitem[Fidanova 2003]{Fidanova2003}
+\abntrefinfo{Fidanova}{FIDANOVA}{2003}
+{FIDANOVA, S. Aco algorithm for mkp using various heuristic information. In:
+  DIMOV, I. et al. (Ed.). \textbf{Numerical Methods and Applications}. Berlin,
+  Heidelberg: Springer Berlin Heidelberg, 2003. p. 438--444.
+ISBN 978-3-540-36487-0.}
+
+\bibitem[França et al. 2017]{Franca2017}
+\abntrefinfo{França et al.}{FRANçA et al.}{2017}
+{FRANçA, T.~P. et al. A comparative analysis of moeas considering two discrete
+  optimization problems. In:  \textbf{2017 Brazilian Conference on Intelligent
+  Systems (BRACIS)}. [S.l.: s.n.], 2017. p. 402--407.}
+
+\bibitem[Goldberg 1989]{Goldberg1989}
+\abntrefinfo{Goldberg}{GOLDBERG}{1989}
+{GOLDBERG, D.~E. \textbf{Genetic Algorithms in Search, Optimization and Machine
+  Learning}. [S.l.]: Addison-Wesley Longman, 1989.}
+
+\bibitem[Hristakeva e Shrestha 2013]{Hristakeva2013}
+\abntrefinfo{Hristakeva e Shrestha}{HRISTAKEVA; SHRESTHA}{2013}
+{HRISTAKEVA, M.; SHRESTHA, D. Solving the 0-1 knapsack problem with genetic
+  algorithms.
+2013.}
+
+\bibitem[Ishibuchi, Akedo e Nojima 2015]{Ishibuchi2015}
+\abntrefinfo{Ishibuchi, Akedo e Nojima}{ISHIBUCHI; AKEDO; NOJIMA}{2015}
+{ISHIBUCHI, H.; AKEDO, N.; NOJIMA, Y. Behavior of multiobjective evolutionary
+  algorithms on many-objective knapsack problems.
+\textbf{Trans. Evol. Comput.}, v. 19(2), p. 264--283, 2015.}
+
+\bibitem[Ke et al. 2010]{Ke2010}
+\abntrefinfo{Ke et al.}{KE et al.}{2010}
+{KE, L. et al. An ant colony optimization approach for the multidimensional
+  knapsack problem.
+v.~16, p. 65--83, 2010.}
+
+\bibitem[Khuri, B{\"a}ck e Heitk{\"o}tter 1994]{Khuri1994}
+\abntrefinfo{Khuri, B{\"a}ck e Heitk{\"o}tter}{KHURI; B{\"A}CK;
+  HEITK{\"O}TTER}{1994}
+{KHURI, S.; B{\"A}CK, T.; HEITK{\"O}TTER, J. The zero/one multiple knapsack
+  problem and genetic algorithms. In:  \textbf{Symp. on Applied Computing}.
+  [S.l.: s.n.], 1994. p. 188--193.}
+
+\bibitem[Kong, Tian e Kao 2008]{kong2008}
+\abntrefinfo{Kong, Tian e Kao}{KONG; TIAN; KAO}{2008}
+{KONG, M.; TIAN, P.; KAO, Y. A new ant colony optimization algorithm for the
+  multidimensional knapsack problem.
+\textbf{Computers and Operations Research}, v.~35, n.~8, p. 2672 -- 2683, 2008.
+ISSN 0305-0548.
+Queues in Practice.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0305054806003236}.}
+
+\bibitem[Lafet{\'a} et al. 2016]{Lafeta2016}
+\abntrefinfo{Lafet{\'a} et al.}{LAFET{\'A} et al.}{2016}
+{LAFET{\'A}, T. F. d.~Q. et al. Many-objective evolutionary algorithms for
+  multicast routing with quality of service problem. In:  \textbf{Braz. Conf.
+  on Intelligent Systems}. [S.l.: s.n.], 2016. p. 187--192.}
+
+\bibitem[Leguizamon e Michalewicz 1999]{Leguizamon1999}
+\abntrefinfo{Leguizamon e Michalewicz}{LEGUIZAMON; MICHALEWICZ}{1999}
+{LEGUIZAMON, G.; MICHALEWICZ, Z. A new version of ant system for subset
+  problems. In:  \textbf{Proceedings of the 1999 Congress on Evolutionary
+  Computation-CEC99 (Cat. No. 99TH8406)}. [S.l.: s.n.], 1999. v.~2, p. 1464
+  Vol. 2.}
+
+\bibitem[Martello e Toth 1990]{Martello1990}
+\abntrefinfo{Martello e Toth}{MARTELLO; TOTH}{1990}
+{MARTELLO, S.; TOTH, P. \textbf{Knapsack Problems: Algorithms and Computer
+  Implementations}. [S.l.]: John Wiley \& Sons, Inc., 1990.}
+
+\bibitem[Pinto e Bar\'{a}n 2005]{Pinto2005}
+\abntrefinfo{Pinto e Bar\'{a}n}{PINTO; BAR\'{a}N}{2005}
+{PINTO, D.; BAR\'{a}N, B. Solving multiobjective multicast routing problem with
+  a new ant colony optimization approach. In:  \textbf{Int. Latin American
+  Conf. on Networking}. [S.l.: s.n.], 2005. p. 11--19.}
+
+\bibitem[Prim 1957]{Prim1957}
+\abntrefinfo{Prim}{PRIM}{1957}
+{PRIM, R.~C. Shortest connection networks and some generalizations.
+\textbf{The Bell System Technical Journal}, v.~36, n.~6, p. 1389--1401, Nov
+  1957.
+ISSN 0005-8580.}
+
+\bibitem[Riveros et al. 2016]{Riveros2016}
+\abntrefinfo{Riveros et al.}{RIVEROS et al.}{2016}
+{RIVEROS, F. et al. A many-objective ant colony optimization applied to the
+  traveling salesman problem.
+\textbf{J. of Computer Science \& Technology}, v. 16(2), p. 89--94, 2016.}
+
+\bibitem[While, Bradstreet e Barone 2012]{Bradstreet2012}
+\abntrefinfo{While, Bradstreet e Barone}{WHILE; BRADSTREET; BARONE}{2012}
+{WHILE, L.; BRADSTREET, L.; BARONE, L. A fast way of calculating exact
+  hypervolumes.
+\textbf{IEEE Transactions on Evolutionary Computation}, v.~16, n.~1, p. 86--95,
+  Feb 2012.
+ISSN 1089-778X.}
+
+\bibitem[Zhang e Li 2007]{Zhang2007}
+\abntrefinfo{Zhang e Li}{ZHANG; LI}{2007}
+{ZHANG, Q.; LI, H. Moea/d: A multiobjective evolutionary algorithm based on
+  decomposition.
+\textbf{Evol. Comput.}, v. 11(6), p. 712--731, 2007.}
+
+\bibitem[Zitzler, Laumanns e Thiele 2002]{Zitzler2002}
+\abntrefinfo{Zitzler, Laumanns e Thiele}{ZITZLER; LAUMANNS; THIELE}{2002}
+{ZITZLER, E.; LAUMANNS, M.; THIELE, L. Spea2: Improving the strength pareto
+  evolutionary algorithm for multiobjective optimization.
+2002.}
+
+\bibitem[Zitzler e Thiele 1999]{Zitzler1999}
+\abntrefinfo{Zitzler e Thiele}{ZITZLER; THIELE}{1999}
+{ZITZLER, E.; THIELE, L. Multiobjective evolutionary algorithms: a comparative
+  case study and the strength pareto approach.
+\textbf{Trans. Evol. Comput.}, v.~3(4), p. 257--271, 1999.}
 
 \end{thebibliography}

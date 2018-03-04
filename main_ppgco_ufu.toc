@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {3.2.2}Non-dominated Sorting Genetic Algorithm III (NSGA-III)}{42}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Algoritmo Evolutivo Multiobjetivo com Muitas Tabelas (AEMMT)}{42}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Algoritmo Evolutivo Multiobjetivo com M\IeC {\'u}ltiplas Domin\IeC {\^a}ncias (AEMMD)}{43}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Algoritmos many-objectives baseados em col\IeC {\^o}nias de formigas}{44}{section.3.3}
+\contentsline {section}{\numberline {3.3}Algoritmos many-objectives baseados em col\IeC {\^o}nias de formigas}{45}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Multi-Objective Ant Colony Optimization Algorithm (MOACS)}{45}{subsection.3.3.1}
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Problemas de teste}}{49}{chapter.4}
 \contentsline {section}{\numberline {4.1}Problema da mochila multiobjetivo}{49}{section.4.1}
@@ -30,22 +30,23 @@
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Estrat\IeC {\'e}gias evolutivas para o PMM}}{55}{chapter.5}
 \contentsline {section}{\numberline {5.1}Representa\IeC {\c c}\IeC {\~a}o da solu\IeC {\c c}\IeC {\~a}o}{55}{section.5.1}
 \contentsline {section}{\numberline {5.2}Cruzamento e muta\IeC {\c c}\IeC {\~a}o (AGs)}{56}{section.5.2}
-\contentsline {section}{\numberline {5.3}Constru\IeC {\c c}\IeC {\~a}o da solu\IeC {\c c}\IeC {\~a}o (ACOs)}{56}{section.5.3}
+\contentsline {section}{\numberline {5.3}Constru\IeC {\c c}\IeC {\~a}o da solu\IeC {\c c}\IeC {\~a}o (ACOs)}{57}{section.5.3}
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Estrat\IeC {\'e}gias evolutivas para o PRM}}{59}{chapter.6}
 \contentsline {section}{\numberline {6.1}Representa\IeC {\c c}\IeC {\~a}o da solu\IeC {\c c}\IeC {\~a}o}{59}{section.6.1}
 \contentsline {section}{\numberline {6.2}Inicializa\IeC {\c c}\IeC {\~a}o dos indiv\IeC {\'\i }duos}{60}{section.6.2}
 \contentsline {section}{\numberline {6.3}Cruzamento (AG)}{60}{section.6.3}
 \contentsline {section}{\numberline {6.4}Muta\IeC {\c c}\IeC {\~a}o (AG)}{61}{section.6.4}
 \contentsline {section}{\numberline {6.5}Constru\IeC {\c c}\IeC {\~a}o da solu\IeC {\c c}\IeC {\~a}o (ACO)}{62}{section.6.5}
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Algoritmo proposto}}{65}{chapter.7}
-\contentsline {section}{\numberline {7.1}Constru\IeC {\c c}\IeC {\~a}o das solu\IeC {\c c}\IeC {\~o}es}{68}{section.7.1}
-\contentsline {section}{\numberline {7.2}Atualiza\IeC {\c c}\IeC {\~a}o dos ferom\IeC {\^o}nios}{69}{section.7.2}
-\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {Experimentos}}{71}{chapter.8}
-\contentsline {section}{\numberline {8.1}Etapa 1: AG's multiobjetivos}{73}{section.8.1}
-\contentsline {section}{\numberline {8.2}Etapa 2: AG's many-objectives vs. MACO/D}{84}{section.8.2}
-\contentsline {section}{\numberline {8.3}Etapa 3: An\IeC {\'a}lise com hipervolume}{90}{section.8.3}
-\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase {Conclus\IeC {\~a}o}}{91}{chapter.9}
-\contentsline {section}{\numberline {9.1}Principais Contribui\IeC {\c c}\IeC {\~o}es}{91}{section.9.1}
-\contentsline {section}{\numberline {9.2}Trabalhos Futuros}{91}{section.9.2}
-\contentsline {section}{\numberline {9.3}Contribui\IeC {\c c}\IeC {\~o}es em Produ\IeC {\c c}\IeC {\~a}o Bibliogr\IeC {\'a}fica}{91}{section.9.3}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{93}{section*.12}
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Algoritmo proposto}}{67}{chapter.7}
+\contentsline {section}{\numberline {7.1}Constru\IeC {\c c}\IeC {\~a}o das solu\IeC {\c c}\IeC {\~o}es}{71}{section.7.1}
+\contentsline {section}{\numberline {7.2}Atualiza\IeC {\c c}\IeC {\~a}o dos ferom\IeC {\^o}nios}{72}{section.7.2}
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {Experimentos}}{73}{chapter.8}
+\contentsline {section}{\numberline {8.1}Etapa 1: AG's multiobjetivos}{75}{section.8.1}
+\contentsline {section}{\numberline {8.2}Etapa 2: MACO/D}{87}{section.8.2}
+\contentsline {section}{\numberline {8.3}Etapa 3: AG's \textit {many-objectives} vs. MACO/D}{90}{section.8.3}
+\contentsline {section}{\numberline {8.4}Etapa 4: An\IeC {\'a}lise com hipervolume}{98}{section.8.4}
+\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase {Conclus\IeC {\~a}o}}{99}{chapter.9}
+\contentsline {section}{\numberline {9.1}Principais Contribui\IeC {\c c}\IeC {\~o}es}{99}{section.9.1}
+\contentsline {section}{\numberline {9.2}Trabalhos Futuros}{99}{section.9.2}
+\contentsline {section}{\numberline {9.3}Contribui\IeC {\c c}\IeC {\~o}es em Produ\IeC {\c c}\IeC {\~a}o Bibliogr\IeC {\'a}fica}{99}{section.9.3}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{101}{section*.12}
