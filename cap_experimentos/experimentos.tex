@@ -464,14 +464,115 @@ No PMM, se o tempo de execução é uma preocupação, a melhor alternativa é o
 \section{Etapa 4: Análise com hipervolume}
 \label{section_experiments_3}
 
-A fim de testar propriamente o comportamento dos algoritmos em espaços de busca mais complexos que os utilizados nos experimentos das etapas 1 e 3, lançou-se mão de três novas redes e instâncias do problema da mochila com 100 e 200 itens. Como não é possível extrair Paretos estáveis para as redes $R_4$, $R_5$ e $R_6$, nem para os problemas da mochila com 50, 100 e 200 itens, não é interessante basear-se em métricas dependentes de tais Paretos para se tirar conclusões. Por isso, nesta etapa, testa-se unicamente a métrica hipervolume, independente do Pareto.
+A fim de testar propriamente o comportamento dos algoritmos em espaços de busca mais complexos que os utilizados nos experimentos das etapas 1 e 3, lançou-se mão de duas novas redes (redes 4 e 5) e duas novas instâncias do problema da mochila (100 e 200 itens). Como não é possível extrair Paretos estáveis para as redes $R_3$, $R_4$ e $R_5$, nem para os problemas da mochila com 50, 100 e 200 itens, não é interessante basear-se em métricas dependentes de tais Paretos para se tirar conclusões. Por isso, nesta etapa, testa-se unicamente as métrica hiper-volume e tempo, independentes do Pareto.
 
-O hiper-volume, junto ao \textit{inverse generational distance} $(IDG)$, é a métrica mais utilizada na literatura para se avaliar algoritmos many-objectives. O hipervolume, como explicado no início deste capítulo, calcula o volume da figura geométrica formada pelas distâncias das soluções a um ponto de referência pré-definido. Os pontos de referência utilizados em cada cenário são apresentados na tabela [!todo!].
+O hiper-volume, junto ao \textit{inverse generational distance} $(IDG)$, são as métricas mais utilizadas na literatura para se avaliar algoritmos many-objectives. O hiper-volume, como explicado no início deste capítulo, calcula o volume da figura geométrica formada pelas distâncias das soluções a um ponto de referência pré-definido. Os pontos de referência utilizados em cada cenário são apresentados na tabela \ref{table_exp4_pts_referencia}.
 
-Tabela de pontos de referência.
+Neste conjunto de experimentos, assim como na etapa 3, comparou-se apenas os cenários many-objectives, com 4, 5 e 6 objetivos. Por esse motivo, ficaram de fora dos testes os algoritmos clássicos NSGA-II e SPEA2. Em contra-partida incluiu-se 3 novos métodos many-objectives na comparação: SPEA2-SDE (AG), MOACS (ACO) e MOEA/D-ACO (ACO).
 
-Nesta etapa testou-se os algoritmos NSGA-III, SPEA2-SDE, MOEA/D, AEMMT, AEMMD, MOACS e MACO/D. Foram 3 formulações de objetivo para cada problema (4, 5 e 6 objetivos) e 3 instâncias, totalizando 18 cenários de teste. Foram realizadas 10 execuções para cada algoritmo em cada cenário e os resultados foram calculados através das médias dos hivervolumes de cada execução.
+Com relação aos algoritmos NSGA-III e SPEA2-SDE, na etapa 4, tomou-se uma outra atitude em relação às limitações no tamanho do Pareto. Ao invés de impedir o conjunto de soluções não-dominadas de crescerem além do tamanho máximo da população, ajustou-se esse limite para coincidi-lo com o tamanho médio dos Paretos encontrados pelos algoritmos que retornaram os maiores conjuntos de soluções. Dessa forma, ambos NSGA-III e SPEA2-SDE podem encontrar Paretos tão grandes quanto os demais algoritmos. A tabela \ref{table_exp4_pts_referencia} mostra os limites utilizados para cada cenário de teste.
 
-Falar sobre figuras.
-Exibir figuras.
-Discutir resultados.
+\begin{table}[!htbp]
+	\centering
+	\caption{Ponto de referência e limitações no tamanho do Pareto usados para cada cenário de teste}
+	\label{table_exp4_pts_referencia}
+	\begin{tabular}{clll}
+		\textbf{Instância}                                                       & \textbf{Obj.} & \textbf{Ponto de referência}                          & \textbf{Limite} \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PMM\\ 50 itens\end{tabular}}  & 4                  &                                                       &                                   \\
+		& 5                  &                                                       &                                   \\
+		& 6                  &                                                       &                                   \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PMM\\ 100 itens\end{tabular}} & 4                  &                                                       &                                   \\
+		& 5                  &                                                       &                                   \\
+		& 6                  &                                                       &                                   \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PMM\\ 200 itens\end{tabular}} & 4                  &                                                       &                                   \\
+		& 5                  &                                                       &                                   \\
+		& 6                  &                                                       &                                   \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PRM\\ Rede 3\end{tabular}}    & $P_4$              & {[}0.758449304, 283, 115, 52{]}                       & 90                                \\
+		& $P_5$              & {[}0.47215566, 0.776046738, 304, 159, 56{]}           & 250                               \\
+		& $P_6$              & {[}0.471416081, 0.776046738, 310, 159, 56, 83.459{]}  & 400                               \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PRM\\ Rede 4\end{tabular}}    & $P_4$              & {[}0.717830882, 185, 107, 33{]}                       & 90                                \\
+		& $P_5$              & {[}0.454221232, 0.776046738, 256, 157, 42{]}          & 200                               \\
+		& $P_6$              & {[}0.457194502, 0.776046738, 239, 157, 40, 80.667{]}  & 350                               \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PRM\\ Rede 5\end{tabular}}    & $P_4$              & {[}0.776046738, 259, 146, 43{]}                       & 90                                \\
+		& $P_5$              & {[}0.458729196, 0.776046738, 296, 166, 49{]}          & 100                               \\
+		& $P_6$              & {[}0.458729196, 0.776046738, 287, 177, 48, 101.938{]} & 250                               \\ \hline
+	\end{tabular}
+\end{table}
+
+Com relação aos algoritmos baseados em colônias de formigas (MOEA/D-ACO, MOACS e MACO/D), afim de testar o \textit{framework} da forma mais isolada possível, foi utilizada a mesma estratégia de construção da solução para os três métodos. Isto é, as estratégias para se criar uma solução a partir da tabela de feromônios e das heurísticas dos artigos originais do MOEA/D-ACO e do MOACS foram ignoradas em favor das estratégias utilizadas no MACO/D, algoritmo proposto nesta dissertação. A construção da solução para o ambos os problemas foi explicada na seção \ref{section_construcao_solucao}. No MOEA/D-ACO, cada formiga possui uma solução corrente que interfere nas probabilidades ao construir uma nova solução, por isso o processo de construção foi adaptado para suportar essa característica, sempre, ao calcular o feromônio no MOEA/D-ACO, soma-se um novo termo correspondente à presença ou ausência da aresta (ou item) na solução atual da formiga.
+
+Nesta etapa testou-se os algoritmos NSGA-III, SPEA2-SDE, MOEA/D, AEMMT, AEMMD, MOEA/D-ACO, MOACS, e MACO/D. Foram 3 formulações de objetivo para cada problema (4, 5 e 6 objetivos) e 3 instâncias, totalizando 18 cenários de teste (problema, instância e objetivo). Foram realizadas 30 execuções para cada algoritmo em cada cenário e os resultados foram calculados através das médias dos hiper-volumes de cada execução. O tempo foi avaliado através da média de três execuções em uma máquina i7-3770k@4.36GHz.
+
+As figuras \ref{fig_exp4_r3o4} a \ref{fig_exp4_r5o6} mostram os resultados para os 9 cenários do PRM. O hiper-volume é indicado pelas barras e o eixo vertical do lado esquerdo, enquanto o tempo de execução é mostrado pela linha e o eixo vertical do lado direito.
+
+\begin{figure*}[!htbp]
+	\caption{Rede 3, 4 objetivos}
+	\label{fig_exp4_r3o4}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r3o4}
+\end{figure*}
+
+Nesta etapa, a rede 3 com 4 objetivos é o cenário mais simples do PRM. Nesse caso o AEMMD apresenta o pior hiper-volume, enquanto os ACO's MOACS e MACO/D se destacam, sendo o MOACS o melhor entre os dois, tanto em termos de hiper-volume quanto tempo. O AEMMT atinge hiper-volume quase tão bom quanto o MACO/D mas leva consideravelmente mais tempo para executar. Neste cenário, o MOACS é claramente a melhor estratégia para se resolver o problema.
+
+\begin{figure*}[!htbp]
+	\caption{Rede 3, 5 objetivos}
+	\label{fig_exp4_r3o5}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r3o5}
+\end{figure*}
+
+Para a rede 3 com 5 objetivos, a simples modificação que o SDE traz para o SPEA2 o permite obter o melhor hiper-volume entre todos os algoritmos. Infelizmente, um dos piores problemas do SPEA2, o custo do algoritmo, não é resolvido no SPEA2-SDE e, dessa forma, leva-se muito tempo para executá-lo quando comparado às demais estratégias. Os algoritmos NSGA-III, MOEA/D, AEMMT e MOEA/D-ACO obtiveram todos performance ruins. O AEMMD apresentou ótimo valor de hiper-volume com tempo de execução razoável, enquanto os ACO's MOACS e MACO/D precisaram de menos tempo para executar e conseguiram hiper-volumes bons, mas inferiores ao AEMMD. Neste cenário, não é claro qual é o melhor algoritmo. Se um bom hiper-volume é mais desejável que um rápido tempo de execução, o AEMMD é a melhor opção, caso seja de extrema importância a rapidez do algoritmo, ambos MOACS e MACO/D fariam bem o trabalho.
+
+\begin{figure*}[!htbp]
+	\caption{Rede 3, 6 objetivos}
+	\label{fig_exp4_r3o6}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r3o6}
+\end{figure*}
+
+Na rede 3 com 6 objetivos, o SPEA2-SDE repete o comportamento do cenário anterior, ou seja, consegue um resultado de hiper-volume muito bom, mas a um custo muito alto de tempo. Dentre os demais algoritmos, o único que se destaca é o MOACS, que possui ótimo resultado de hiper-volume e um custo muito pequeno em tempo: 7,3 segundos. O AEMMD consegue hiper-volume pouco melhor que o MOACS, mas a um custo superior em mais de três vezes: 26,6 segundos.
+
+\begin{figure*}[!htbp]
+	\caption{Rede 4, 4 objetivos}
+	\label{fig_exp4_r4o4}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r4o4}
+\end{figure*}
+
+Na rede 4 com 4 objetivos todos os algoritmos genéticos tiveram performance bem fraca, os únicos métodos que apresentaram bom desempenho foram aqueles baseados em colônias de formigas. Dentre os ACO's, destacaram-se o MOEA/D-ACO, que executa em menor tempo e obtém um bom hiper-volume, e o MOACS, que leva mais tempo para executar, mas em compensação produz hiper-volume levemente melhor.
+
+\begin{figure*}[!htbp]
+	\caption{Rede 4, 5 objetivos}
+	\label{fig_exp4_r4o5}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r4o5}
+\end{figure*}
+
+Com 5 objetivos, na rede 4, o SPEA2-SDE volta a mostrar seu potencial quanto ao hiper-volume, mas seu alto custo o torna um algoritmo menos interessante em aplicações práticas. Os algoritmos AEMMD e MOACS são os que apresentam melhor desempenho, o AEMMD consegue maior hiper-volume e leva 10 segundos para executar, enquanto o MOACS garante um resultado levemente pior e executa em 7,3 segundos.
+
+\begin{figure*}[!htbp]
+	\caption{Rede 4, 6 objetivos}
+	\label{fig_exp4_r4o6}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r4o6}
+\end{figure*}
+
+Para 6 objetivos, na rede 4, o custo em tempo do SPEA2 dispara, o que inclusive dificulta a visualização do tempo nos demais algoritmos. O melhor hiper-volume é dado pelo MACO/D, o segundo pelo SPEA2-SDE e o terceiro pelo MOACS, sendo a  diferença entre os três muito pequena. O SPEA-SDE possui péssima relação custo/benefício quando comparado aos dois ACO's. Entre o MOACS e o MACO/D, o segundo consegue um conjunto de soluções de qualidade levemente superior ao primeiro e leva apenas um segundo a mais para executar, portanto é preferível.
+
+\begin{figure*}[!htbp]
+	\caption{Rede 5, 4 objetivos}
+	\label{fig_exp4_r5o4}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r5o4}
+\end{figure*}
+
+A rede 5 é a mais complexa utilizada em nossos experimentos, para 4 objetivos, o NSGA-III apresentou o pior resultado. O MOEA/D-ACO levou praticamente o mesmo tempo que o algoritmo original MOEA/D, mas obteve um hiper-volume consideravelmente pior; e os demais algoritmos não variaram muito em questão de hiper-volume. A melhor relação custo/benefício foi obtida pelo MOACS, que apresentou o segundo maior hiper-volume e um tempo de execução razoável.
+
+\begin{figure*}[!htbp]
+	\caption{Rede 5, 5 objetivos}
+	\label{fig_exp4_r5o5}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r5o5}
+\end{figure*}
+
+Na rede 5 com 5 objetivos, os melhores hiper-volumes são dados pelo AEMMD e MACO/D. O AEMMD apresenta um conjunto de soluções de melhor qualidade, mas leva um pouco mais de tempo para calculá-las, enquanto as soluções encontradas pelo MACO/D são levemente piores e o tempo necessário para obtê-las é um pouco menor.
+
+\begin{figure*}[!htbp]
+	\caption{Rede 5, 6 objetivos}
+	\label{fig_exp4_r5o6}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r5o6}
+\end{figure*}
+
+O cenário mais complexo do PRM nesta etapa é dado pela rede 5 com 6 objetivos. Nele, os piores resultados foram encontrados pelo NSGA-III e MOEA/D-ACO. O SPEA2-SDE e o AEMMT obtiveram bons hiper-volumes, mas levaram muito tempo para executar. Novamente, repetindo o ocorrido no cenário anterior, o AEMMD e MACO/D foram os algoritmos que atingiram os melhores resultados, ambos com diferenças mínimas um para o outro: o AEMMD com hiper-volume melhor e tempo pior, e o MACO/D com hiper-volume pior e tempo melhor.

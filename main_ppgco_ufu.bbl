@@ -21,6 +21,16 @@
 {BARAN, B.; SCHAERER, M. \textbf{A Multiobjective Ant Colony System for Vehicle
   Routing Problem with Time Windows.} 2003. 97-102~p.}
 
+\bibitem[Beume, Naujoks e Emmerich 2007]{Beume2007}
+\abntrefinfo{Beume, Naujoks e Emmerich}{BEUME; NAUJOKS; EMMERICH}{2007}
+{BEUME, N.; NAUJOKS, B.; EMMERICH, M. Sms-emoa: Multiobjective selection based
+  on dominated hypervolume.
+\textbf{European Journal of Operational Research}, v.~181, n.~3, p. 1653 --
+  1669, 2007.
+ISSN 0377-2217.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0377221706005443}.}
+
 \bibitem[Brasil, Delbem e Silva 2013]{Brasil2013}
 \abntrefinfo{Brasil, Delbem e Silva}{BRASIL; DELBEM; SILVA}{2013}
 {BRASIL, C. R.~S.; DELBEM, A. C.~B.; SILVA, F. L.~B. da. Multiobjective
@@ -75,6 +85,16 @@ Dispon{\'\i}vel em:
   DIMOV, I. et al. (Ed.). \textbf{Numerical Methods and Applications}. Berlin,
   Heidelberg: Springer Berlin Heidelberg, 2003. p. 438--444.
 ISBN 978-3-540-36487-0.}
+
+\bibitem[Fingler et al. 2014]{Fingler2014}
+\abntrefinfo{Fingler et al.}{FINGLER et al.}{2014}
+{FINGLER, H. et al. A cuda based solution to the multidimensional knapsack
+  problem using the ant colony optimization.
+\textbf{Procedia Computer Science}, v.~29, p. 84 -- 94, 2014.
+ISSN 1877-0509.
+2014 International Conference on Computational Science.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S1877050914001859}.}
 
 \bibitem[França et al. 2017]{Franca2017}
 \abntrefinfo{França et al.}{FRANçA et al.}{2017}
@@ -135,6 +155,14 @@ Dispon{\'\i}vel em:
   Computation-CEC99 (Cat. No. 99TH8406)}. [S.l.: s.n.], 1999. v.~2, p. 1464
   Vol. 2.}
 
+\bibitem[Li, Yang e Liu 2014]{Spea2SDE}
+\abntrefinfo{Li, Yang e Liu}{LI; YANG; LIU}{2014}
+{LI, M.; YANG, S.; LIU, X. Shift-based density estimation for pareto-based
+  algorithms in many-objective optimization.
+\textbf{IEEE Transactions on Evolutionary Computation}, v.~18, n.~3, p.
+  348--365, June 2014.
+ISSN 1089-778X.}
+
 \bibitem[Martello e Toth 1990]{Martello1990}
 \abntrefinfo{Martello e Toth}{MARTELLO; TOTH}{1990}
 {MARTELLO, S.; TOTH, P. \textbf{Knapsack Problems: Algorithms and Computer
@@ -158,6 +186,12 @@ ISSN 0005-8580.}
 {RIVEROS, F. et al. A many-objective ant colony optimization applied to the
   traveling salesman problem.
 \textbf{J. of Computer Science \& Technology}, v. 16(2), p. 89--94, 2016.}
+
+\bibitem[Souza e Pozo 2015]{SouzaPozo2015}
+\abntrefinfo{Souza e Pozo}{SOUZA; POZO}{2015}
+{SOUZA, M.~Z. d.; POZO, A. T.~R. Multiobjective binary aco for unconstrained
+  binary quadratic programming. In:  \textbf{2015 Brazilian Conference on
+  Intelligent Systems (BRACIS)}. [S.l.: s.n.], 2015. p. 86--91.}
 
 \bibitem[While, Bradstreet e Barone 2012]{Bradstreet2012}
 \abntrefinfo{While, Bradstreet e Barone}{WHILE; BRADSTREET; BARONE}{2012}

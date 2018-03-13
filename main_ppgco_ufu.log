@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  4 MAR 2018 20:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  13 MAR 2018 15:54
 entering extended mode
 **./main_ppgco_ufu.tex
 (main_ppgco_ufu.tex
@@ -1124,9 +1124,16 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip273
+\multirow@cntb=\count190
+\multirow@dima=\skip274
+\bigstrutjot=\dimen170
+)
 (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\lipsum\lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count190
+\c@lips@count=\count191
 )
 (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\acronym\acronym.sty
 Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
@@ -1137,8 +1144,8 @@ Package: suffix 2006/07/15 1.5a Variant command support
 (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty
 (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex
 \@xs@message=\write4
-\integerpart=\count191
-\decimalpart=\count192
+\integerpart=\count192
+\decimalpart=\count193
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
@@ -1155,10 +1162,10 @@ Package xcolor Info: Driver file: pdftex.def on input line 225.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks38
-\minrowclearance=\skip273
+\minrowclearance=\skip275
 )
 LaTeX Info: Redefining \color on input line 709.
-\rownum=\count193
+\rownum=\count194
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -1187,27 +1194,27 @@ Writing nomenclature file main_ppgco_ufu.nlo
 (cap_experimentos/experimentos.aux) (cap_conclusao/conclusao.aux))
 \openout1 = `main_ppgco_ufu.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 126.
-LaTeX Font Info:    ... okay on input line 126.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 126.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 127.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<t1.cmap>>
 \AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring ON on input line 126.
+Package hyperref Info: Link coloring ON on input line 127.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1215,28 +1222,28 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count194
+\c@section@level=\count266
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 126.
-LaTeX Info: Redefining \ref on input line 126.
-LaTeX Info: Redefining \pageref on input line 126.
-LaTeX Info: Redefining \nameref on input line 126.
+LaTeX Info: Redefining \nameref on input line 127.
+LaTeX Info: Redefining \ref on input line 127.
+LaTeX Info: Redefining \pageref on input line 127.
+LaTeX Info: Redefining \nameref on input line 127.
 \myptabbox=\box37
-\myptabboxwidth=\skip274
+\myptabboxwidth=\skip276
 (C:\Users\tiago\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count266
-\scratchdimen=\dimen170
+\scratchcounter=\count267
+\scratchdimen=\dimen171
 \scratchbox=\box38
-\nofMPsegments=\count267
-\nofMParguments=\count268
+\nofMPsegments=\count268
+\nofMParguments=\count269
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count269
-\MPscratchDim=\dimen171
-\MPnumerator=\count270
-\makeMPintoPDFobject=\count271
+\MPscratchCnt=\count270
+\MPscratchDim=\dimen172
+\MPnumerator=\count271
+\makeMPintoPDFobject=\count272
 \everyMPtoPDFconversion=\toks40
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1253,7 +1260,7 @@ G,.JBIG2,.JB2,.eps]
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 126.
+(lastpage)             ! on input line 127.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
@@ -1266,41 +1273,41 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 <figs/logo-ufu2.png, id=4, 160.6pt x 160.6pt>
 File: figs/logo-ufu2.png Graphic file (type png)
  <use figs/logo-ufu2.png>
-Package pdftex.def Info: figs/logo-ufu2.png used on input line 137.
+Package pdftex.def Info: figs/logo-ufu2.png used on input line 138.
 (pdftex.def)             Requested size: 144.54pt x 144.54355pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 137.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 138.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<ot1.cmap>>
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 137.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 138.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oml.cmap>>
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 137
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 138
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oms.cmap>>
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 137
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 138
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 137.
+(Font)              <12> on input line 138.
 <<omx.cmap>>
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 137.
+(Font)              <8> on input line 138.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 137.
+(Font)              <6> on input line 138.
 
-Overfull \vbox (73.68982pt too high) detected at line 137
+Overfull \vbox (73.68982pt too high) detected at line 138
  []
 
 [1
@@ -1309,27 +1316,27 @@ Overfull \vbox (73.68982pt too high) detected at line 137
 -ufu2.png>] [2
 
 ]
-\tampar=\skip275
-\tamconcetracao=\skip276
-\tamorientador=\skip277
-\tamcoorientador=\skip278
+\tampar=\skip277
+\tamconcetracao=\skip278
+\tamorientador=\skip279
+\tamcoorientador=\skip280
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []\T1/lmr/m/n/12 Dissertação de mes-trado apre-sen-tada ao
  []
 
 
-Underfull \hbox (badness 3333) in paragraph at lines 137--137
+Underfull \hbox (badness 3333) in paragraph at lines 138--138
 \T1/lmr/m/n/12 Pro-grama de Pós-graduação da Fa-cul-dade
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 
  []
 
@@ -1337,7 +1344,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.137 \maketitle
+l.138 \maketitle
                  [1
 
 
@@ -1346,77 +1353,77 @@ l.137 \maketitle
 File: fichaCatalografica.pdf Graphic file (type pdf)
 
 <use fichaCatalografica.pdf>
-Package pdftex.def Info: fichaCatalografica.pdf used on input line 137.
+Package pdftex.def Info: fichaCatalografica.pdf used on input line 138.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: fichaCatalografica.pdf Graphic file (type pdf)
  <use fichaCatalografica.pdf>
-Package pdftex.def Info: fichaCatalografica.pdf used on input line 137.
+Package pdftex.def Info: fichaCatalografica.pdf used on input line 138.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
 <fichaCatalografica.pdf, id=29, page=1, 597.55246pt x 845.07718pt>
 File: fichaCatalografica.pdf Graphic file (type pdf)
 
 <use fichaCatalografica.pdf, page 1>
-Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 137.
+Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: fichaCatalografica.pdf Graphic file (type pdf)
  <use fichaCatalografica.pdf, page 1>
-Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 137.
+Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: fichaCatalografica.pdf Graphic file (type pdf)
 
 <use fichaCatalografica.pdf, page 1>
-Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 137.
+Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: fichaCatalografica.pdf Graphic file (type pdf)
  <use fichaCatalografica.pdf, page 1>
-Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 137.
+Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.137 \maketitle
+l.138 \maketitle
                 
 File: fichaCatalografica.pdf Graphic file (type pdf)
  <use fichaCatalografica.pdf, page 1>
-Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 137.
+Package pdftex.def Info: fichaCatalografica.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
  [2 <./fichaCatalografica.pdf>] <folhaAprovacao.pdf, id=42, 614.295pt x 794.97p
 t>
 File: folhaAprovacao.pdf Graphic file (type pdf)
 
 <use folhaAprovacao.pdf>
-Package pdftex.def Info: folhaAprovacao.pdf used on input line 137.
+Package pdftex.def Info: folhaAprovacao.pdf used on input line 138.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: folhaAprovacao.pdf Graphic file (type pdf)
  <use folhaAprovacao.pdf>
-Package pdftex.def Info: folhaAprovacao.pdf used on input line 137.
+Package pdftex.def Info: folhaAprovacao.pdf used on input line 138.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 <folhaAprovacao.pdf, id=45, page=1, 614.295pt x 794.97pt>
 File: folhaAprovacao.pdf Graphic file (type pdf)
 
 <use folhaAprovacao.pdf, page 1>
-Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 137.
+Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: folhaAprovacao.pdf Graphic file (type pdf)
  <use folhaAprovacao.pdf, page 1>
-Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 137.
+Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: folhaAprovacao.pdf Graphic file (type pdf)
 
 <use folhaAprovacao.pdf, page 1>
-Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 137.
+Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: folhaAprovacao.pdf Graphic file (type pdf)
  <use folhaAprovacao.pdf, page 1>
-Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 137.
+Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: folhaAprovacao.pdf Graphic file (type pdf)
 
 <use folhaAprovacao.pdf, page 1>
-Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 137.
+Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 138.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [3
 
@@ -1427,16 +1434,16 @@ Package pdftex.def Info: folhaAprovacao.pdf, page1 used on input line 137.
 ]
 
 LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
-(Font)              using `T1/lmr/bx/n' instead on input line 152.
+(Font)              using `T1/lmr/bx/n' instead on input line 153.
 
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 152.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 153.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmss/bx/sc' undefined
-(Font)              using `T1/lmss/bx/n' instead on input line 152.
+(Font)              using `T1/lmss/bx/n' instead on input line 153.
 
 [7
 
@@ -1446,10 +1453,10 @@ LaTeX Font Warning: Font shape `T1/lmss/bx/sc' undefined
 
 ]
 
-LaTeX Warning: Citation `NBR6028:2003' on page 11 undefined on input line 171.
+LaTeX Warning: Citation `NBR6028:2003' on page 11 undefined on input line 172.
 
 
-LaTeX Warning: Reference `cap_exemplos' on page 11 undefined on input line 174.
+LaTeX Warning: Reference `cap_exemplos' on page 11 undefined on input line 175.
 
 
 [11
@@ -1460,10 +1467,10 @@ LaTeX Warning: Reference `cap_exemplos' on page 11 undefined on input line 174.
 
 ] [14
 
-] (main_ppgco_ufu.lof) [15] [16
+] (main_ppgco_ufu.lof [15]) [16] (main_ppgco_ufu.lot)
+[17
 
-] (main_ppgco_ufu.lot)
-[17] [18
+] [18
 
 ] (abrev/Abreviaturas.tex) [19
 
@@ -1476,16 +1483,47 @@ n de-com-po-si-tion (MOEA/D)[][] []
  []
 
 
-Overfull \hbox (1.1957pt too wide) in paragraph at lines 24--24
+Overfull \hbox (1.1957pt too wide) in paragraph at lines 25--25
  [][] [][][]\T1/lmr/m/n/12 Algoritmo Evo-lu-tivo Mul-ti-ob-je-tivo com Múl-ti-p
 las Do-mi-nân-cias (AEMMD)[][] []  
+ []
+
+
+Overfull \hbox (0.23947pt too wide) in paragraph at lines 28--28
+ [][] [][][]\T1/lmr/m/n/12 Multiobjective evo-lu-ti-o-nary al-go-rithm ba-sed o
+n de-com-po-si-tion and ACO 
  []
 
 [21
 
 ]
+Overfull \hbox (2.03773pt too wide) detected at line 50
+ \T1/lmr/bx/n/12 100
+ []
+
+
+Overfull \hbox (2.03773pt too wide) detected at line 51
+ \T1/lmr/bx/n/12 107
+ []
+
+
 Overfull \hbox (2.03773pt too wide) detected at line 52
- \T1/lmr/bx/n/12 101
+ \T1/lmr/bx/n/12 107
+ []
+
+
+Overfull \hbox (2.03773pt too wide) detected at line 53
+ \T1/lmr/bx/n/12 107
+ []
+
+
+Overfull \hbox (2.03773pt too wide) detected at line 54
+ \T1/lmr/bx/n/12 107
+ []
+
+
+Overfull \hbox (2.03773pt too wide) detected at line 55
+ \T1/lmr/bx/n/12 109
  []
 
 ) [22]
@@ -1518,7 +1556,7 @@ LaTeX Warning: Command \c invalid in math mode on input line 82.
 \openout2 = `cap_otimizacao-multi/otimizacao-multi.aux'.
 
  (cap_otimizacao-multi/otimizacao-multi.tex
-<cap_otimizacao-multi/figs/pareto.png, id=437, 279.0425pt x 280.04625pt>
+<cap_otimizacao-multi/figs/pareto.png, id=465, 279.0425pt x 280.04625pt>
 File: cap_otimizacao-multi/figs/pareto.png Graphic file (type png)
 
 <use cap_otimizacao-multi/figs/pareto.png>
@@ -1562,57 +1600,69 @@ LaTeX Warning: Command \~ invalid in math mode on input line 72.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41]
-<cap_otimizacao-multi/figs/aeemt-tabelas.png, id=500, 993.7125pt x 650.43pt>
+Overfull \hbox (8.6337pt too wide) in paragraph at lines 143--143
+[]\T1/lmr/bx/n/14.4 SPEA2 with Shift-Based Den-sity Es-ti-ma-tion (SPEA2-SDE) 
+ []
+
+[42]
+<cap_otimizacao-multi/figs/aeemt-tabelas.png, id=535, 993.7125pt x 650.43pt>
 File: cap_otimizacao-multi/figs/aeemt-tabelas.png Graphic file (type png)
 
 <use cap_otimizacao-multi/figs/aeemt-tabelas.png>
 Package pdftex.def Info: cap_otimizacao-multi/figs/aeemt-tabelas.png used on in
-put line 152.
+put line 157.
 (pdftex.def)             Requested size: 455.0pt x 297.82188pt.
- [42] [43pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.3.2}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.163 
-       <./cap_otimizacao-multi/figs/aeemt-tabelas.png>]
-<cap_otimizacao-multi/figs/aeemd-tabelas.png, id=513, 993.7125pt x 387.4475pt>
+Underfull \vbox (badness 3364) has occurred while \output is active []
+
+ [43]
+<cap_otimizacao-multi/figs/aeemd-tabelas.png, id=543, 993.7125pt x 387.4475pt>
 File: cap_otimizacao-multi/figs/aeemd-tabelas.png Graphic file (type png)
 
 <use cap_otimizacao-multi/figs/aeemd-tabelas.png>
 Package pdftex.def Info: cap_otimizacao-multi/figs/aeemd-tabelas.png used on in
-put line 170.
+put line 175.
 (pdftex.def)             Requested size: 455.0pt x 177.40625pt.
 
-Overfull \hbox (24.20482pt too wide) in paragraph at lines 173--174
+Overfull \hbox (24.20482pt too wide) in paragraph at lines 178--179
 []\T1/lmr/m/n/12 Com as ta-be-las cri-a-das, gera-se um nú-mero pré-definido de
  so-lu-ções ale-a-tó-rias, distribuindo-
+ []
+
+[44pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.179 
+       <./cap_otimizacao-multi/figs/aeemt-tabelas.png>]
+Overfull \hbox (6.62552pt too wide) in paragraph at lines 184--184
+[]\T1/lmr/bx/n/14.4 Multi-Objective Ant Co-lony Op-ti-mi-za-tion Al-go-rithm (M
+O-
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [45pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.178 
-       <./cap_otimizacao-multi/figs/aeemd-tabelas.png>]
-Overfull \hbox (6.62552pt too wide) in paragraph at lines 179--179
-[]\T1/lmr/bx/n/14.4 Multi-Objective Ant Co-lony Op-ti-mi-za-tion Al-go-rithm (M
-O-
- []
+l.187 
+       <./cap_otimizacao-multi/figs/aeemd-tabelas.png>] [46] [47] [48] [49]
 
-[45] [46]) [47]
+Package hyperref Warning: Suppressing empty link on input line 268.
+
+) [50]
 \openout2 = `cap_problemas/problemas.aux'.
 
- (cap_problemas/problemas.tex [48
+ (cap_problemas/problemas.tex [51
 
 
 
-] [49] [50]
-<cap_problemas/figs/prm_grafo.png, id=581, 696.6025pt x 258.9675pt>
+] [52]
+<cap_problemas/figs/prm_grafo.png, id=658, 696.6025pt x 258.9675pt>
 File: cap_problemas/figs/prm_grafo.png Graphic file (type png)
 
 <use cap_problemas/figs/prm_grafo.png>
@@ -1620,7 +1670,7 @@ Package pdftex.def Info: cap_problemas/figs/prm_grafo.png used on input line 28
 .
 (pdftex.def)             Requested size: 455.0pt x 169.14877pt.
 
-<cap_problemas/figs/prm_mono.png, id=589, 583.17876pt x 613.29124pt>
+<cap_problemas/figs/prm_mono.png, id=666, 583.17876pt x 613.29124pt>
 File: cap_problemas/figs/prm_mono.png Graphic file (type png)
 
 <use cap_problemas/figs/prm_mono.png>
@@ -1628,20 +1678,20 @@ Package pdftex.def Info: cap_problemas/figs/prm_mono.png used on input line 35.
 
 (pdftex.def)             Requested size: 364.00139pt x 382.8101pt.
 
-<cap_problemas/figs/prm_multi.png, id=593, 429.73973pt x 225.05557pt>
+<cap_problemas/figs/prm_multi.png, id=670, 429.73973pt x 225.05557pt>
 File: cap_problemas/figs/prm_multi.png Graphic file (type png)
 
 <use cap_problemas/figs/prm_multi.png>
 Package pdftex.def Info: cap_problemas/figs/prm_multi.png used on input line 46
 .
 (pdftex.def)             Requested size: 455.0pt x 238.29333pt.
- [51pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [53pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.54 \end{enumerate}
-                     <./cap_problemas/figs/prm_grafo.png>] [52pdfTeX warning (e
+                     <./cap_problemas/figs/prm_grafo.png>] [54pdfTeX warning (e
 xt4): destination with the same identifier (name{figure.4.5}) has been already 
 used, duplicate ignored
 
@@ -1655,12 +1705,12 @@ l.54 \end{enumerate}
                                                   \fi \fi 
 l.54 \end{enumerate}
                      <./cap_problemas/figs/prm_mono.png> <./cap_problemas/figs/
-prm_multi.png>]) [53] [54pdfTeX warning (ext4): destination with the same ident
+prm_multi.png>]) [55] [56pdfTeX warning (ext4): destination with the same ident
 ifier (name{table.4.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.233 \include{cap_problemas/problemas}
+l.234 \include{cap_problemas/problemas}
                                        ]
 \openout2 = `cap_estrategias-pmm/estrategias-pmm.aux'.
 
@@ -1669,14 +1719,14 @@ l.233 \include{cap_problemas/problemas}
 
 Package hyperref Warning: Suppressing empty link on input line 5.
 
-[55
+[57
 
 
 
 ]
 Underfull \vbox (badness 2073) has occurred while \output is active []
 
- [56pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [58pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1693,15 +1743,15 @@ fe-rir ao peso do item: $\OML/lmm/m/it/12 h[]\OT1/lmr/m/n/12 (\OML/lmm/m/it/12
 item\OT1/lmr/m/n/12 ) =
  []
 
-[57]) [58]
+[59]) [60]
 \openout2 = `cap_estrategias-prm/estrategias-prm.aux'.
 
- (cap_estrategias-prm/estrategias-prm.tex [59
+ (cap_estrategias-prm/estrategias-prm.tex [61
 
 
 
 ]
-<cap_estrategias-prm/figs/prm-cruzamento-caminho.png, id=696, 1346.02875pt x 60
+<cap_estrategias-prm/figs/prm-cruzamento-caminho.png, id=767, 1346.02875pt x 60
 9.27625pt>
 File: cap_estrategias-prm/figs/prm-cruzamento-caminho.png Graphic file (type pn
 g)
@@ -1709,51 +1759,51 @@ g)
 Package pdftex.def Info: cap_estrategias-prm/figs/prm-cruzamento-caminho.png us
 ed on input line 33.
 (pdftex.def)             Requested size: 455.0pt x 205.95189pt.
- [60]
+ [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+ [63pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
 8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.75 
-      <./cap_estrategias-prm/figs/prm-cruzamento-caminho.png>] [62] [63]
-[64]) [65]
+      <./cap_estrategias-prm/figs/prm-cruzamento-caminho.png>] [64] [65]
+[66]) [67]
 \openout2 = `cap_algoritmo-proposto/algoritmo-proposto.aux'.
 
- (cap_algoritmo-proposto/algoritmo-proposto.tex [66
+ (cap_algoritmo-proposto/algoritmo-proposto.tex [68
 
 
 
-] [67]
+] [69]
 Overfull \hbox (16.82826pt too wide) in paragraph at lines 26--27
 []\T1/lmr/m/n/12 O pri-meiro passo do MACO/D é criar as es-tru-tu-ras de fe-rom
 ô-nio $\OML/lmm/m/it/12 P \OT1/lmr/m/n/12 = \OMS/lmsy/m/n/12 f\OML/lmm/m/it/12 
 p[]; p[]; :::; p[]; :::; p[]\OMS/lmsy/m/n/12 g$\T1/lmr/m/n/12 ,
  []
 
-[68]
+[70]
 Overfull \hbox (0.57877pt too wide) in paragraph at lines 38--39
 []\T1/lmr/m/n/12 Inicialmente, os cinco sub-pro-ble-mas mais sim-ples são ati-v
 a-dos ($\OML/lmm/m/it/12 P[] \OT1/lmr/m/n/12 = \OMS/lmsy/m/n/12 f\OML/lmm/m/it/
 12 p[]; p[]; :::; p[]\OMS/lmsy/m/n/12 g$\T1/lmr/m/n/12 ).
  []
 
-[69] [70] [71]) [72]
+[71] [72] [73]) [74]
 \openout2 = `cap_experimentos/experimentos.aux'.
 
- (cap_experimentos/experimentos.tex [73
+ (cap_experimentos/experimentos.tex [75
 
 
 
-] [74]
+] [76]
 Overfull \hbox (5.38641pt too wide) in paragraph at lines 29--30
 []\T1/lmr/m/n/12 Neste etapa testou-se os al-go-rit-mos NSGA-II, NSGA-III, SPEA
 2, MOEA/D e AEMMT.
  []
 
-[75] <cap_experimentos/figs/etapa1/er-mkp-30.pdf, id=862, 2007.5pt x 803.0pt>
+[77] <cap_experimentos/figs/etapa1/er-mkp-30.pdf, id=933, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mkp-30.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mkp-30.pdf>
@@ -1761,7 +1811,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mkp-30.pdf used on inp
 ut line 82.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/gd-mkp-30.pdf, id=863, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mkp-30.pdf, id=934, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mkp-30.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mkp-30.pdf>
@@ -1769,14 +1819,14 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mkp-30.pdf used on inp
 ut line 83.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/ps-mkp-30.pdf, id=864, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mkp-30.pdf, id=935, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mkp-30.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mkp-30.pdf>
 Package pdftex.def Info: cap_experimentos/figs/etapa1/ps-mkp-30.pdf used on inp
 ut line 84.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
- [76pdfTeX warning (ext4): destination with the same identifier (name{table.8.2
+ [78pdfTeX warning (ext4): destination with the same identifier (name{table.8.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1788,7 +1838,7 @@ name{table.8.3}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.85 \end{figure*}
-                  ] [77pdfTeX warning (ext4): destination with the same identif
+                  ] [79pdfTeX warning (ext4): destination with the same identif
 ier (name{figure.8.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1796,7 +1846,7 @@ ier (name{figure.8.9}) has been already used, duplicate ignored
 l.88 
       <./cap_experimentos/figs/etapa1/er-mkp-30.pdf> <./cap_experimentos/figs/e
 tapa1/gd-mkp-30.pdf> <./cap_experimentos/figs/etapa1/ps-mkp-30.pdf>]
-<cap_experimentos/figs/etapa1/er-mkp-50.pdf, id=920, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/er-mkp-50.pdf, id=990, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mkp-50.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mkp-50.pdf>
@@ -1804,7 +1854,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mkp-50.pdf used on inp
 ut line 92.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/gd-mkp-50.pdf, id=921, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mkp-50.pdf, id=991, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mkp-50.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mkp-50.pdf>
@@ -1812,7 +1862,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mkp-50.pdf used on inp
 ut line 93.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/ps-mkp-50.pdf, id=922, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mkp-50.pdf, id=992, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mkp-50.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mkp-50.pdf>
@@ -1820,7 +1870,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/ps-mkp-50.pdf used on inp
 ut line 94.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/er-mkp-100.pdf, id=924, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/er-mkp-100.pdf, id=994, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mkp-100.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mkp-100.pdf>
@@ -1828,7 +1878,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mkp-100.pdf used on in
 put line 102.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/gd-mkp-100.pdf, id=925, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mkp-100.pdf, id=995, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mkp-100.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mkp-100.pdf>
@@ -1836,7 +1886,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mkp-100.pdf used on in
 put line 103.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/ps-mkp-100.pdf, id=926, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mkp-100.pdf, id=996, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mkp-100.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mkp-100.pdf>
@@ -1844,7 +1894,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/ps-mkp-100.pdf used on in
 put line 104.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/er-mkp-todos.pdf, id=929, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/er-mkp-todos.pdf, id=999, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mkp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mkp-todos.pdf>
@@ -1852,7 +1902,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mkp-todos.pdf used on
 input line 112.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/gd-mkp-todos.pdf, id=930, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mkp-todos.pdf, id=1000, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mkp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mkp-todos.pdf>
@@ -1860,7 +1910,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mkp-todos.pdf used on
 input line 113.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/ps-mkp-todos.pdf, id=931, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mkp-todos.pdf, id=1001, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mkp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mkp-todos.pdf>
@@ -1870,15 +1920,15 @@ input line 114.
 
 Underfull \vbox (badness 6725) has occurred while \output is active []
 
- [78]
-[79pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
+ [80]
+[81pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
 0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.118 
        <./cap_experimentos/figs/etapa1/er-mkp-50.pdf> <./cap_experimentos/figs/
-etapa1/gd-mkp-50.pdf> <./cap_experimentos/figs/etapa1/ps-mkp-50.pdf>] [80pdfTeX
+etapa1/gd-mkp-50.pdf> <./cap_experimentos/figs/etapa1/ps-mkp-50.pdf>] [82pdfTeX
  warning (ext4): destination with the same identifier (name{figure.8.11}) has b
 een already used, duplicate ignored
 
@@ -1887,7 +1937,7 @@ een already used, duplicate ignored
 l.118 
        <./cap_experimentos/figs/etapa1/er-mkp-100.pdf> <./cap_experimentos/figs
 /etapa1/gd-mkp-100.pdf> <./cap_experimentos/figs/etapa1/ps-mkp-100.pdf>]
-[81pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
+[83pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1895,7 +1945,7 @@ l.118
 l.118 
        <./cap_experimentos/figs/etapa1/er-mkp-todos.pdf> <./cap_experimentos/fi
 gs/etapa1/gd-mkp-todos.pdf> <./cap_experimentos/figs/etapa1/ps-mkp-todos.pdf>]
-<cap_experimentos/figs/etapa1/er-mrp-r1.pdf, id=1084, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/er-mrp-r1.pdf, id=1155, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mrp-r1.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mrp-r1.pdf>
@@ -1903,7 +1953,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mrp-r1.pdf used on inp
 ut line 122.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/gd-mrp-r1.pdf, id=1085, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mrp-r1.pdf, id=1156, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mrp-r1.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mrp-r1.pdf>
@@ -1911,7 +1961,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mrp-r1.pdf used on inp
 ut line 123.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/ps-mrp-r1.pdf, id=1086, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mrp-r1.pdf, id=1157, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mrp-r1.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mrp-r1.pdf>
@@ -1919,7 +1969,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/ps-mrp-r1.pdf used on inp
 ut line 124.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/er-mrp-r2.pdf, id=1088, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/er-mrp-r2.pdf, id=1159, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mrp-r2.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mrp-r2.pdf>
@@ -1927,7 +1977,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mrp-r2.pdf used on inp
 ut line 132.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/gd-mrp-r2.pdf, id=1089, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mrp-r2.pdf, id=1160, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mrp-r2.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mrp-r2.pdf>
@@ -1935,7 +1985,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mrp-r2.pdf used on inp
 ut line 133.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/ps-mrp-r2.pdf, id=1090, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mrp-r2.pdf, id=1161, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mrp-r2.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mrp-r2.pdf>
@@ -1943,7 +1993,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/ps-mrp-r2.pdf used on inp
 ut line 134.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/er-mrp-r3.pdf, id=1092, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/er-mrp-r3.pdf, id=1163, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mrp-r3.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mrp-r3.pdf>
@@ -1951,7 +2001,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mrp-r3.pdf used on inp
 ut line 142.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/gd-mrp-r3.pdf, id=1093, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mrp-r3.pdf, id=1164, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mrp-r3.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mrp-r3.pdf>
@@ -1959,7 +2009,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mrp-r3.pdf used on inp
 ut line 143.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/ps-mrp-r3.pdf, id=1094, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mrp-r3.pdf, id=1165, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mrp-r3.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mrp-r3.pdf>
@@ -1967,7 +2017,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/ps-mrp-r3.pdf used on inp
 ut line 144.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/er-mrp-todos.pdf, id=1096, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/er-mrp-todos.pdf, id=1167, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mrp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mrp-todos.pdf>
@@ -1975,7 +2025,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mrp-todos.pdf used on
 input line 152.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/gd-mrp-todos.pdf, id=1097, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mrp-todos.pdf, id=1168, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mrp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mrp-todos.pdf>
@@ -1983,7 +2033,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mrp-todos.pdf used on
 input line 153.
 (pdftex.def)             Requested size: 455.0pt x 181.9905pt.
 
-<cap_experimentos/figs/etapa1/ps-mrp-todos.pdf, id=1098, 2007.5pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mrp-todos.pdf, id=1169, 2007.5pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mrp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mrp-todos.pdf>
@@ -1993,15 +2043,15 @@ input line 154.
 
 Underfull \vbox (badness 1454) has occurred while \output is active []
 
- [82]
-[83pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
+ [84]
+[85pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.160 
        <./cap_experimentos/figs/etapa1/er-mrp-r1.pdf> <./cap_experimentos/figs/
-etapa1/gd-mrp-r1.pdf> <./cap_experimentos/figs/etapa1/ps-mrp-r1.pdf>] [84pdfTeX
+etapa1/gd-mrp-r1.pdf> <./cap_experimentos/figs/etapa1/ps-mrp-r1.pdf>] [86pdfTeX
  warning (ext4): destination with the same identifier (name{figure.8.14}) has b
 een already used, duplicate ignored
 
@@ -2009,7 +2059,7 @@ een already used, duplicate ignored
                                                   \fi \fi 
 l.160 
        <./cap_experimentos/figs/etapa1/er-mrp-r2.pdf> <./cap_experimentos/figs/
-etapa1/gd-mrp-r2.pdf> <./cap_experimentos/figs/etapa1/ps-mrp-r2.pdf>] [85pdfTeX
+etapa1/gd-mrp-r2.pdf> <./cap_experimentos/figs/etapa1/ps-mrp-r2.pdf>] [87pdfTeX
  warning (ext4): destination with the same identifier (name{figure.8.15}) has b
 een already used, duplicate ignored
 
@@ -2017,7 +2067,7 @@ een already used, duplicate ignored
                                                   \fi \fi 
 l.160 
        <./cap_experimentos/figs/etapa1/er-mrp-r3.pdf> <./cap_experimentos/figs/
-etapa1/gd-mrp-r3.pdf> <./cap_experimentos/figs/etapa1/ps-mrp-r3.pdf>] [86pdfTeX
+etapa1/gd-mrp-r3.pdf> <./cap_experimentos/figs/etapa1/ps-mrp-r3.pdf>] [88pdfTeX
  warning (ext4): destination with the same identifier (name{figure.8.16}) has b
 een already used, duplicate ignored
 
@@ -2026,13 +2076,13 @@ een already used, duplicate ignored
 l.160 
        <./cap_experimentos/figs/etapa1/er-mrp-todos.pdf> <./cap_experimentos/fi
 gs/etapa1/gd-mrp-todos.pdf> <./cap_experimentos/figs/etapa1/ps-mrp-todos.pdf>]
-[87] [88pdfTeX warning (ext4): destination with the same identifier (name{table
+[89] [90pdfTeX warning (ext4): destination with the same identifier (name{table
 .8.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.221 
-      ] [89pdfTeX warning (ext4): destination with the same identifier (name{ta
+      ] [91pdfTeX warning (ext4): destination with the same identifier (name{ta
 ble.8.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2044,7 +2094,7 @@ Overfull \hbox (1.03355pt too wide) in paragraph at lines 285--286
 clás-si-cos NSGA-II e SPEA2
  []
 
-[90pdfTeX warning (ext4): destination with the same identifier (name{table.8.6}
+[92pdfTeX warning (ext4): destination with the same identifier (name{table.8.6}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2055,7 +2105,7 @@ Overfull \hbox (35.89569pt too wide) in paragraph at lines 312--329
  [] 
  []
 
-<cap_experimentos/figs/etapa3/er-mkp-30.pdf, id=1348, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/er-mkp-30.pdf, id=1418, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mkp-30.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mkp-30.pdf>
@@ -2063,7 +2113,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mkp-30.pdf used on inp
 ut line 337.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mkp-30.pdf, id=1349, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mkp-30.pdf, id=1419, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mkp-30.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mkp-30.pdf>
@@ -2071,7 +2121,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mkp-30.pdf used on inp
 ut line 338.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mkp-30.pdf, id=1350, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mkp-30.pdf, id=1420, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mkp-30.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mkp-30.pdf>
@@ -2079,7 +2129,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mkp-30.pdf used on inp
 ut line 339.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mkp-30.pdf, id=1351, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mkp-30.pdf, id=1421, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mkp-30.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mkp-30.pdf>
@@ -2096,7 +2146,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 337--341
 [] [] 
  []
 
-[91pdfTeX warning (ext4): destination with the same identifier (name{table.8.7}
+[93pdfTeX warning (ext4): destination with the same identifier (name{table.8.7}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2109,7 +2159,7 @@ l.344
                                                   \fi \fi 
 l.344 
       ]
-<cap_experimentos/figs/etapa3/er-mkp-40.pdf, id=1357, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/er-mkp-40.pdf, id=1427, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mkp-40.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mkp-40.pdf>
@@ -2117,7 +2167,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mkp-40.pdf used on inp
 ut line 348.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mkp-40.pdf, id=1358, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mkp-40.pdf, id=1428, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mkp-40.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mkp-40.pdf>
@@ -2125,7 +2175,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mkp-40.pdf used on inp
 ut line 349.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mkp-40.pdf, id=1359, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mkp-40.pdf, id=1429, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mkp-40.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mkp-40.pdf>
@@ -2133,7 +2183,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mkp-40.pdf used on inp
 ut line 350.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mkp-40.pdf, id=1360, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mkp-40.pdf, id=1430, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mkp-40.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mkp-40.pdf>
@@ -2150,7 +2200,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 348--352
 [] [] 
  []
 
-[92pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
+[94pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
 7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2167,7 +2217,7 @@ etapa3/gd-mkp-30.pdf> <./cap_experimentos/figs/etapa3/ps-mkp-30.pdf> <./cap_exp
 erimentos/figs/etapa3/time-mkp-30.pdf> <./cap_experimentos/figs/etapa3/er-mkp-4
 0.pdf> <./cap_experimentos/figs/etapa3/gd-mkp-40.pdf> <./cap_experimentos/figs/
 etapa3/ps-mkp-40.pdf> <./cap_experimentos/figs/etapa3/time-mkp-40.pdf>]
-<cap_experimentos/figs/etapa3/er-mkp-50.pdf, id=1486, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/er-mkp-50.pdf, id=1556, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mkp-50.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mkp-50.pdf>
@@ -2175,7 +2225,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mkp-50.pdf used on inp
 ut line 359.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mkp-50.pdf, id=1487, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mkp-50.pdf, id=1557, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mkp-50.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mkp-50.pdf>
@@ -2183,7 +2233,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mkp-50.pdf used on inp
 ut line 360.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mkp-50.pdf, id=1488, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mkp-50.pdf, id=1558, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mkp-50.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mkp-50.pdf>
@@ -2191,7 +2241,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mkp-50.pdf used on inp
 ut line 361.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mkp-50.pdf, id=1489, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mkp-50.pdf, id=1559, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mkp-50.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mkp-50.pdf>
@@ -2208,7 +2258,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 359--363
 [] [] 
  []
 
-<cap_experimentos/figs/etapa3/er-mkp-todos.pdf, id=1491, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/er-mkp-todos.pdf, id=1561, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mkp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mkp-todos.pdf>
@@ -2216,7 +2266,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mkp-todos.pdf used on
 input line 370.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mkp-todos.pdf, id=1492, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mkp-todos.pdf, id=1562, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mkp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mkp-todos.pdf>
@@ -2224,7 +2274,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mkp-todos.pdf used on
 input line 371.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mkp-todos.pdf, id=1493, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mkp-todos.pdf, id=1563, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mkp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mkp-todos.pdf>
@@ -2232,7 +2282,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mkp-todos.pdf used on
 input line 372.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mkp-todos.pdf, id=1494, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mkp-todos.pdf, id=1564, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mkp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mkp-todos.pdf>
@@ -2249,7 +2299,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 370--374
 [] [] 
  []
 
-[93pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
+[95pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
 9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2266,7 +2316,7 @@ etapa3/gd-mkp-50.pdf> <./cap_experimentos/figs/etapa3/ps-mkp-50.pdf> <./cap_exp
 erimentos/figs/etapa3/time-mkp-50.pdf> <./cap_experimentos/figs/etapa3/er-mkp-t
 odos.pdf> <./cap_experimentos/figs/etapa3/gd-mkp-todos.pdf> <./cap_experimentos
 /figs/etapa3/ps-mkp-todos.pdf> <./cap_experimentos/figs/etapa3/time-mkp-todos.p
-df>] <cap_experimentos/figs/etapa3/er-mrp-r1.pdf, id=1620, 1606.0pt x 803.0pt>
+df>] <cap_experimentos/figs/etapa3/er-mrp-r1.pdf, id=1691, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mrp-r1.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mrp-r1.pdf>
@@ -2274,7 +2324,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mrp-r1.pdf used on inp
 ut line 381.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mrp-r1.pdf, id=1621, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mrp-r1.pdf, id=1692, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mrp-r1.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mrp-r1.pdf>
@@ -2282,7 +2332,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mrp-r1.pdf used on inp
 ut line 382.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mrp-r1.pdf, id=1622, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mrp-r1.pdf, id=1693, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mrp-r1.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mrp-r1.pdf>
@@ -2290,7 +2340,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mrp-r1.pdf used on inp
 ut line 383.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mrp-r1.pdf, id=1623, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mrp-r1.pdf, id=1694, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mrp-r1.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mrp-r1.pdf>
@@ -2307,7 +2357,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 381--385
 [] [] 
  []
 
-<cap_experimentos/figs/etapa3/er-mrp-r2.pdf, id=1625, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/er-mrp-r2.pdf, id=1696, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mrp-r2.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mrp-r2.pdf>
@@ -2315,7 +2365,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mrp-r2.pdf used on inp
 ut line 392.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mrp-r2.pdf, id=1626, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mrp-r2.pdf, id=1697, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mrp-r2.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mrp-r2.pdf>
@@ -2323,7 +2373,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mrp-r2.pdf used on inp
 ut line 393.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mrp-r2.pdf, id=1627, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mrp-r2.pdf, id=1698, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mrp-r2.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mrp-r2.pdf>
@@ -2331,7 +2381,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mrp-r2.pdf used on inp
 ut line 394.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mrp-r2.pdf, id=1628, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mrp-r2.pdf, id=1699, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mrp-r2.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mrp-r2.pdf>
@@ -2348,7 +2398,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 392--396
 [] [] 
  []
 
-[94pdfTeX warning (ext4): destination with the same identifier (name{figure.8.2
+[96pdfTeX warning (ext4): destination with the same identifier (name{figure.8.2
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2357,7 +2407,7 @@ l.399
        <./cap_experimentos/figs/etapa3/er-mrp-r1.pdf> <./cap_experimentos/figs/
 etapa3/gd-mrp-r1.pdf> <./cap_experimentos/figs/etapa3/ps-mrp-r1.pdf> <./cap_exp
 erimentos/figs/etapa3/time-mrp-r1.pdf>]
-<cap_experimentos/figs/etapa3/er-mrp-r3.pdf, id=1694, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/er-mrp-r3.pdf, id=1765, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mrp-r3.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mrp-r3.pdf>
@@ -2365,7 +2415,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mrp-r3.pdf used on inp
 ut line 403.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mrp-r3.pdf, id=1695, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mrp-r3.pdf, id=1766, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mrp-r3.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mrp-r3.pdf>
@@ -2373,7 +2423,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mrp-r3.pdf used on inp
 ut line 404.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mrp-r3.pdf, id=1696, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mrp-r3.pdf, id=1767, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mrp-r3.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mrp-r3.pdf>
@@ -2381,7 +2431,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mrp-r3.pdf used on inp
 ut line 405.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mrp-r3.pdf, id=1697, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mrp-r3.pdf, id=1768, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mrp-r3.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mrp-r3.pdf>
@@ -2398,7 +2448,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 403--407
 [] [] 
  []
 
-[95pdfTeX warning (ext4): destination with the same identifier (name{figure.8.2
+[97pdfTeX warning (ext4): destination with the same identifier (name{figure.8.2
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2415,7 +2465,7 @@ etapa3/gd-mrp-r2.pdf> <./cap_experimentos/figs/etapa3/ps-mrp-r2.pdf> <./cap_exp
 erimentos/figs/etapa3/time-mrp-r2.pdf> <./cap_experimentos/figs/etapa3/er-mrp-r
 3.pdf> <./cap_experimentos/figs/etapa3/gd-mrp-r3.pdf> <./cap_experimentos/figs/
 etapa3/ps-mrp-r3.pdf> <./cap_experimentos/figs/etapa3/time-mrp-r3.pdf>]
-<cap_experimentos/figs/etapa3/er-mrp-todos.pdf, id=1824, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/er-mrp-todos.pdf, id=1894, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mrp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mrp-todos.pdf>
@@ -2423,7 +2473,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mrp-todos.pdf used on
 input line 414.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mrp-todos.pdf, id=1825, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mrp-todos.pdf, id=1895, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mrp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mrp-todos.pdf>
@@ -2431,7 +2481,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mrp-todos.pdf used on
 input line 415.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mrp-todos.pdf, id=1826, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mrp-todos.pdf, id=1896, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mrp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mrp-todos.pdf>
@@ -2439,7 +2489,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mrp-todos.pdf used on
 input line 416.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mrp-todos.pdf, id=1827, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mrp-todos.pdf, id=1897, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mrp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mrp-todos.pdf>
@@ -2456,7 +2506,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 414--418
 [] [] 
  []
 
-[96pdfTeX warning (ext4): destination with the same identifier (name{figure.8.2
+[98pdfTeX warning (ext4): destination with the same identifier (name{figure.8.2
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2464,31 +2514,170 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 414--418
 l.421 
        <./cap_experimentos/figs/etapa3/er-mrp-todos.pdf> <./cap_experimentos/fi
 gs/etapa3/gd-mrp-todos.pdf> <./cap_experimentos/figs/etapa3/ps-mrp-todos.pdf> <
-./cap_experimentos/figs/etapa3/time-mrp-todos.pdf>] [97pdfTeX warning (ext4): d
+./cap_experimentos/figs/etapa3/time-mrp-todos.pdf>] [99pdfTeX warning (ext4): d
 estination with the same identifier (name{table.8.9}) has been already used, du
 plicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.460 \end{table}
-                 ]) [98pdfTeX warning (ext4): destination with the same identif
+                 ] [100pdfTeX warning (ext4): destination with the same identif
 ier (name{table.8.10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.255 \include{cap_experimentos/experimentos}
-                                             ]
+l.474 
+      ] [101pdfTeX warning (ext4): destination with the same identifier (name{t
+able.8.11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.506 A
+       s figuras \ref{fig_exp4_r3o4} a \ref{fig_exp4_r5o6} mostram os result...
+] <cap_experimentos/figs/etapa4/r3o4.pdf, id=1985, 2810.5pt x 1003.75pt>
+File: cap_experimentos/figs/etapa4/r3o4.pdf Graphic file (type pdf)
+
+<use cap_experimentos/figs/etapa4/r3o4.pdf>
+Package pdftex.def Info: cap_experimentos/figs/etapa4/r3o4.pdf used on input li
+ne 511.
+(pdftex.def)             Requested size: 455.0pt x 162.48714pt.
+
+<cap_experimentos/figs/etapa4/r3o5.pdf, id=1986, 2810.5pt x 1003.75pt>
+File: cap_experimentos/figs/etapa4/r3o5.pdf Graphic file (type pdf)
+
+<use cap_experimentos/figs/etapa4/r3o5.pdf>
+Package pdftex.def Info: cap_experimentos/figs/etapa4/r3o5.pdf used on input li
+ne 519.
+(pdftex.def)             Requested size: 455.0pt x 162.48714pt.
+ [102pdfTeX warning (ext4): destination with the same identifier (name{figure.8
+.25}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.523 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+8.26}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.523 
+       <./cap_experimentos/figs/etapa4/r3o4.pdf> <./cap_experimentos/figs/etapa
+4/r3o5.pdf>]
+<cap_experimentos/figs/etapa4/r3o6.pdf, id=2021, 2810.5pt x 1003.75pt>
+File: cap_experimentos/figs/etapa4/r3o6.pdf Graphic file (type pdf)
+
+<use cap_experimentos/figs/etapa4/r3o6.pdf>
+Package pdftex.def Info: cap_experimentos/figs/etapa4/r3o6.pdf used on input li
+ne 527.
+(pdftex.def)             Requested size: 455.0pt x 162.48714pt.
+
+<cap_experimentos/figs/etapa4/r4o4.pdf, id=2022, 2810.5pt x 1003.75pt>
+File: cap_experimentos/figs/etapa4/r4o4.pdf Graphic file (type pdf)
+
+<use cap_experimentos/figs/etapa4/r4o4.pdf>
+Package pdftex.def Info: cap_experimentos/figs/etapa4/r4o4.pdf used on input li
+ne 535.
+(pdftex.def)             Requested size: 455.0pt x 162.48714pt.
+
+<cap_experimentos/figs/etapa4/r4o5.pdf, id=2023, 2810.5pt x 1003.75pt>
+File: cap_experimentos/figs/etapa4/r4o5.pdf Graphic file (type pdf)
+
+<use cap_experimentos/figs/etapa4/r4o5.pdf>
+Package pdftex.def Info: cap_experimentos/figs/etapa4/r4o5.pdf used on input li
+ne 543.
+(pdftex.def)             Requested size: 455.0pt x 162.48714pt.
+ [103pdfTeX warning (ext4): destination with the same identifier (name{figure.8
+.27}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.544 \end{figure*}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.8.28}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.544 \end{figure*}
+                    <./cap_experimentos/figs/etapa4/r3o6.pdf> <./cap_experiment
+os/figs/etapa4/r4o4.pdf>]
+<cap_experimentos/figs/etapa4/r4o6.pdf, id=2058, 2810.5pt x 1003.75pt>
+File: cap_experimentos/figs/etapa4/r4o6.pdf Graphic file (type pdf)
+
+<use cap_experimentos/figs/etapa4/r4o6.pdf>
+Package pdftex.def Info: cap_experimentos/figs/etapa4/r4o6.pdf used on input li
+ne 551.
+(pdftex.def)             Requested size: 455.0pt x 162.48714pt.
+
+<cap_experimentos/figs/etapa4/r5o4.pdf, id=2059, 2810.5pt x 1003.75pt>
+File: cap_experimentos/figs/etapa4/r5o4.pdf Graphic file (type pdf)
+
+<use cap_experimentos/figs/etapa4/r5o4.pdf>
+Package pdftex.def Info: cap_experimentos/figs/etapa4/r5o4.pdf used on input li
+ne 559.
+(pdftex.def)             Requested size: 455.0pt x 162.48714pt.
+ [104pdfTeX warning (ext4): destination with the same identifier (name{figure.8
+.29}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.563 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+8.30}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.563 
+       <./cap_experimentos/figs/etapa4/r4o5.pdf> <./cap_experimentos/figs/etapa
+4/r4o6.pdf>]
+<cap_experimentos/figs/etapa4/r5o5.pdf, id=2094, 2810.5pt x 1003.75pt>
+File: cap_experimentos/figs/etapa4/r5o5.pdf Graphic file (type pdf)
+
+<use cap_experimentos/figs/etapa4/r5o5.pdf>
+Package pdftex.def Info: cap_experimentos/figs/etapa4/r5o5.pdf used on input li
+ne 567.
+(pdftex.def)             Requested size: 455.0pt x 162.48714pt.
+
+<cap_experimentos/figs/etapa4/r5o6.pdf, id=2095, 2810.5pt x 1003.75pt>
+File: cap_experimentos/figs/etapa4/r5o6.pdf Graphic file (type pdf)
+
+<use cap_experimentos/figs/etapa4/r5o6.pdf>
+Package pdftex.def Info: cap_experimentos/figs/etapa4/r5o6.pdf used on input li
+ne 575.
+(pdftex.def)             Requested size: 455.0pt x 162.48714pt.
+) [105pdfTeX warning (ext4): destination with the same identifier (name{figure.
+8.31}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.256 \include{cap_experimentos/experimentos}
+                                             pdfTeX warning (ext4): destination
+ with the same identifier (name{figure.8.32}) has been already used, duplicate 
+ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.256 \include{cap_experimentos/experimentos}
+                                              <./cap_experimentos/figs/etapa4/r
+5o4.pdf> <./cap_experimentos/figs/etapa4/r5o5.pdf>] [106pdfTeX warning (ext4): 
+destination with the same identifier (name{figure.8.33}) has been already used,
+ duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.256 \include{cap_experimentos/experimentos}
+                                              <./cap_experimentos/figs/etapa4/r
+5o6.pdf>]
 \openout2 = `cap_conclusao/conclusao.aux'.
 
  (cap_conclusao/conclusao.tex
 
-LaTeX Warning: Reference `avaliacao' on page 99 undefined on input line 8.
+LaTeX Warning: Reference `avaliacao' on page 107 undefined on input line 8.
 
-) [99
+) [107
 
 
 
-] (main_ppgco_ufu.bbl [100
+] (main_ppgco_ufu.bbl [108
 
 
 ]
@@ -2497,9 +2686,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[101] [102]) 
+[109] [110]) 
 AED: lastpage setting LastPage
-[103]
+[111]
 \tf@lof=\write7
 \openout7 = `main_ppgco_ufu.lof'.
 
@@ -2509,8 +2698,8 @@ AED: lastpage setting LastPage
 \tf@toc=\write9
 \openout9 = `main_ppgco_ufu.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 330.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 330.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 331.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 331.
  (main_ppgco_ufu.aux (cap_introducao/introducao.aux)
 (cap_otimizacao-bio/otimizacao-bio.aux)
 (cap_otimizacao-multi/otimizacao-multi.aux) (cap_problemas/problemas.aux)
@@ -2518,8 +2707,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 330.
 (cap_estrategias-prm/estrategias-prm.aux)
 (cap_algoritmo-proposto/algoritmo-proposto.aux)
 (cap_experimentos/experimentos.aux) (cap_conclusao/conclusao.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 330.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 330.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 331.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 331.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2530,16 +2719,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 330.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 331.
  ) 
 Here is how much of TeX's memory you used:
- 15697 strings out of 493323
- 233921 string characters out of 3139066
- 483272 words of memory out of 3000000
- 18512 multiletter control sequences out of 15000+200000
+ 15883 strings out of 493323
+ 237636 string characters out of 3139066
+ 486559 words of memory out of 3000000
+ 18659 multiletter control sequences out of 15000+200000
  78633 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,18n,45p,2011b,647s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,18n,45p,2063b,642s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
 es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
@@ -2558,9 +2747,9 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/zapfdi
 ng/uzdr.pfb>
-Output written on main_ppgco_ufu.pdf (105 pages, 1554780 bytes).
+Output written on main_ppgco_ufu.pdf (113 pages, 1730329 bytes).
 PDF statistics:
- 2236 PDF objects out of 2487 (max. 8388607)
- 291 named destinations out of 1000 (max. 500000)
- 861 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2496 PDF objects out of 2984 (max. 8388607)
+ 316 named destinations out of 1000 (max. 500000)
+ 930 words of extra memory for PDF output out of 10000 (max. 10000000)
 
