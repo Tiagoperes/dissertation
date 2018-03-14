@@ -49,7 +49,6 @@
 \contentsline {section}{\numberline {8.3}Etapa 3: AG's \textit {many-objectives} vs. MACO/D}{92}{section.8.3}
 \contentsline {section}{\numberline {8.4}Etapa 4: An\IeC {\'a}lise com hipervolume}{100}{section.8.4}
 \contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase {Conclus\IeC {\~a}o}}{107}{chapter.9}
-\contentsline {section}{\numberline {9.1}Principais Contribui\IeC {\c c}\IeC {\~o}es}{107}{section.9.1}
-\contentsline {section}{\numberline {9.2}Trabalhos Futuros}{107}{section.9.2}
-\contentsline {section}{\numberline {9.3}Contribui\IeC {\c c}\IeC {\~o}es em Produ\IeC {\c c}\IeC {\~a}o Bibliogr\IeC {\'a}fica}{107}{section.9.3}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{109}{section*.12}
+\contentsline {section}{\numberline {9.1}Trabalhos Futuros}{109}{section.9.1}
+\contentsline {section}{\numberline {9.2}Contribui\IeC {\c c}\IeC {\~o}es em Produ\IeC {\c c}\IeC {\~a}o Bibliogr\IeC {\'a}fica}{110}{section.9.2}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{111}{section*.12}

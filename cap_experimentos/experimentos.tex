@@ -25,6 +25,7 @@ Considerando as quatro etapas de experimentos, foram usadas 5 métricas diferent
 As seções a seguir apresentam os experimentos e seus resultados em cada uma das etapas citadas acima.
 
 \section{Etapa 1: AG's multiobjetivos}
+\label{section_experimentos_etapa1}
 
 Neste etapa testou-se os algoritmos NSGA-II, NSGA-III, SPEA2, MOEA/D e AEMMT. Ao todo, 30 cenários de teste foram considerados:
 
@@ -104,7 +105,7 @@ O PMM com 50 itens (figura \ref{fig_exp1_pmm_50}) é um problema bem mais comple
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa1/ps-mkp-100}
 \end{figure*}
 
-O tamanho do espaço de busca no problema da mochila pode ser medido através da equação $2^n$, onde $n$ é o número de itens. Portanto, a complexidade do PMM com 100 itens (figura \ref{fig_exp1_pmm_100}) é absurdamente maior que os anteriores. Por essa razão, não foi possível encontrar um Pareto estável para as formulações de 4, 5 e 6 objetivos. Dessa forma, apesar de as métricas $ER$, $GD$ e $PS$ serem um bom indicativo da performance entre os algoritmos, a melhor forma de avaliação seria o hiper-volume. Um experimento parecido com este, mas utilizando o hiper-volume é apresentado na seção \ref{section_experiments_3}. É difícil avaliar o problema de 100 itens, pois, já no erro é possível perceber que poucos algoritmos conseguiram encontrar boas soluções, a menor taxa de erro está acima de 50\%. No PMM de 100 itens o NSGA-III apresentou o menor $ER$ nos cenários de 2, 3, 4 e 5 objetivos, e na formulação de 6, foi ultrapassado pelos AEMMT e MOEA/D. Com relação ao $GD$, para 2 objetivos, o NSGA-II e o SPEA2 apresentaram os melhores resultados. Na formulação de 3 objetivos em diante, o MOEA/D foi o algoritmo com menor $GD$, sendo que em 4, 5 e 6 objetivos o AEMMT obteve desempenho similar. A situação se repete ao analisar o $PS$: a partir de 3 objetivos, o MOEA/D traz um conjunto maior de soluções na fronteira de Pareto, seguido pelo AEMMT a partir de 4 objetivos.
+O tamanho do espaço de busca no problema da mochila pode ser medido através da equação $2^n$, onde $n$ é o número de itens. Portanto, a complexidade do PMM com 100 itens (figura \ref{fig_exp1_pmm_100}) é absurdamente maior que os anteriores. Por essa razão, não foi possível encontrar um Pareto estável para as formulações de 4, 5 e 6 objetivos. Dessa forma, apesar de as métricas $ER$, $GD$ e $PS$ serem um bom indicativo da performance entre os algoritmos, a melhor forma de avaliação seria o hiper-volume. Um experimento parecido com este, mas utilizando o hiper-volume é apresentado na seção \ref{section_experimentos_etapa4}. É difícil avaliar o problema de 100 itens, pois, já no erro é possível perceber que poucos algoritmos conseguiram encontrar boas soluções, a menor taxa de erro está acima de 50\%. No PMM de 100 itens o NSGA-III apresentou o menor $ER$ nos cenários de 2, 3, 4 e 5 objetivos, e na formulação de 6, foi ultrapassado pelos AEMMT e MOEA/D. Com relação ao $GD$, para 2 objetivos, o NSGA-II e o SPEA2 apresentaram os melhores resultados. Na formulação de 3 objetivos em diante, o MOEA/D foi o algoritmo com menor $GD$, sendo que em 4, 5 e 6 objetivos o AEMMT obteve desempenho similar. A situação se repete ao analisar o $PS$: a partir de 3 objetivos, o MOEA/D traz um conjunto maior de soluções na fronteira de Pareto, seguido pelo AEMMT a partir de 4 objetivos.
 
 \begin{figure*}[!htbp]
 	\caption{Etapa 1: resultados agrupados para o PMM com 30, 50 e 100 itens}
@@ -161,7 +162,7 @@ Considerando ambos os problemas, PMM e PRM, os algoritmos NSGA-II, SPEA2 e NSGA-
 Uma outra observação que pôde ser feita a partir dos experimentos nesta etapa é que o AEMMT perde apenas em $PS$ para o MOEA/D. Uma das características do AEMMT é a limitação no tamanho do arquivo, por isso surge a dúvida: se não houvesse um limite, seria possível que o AEMMT obtivesse um melhor resultado em todas as métricas? Pensando nisso, executou-se os mesmos testes para uma variação do AEMMT (AEMMT-F), onde o limite não foi aplicado. Na maioria dos resultados, o AEMMT-F apresentou erro maior que sua versão original, mas ainda sim $ER$ e $PS$ melhores que o MOEA/D. Dessa forma, através de um teste de hipótese z-teste com 0,1\% de significância ($\alpha = 0.1$), confirmou-se a superioridade do AEMMT-F em relação ao MOEA/D nos cenários com 5 e 6 objetivos.
 
 \section{Etapa 2: MACO/D}
-\label{section_experimentos_macod}
+\label{section_experimentos_etapa2}
 
 O algoritmo responsável pela construção das soluções do PRM no MACO/D foi concebido de acordo com os experimentos realizados nesta etapa. O mesmo processo não foi realizado para o PMM, pois já havia um modelo bem conceituado que funcionava bem com o algoritmo MACO/D. Além disso, aproveitou-se esse conjunto de experimentos para variar aspectos sobre a atualização de feromônios e parâmetros de entrada no ACO, resultando em particularidades do algoritmo descrito no capítulo \ref{chapter_macod}.
 
@@ -281,6 +282,7 @@ Tomando como referência o problema $P_6$, com seis objetivos, construiu-se a ta
 Na tabela \ref{tab_exp2_macod_simples} pode-se observar que na maioria dos casos as duas alterações propostas melhoraram o resultado do MACO/D, portanto, o algoritmo final proposto inclui essas duas pequenas alterações. O AEMMD ainda apresenta melhores resultados, mas como será visto nas etapas 3 e 4 de experimentos, o MACO/D leva até 5 vezes menos tempo para executar.
 
 \section{Etapa 3: AG's \textit{many-objectives} vs. MACO/D}
+\label{section_experimentos_etapa3}
 
 Na terceira etapa de experimentos descartam-se os AEMOs clássicos NSGA-II e SPEA2 e inclui-se o AEMMD e o MACO/D, algoritmo proposto neste trabalho. Uma nova métrica de desempenho é utilizada, o tempo, e as demais continuam sendo o erro ($ER$), a distância ($GD$) e o número de soluções corretas ($PS$). Assim como na etapa 1, o Pareto aproximado foi pré-calculado a partir de múltiplas execuções dos algoritmos e é apresentado na tabela \ref{table_exp3_paretos}. Enfim, os resultados (com exceção do tempo) foram obtidos através das médias entre 100 execuções dos 30 cenários descritos na lista a seguir. À medida de tempo considerou apenas 3 execuções de cada algoritmo em cada cenário.
 
@@ -462,7 +464,7 @@ A fim de melhor comparar o MACO/D aos algoritmos AEMMT e AEMMD realizou-se o tes
 No PMM, se o tempo de execução é uma preocupação, a melhor alternativa é o algoritmo MOEA/D, que executa em tempo recorde e produz bons resultados. Se a rapidez do algoritmo não é tão importante e deseja-se encontrar um conjunto de soluções mais próximo do Pareto real, o MACO/D é o algoritmo mais indicado. No PRM, o método que representa melhor relação entre qualidade e tempo é o MACO/D, mas se tempo não é importante, o AEMMD pode ser preferível. Ao mesmo tempo, seria interessante testar se, dada a mesma quantidade de tempo, o MACO/D não supera o AEMMD.
 
 \section{Etapa 4: Análise com hipervolume}
-\label{section_experiments_3}
+\label{section_experimentos_etapa4}
 
 A fim de testar propriamente o comportamento dos algoritmos em espaços de busca mais complexos que os utilizados nos experimentos das etapas 1 e 3, lançou-se mão de duas novas redes (redes 4 e 5) e duas novas instâncias do problema da mochila (100 e 200 itens). Como não é possível extrair Paretos estáveis para as redes $R_3$, $R_4$ e $R_5$, nem para os problemas da mochila com 50, 100 e 200 itens, não é interessante basear-se em métricas dependentes de tais Paretos para se tirar conclusões. Por isso, nesta etapa, testa-se unicamente as métrica hiper-volume e tempo, independentes do Pareto.
 
@@ -576,3 +578,5 @@ Na rede 5 com 5 objetivos, os melhores hiper-volumes são dados pelo AEMMD e MAC
 \end{figure*}
 
 O cenário mais complexo do PRM nesta etapa é dado pela rede 5 com 6 objetivos. Nele, os piores resultados foram encontrados pelo NSGA-III e MOEA/D-ACO. O SPEA2-SDE e o AEMMT obtiveram bons hiper-volumes, mas levaram muito tempo para executar. Novamente, repetindo o ocorrido no cenário anterior, o AEMMD e MACO/D foram os algoritmos que atingiram os melhores resultados, ambos com diferenças mínimas um para o outro: o AEMMD com hiper-volume melhor e tempo pior, e o MACO/D com hiper-volume pior e tempo melhor.
+
+De forma geral, percebe-se que o SPEA2-SDE encontra ótimos resultados, mas a um custo muito alto de tempo, o que o torna inviável para aplicações como o PRM, onde é importante que se tenha uma resposta rápida sobre qual rota tomar. Dentre os demais AG's, o melhor método é o AEMMD que na maioria dos casos consegue o melhor hiper-volume sem tomar muito mais tempo. A grande vantagem dos ACO's em relação aos AG's está no tempo de execução, além disso, em 4 de 9 cenários, os algoritmos baseados em formigas ultrapassam os AG's também em hiper-volume. Para o PRM, parece ser mais adequado utilizar um ACO que um AG, pois assim é possível encontrar soluções de ótima qualidade em um curto espaço de tempo. Dentre os três ACO's o MOACS na maioria das vezes apresentou melhores resultados que o MACO/D, tanto em termos de tempo quanto hiper-volume, mas é interessante notar que, na rede 5, o MACO/D supera o hiper-volume MOACS em todas as formulações de objetivos, o que indica que o MACO/D possa ser o melhor método para redes mais complexas. É importante também lembrar que o MOACS utilizado neste experimento utiliza a abordagem do MACO/D para construir as soluções, o que permitiu que ele obtivesse melhores resultados que o algoritmo original.
