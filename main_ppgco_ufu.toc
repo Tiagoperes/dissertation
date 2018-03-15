@@ -45,10 +45,10 @@
 \contentsline {section}{\numberline {7.2}Atualiza\IeC {\c c}\IeC {\~a}o dos ferom\IeC {\^o}nios}{74}{section.7.2}
 \contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {Experimentos}}{75}{chapter.8}
 \contentsline {section}{\numberline {8.1}Etapa 1: AG's multiobjetivos}{77}{section.8.1}
-\contentsline {section}{\numberline {8.2}Etapa 2: MACO/D}{89}{section.8.2}
-\contentsline {section}{\numberline {8.3}Etapa 3: AG's \textit {many-objectives} vs. MACO/D}{92}{section.8.3}
-\contentsline {section}{\numberline {8.4}Etapa 4: An\IeC {\'a}lise com hipervolume}{100}{section.8.4}
-\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase {Conclus\IeC {\~a}o}}{107}{chapter.9}
-\contentsline {section}{\numberline {9.1}Trabalhos Futuros}{109}{section.9.1}
-\contentsline {section}{\numberline {9.2}Contribui\IeC {\c c}\IeC {\~o}es em Produ\IeC {\c c}\IeC {\~a}o Bibliogr\IeC {\'a}fica}{110}{section.9.2}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{111}{section*.12}
+\contentsline {section}{\numberline {8.2}Etapa 2: MACO/D}{88}{section.8.2}
+\contentsline {section}{\numberline {8.3}Etapa 3: AG's \textit {many-objectives} vs. MACO/D}{91}{section.8.3}
+\contentsline {section}{\numberline {8.4}Etapa 4: An\IeC {\'a}lise com hipervolume}{99}{section.8.4}
+\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase {Conclus\IeC {\~a}o}}{111}{chapter.9}
+\contentsline {section}{\numberline {9.1}Trabalhos Futuros}{113}{section.9.1}
+\contentsline {section}{\numberline {9.2}Contribui\IeC {\c c}\IeC {\~o}es em Produ\IeC {\c c}\IeC {\~a}o Bibliogr\IeC {\'a}fica}{114}{section.9.2}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{115}{section*.13}

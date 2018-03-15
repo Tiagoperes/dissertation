@@ -56,7 +56,7 @@ Na tabela \ref{table_exp1_paretos}, a quantidade de elementos nos paretos do PMM
 Para compilar os resultados através das medidas de desempenho $ER$, $GD$ e $PS$, foram feitas 100 execuções de cada algoritmo com os parâmetros listados na tabela \ref{table_exp1_parametros}. As figuras \ref{fig_exp1_pmm_30}, \ref{fig_exp1_pmm_50} e \ref{fig_exp1_pmm_100} mostram respectivamente os resultados para o PMM de 30, 50 e 100 itens. As figuras \ref{fig_exp1_prm_r1}, \ref{fig_exp1_prm_r2} e \ref{fig_exp1_prm_r3} revelam respectivamente os resultados para o PRM aplicado às redes $R_1$, $R_2$ e $R_3$. Uma análise conjunta, através de uma média entre as três instâncias de cada problema, é apresenta nas figuras \ref{fig_exp1_prm_todos} (PRM) e \ref{fig_exp1_pmm_todos} (PMM).
 
 \begin{table}[!htbp]
-	\caption{Parâmetros utilizados pelos algoritmos no PRM e PMM.}
+	\caption{Parâmetros utilizados pelos algoritmos no PRM e PMM na etapa 1 de experimentos.}
 	\label{table_exp1_parametros}
 	\begin{center}
 		\begin{tabular}{c|r|r}
@@ -308,7 +308,7 @@ Na terceira etapa de experimentos descartam-se os AEMOs clássicos NSGA-II e SPE
 A tabela \ref{table_exp3_parametros} apresenta os parâmetros dos algoritmos utilizados neste experimento. Note que o número de gerações (marcado com asterisco) deve ser multiplicado pelo tamanho da população no AEMMT e AEMMD devido ao fato de realizarem apenas um crossover por geração.
 
 \begin{table}[!htbp]
-	\caption{Parâmetros utilizados para o PRM e o PMM.}
+	\caption{Parâmetros utilizados para o PRM e o PMM na etapa 3 de experimentos.}
 	\label{table_exp3_parametros}
 	\begin{center}
 		\begin{tabular}{c|r|r}
@@ -397,7 +397,7 @@ Os gráficos correspondentes ao PRM na rede 1 (figura \ref{fig_exp3_prm_r1}) mos
 	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/time-mrp-r2}
 \end{figure*}
 
-A rede 2 (figura \ref{fig_exp3_prm_r2}), apesar de mais complexa que a primeira, apresenta comportamento bem parecido à instância anterior. O AEMMD produz as menores taxas de erro, seguido pelo AEMMT e MACO/D. Dentre as soluções incorretas encontradas, o MACO/D é o algoritmo que chega mais perto das soluções corretas ($GD$), sendo que os MOEAD, AEMMT e AEMMD conseguem resultados bem próximos. Com relação ao $PS$, os melhores valores foram encontrados pelo AEMMD, mas com vantagem muito pequena para o segundo lugar: MACO/D. Em último, aparece o NSGA-III, que é um algoritmo limitado no crescimento do Pareto. O método mais rápido é o MACO/D e o mais lento é o AEMMT.
+A rede 2 (figura \ref{fig_exp3_prm_r2}), apesar de mais complexa que a primeira, apresenta comportamento bem parecido à instância anterior. O AEMMD produz as menores taxas de erro, seguido pelo AEMMT. Dentre as soluções incorretas encontradas, o MACO/D é o algoritmo que chega mais perto das soluções corretas ($GD$), sendo que os AEMMT e AEMMD conseguem resultados bem próximos. Com relação ao $PS$, os melhores valores foram encontrados pelo AEMMD, mas com vantagem muito pequena para o segundo lugar: MACO/D. Em último, aparece o NSGA-III, que é um algoritmo limitado no crescimento do Pareto. O método mais rápido é o MOEA/D e o mais lento é o AEMMT.
 
 \begin{figure*}[!htbp]
 	\caption{Etapa 3: resultados para o PRM na rede $R_3$}
@@ -408,7 +408,7 @@ A rede 2 (figura \ref{fig_exp3_prm_r2}), apesar de mais complexa que a primeira,
 	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/time-mrp-r3}
 \end{figure*}
 
-No PRM aplicado à rede 3 (figura \ref{fig_exp3_prm_r3}), o AEMMT encontra as melhores taxas de erro para 4 e 5 objetivos, enquanto que para 6 objetivos, o AEMMD consegue um resultado ligeiramente melhor. O NSGA-III produz o segundo menor $ER$ no problema de 4 objetivos e o terceiro melhor no problema de 5. Com 6 objetivos, o AEMMD, AEMMT e MACO/D produzem taxa de erro bem menor que os demais. O menor $GD$ no problema com 4 objetivos é dado pelo MACO/D. Com 5 objetivos, o MOEA/D apresenta o melhor $GD$, enquanto que na formulação de 6 objetivos, o AEMMD consegue o menor valor. As maiores fronteiras de Pareto são encontradas pelo AEMMD e MACO/D, sendo o AEMMD o melhor entre os dois. O algoritmo mais rápido é o MACO/D, executando em tempo 5 vezes menor que o método mais lento: AEMMT.
+No PRM aplicado à rede 3 (figura \ref{fig_exp3_prm_r3}), o AEMMT encontra as melhores taxas de erro para 4 e 5 objetivos, enquanto que para 6 objetivos, o MOEA/D consegue o melhor resultado. O NSGA-III produz o segundo menor $ER$ no problema de 4 objetivos, mas é o segundo pior no de 5 e o pior no de 6. O menor $GD$ no problema com 4 objetivos é dado pelo MACO/D, enquanto nos problemas com 5 e 6 objetivos, o AEMMT obtém o melhor $GD$. As maiores fronteiras de Pareto são encontradas pelo AEMMD e MACO/D, sendo o AEMMD o melhor entre os dois. O algoritmo mais rápido é o MACO/D, executando em tempo 5 vezes menor que o método mais lento: AEMMT.
 
 \begin{figure*}[!htbp]
 	\caption{Etapa 3: resultados agrupados para o PRM nas redes $R_1$, $R_2$ e $R_3$}
@@ -419,7 +419,7 @@ No PRM aplicado à rede 3 (figura \ref{fig_exp3_prm_r3}), o AEMMT encontra as me
 	\includegraphics[width=0.5\textwidth]{cap_experimentos/figs/etapa3/time-mrp-todos}
 \end{figure*}
 
-Para analisar de forma conjunta os resultados das três redes, na figura \ref{fig_exp3_prm_todos} compila-se todos os experimentos através da média aritmética dos resultados. De maneira geral, o NSGA-III consegue soluções de qualidade razoável, mas apresenta baixo $PS$ e apesar de não ser um algoritmo lento, também não é o mais rápido. O MOEA/D obtém as piores taxas de erro entre todos os algoritmos, seu $GD$ é compatível com os demais métodos e seu $PS$ é baixo. A velocidade de execução do MOEA/D é a segunda melhor, mas como seus resultados nas outras métricas não foram bons, não é possível recomendá-lo para este problema. Os melhores resultados foram obtidos pelo AEMMT, AEMMD e o método proposto: MACO/D. Com relação ao erro, o AEMMD consegue as melhores taxas, seguido pelo AEMMT em segundo lugar e MACO/D em terceiro. Analisando o $GD$, observa-se que não há muita diferença entre os três métodos, mas o MACO/D gera melhores soluções que os outros dois, além disso, o desvio padrão do MACO/D é consideravelmente menor, o que o revela ser um método mais estável no que se refere à qualidade das soluções. O AEMMT apresenta um valor de $PS$ bem menor que o AEMMD e o MACO/D nas formulações com 5 e 6 objetivos. O AEMMD produz as maiores fronteiras de Pareto, mas o MACO/D apresenta resultado bem próximo. O mais interessante nesta análise é o tempo de execução, por mais que o AEMMD gere soluções razoavelmente melhores que o MACO/D considerando as métricas $ER$ e $GD$, o segundo é consideravelmente mais rápido, chegando a executar em quase 5 vezes menos tempo.
+Para analisar de forma conjunta os resultados das três redes, na figura \ref{fig_exp3_prm_todos} compila-se todos os experimentos através da média aritmética dos resultados. De maneira geral, o NSGA-III consegue soluções de qualidade razoável, mas apresenta baixo $PS$ e apesar de não ser um algoritmo lento, também não é o mais rápido. O MOEA/D obtém as melhores taxas de erro no problema de seis objetivos e tem desempenho razoável nos problemas de 4 e 5 objetivos, seu $GD$ é levemente mais alto que os demais métodos e seu $PS$ é baixo. A velocidade de execução do MOEA/D é tão boa quanto a do MACO/D, juntos são os dois algoritmos mais rápidos, tornando o MOEA/D uma boa opção se o objetivo da busca é conseguir uma baixa taxa de erro em um curto tempo de execução, sem se preocupar com o $PS$. Os melhores resultados foram obtidos pelo AEMMD e o método proposto: MACO/D. Com relação ao erro, o AEMMD consegue as melhores taxas, o MACO/D não fica muito atrás. Analisando o $GD$, observa-se que não há muita diferença entre os dois métodos, mas o MACO/D gera melhores soluções que o AEMMD, além disso, o desvio padrão do MACO/D é consideravelmente menor, o que o revela ser um método mais estável no que se refere à qualidade das soluções. O AEMMD produz as maiores fronteiras de Pareto, mas o MACO/D apresenta resultado bem próximo. O mais interessante nesta análise é o tempo de execução, por mais que o AEMMD gere soluções razoavelmente melhores que o MACO/D considerando as métricas $ER$ e $GD$, o segundo é consideravelmente mais rápido, chegando a executar em quase 5 vezes menos tempo. Considerando o fato de que o PRM é um problema sensível ao tempo de execução, pelo menos nos cenários analisados, o MACO/D é a melhor opção entre os algoritmos testados.
 
 A primeira diferença que se nota entre os resultados dos dois problemas é o tempo de execução do algoritmo proposto, o MACO/D. considerando os gráficos da figura \ref{fig_exp3_pmm_todos}, o MACO/D é o segundo algoritmo mais lento e seu tempo de execução está altamente relacionado ao número de objetivos. Na figura \ref{fig_exp3_prm_todos}, que representa o comportamento geral dos algoritmos no PRM, vê-se o oposto: o MACO/D é o algoritmo mais rápido e seu tempo de execução se mantém estável independente da formulação de objetivos. O processo de maior custo computacional no MACO/D é a atualização dos feromônios, onde é necessário recalcular o conjunto de soluções não-dominadas $nd$. A cada iteração, para toda solução criada, é necessário passar por todos elementos em $nd$ verificando a relação de não-dominância. Naturalmente, quanto maior o conjunto $nd$ mais caro se torna o processo. No PRM, foram encontradas fronteiras de Pareto de tamanho razoavelmente pequenos, todas com menos de 350 elementos, ou seja, foi necessário, para cada solução criada, fazer no máximo 350 comparações. No caso do PMM, as fronteiras de Pareto são muito grandes, no problema com 6 objetivos e 50 itens, por exemplo, a cardinalidade do conjunto $nd$ chega a ser maior que 4500. Quanto maior a quantidade de objetivos do problema, maior o número de soluções no Pareto e mais lento será a classificação de soluções não dominadas. Se o conjunto $nd$ é pequeno até mesmo para a maior quantidade de objetivos (caso do PRM), o processo será rápido e o tempo de execução não será muito diferente entre as formulações de objetivos. Por outro lado, se a cardinalidade de $nd$ é muito grande e cresce muito com o aumento da quantidade de objetivos, o tempo necessário para se atualizar os feromônios será muito alto e terá grande variação conforme a formulação de objetivos.
 
@@ -470,7 +470,37 @@ A fim de testar propriamente o comportamento dos algoritmos em espaços de busca
 
 O hiper-volume, junto ao \textit{inverse generational distance} $(IDG)$, são as métricas mais utilizadas na literatura para se avaliar algoritmos many-objectives. O hiper-volume, como explicado no início deste capítulo, calcula o volume da figura geométrica formada pelas distâncias das soluções a um ponto de referência pré-definido. Os pontos de referência utilizados em cada cenário são apresentados na tabela \ref{table_exp4_pts_referencia}.
 
-Neste conjunto de experimentos, assim como na etapa 3, comparou-se apenas os cenários many-objectives, com 4, 5 e 6 objetivos. Por esse motivo, ficaram de fora dos testes os algoritmos clássicos NSGA-II e SPEA2. Em contra-partida incluiu-se 3 novos métodos many-objectives na comparação: SPEA2-SDE (AG), MOACS (ACO) e MOEA/D-ACO (ACO).
+Neste conjunto de experimentos, assim como na etapa 3, comparou-se apenas os cenários many-objectives, com 4, 5 e 6 objetivos. Por esse motivo, ficaram de fora dos testes os algoritmos clássicos NSGA-II e SPEA2. Em contra-partida incluiu-se 3 novos métodos many-objectives na comparação: SPEA2-SDE (AG), MOACS (ACO) e MOEA/D-ACO (ACO). Os parâmetros utilizados para cada método podem ser encontrados na tabela \ref{table_exp4_params}.
+
+\begin{table}[!htbp]
+	\caption{Parâmetros utilizados para o PRM e o PMM na etapa 4 de experimentos.}
+	\label{table_exp4_params}
+	\begin{center}
+		\begin{tabular}{c|r|r}
+			\textbf{Parâmetro} & \textbf{PRM} &  \textbf{PMM} \\ %\hline
+			\hline
+			Tamanho da população               &    90 &      150 \\ %\hline
+			Número de comparações        &   9000 &      15000 \\ %\hline
+			Taxa de crossover                & 100\% &    100\% \\ %\hline
+			Taxa de mutação                 &  20\% &      5\% \\ %\hline
+			Tamanho da vizinhança (MOEA/D e MOEA/D-ACO)    &    10 &       10 \\ %\hline
+			Tamanho das tabelas (MEAMT)   &    30 &       50 \\ %\hline
+			Tamanho da tabela de dominância (MEAMT) &    90 &      150 \\ %\hline
+			Número de divisões (NSGA-III)&     8 &        8 \\ %\hline
+			$\alpha, \beta, \rho$ (ACO's)& 1, 2, 0.3 & 1, 4.3, 0.3 \\ %\hline
+			Intervalo de valores para os feromônios (ACO's)& [0.1, 0.9] & [0.1, 0.9] \\ %\hline
+			$\delta$ (MOEA/D-ACO)& 0.2 & 0.2 \\ %\hline
+			Número de formigas e grupos (MOEA/D-ACO)*& 6 & variável \\ %\hline
+			Número de grupos de formigas (MOEA/D-ACO)*& 3 & 3 \\ %\hline
+			Taxa de elitismo (MOEA/D-ACO)& 0.9 & 0 \\ %\hline
+			Tamanho das amostras (MACO/D)& 10 & 10 \\  %\hline
+			Tamanho do grupo de estruturas ativas (MACO/D)& 5 & 5 \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+Sobre os parâmetros marcados com ``*'' na tabela \ref{table_exp4_params}, a quantidade de formigas depende do parâmetro $H$, do artigo original do algoritmo \cite{ke2013}, enquanto o tamanho dos grupos depende de outro parâmetro, $K$, também descrito no mesmo artigo. Ambos os parâmetros $H$ e $K$ servem como guia para gerar os pesos aleatórios das formigas e dos grupos, quanto maior o valor de $H$, maior será o número de formigas, o mesmo vale para $K$ e a quantidade de grupos. De toda maneira, o número de iterações no laço principal é ajustado para que sempre se tenha o mesmo número de comparações (9000 no PRM e 15000 no PMM). Os valores de $H$ usados no PMM foram: $H=8$ para 4 objetivos, $H=6$ para 5 objetivos e $H=5$ para 6 objetivos.
 
 Com relação aos algoritmos NSGA-III e SPEA2-SDE, na etapa 4, tomou-se uma outra atitude em relação às limitações no tamanho do Pareto. Ao invés de impedir o conjunto de soluções não-dominadas de crescerem além do tamanho máximo da população, ajustou-se esse limite para coincidi-lo com o tamanho médio dos Paretos encontrados pelos algoritmos que retornaram os maiores conjuntos de soluções. Dessa forma, ambos NSGA-III e SPEA2-SDE podem encontrar Paretos tão grandes quanto os demais algoritmos. A tabela \ref{table_exp4_pts_referencia} mostra os limites utilizados para cada cenário de teste.
 
@@ -480,43 +510,121 @@ Com relação aos algoritmos NSGA-III e SPEA2-SDE, na etapa 4, tomou-se uma outr
 	\label{table_exp4_pts_referencia}
 	\begin{tabular}{clll}
 		\textbf{Instância}                                                       & \textbf{Obj.} & \textbf{Ponto de referência}                          & \textbf{Limite} \\ \hline
-		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PMM\\ 50 itens\end{tabular}}  & 4                  &                                                       &                                   \\
-		& 5                  &                                                       &                                   \\
-		& 6                  &                                                       &                                   \\ \hline
-		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PMM\\ 100 itens\end{tabular}} & 4                  &                                                       &                                   \\
-		& 5                  &                                                       &                                   \\
-		& 6                  &                                                       &                                   \\ \hline
-		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PMM\\ 200 itens\end{tabular}} & 4                  &                                                       &                                   \\
-		& 5                  &                                                       &                                   \\
-		& 6                  &                                                       &                                   \\ \hline
-		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PRM\\ Rede 3\end{tabular}}    & $P_4$              & {[}0.758449304, 283, 115, 52{]}                       & 90                                \\
-		& $P_5$              & {[}0.47215566, 0.776046738, 304, 159, 56{]}           & 250                               \\
-		& $P_6$              & {[}0.471416081, 0.776046738, 310, 159, 56, 83.459{]}  & 400                               \\ \hline
-		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PRM\\ Rede 4\end{tabular}}    & $P_4$              & {[}0.717830882, 185, 107, 33{]}                       & 90                                \\
-		& $P_5$              & {[}0.454221232, 0.776046738, 256, 157, 42{]}          & 200                               \\
-		& $P_6$              & {[}0.457194502, 0.776046738, 239, 157, 40, 80.667{]}  & 350                               \\ \hline
-		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PRM\\ Rede 5\end{tabular}}    & $P_4$              & {[}0.776046738, 259, 146, 43{]}                       & 90                                \\
-		& $P_5$              & {[}0.458729196, 0.776046738, 296, 166, 49{]}          & 100                               \\
-		& $P_6$              & {[}0.458729196, 0.776046738, 287, 177, 48, 101.938{]} & 250                               \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PMM\\ 50 itens\end{tabular}}  & 4             & {[}-15665, -17464, -19122, -16978{]}                   & 600             \\
+		& 5             & {[}-15948, -15980, -14696, -14800, -14610{]}           & 1400            \\
+		& 6             & {[}-16094, -14354, -12511, -14240, -17865, -11801{]}   & 4500            \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PMM\\ 100 itens\end{tabular}} & 4             & {[}-30442, -25071, -30870, -29800{]}                   & 1300            \\
+		& 5             & {[}-30673, -30266, -30171, -30922, -28821{]}           & 3200            \\
+		& 6             & {[}-29389, -27406, -30824, -32040, -30531, -30171{]}   & 3400            \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PMM\\ 200 itens\end{tabular}} & 4             & {[}-64608, -58090, -61540, -59399{]}                   & 1500            \\
+		& 5             & {[}-62513, -63014, -58939, -64477, -65814{]}           & 3000            \\
+		& 6             & {[}-59835, -60434, -65232, -60525, -60843, -60753{]}   & 3200            \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PRM\\ Rede 3\end{tabular}}    & $P_4$         & {[}0.758449304, 283, 115, 52{]}                       & 90              \\
+		& $P_5$         & {[}0.47215566, 0.776046738, 304, 159, 56{]}           & 250             \\
+		& $P_6$         & {[}0.471416081, 0.776046738, 310, 159, 56, 83.459{]}  & 400             \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PRM\\ Rede 4\end{tabular}}    & $P_4$         & {[}0.717830882, 185, 107, 33{]}                       & 90              \\
+		& $P_5$         & {[}0.454221232, 0.776046738, 256, 157, 42{]}          & 200             \\
+		& $P_6$         & {[}0.457194502, 0.776046738, 239, 157, 40, 80.667{]}  & 350             \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PRM\\ Rede 5\end{tabular}}    & $P_4$         & {[}0.776046738, 259, 146, 43{]}                       & 90              \\
+		& $P_5$         & {[}0.458729196, 0.776046738, 296, 166, 49{]}          & 100             \\
+		& $P_6$         & {[}0.458729196, 0.776046738, 287, 177, 48, 101.938{]} & 250             \\ \hline
 	\end{tabular}
 \end{table}
+
+Na tabela \ref{table_exp4_pts_referencia}, os valores para o PMM são negativos, pois todos os algoritmos foram implementados para lidar com problemas de minimização. Dessa forma, como no problema da mochila deseja-se maximizar o valor de lucro carregado na mochila, todos os valores são multiplicados por -1 antes de se iniciar a busca.
 
 Com relação aos algoritmos baseados em colônias de formigas (MOEA/D-ACO, MOACS e MACO/D), afim de testar o \textit{framework} da forma mais isolada possível, foi utilizada a mesma estratégia de construção da solução para os três métodos. Isto é, as estratégias para se criar uma solução a partir da tabela de feromônios e das heurísticas dos artigos originais do MOEA/D-ACO e do MOACS foram ignoradas em favor das estratégias utilizadas no MACO/D, algoritmo proposto nesta dissertação. A construção da solução para o ambos os problemas foi explicada na seção \ref{section_construcao_solucao}. No MOEA/D-ACO, cada formiga possui uma solução corrente que interfere nas probabilidades ao construir uma nova solução, por isso o processo de construção foi adaptado para suportar essa característica, sempre, ao calcular o feromônio no MOEA/D-ACO, soma-se um novo termo correspondente à presença ou ausência da aresta (ou item) na solução atual da formiga.
 
 Nesta etapa testou-se os algoritmos NSGA-III, SPEA2-SDE, MOEA/D, AEMMT, AEMMD, MOEA/D-ACO, MOACS, e MACO/D. Foram 3 formulações de objetivo para cada problema (4, 5 e 6 objetivos) e 3 instâncias, totalizando 18 cenários de teste (problema, instância e objetivo). Foram realizadas 30 execuções para cada algoritmo em cada cenário e os resultados foram calculados através das médias dos hiper-volumes de cada execução. O tempo foi avaliado através da média de três execuções em uma máquina i7-3770k@4.36GHz.
 
-As figuras \ref{fig_exp4_r3o4} a \ref{fig_exp4_r5o6} mostram os resultados para os 9 cenários do PRM. O hiper-volume é indicado pelas barras e o eixo vertical do lado esquerdo, enquanto o tempo de execução é mostrado pela linha e o eixo vertical do lado direito.
+Foi possível executar os 8 algoritmos 30 vezes cada apenas para o PRM, os gráficos a seguir, para o PMM, possuem apenas 7 algoritmos, sendo que os cenários com 6 objetivos do NSGA-III foram feitos a partir da média de 5 execuções ao invés de 30. O espaço de busca do problema da mochila é muito maior que o do roteamento \textit{multicast}, o que encarece muito o processo e o torna inviável em algumas situações. No PRM, o SPEA2-SDE foi, claramente, o algoritmo mais caro em termos de tempo, mas no PMM, sua execução foi inviável. No cenário mais simples do PMM, com 50 itens e 4 objetivos, o SPEA2-SDE levou 5,4 minutos para executar. Com 50 itens e 5 objetivos, o algoritmo precisou de 1 hora e 11 minutos. Para o próximo cenário, o computador começou a apresentar problemas de falta de memória. Por essa razão, decidiu-se excluir o SPEA2-SDE dos experimentos para o problema da mochila. Com relação ao NSGA-III no mesmo problema, o tempo de execução foi muito superior aos demais algoritmos, chegando a mais de uma hora em uma das situações. Por essa razão, nos cenários com 6 objetivos, tomou-se a média de apenas 5 execuções ao invés de 30. Além disso, para facilitar a visualização do tempo de execução nos gráficos, excluiu-se essa informação referente ao NSGA-III, ao invés disso, o tempo do NSGA-III é informado na forma de tabela para cada um dos cenários do PMM (tabela \ref{table_exp4_tempos_nsga3}).
+
+\begin{table}[!htbp]
+	\centering
+	\caption{Tempos de execução para o NSGA-III no PMM}
+	\label{table_exp4_tempos_nsga3}
+	\begin{tabular}{cll}
+		\textbf{Instância}                                                       & \textbf{Obj.} & \textbf{Tempo de execução} \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PMM\\ 50 itens\end{tabular}}  & 4             & 1m 1s                      \\
+		& 5             & 5m 34s                     \\
+		& 6             & 1h 9m 5s                   \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PMM\\ 100 itens\end{tabular}} & 4             & 4m 39s                     \\
+		& 5             & 30m 34s                    \\
+		& 6             & 35m 10s                    \\ \hline
+		\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}PMM\\ 200 itens\end{tabular}} & 4             & 6m 21s                     \\
+		& 5             & 26m 52s                    \\
+		& 6             & 30m 49s                    \\ \hline
+	\end{tabular}
+\end{table}
+
+As figuras \ref{fig_exp4_i50o4} a \ref{fig_exp4_i200o6} mostram os resultados para os 9 cenários do PMM, enquanto as figuras \ref{fig_exp4_r3o4} a \ref{fig_exp4_r5o6} traz os gráficos com os resultados dos 9 cenários do PRM. O hiper-volume é indicado pelas barras e o eixo vertical do lado esquerdo, enquanto o tempo de execução é mostrado pela linha e o eixo vertical do lado direito. No eixo do hiper-volume, as unidades k, M, P e E significam, respectivamente, $10^3$, $10^6$, $10^15$ e $10^18$. Para o PMM, como os resultados foram muito similares uns aos outros, fez-se uma análise geral. O PRM, por sua vez, mostrou diferenças significativas entre um cenário e outro e portanto foi analisado caso a caso.
 
 \begin{figure*}[!htbp]
-	\caption{Rede 3, 4 objetivos}
+	\caption{Resultados do PMM com 50 itens e 4 objetivos}
+	\label{fig_exp4_i50o4}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/i50o4}
+\end{figure*}
+
+\begin{figure*}[!htbp]
+	\caption{Resultados do PMM com 50 itens e 5 objetivos}
+	\label{fig_exp4_i50o5}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/i50o5}
+\end{figure*}
+
+\begin{figure*}[!htbp]
+	\caption{Resultados do PMM com 50 itens e 6 objetivos}
+	\label{fig_exp4_i50o6}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/i50o6}
+\end{figure*}
+
+\begin{figure*}[!htbp]
+	\caption{Resultados do PMM com 100 itens e 4 objetivos}
+	\label{fig_exp4_i100o4}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/i100o4}
+\end{figure*}
+
+\begin{figure*}[!htbp]
+	\caption{Resultados do PMM com 100 itens e 5 objetivos}
+	\label{fig_exp4_i100o5}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/i100o5}
+\end{figure*}
+
+\begin{figure*}[!htbp]
+	\caption{Resultados do PMM com 100 itens e 6 objetivos}
+	\label{fig_exp4_i100o6}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/i100o6}
+\end{figure*}
+
+\begin{figure*}[!htbp]
+	\caption{Resultados do PMM com 200 itens e 4 objetivos}
+	\label{fig_exp4_i200o4}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/i200o4}
+\end{figure*}
+
+\begin{figure*}[!htbp]
+	\caption{Resultados do PMM com 200 itens e 5 objetivos}
+	\label{fig_exp4_i200o5}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/i200o5}
+\end{figure*}
+
+\begin{figure*}[!htbp]
+	\caption{Resultados do PMM com 200 itens e 6 objetivos}
+	\label{fig_exp4_i200o6}
+	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/i200o6}
+\end{figure*}
+
+No problema da mochila todos os algoritmos tiveram comportamento parecido ao variar os cenários. Todos os AG's obtiveram hiper-volumes ruins quando comparados aos ACO's. Em termos de tempo, o MOEA/D é de longe o mais rápido dentre todos os métodos e, caso essa seja uma grande preocupação, ele pode ser a melhor opção de algoritmo. Além disso, dentre os AG's, o MOEA/D sempre obtém soluções de qualidade similar ou superior ao AEMMT e ao AEMMD. O NSGA-III, apesar de conseguir o melhor hiper-volume dentre os AG's, é muito mais lento que qualquer outro método e apresenta hiper-volume sempre menor que os ACO's, por esse motivo, não é uma boa opção em nenhum dos cenários aqui analisados. A custo de mais tempo, mas ainda se mantendo abaixo da marca de 1 minuto, os ACO's MOEA/D-ACO e MACO/D produziram conjuntos de soluções de qualidade muito superior aos AG's. Dentre os três ACO's, o MOACS demorou mais a executar e obteve os piores resultados, enquanto o MOEA/D-ACO superou os dois outros dois métodos tanto em hiper-volume quanto tempo. Finalmente, os gráficos das figuras \ref{fig_exp4_i50o4} a \ref{fig_exp4_i200o6} permitem concluir que o MOEA/D-ACO é o melhor algoritmo para o problema da mochila multiobjetivo com 4, 5 e 6 objetivos, a única exceção é caso seja muito importante obter um baixo tempo de execução, nessa situação, o MOEA/D é o melhor método.
+
+\begin{figure*}[!htbp]
+	\caption{Resultados do PRM na rede 3 com 4 objetivos}
 	\label{fig_exp4_r3o4}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r3o4}
 \end{figure*}
 
-Nesta etapa, a rede 3 com 4 objetivos é o cenário mais simples do PRM. Nesse caso o AEMMD apresenta o pior hiper-volume, enquanto os ACO's MOACS e MACO/D se destacam, sendo o MOACS o melhor entre os dois, tanto em termos de hiper-volume quanto tempo. O AEMMT atinge hiper-volume quase tão bom quanto o MACO/D mas leva consideravelmente mais tempo para executar. Neste cenário, o MOACS é claramente a melhor estratégia para se resolver o problema.
+No PRM, inicia-se a análise pelo cenário mais simples: a rede 3 com 4 objetivos. Nesse caso o AEMMD apresenta o pior hiper-volume, enquanto os ACO's MOACS e MACO/D se destacam, sendo o MOACS o melhor entre os dois, tanto em termos de hiper-volume quanto tempo. O AEMMT atinge hiper-volume quase tão bom quanto o MACO/D mas leva consideravelmente mais tempo para executar. Neste cenário, o MOACS é claramente a melhor estratégia para se resolver o problema.
 
 \begin{figure*}[!htbp]
-	\caption{Rede 3, 5 objetivos}
+	\caption{Resultados do PRM na rede 3 com 5 objetivos}
 	\label{fig_exp4_r3o5}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r3o5}
 \end{figure*}
@@ -524,7 +632,7 @@ Nesta etapa, a rede 3 com 4 objetivos é o cenário mais simples do PRM. Nesse c
 Para a rede 3 com 5 objetivos, a simples modificação que o SDE traz para o SPEA2 o permite obter o melhor hiper-volume entre todos os algoritmos. Infelizmente, um dos piores problemas do SPEA2, o custo do algoritmo, não é resolvido no SPEA2-SDE e, dessa forma, leva-se muito tempo para executá-lo quando comparado às demais estratégias. Os algoritmos NSGA-III, MOEA/D, AEMMT e MOEA/D-ACO obtiveram todos performance ruins. O AEMMD apresentou ótimo valor de hiper-volume com tempo de execução razoável, enquanto os ACO's MOACS e MACO/D precisaram de menos tempo para executar e conseguiram hiper-volumes bons, mas inferiores ao AEMMD. Neste cenário, não é claro qual é o melhor algoritmo. Se um bom hiper-volume é mais desejável que um rápido tempo de execução, o AEMMD é a melhor opção, caso seja de extrema importância a rapidez do algoritmo, ambos MOACS e MACO/D fariam bem o trabalho.
 
 \begin{figure*}[!htbp]
-	\caption{Rede 3, 6 objetivos}
+	\caption{Resultados do PRM na rede 3 com 6 objetivos}
 	\label{fig_exp4_r3o6}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r3o6}
 \end{figure*}
@@ -532,7 +640,7 @@ Para a rede 3 com 5 objetivos, a simples modificação que o SDE traz para o SPE
 Na rede 3 com 6 objetivos, o SPEA2-SDE repete o comportamento do cenário anterior, ou seja, consegue um resultado de hiper-volume muito bom, mas a um custo muito alto de tempo. Dentre os demais algoritmos, o único que se destaca é o MOACS, que possui ótimo resultado de hiper-volume e um custo muito pequeno em tempo: 7,3 segundos. O AEMMD consegue hiper-volume pouco melhor que o MOACS, mas a um custo superior em mais de três vezes: 26,6 segundos.
 
 \begin{figure*}[!htbp]
-	\caption{Rede 4, 4 objetivos}
+	\caption{Resultados do PRM na rede 4 com 4 objetivos}
 	\label{fig_exp4_r4o4}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r4o4}
 \end{figure*}
@@ -540,7 +648,7 @@ Na rede 3 com 6 objetivos, o SPEA2-SDE repete o comportamento do cenário anteri
 Na rede 4 com 4 objetivos todos os algoritmos genéticos tiveram performance bem fraca, os únicos métodos que apresentaram bom desempenho foram aqueles baseados em colônias de formigas. Dentre os ACO's, destacaram-se o MOEA/D-ACO, que executa em menor tempo e obtém um bom hiper-volume, e o MOACS, que leva mais tempo para executar, mas em compensação produz hiper-volume levemente melhor.
 
 \begin{figure*}[!htbp]
-	\caption{Rede 4, 5 objetivos}
+	\caption{Resultados do PRM na rede 4 com 5 objetivos}
 	\label{fig_exp4_r4o5}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r4o5}
 \end{figure*}
@@ -548,7 +656,7 @@ Na rede 4 com 4 objetivos todos os algoritmos genéticos tiveram performance bem
 Com 5 objetivos, na rede 4, o SPEA2-SDE volta a mostrar seu potencial quanto ao hiper-volume, mas seu alto custo o torna um algoritmo menos interessante em aplicações práticas. Os algoritmos AEMMD e MOACS são os que apresentam melhor desempenho, o AEMMD consegue maior hiper-volume e leva 10 segundos para executar, enquanto o MOACS garante um resultado levemente pior e executa em 7,3 segundos.
 
 \begin{figure*}[!htbp]
-	\caption{Rede 4, 6 objetivos}
+	\caption{Resultados do PRM na rede 4 com 6 objetivos}
 	\label{fig_exp4_r4o6}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r4o6}
 \end{figure*}
@@ -556,7 +664,7 @@ Com 5 objetivos, na rede 4, o SPEA2-SDE volta a mostrar seu potencial quanto ao 
 Para 6 objetivos, na rede 4, o custo em tempo do SPEA2 dispara, o que inclusive dificulta a visualização do tempo nos demais algoritmos. O melhor hiper-volume é dado pelo MACO/D, o segundo pelo SPEA2-SDE e o terceiro pelo MOACS, sendo a  diferença entre os três muito pequena. O SPEA-SDE possui péssima relação custo/benefício quando comparado aos dois ACO's. Entre o MOACS e o MACO/D, o segundo consegue um conjunto de soluções de qualidade levemente superior ao primeiro e leva apenas um segundo a mais para executar, portanto é preferível.
 
 \begin{figure*}[!htbp]
-	\caption{Rede 5, 4 objetivos}
+	\caption{Resultados do PRM na rede 5 com 4 objetivos}
 	\label{fig_exp4_r5o4}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r5o4}
 \end{figure*}
@@ -564,7 +672,7 @@ Para 6 objetivos, na rede 4, o custo em tempo do SPEA2 dispara, o que inclusive 
 A rede 5 é a mais complexa utilizada em nossos experimentos, para 4 objetivos, o NSGA-III apresentou o pior resultado. O MOEA/D-ACO levou praticamente o mesmo tempo que o algoritmo original MOEA/D, mas obteve um hiper-volume consideravelmente pior; e os demais algoritmos não variaram muito em questão de hiper-volume. A melhor relação custo/benefício foi obtida pelo MOACS, que apresentou o segundo maior hiper-volume e um tempo de execução razoável.
 
 \begin{figure*}[!htbp]
-	\caption{Rede 5, 5 objetivos}
+	\caption{Resultados do PRM na rede 5 com 5 objetivos}
 	\label{fig_exp4_r5o5}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r5o5}
 \end{figure*}
@@ -572,7 +680,7 @@ A rede 5 é a mais complexa utilizada em nossos experimentos, para 4 objetivos, 
 Na rede 5 com 5 objetivos, os melhores hiper-volumes são dados pelo AEMMD e MACO/D. O AEMMD apresenta um conjunto de soluções de melhor qualidade, mas leva um pouco mais de tempo para calculá-las, enquanto as soluções encontradas pelo MACO/D são levemente piores e o tempo necessário para obtê-las é um pouco menor.
 
 \begin{figure*}[!htbp]
-	\caption{Rede 5, 6 objetivos}
+	\caption{Resultados do PRM na rede 5 com 6 objetivos}
 	\label{fig_exp4_r5o6}
 	\includegraphics[width=1\textwidth]{cap_experimentos/figs/etapa4/r5o6}
 \end{figure*}

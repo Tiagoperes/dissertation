@@ -125,6 +125,14 @@ Dispon{\'\i}vel em:
   knapsack problem.
 v.~16, p. 65--83, 2010.}
 
+\bibitem[Ke, Zhang e Battiti 2013]{ke2013}
+\abntrefinfo{Ke, Zhang e Battiti}{KE; ZHANG; BATTITI}{2013}
+{KE, L.; ZHANG, Q.; BATTITI, R. Moea/d-aco: A multiobjective evolutionary
+  algorithm using decomposition and antcolony.
+\textbf{IEEE Transactions on Cybernetics}, v.~43, n.~6, p. 1845--1859, Dec
+  2013.
+ISSN 2168-2267.}
+
 \bibitem[Khuri, B{\"a}ck e Heitk{\"o}tter 1994]{Khuri1994}
 \abntrefinfo{Khuri, B{\"a}ck e Heitk{\"o}tter}{KHURI; B{\"A}CK;
   HEITK{\"O}TTER}{1994}

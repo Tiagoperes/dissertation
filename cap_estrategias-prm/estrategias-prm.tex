@@ -16,7 +16,7 @@ Como mostrado na seção \ref{section_problemas_prm}, considerando que em cada n
 Neste trabalho optou-se por utilizar a representação 1, árvores.
 
 \section{Inicialização dos indivíduos}
-Considerando $G$ o gráfico da rede, $r$ a raiz (servidor) e $D$ o conjunto de destinos. Para criar uma solução aleatória no PRM, inicia-se um grafo $S$ que contém apenas o vértice $r$, o passo seguinte é extrair um destino aleatório $d \in D$ e, com base no grafo $G$, criar um caminho em $S$ entre qualquer um de seus vértices e $d$. Após construir o caminho, $d$ com certeza será atingível a partir de qualquer vértice de $S$. O processo se repete até que todos os nós estejam no grafo $S$. Para obter a árvore aleatória, basta então remover os ciclos de $S$ e aplicar uma poda.
+Considerando $G$ o grafo da rede, $r$ a raiz (servidor) e $D$ o conjunto de destinos. Para criar uma solução aleatória no PRM, inicia-se um grafo $S$ que contém apenas o vértice $r$, o passo seguinte é extrair um destino aleatório $d \in D$ e, com base no grafo $G$, criar um caminho em $S$ entre qualquer um de seus vértices e $d$. Após construir o caminho, $d$ com certeza será atingível a partir de qualquer vértice de $S$. O processo se repete até que todos os nós destinos estejam no grafo $S$. Para obter a árvore aleatória, basta então remover os ciclos de $S$ e aplicar uma poda.
 
 Para criar o caminho aleatório entre um vértice de $S$ e $d$, considera-se um \textit{array} de exploração $E$ que inicialmente contém todos os nós de $S$. Enquanto o destino $d$ não é encontrado, escolhe-se algum nó $e \in E$ e inclui-se em $E$ todos os vértices conectados a $e$. Quando $d$ é encontrado, adiciona-se a $S$ o caminho necessário para sair do vértice de $S$ e chegar ao destino $d$.
 
@@ -127,3 +127,12 @@ O Algoritmo \ref{alg_aco_prm_construir_solucao} recebe como parâmetros de entra
 \end{itemize}
 
 Trabalhar com todas as arestas possíveis é demasiadamente caro e inviável para um algoritmo em que se deseja boa performance em termos de tempo de execução. Por isso, trabalha-se com uma amostra da lista de exploração (linha 5 do algoritmo). Também a fim de se evitar o crescimento de $E$, nas linhas 12 a 16, caso um novo vértice descoberto já seja atingível a partir de alguma aresta em $E$, mantém-se em $E$ apenas uma das arestas. Para escolher qual das arestas manter, calcula-se as probabilidades de acordo com os feromônios ($\tau$) e a heurística ($h$).
+
+Com relação às heurísticas no PRM, uma função é construída para cada métrica de rede presente na formulação de objetivos. No problema $P_4$, por exemplo, em que os objetivos envolvem as métricas custo, \textit{delay}, tráfego e capacidade, quatro heurísticas são criadas, são elas:
+
+\begin{enumerate}
+	\item $h_1(e) = 1 - custo(e)$, onde $custo(e)$ é o valor de custo normalizado entre 0 e 1 da aresta $e$;
+	\item $h_2(e) = 1 - delay(e)$, onde $delay(e)$ é o valor de \textit{delay} normalizado entre 0 e 1 da aresta $e$;
+	\item $h_3(e) = 1 - trafego(e)$, onde $trafego(e)$ é o valor de tráfego normalizado entre 0 e 1 da aresta $e$;
+	\item $h_4(e) = capacidade(e)$, onde $capacidade(e)$ é o valor de capacidade normalizado entre 0 e 1 da aresta $e$. Neste caso não se faz $1 - capacidade(e)$, pois essa é a única métrica que deve ser maximizada.
+\end{enumerate}
