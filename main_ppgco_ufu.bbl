@@ -5,21 +5,37 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
-\bibitem[Alaya, Solnon e Ghedira]{Alaya2004}
-\abntrefinfo{Alaya, Solnon e Ghedira}{ALAYA; SOLNON; GHEDIRA}{}
+\bibitem[Aguirre e Tanaka 2009]{Aguirre2009}
+\abntrefinfo{Aguirre e Tanaka}{AGUIRRE; TANAKA}{2009}
+{AGUIRRE, H.; TANAKA, K. Many-objective optimization by space partitioning and
+  adaptive $\varepsilon$-ranking on mnk-landscapes.
+p. 407--422, 2009.}
+
+\bibitem[Alaya, Solnon e Ghedira 2004]{Alaya2004}
+\abntrefinfo{Alaya, Solnon e Ghedira}{ALAYA; SOLNON; GHEDIRA}{2004}
 {ALAYA, I.; SOLNON, C.; GHEDIRA, K. Ant algorithm for the multi-dimensional
-  knapsack problem.}
+  knapsack problem.
+p. 63--72, 2004.}
 
 \bibitem[Alaya, Solnon e Ghedira 2007]{Alaya2007}
 \abntrefinfo{Alaya, Solnon e Ghedira}{ALAYA; SOLNON; GHEDIRA}{2007}
 {\underline{\ \ \ \ \ \ \ \ }. Ant colony optimization for multi-objective
-  optimization problems. In:  \textbf{IEEE Int. Conf. on Tools with Artificial
-  Intelligence}. [S.l.: s.n.], 2007. v.~1, p. 450--457.}
+  optimization problems. In:  \textbf{19th IEEE International Conference on
+  Tools with Artificial Intelligence(ICTAI 2007)}. [S.l.: s.n.], 2007. v.~1, p.
+  450--457.
+ISSN 1082-3409.}
+
+\bibitem[Bader e Zitzler 2011]{Bader2011}
+\abntrefinfo{Bader e Zitzler}{BADER; ZITZLER}{2011}
+{BADER, J.; ZITZLER, E. Hype: An algorithm for fast hypervolume-based
+  many-objective optimization.
+\textbf{Trans. Evol. Comput.}, v. 19(1), p. 45--76, 2011.}
 
 \bibitem[Baran e Schaerer 2003]{Baran2003}
 \abntrefinfo{Baran e Schaerer}{BARAN; SCHAERER}{2003}
-{BARAN, B.; SCHAERER, M. \textbf{A Multiobjective Ant Colony System for Vehicle
-  Routing Problem with Time Windows.} 2003. 97-102~p.}
+{BARAN, B.; SCHAERER, M. A multiobjective ant colony system for vehicle routing
+  problem with time windows.
+v.~21, p. 97--102, 01 2003.}
 
 \bibitem[Beume, Naujoks e Emmerich 2007]{Beume2007}
 \abntrefinfo{Beume, Naujoks e Emmerich}{BEUME; NAUJOKS; EMMERICH}{2007}
@@ -96,11 +112,11 @@ ISSN 1877-0509.
 Dispon{\'\i}vel em:
   \url{http://www.sciencedirect.com/science/article/pii/S1877050914001859}.}
 
-\bibitem[França et al. 2017]{Franca2017}
-\abntrefinfo{França et al.}{FRANçA et al.}{2017}
-{FRANçA, T.~P. et al. A comparative analysis of moeas considering two discrete
-  optimization problems. In:  \textbf{2017 Brazilian Conference on Intelligent
-  Systems (BRACIS)}. [S.l.: s.n.], 2017. p. 402--407.}
+\bibitem[Fran{\c c}a et al. 2017]{Franca2017}
+\abntrefinfo{Fran{\c c}a et al.}{FRAN{\c C}A et al.}{2017}
+{FRAN{\c C}A, T.~P. et al. A comparative analysis of moeas considering two
+  discrete optimization problems. In:  \textbf{2017 Brazilian Conference on
+  Intelligent Systems (BRACIS)}. [S.l.: s.n.], 2017. p. 402--407.}
 
 \bibitem[Goldberg 1989]{Goldberg1989}
 \abntrefinfo{Goldberg}{GOLDBERG}{1989}
@@ -125,7 +141,7 @@ Dispon{\'\i}vel em:
   knapsack problem.
 v.~16, p. 65--83, 2010.}
 
-\bibitem[Ke, Zhang e Battiti 2013]{ke2013}
+\bibitem[Ke, Zhang e Battiti 2013]{Ke2013}
 \abntrefinfo{Ke, Zhang e Battiti}{KE; ZHANG; BATTITI}{2013}
 {KE, L.; ZHANG, Q.; BATTITI, R. Moea/d-aco: A multiobjective evolutionary
   algorithm using decomposition and antcolony.
@@ -195,11 +211,23 @@ ISSN 0005-8580.}
   traveling salesman problem.
 \textbf{J. of Computer Science \& Technology}, v. 16(2), p. 89--94, 2016.}
 
+\bibitem[Schaffer 1985]{Schaffer1985}
+\abntrefinfo{Schaffer}{SCHAFFER}{1985}
+{SCHAFFER, J.~D. Some experiments in machine learning using vector evaluated
+  genetic algorithms.
+1985.}
+
 \bibitem[Souza e Pozo 2015]{SouzaPozo2015}
 \abntrefinfo{Souza e Pozo}{SOUZA; POZO}{2015}
 {SOUZA, M.~Z. d.; POZO, A. T.~R. Multiobjective binary aco for unconstrained
   binary quadratic programming. In:  \textbf{2015 Brazilian Conference on
   Intelligent Systems (BRACIS)}. [S.l.: s.n.], 2015. p. 86--91.}
+
+\bibitem[Srinivas e Deb 1994]{Srinivas1994}
+\abntrefinfo{Srinivas e Deb}{SRINIVAS; DEB}{1994}
+{SRINIVAS, N.; DEB, K. Multiobjective optimization using nondominated sorting
+  in genetic algorithms.
+\textbf{Trans. Evol. Comput.}, v.~2(3), p. 221--248, 1994.}
 
 \bibitem[While, Bradstreet e Barone 2012]{Bradstreet2012}
 \abntrefinfo{While, Bradstreet e Barone}{WHILE; BRADSTREET; BARONE}{2012}

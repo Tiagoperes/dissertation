@@ -4,11 +4,11 @@ São vários os problemas em que se pode aplicar os algoritmos multiobjetivos e 
 
 \section{Problema da mochila multiobjetivo}
 
-O problema da mochila (PM) é um problema teórico muito conhecido na computação e geralmente utilizado para se introduzir o conceito de otimização. Apesar disso, existem problemas reais equivalentes que podem ser resolvidos com as mesmas técnicas, como o escalonamento de tarefas em um sistema operacional.
+O \ac{PM} é um problema teórico muito conhecido na computação e geralmente utilizado para se introduzir o conceito de otimização. Apesar disso, existem problemas reais equivalentes que podem ser resolvidos com as mesmas técnicas, como o escalonamento de tarefas em um sistema operacional.
 
-O problema da mochila consiste em arranjar um conjunto de itens em uma mochila de forma a não exceder a capacidade da mesma e ao mesmo tempo maximizar o valor (lucro) dos objetos carregados. Matematicamente, dado uma mochila de capacidade $C$ e um conjunto de itens $O$, onde cada $O_i \in O$ possui um peso $peso(O_i)$ e um lucro $lucro(O_i)$, encontrar o conjunto $S \subset O$, tal que $\sum_{o \in S} peso(o) <= C$ e $\sum_{o \in S} lucro(o)$ seja o maior possível.
+O problema da mochila consiste em arranjar um conjunto de itens em uma mochila de forma a não exceder a capacidade da mesma e ao mesmo tempo maximizar o valor (lucro) dos objetos carregados. Matematicamente, dado uma mochila de capacidade $C$ e um conjunto de itens $O$, onde cada $O_i \in O$ possui um peso $peso(O_i)$ e um lucro $lucro(O_i)$, encontrar o conjunto $S \subset O$, tal que $\sum_{o \in S} peso(o) \leq C$ e $\sum_{o \in S} lucro(o)$ seja o maior possível.
 
-Existem diversas estratégias para se resolver o problema da mochila (PM), dentre elas as mais usadas são os algoritmos gulosos e os algoritmos genéticos. Uma coletânea de algoritmos gulosos para o PM são explicados, implementados e analisados em \cite{Martello1990}.  Em \cite{Khuri1994}, um AG é proposto, mostrando o potencial da estratégia para a resolução de problemas de otimização NP-completos com restrições. Apesar de existirem múltiplas estratégias, os algoritmos gulosos são os mais rápidos e eficientes para resolver o PM mono-objetivo, em contra-partida, a complexidade adicionada pela versão multiobjetivo (PMM) inviabiliza a utilização dos mesmos, tornando os AG's e demais métodos bio-inspirados as melhores opções.
+Existem diversas estratégias para se resolver o \ac{PM}, dentre elas as mais usadas são os algoritmos gulosos e os algoritmos genéticos. Uma coletânea de algoritmos gulosos para o \ac{PM} são explicados, implementados e analisados em \cite{Martello1990}.  Em \cite{Khuri1994}, um AG é proposto, mostrando o potencial da estratégia para a resolução de problemas de otimização NP-completos com restrições. Apesar de existirem múltiplas estratégias, os algoritmos gulosos são os mais rápidos e eficientes para resolver o PM mono-objetivo, em contra-partida, a complexidade adicionada pela versão multiobjetivo (PMM) inviabiliza a utilização dos mesmos, tornando os AG's e demais métodos bio-inspirados as melhores opções.
 
 O problema da mochila multiobjetivo (PMM) é similar ao original, sua única diferença está no fato de que cada item, ao invés de possuir um único valor (lucro), é composto de múltiplos valores. No PMM, a função $lucro(O_i)$ retorna um vetor ao invés de um escalar, onde cada componente representa o valor do item $O_i$ em um dos objetivos. Por exemplo, no PMM de 3 objetivos, cada $O_i \in O$ possui um vetor tri-dimensional de lucros. O objetivo do problema passa a ser maximizar todos os lucros ao invés de um único valor.
 
@@ -59,7 +59,7 @@ Neste trabalho considera-se até quatro valores de peso para um enlace rede: cus
 	\item Custo total: soma dos valores de custo para cada aresta da árvore;
 	\item Delay fim-a-fim médio: média da soma dos \textit{delays} em cada ramo da árvore. Em outras palavras, média do atraso em cada uma das comunicações cliente-servidor;
 	\item Delay fim-a-fim máximo: maior valor para a soma de \textit{delays} dentre todos os ramos da árvore;
-	\item Hops count: número de vértices na árvore;
+	\item \textit{Hops count}: número de vértices na árvore;
 	\item Utilização máxima de enlaces: considerando todas as arestas na árvore, qual delas atinge a maior utilização de banda? Matematicamente, considerando $E$ o conjunto de arestas da árvore e $\phi$ o tamanho da mensagem, $\max_{e \in E} \frac{t(e) + \phi}{z(e)}$;
 	\item Utilização média dos enlaces: média entre a utilização de banda entre todas as arestas da árvore. Similar à definição anterior.
 \end{enumerate}

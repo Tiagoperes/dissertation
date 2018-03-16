@@ -1,43 +1,43 @@
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces Fronteira de Pareto}}{36}{figure.3.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Tabelas do AEMMT}}{44}{figure.3.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Tabelas do AEMMD}}{45}{figure.3.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Exemplo de rede retirado de \cite {Bueno2010}}}{53}{figure.4.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Exemplos de \IeC {\'a}rvores multicast relativos ao grafo da figura \ref {fig_prm_grafo}. Retirado do trabalho de \cite {Lafeta2016}}}{54}{figure.4.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Exemplo de \IeC {\'a}rvore multicast no PRM multiobjetivo}}{54}{figure.4.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Exemplo de crossover uniforme}}{58}{figure.5.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Exemplo de cruzamento por caminho}}{63}{figure.6.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Etapa 1: resultados para o PMM com 30 itens}}{79}{figure.8.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Etapa 1: resultados para o PMM com 50 itens}}{80}{figure.8.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Etapa 1: resultados para o PMM com 100 itens}}{81}{figure.8.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Etapa 1: resultados agrupados para o PMM com 30, 50 e 100 itens}}{82}{figure.8.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Etapa 1: resultados para o PRM na rede $R_1$}}{84}{figure.8.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Etapa 1: resultados para o PRM na rede $R_2$}}{85}{figure.8.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Etapa 1: resultados para o PRM na rede $R_3$}}{86}{figure.8.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Etapa 1: resultados agrupados para o PRM nas redes $R_1$, $R_2$ e $R_3$}}{87}{figure.8.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Etapa 3: resultados para o PMM com 30 itens}}{93}{figure.8.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces Etapa 3: resultados para o PMM com 40 itens}}{93}{figure.8.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces Etapa 3: resultados para o PMM com 50 itens}}{94}{figure.8.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Etapa 3: resultados agrupados para o PMM com 30, 40 e 50 itens}}{95}{figure.8.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces Etapa 3: resultados para o PRM na rede $R_1$}}{95}{figure.8.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces Etapa 3: resultados para o PRM na rede $R_2$}}{96}{figure.8.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces Etapa 3: resultados para o PRM na rede $R_3$}}{96}{figure.8.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Etapa 3: resultados agrupados para o PRM nas redes $R_1$, $R_2$ e $R_3$}}{97}{figure.8.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces Resultados do PMM com 50 itens e 4 objetivos}}{103}{figure.8.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces Resultados do PMM com 50 itens e 5 objetivos}}{103}{figure.8.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces Resultados do PMM com 50 itens e 6 objetivos}}{103}{figure.8.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces Resultados do PMM com 100 itens e 4 objetivos}}{104}{figure.8.28}
-\contentsline {figure}{\numberline {29}{\ignorespaces Resultados do PMM com 100 itens e 5 objetivos}}{104}{figure.8.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces Resultados do PMM com 100 itens e 6 objetivos}}{104}{figure.8.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces Resultados do PMM com 200 itens e 4 objetivos}}{105}{figure.8.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces Resultados do PMM com 200 itens e 5 objetivos}}{105}{figure.8.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces Resultados do PMM com 200 itens e 6 objetivos}}{105}{figure.8.33}
-\contentsline {figure}{\numberline {34}{\ignorespaces Resultados do PRM na rede 3 com 4 objetivos}}{106}{figure.8.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces Resultados do PRM na rede 3 com 5 objetivos}}{106}{figure.8.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces Resultados do PRM na rede 3 com 6 objetivos}}{107}{figure.8.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces Resultados do PRM na rede 4 com 4 objetivos}}{107}{figure.8.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces Resultados do PRM na rede 4 com 5 objetivos}}{108}{figure.8.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces Resultados do PRM na rede 4 com 6 objetivos}}{108}{figure.8.39}
-\contentsline {figure}{\numberline {40}{\ignorespaces Resultados do PRM na rede 5 com 4 objetivos}}{109}{figure.8.40}
-\contentsline {figure}{\numberline {41}{\ignorespaces Resultados do PRM na rede 5 com 5 objetivos}}{109}{figure.8.41}
-\contentsline {figure}{\numberline {42}{\ignorespaces Resultados do PRM na rede 5 com 6 objetivos}}{110}{figure.8.42}
+\contentsline {figure}{\numberline {1}{\ignorespaces Fronteira de Pareto}}{38}{figure.3.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Tabelas do AEMMT}}{46}{figure.3.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Tabelas do AEMMD}}{47}{figure.3.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Exemplo de rede retirado de \cite {Bueno2010}}}{55}{figure.4.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Exemplos de \IeC {\'a}rvores multicast relativos ao grafo da figura \ref {fig_prm_grafo}. Retirado do trabalho de \cite {Lafeta2016}}}{56}{figure.4.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Exemplo de \IeC {\'a}rvore multicast no PRM multiobjetivo}}{56}{figure.4.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Exemplo de crossover uniforme}}{60}{figure.5.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Exemplo de cruzamento por caminho}}{65}{figure.6.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Etapa 1: resultados para o PMM com 30 itens}}{82}{figure.8.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Etapa 1: resultados para o PMM com 50 itens}}{83}{figure.8.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Etapa 1: resultados para o PMM com 100 itens}}{84}{figure.8.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Etapa 1: resultados agrupados para o PMM com 30, 50 e 100 itens}}{85}{figure.8.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Etapa 1: resultados para o PRM na rede $R_1$}}{86}{figure.8.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Etapa 1: resultados para o PRM na rede $R_2$}}{87}{figure.8.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Etapa 1: resultados para o PRM na rede $R_3$}}{88}{figure.8.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Etapa 1: resultados agrupados para o PRM nas redes $R_1$, $R_2$ e $R_3$}}{89}{figure.8.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Etapa 3: resultados para o PMM com 30 itens}}{94}{figure.8.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Etapa 3: resultados para o PMM com 40 itens}}{95}{figure.8.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Etapa 3: resultados para o PMM com 50 itens}}{96}{figure.8.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Etapa 3: resultados agrupados para o PMM com 30, 40 e 50 itens}}{96}{figure.8.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Etapa 3: resultados para o PRM na rede $R_1$}}{97}{figure.8.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Etapa 3: resultados para o PRM na rede $R_2$}}{98}{figure.8.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Etapa 3: resultados para o PRM na rede $R_3$}}{98}{figure.8.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces Etapa 3: resultados agrupados para o PRM nas redes $R_1$, $R_2$ e $R_3$}}{99}{figure.8.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces Resultados do PMM com 50 itens e 4 objetivos}}{104}{figure.8.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Resultados do PMM com 50 itens e 5 objetivos}}{105}{figure.8.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces Resultados do PMM com 50 itens e 6 objetivos}}{105}{figure.8.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces Resultados do PMM com 100 itens e 4 objetivos}}{105}{figure.8.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces Resultados do PMM com 100 itens e 5 objetivos}}{106}{figure.8.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces Resultados do PMM com 100 itens e 6 objetivos}}{106}{figure.8.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces Resultados do PMM com 200 itens e 4 objetivos}}{106}{figure.8.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces Resultados do PMM com 200 itens e 5 objetivos}}{107}{figure.8.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces Resultados do PMM com 200 itens e 6 objetivos}}{107}{figure.8.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces Resultados do PRM na rede 3 com 4 objetivos}}{108}{figure.8.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces Resultados do PRM na rede 3 com 5 objetivos}}{108}{figure.8.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces Resultados do PRM na rede 3 com 6 objetivos}}{109}{figure.8.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces Resultados do PRM na rede 4 com 4 objetivos}}{109}{figure.8.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces Resultados do PRM na rede 4 com 5 objetivos}}{110}{figure.8.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces Resultados do PRM na rede 4 com 6 objetivos}}{110}{figure.8.39}
+\contentsline {figure}{\numberline {40}{\ignorespaces Resultados do PRM na rede 5 com 4 objetivos}}{110}{figure.8.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces Resultados do PRM na rede 5 com 5 objetivos}}{111}{figure.8.41}
+\contentsline {figure}{\numberline {42}{\ignorespaces Resultados do PRM na rede 5 com 6 objetivos}}{111}{figure.8.42}

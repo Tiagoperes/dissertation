@@ -11,17 +11,10 @@ A level-1 auxiliary file: cap_conclusao/conclusao.aux
 The style file: abntex2-alf.bst
 Database file #1: abntex2-options.bib
 Database file #2: bib/abntex2-modelo-references.bib
-I was expecting a `,' or a `}'---line 13 of file bib/abntex2-modelo-references.bib
- : 
- : pages = {63-72},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--entry type for "Baran2003" isn't style-file defined
---line 442 of file bib/abntex2-modelo-references.bib
 Warning--I didn't find a database entry for "abnt-year-extra-label=yes"
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-(There was 1 error message)
+(There was 1 warning)

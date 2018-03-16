@@ -1,24 +1,40 @@
 \chapter[Experimentos]{Experimentos}
 \label{chapter_experimentos}
 
-Os experimentos realizados neste trabalho compreendem os algoritmos NSGA-II \cite{Deb2002}, NSGA-III \cite{Deb2014}, SPEA2 \cite{Zitzler2002}, MOEA/D \cite{Zhang2007}, AEMMT \cite{Brasil2013}, AEMMD \cite{Lafeta2016}, MOACS \cite{Riveros2016} e o ACO proposto: MACO/D. Todos os métodos são testados em dois problemas discretos multiobjetivos: o PMM e o PRM. A fim  de verificar o comportamento dos algoritmos em relação ao número de objetivos, diversas formulações foram consideradas, avaliando-se problemas desde dois até seis objetivos. Assim como o número de funções objetivos, a topologia da rede (PRM) e a quantidade de itens (PMM) também afetam a complexidade, portanto elaborou-se instâncias diferentes para cada problema: no PRM, são consideradas seis redes de diferentes complexidades e no PMM variou-se a quantidade de itens em 30, 40, 50, 100 e 200.
+Os experimentos realizados neste trabalho compreendem os algoritmos:
+
+\acresetall
+\begin{itemize}
+	\item \ac{NSGA-II} \cite{Deb2002};
+	\item \ac{NSGA-III} \cite{Deb2014};
+	\item \ac{SPEA2} \cite{Zitzler2002};
+	\item \ac{SPEA2-SDE} \cite{Spea2SDE};
+	\item \ac{MOEA/D} \cite{Zhang2007};
+	\item \ac{AEMMT} \cite{Brasil2013};
+	\item \ac{AEMMD} \cite{Lafeta2016};
+	\item \ac{MOEA/D-ACO} \cite{Ke2013};
+	\item \ac{MOACS} \cite{Riveros2016}
+	\item e o ACO proposto: \ac{MACO/D}.
+\end{itemize}
+
+Todos os métodos são testados em dois problemas discretos multiobjetivos: o PMM e o PRM. A fim  de verificar o comportamento dos algoritmos em relação ao número de objetivos, diversas formulações foram consideradas, avaliando-se problemas desde dois até seis objetivos. Assim como o número de funções objetivos, a topologia da rede (PRM) e a quantidade de itens (PMM) também afetam a complexidade, portanto elaborou-se instâncias diferentes para cada problema: no PRM, são consideradas seis redes de diferentes complexidades e no PMM variou-se a quantidade de itens em 30, 40, 50, 100 e 200.
 
 Os experimentos podem ser divididos em quatro etapas distintas:
 
 \begin{enumerate}
 	\item Teste dos AG's multiobjetivos NSGA-II, NSGA-III, SPEA2, MOEA/D e AEMMT nos problemas da mochila e do roteamento multicast. O número de objetivos varia entre dois e seis e, no PRM, três redes são testadas, enquanto o PMM lida com instâncias de 30, 50 e 100 itens. Esses experimentos compuseram o primeiro artigo gerado neste trabalho intitulado \textit{``A Comparative Analysis of MOEAs Considering Two Discrete Optimization Problems''} \cite{Franca2017}, em português, uma análise comparativa entre algoritmos evolutivos multiobjetivos considerando dois problemas de otimização discretos. Além dos cinco algoritmos mencionados, avalia-se também uma pequena modificação no AEMMT chamada de AEMMT-f que remove o limite no tamanho do arquivo de soluções não-dominadas. As avaliações dos algoritmos são feitas com base em métricas relacionadas ao Pareto conhecido e permitem um melhor entendimento sobre o comportamento dos algoritmos, o que facilita a identificação de pontos fortes e fracos de cada estratégia, ajudando na elaboração de um novo modelo melhor adequado aos problemas em questão (PMM e PRM).
 	\item Com um novo algoritmo ACO em mente, o MACO/D, fez-se necessário um estudo sobre os métodos para a construção das soluções no PRM. Além disso, foi também preciso testar modelos de atualização de feromônio e ideias sobre os parâmetros de entrada $\alpha$ e $\beta$ do algoritmo. A fim de propor o novo método de otimização \textit{many-objective} e um modelo de aplicação para o PRM, realizou-se a segunda etapa de experimentos, onde várias configurações possíveis do algoritmo e do modelo foram testadas.
-	\item Teste dos métodos de otimização many-objective NSGA-III, MOEA/D, AEMMT, AEMMD e do algoritmo proposto, MACO/D, nos problemas da mochila e do roteamento multicast. São testadas formulações com 4, 5 e 6 objetivos, avaliando-se 3 redes no PRM e problemas com 30, 40 e 50 itens no PMM. Esses experimentos foram responsáveis pela publicação do segundo artigo intitulado \textit{``MACO/D: Many-objective Ant Colony Optimization based on Decomposed Pheromone''} [!todo!], em português, MACO/D: otimização por colônia de formigas com muitos objetivos baseada em decomposição de feromônios. Os experimentos colocam à prova pela primeira vez o algoritmo proposto neste trabalho e revelam suas vantagens e fraquezas, possibilitando a identificação dos casos em que se é uma boa ideia utilizá-lo e as formas em que se pode melhorá-lo em cenários onde que os resultados foram desfavoráveis.
+	\item Teste dos métodos de otimização many-objective NSGA-III, MOEA/D, AEMMT, AEMMD, MOACS, MOEA/D-ACO e do algoritmo proposto, MACO/D, nos problemas da mochila e do roteamento multicast. São testadas formulações com 4, 5 e 6 objetivos, avaliando-se 3 redes no PRM e problemas com 30, 40 e 50 itens no PMM. Esses experimentos foram responsáveis pelo artigo ainda não publicado \textit{``MACO/D: Many-objective Ant Colony Optimization based on Decomposed Pheromone''}, em português, MACO/D: otimização por colônia de formigas com muitos objetivos baseada em decomposição de feromônios. Os experimentos colocam à prova pela primeira vez o algoritmo proposto neste trabalho e revelam suas vantagens e fraquezas, possibilitando a identificação dos casos em que se é uma boa ideia utilizá-lo e as formas em que se pode melhorá-lo em cenários onde que os resultados foram desfavoráveis.
 	\item Teste dos algoritmos de otimização many-objective NSGA-III, MOEA/D, AEMMT, AEMMD e MACO/D em instâncias complexas do PMM e PRM utilizando a métrica hipervolume, independente do Pareto. Esses experimentos são necessários, pois as etapas anteriores testaram apenas problemas com complexidade razoável, onde se é possível estimar o Pareto. A inclusão de mais itens no PMM ou o uso de redes mais complexas no PRM torna inviável a obtenção da fronteira de Pareto e faz necessária a utilização do hipervolume para avaliar os algoritmos. Nesses experimentos são testadas duas novas redes para o PRM e uma nova instância do PMM, com 200 itens.
 \end{enumerate}
 
 Considerando as quatro etapas de experimentos, foram usadas 5 métricas diferentes para se avaliar os algoritmos, são elas:
 
 \begin{itemize}
-	\item Taxa de erro ($ER$): porcentagem das soluções encontradas que não fazem parte do Pareto aproximado;
-	\item \textit{Generational distance} ($GD$): distância das soluções incorretas para a solução mais próxima no Pareto aproximado. Mede o quão distantes as soluções erradas encontradas estão de uma solução correta.
-	\item \textit{Pareto subset} ($PS$): número absoluto de soluções encontradas que fazem parte do Pareto aproximado.
-	\item Hiper-volume ($HV$): Única métrica, além do tempo, utilizada que independe de um Pareto pré-conhecido. Mede o volume da figura geométrica $m$-dimensional ($m$ é o número de objetivos) formada pelas distâncias entre as soluções encontradas e um ponto de referência $p_{ref}$. As coordenadas de $p_{ref}$ são diferentes para cada cenário (problema, formulação de objetivos e instância) e são determinadas pelo pior valor encontrado em cada um dos objetivos considerando a união das soluções dos Paretos obtidos em cada execução. Se o PMM de 5 objetivos e 100 itens é executado 10 vezes, por exemplo, extrai-se os 10 resultados e coloca-se soluções em um único conjunto $S_{todos}$. Varre-se $S_{todos}$ procurando pelo pior valor em cada uma das 5 coordenadas e cria-se uma solução fictícia $p_{ref}$ para os valores encontrados. $p_{ref}$ é então utilizado como ponto de referência para o PMM de 5 objetivos e 100 itens. Para os experimentos deste trabalho foi utilizada a implementação oficial do cálculo de hiper-volume descrito em \cite{Bradstreet2012}.
+	\item \ac{ER}: porcentagem das soluções encontradas que não fazem parte do Pareto aproximado;
+	\item \ac{GD}: distância das soluções incorretas para a solução mais próxima no Pareto aproximado. Mede o quão distantes as soluções erradas encontradas estão de uma solução correta.
+	\item \ac{PS}: número absoluto de soluções encontradas que fazem parte do Pareto aproximado.
+	\item \ac{HV}: Única métrica, além do tempo, utilizada que independe de um Pareto pré-conhecido. Mede o volume da figura geométrica $m$-dimensional ($m$ é o número de objetivos) formada pelas distâncias entre as soluções encontradas e um ponto de referência $p_{ref}$. As coordenadas de $p_{ref}$ são diferentes para cada cenário (problema, formulação de objetivos e instância) e são determinadas pelo pior valor encontrado em cada um dos objetivos considerando a união das soluções dos Paretos obtidos em cada execução. Se o PMM de 5 objetivos e 100 itens é executado 10 vezes, por exemplo, extrai-se os 10 resultados e coloca-se soluções em um único conjunto $S_{todos}$. Varre-se $S_{todos}$ procurando pelo pior valor em cada uma das 5 coordenadas e cria-se uma solução fictícia $p_{ref}$ para os valores encontrados. $p_{ref}$ é então utilizado como ponto de referência para o PMM de 5 objetivos e 100 itens. Para os experimentos deste trabalho foi utilizada a implementação oficial do cálculo de hiper-volume descrito em \cite{Bradstreet2012}.
 	\item Tempo: tempo em segundos necessário para se executar o algoritmo.
 \end{itemize}
 
@@ -463,7 +479,7 @@ A fim de melhor comparar o MACO/D aos algoritmos AEMMT e AEMMD realizou-se o tes
 
 No PMM, se o tempo de execução é uma preocupação, a melhor alternativa é o algoritmo MOEA/D, que executa em tempo recorde e produz bons resultados. Se a rapidez do algoritmo não é tão importante e deseja-se encontrar um conjunto de soluções mais próximo do Pareto real, o MACO/D é o algoritmo mais indicado. No PRM, o método que representa melhor relação entre qualidade e tempo é o MACO/D, mas se tempo não é importante, o AEMMD pode ser preferível. Ao mesmo tempo, seria interessante testar se, dada a mesma quantidade de tempo, o MACO/D não supera o AEMMD.
 
-\section{Etapa 4: Análise com hipervolume}
+\section{Etapa 4: Análise com hiper-volume}
 \label{section_experimentos_etapa4}
 
 A fim de testar propriamente o comportamento dos algoritmos em espaços de busca mais complexos que os utilizados nos experimentos das etapas 1 e 3, lançou-se mão de duas novas redes (redes 4 e 5) e duas novas instâncias do problema da mochila (100 e 200 itens). Como não é possível extrair Paretos estáveis para as redes $R_3$, $R_4$ e $R_5$, nem para os problemas da mochila com 50, 100 e 200 itens, não é interessante basear-se em métricas dependentes de tais Paretos para se tirar conclusões. Por isso, nesta etapa, testa-se unicamente as métrica hiper-volume e tempo, independentes do Pareto.
@@ -500,7 +516,7 @@ Neste conjunto de experimentos, assim como na etapa 3, comparou-se apenas os cen
 	\end{center}
 \end{table}
 
-Sobre os parâmetros marcados com ``*'' na tabela \ref{table_exp4_params}, a quantidade de formigas depende do parâmetro $H$, do artigo original do algoritmo \cite{ke2013}, enquanto o tamanho dos grupos depende de outro parâmetro, $K$, também descrito no mesmo artigo. Ambos os parâmetros $H$ e $K$ servem como guia para gerar os pesos aleatórios das formigas e dos grupos, quanto maior o valor de $H$, maior será o número de formigas, o mesmo vale para $K$ e a quantidade de grupos. De toda maneira, o número de iterações no laço principal é ajustado para que sempre se tenha o mesmo número de comparações (9000 no PRM e 15000 no PMM). Os valores de $H$ usados no PMM foram: $H=8$ para 4 objetivos, $H=6$ para 5 objetivos e $H=5$ para 6 objetivos.
+Sobre os parâmetros marcados com ``*'' na tabela \ref{table_exp4_params}, a quantidade de formigas depende do parâmetro $H$, do artigo original do algoritmo \cite{Ke2013}, enquanto o tamanho dos grupos depende de outro parâmetro, $K$, também descrito no mesmo artigo. Ambos os parâmetros $H$ e $K$ servem como guia para gerar os pesos aleatórios das formigas e dos grupos, quanto maior o valor de $H$, maior será o número de formigas, o mesmo vale para $K$ e a quantidade de grupos. De toda maneira, o número de iterações no laço principal é ajustado para que sempre se tenha o mesmo número de comparações (9000 no PRM e 15000 no PMM). Os valores de $H$ usados no PMM foram: $H=8$ para 4 objetivos, $H=6$ para 5 objetivos e $H=5$ para 6 objetivos.
 
 Com relação aos algoritmos NSGA-III e SPEA2-SDE, na etapa 4, tomou-se uma outra atitude em relação às limitações no tamanho do Pareto. Ao invés de impedir o conjunto de soluções não-dominadas de crescerem além do tamanho máximo da população, ajustou-se esse limite para coincidi-lo com o tamanho médio dos Paretos encontrados pelos algoritmos que retornaram os maiores conjuntos de soluções. Dessa forma, ambos NSGA-III e SPEA2-SDE podem encontrar Paretos tão grandes quanto os demais algoritmos. A tabela \ref{table_exp4_pts_referencia} mostra os limites utilizados para cada cenário de teste.
 
