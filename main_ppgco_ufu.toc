@@ -2,9 +2,9 @@
 \changetocdepth {2}
 \select@language {brazil}
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{23}{chapter.1}
-\contentsline {section}{\numberline {1.1}Objetivos}{25}{section.1.1}
-\contentsline {section}{\numberline {1.2}Contribui\IeC {\c c}\IeC {\~o}es}{25}{section.1.2}
-\contentsline {section}{\numberline {1.3}Organiza\IeC {\c c}\IeC {\~a}o do texto}{26}{section.1.3}
+\contentsline {section}{\numberline {1.1}Objetivos}{26}{section.1.1}
+\contentsline {section}{\numberline {1.2}Contribui\IeC {\c c}\IeC {\~o}es}{27}{section.1.2}
+\contentsline {section}{\numberline {1.3}Organiza\IeC {\c c}\IeC {\~a}o do texto}{27}{section.1.3}
 \contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Otimiza\IeC {\c c}\IeC {\~a}o bio-inspirada}}{29}{chapter.2}
 \contentsline {section}{\numberline {2.1}Algoritmos Gen\IeC {\'e}ticos (AG's)}{30}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Representa\IeC {\c c}\IeC {\~a}o do indiv\IeC {\'\i }duo}{31}{subsection.2.1.1}
@@ -51,4 +51,4 @@
 \contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase {Conclus\IeC {\~a}o}}{113}{chapter.9}
 \contentsline {section}{\numberline {9.1}Trabalhos Futuros}{115}{section.9.1}
 \contentsline {section}{\numberline {9.2}Contribui\IeC {\c c}\IeC {\~o}es em Produ\IeC {\c c}\IeC {\~a}o Bibliogr\IeC {\'a}fica}{116}{section.9.2}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{117}{section*.43}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{117}{section*.42}
