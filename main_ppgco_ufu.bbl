@@ -37,6 +37,15 @@ ISSN 1082-3409.}
   problem with time windows.
 v.~21, p. 97--102, 01 2003.}
 
+\bibitem[Bazgan, Hugot e Vanderpooten 2009]{MKP}
+\abntrefinfo{Bazgan, Hugot e Vanderpooten}{BAZGAN; HUGOT; VANDERPOOTEN}{2009}
+{BAZGAN, C.; HUGOT, H.; VANDERPOOTEN, D. Solving efficiently the 0-1
+  multi-objective knapsack problem.
+\textbf{Comput. Oper. Res.}, Elsevier Science Ltd., Oxford, UK, UK, v.~36,
+  n.~1, p. 260--279, jan. 2009.
+ISSN 0305-0548.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/j.cor.2007.09.009}.}
+
 \bibitem[Beume, Naujoks e Emmerich 2007]{Beume2007}
 \abntrefinfo{Beume, Naujoks e Emmerich}{BEUME; NAUJOKS; EMMERICH}{2007}
 {BEUME, N.; NAUJOKS, B.; EMMERICH, M. Sms-emoa: Multiobjective selection based
@@ -53,6 +62,12 @@ Dispon{\'\i}vel em:
   evolutionary algorithm with many tables for purely ab initio protein
   structure prediction.
 \textbf{Comput. Chem.}, v. 34(20), p. 1719--1734, 2013.}
+
+\bibitem[Bueno 2010]{BuenoThesis}
+\abntrefinfo{Bueno}{BUENO}{2010}
+{BUENO, M. L. d.~P. \textbf{Heurísticas e algoritmos evolutivos para
+  formulações mono e multiobjetivo do problema do roteamento multicast}.
+  2010.}
 
 \bibitem[Bueno e Oliveira 2010]{Bueno2010}
 \abntrefinfo{Bueno e Oliveira}{BUENO; OLIVEIRA}{2010}
@@ -76,6 +91,17 @@ Dispon{\'\i}vel em:
   Dispon{\'\i}vel em:
   \url{https://search.library.wisc.edu/catalog/9934839413602122}.}
 
+\bibitem[Cormen Leiserson e Stein 2009]{GreedyAlgorithms}
+\abntrefinfo{Cormen Leiserson e Stein}{CORMEN LEISERSON; STEIN}{2009}
+{CORMEN LEISERSON, R.; STEIN. Greedy algorithms. In:  FAGERBERG, J.; MOWERY,
+  D.~C.; NELSON, R.~R. (Ed.). \textbf{Introduction to Algorithms, Third
+  Edition}. MIT: MIT Press, 2009. cap.~16.}
+
+\bibitem[Crichigno e Baran 2004]{Baran2004}
+\abntrefinfo{Crichigno e Baran}{CRICHIGNO; BARAN}{2004}
+{CRICHIGNO, J.; BARAN, B. Multiobjective multicast routing algorithm.
+v.~3124, p. 1029--1034, 08 2004.}
+
 \bibitem[Deb e Jain 2014]{Deb2014}
 \abntrefinfo{Deb e Jain}{DEB; JAIN}{2014}
 {DEB, K.; JAIN, H. An evolutionary many-objective optimization algorithm using
@@ -87,6 +113,11 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Deb et al.}{DEB et al.}{2002}
 {DEB, K. et al. A fast and elitist multiobjective genetic algorithm: Nsga-ii.
 \textbf{Trans. Evol. Comput.}, v.~6(2), p. 182--197, 2002.}
+
+\bibitem[Dijkstra 1959]{Dijkstra1959}
+\abntrefinfo{Dijkstra}{DIJKSTRA}{1959}
+{DIJKSTRA, E.~W. A note on two problems in connexion with graphs.
+\textbf{Numerische Mathematik}, v.~1, p. 269--271, 1959.}
 
 \bibitem[Dorigo, Maniezzo e Colorni 1996]{Dorigo1996}
 \abntrefinfo{Dorigo, Maniezzo e Colorni}{DORIGO; MANIEZZO; COLORNI}{1996}
@@ -102,21 +133,19 @@ Dispon{\'\i}vel em:
   Heidelberg: Springer Berlin Heidelberg, 2003. p. 438--444.
 ISBN 978-3-540-36487-0.}
 
-\bibitem[Fingler et al. 2014]{Fingler2014}
-\abntrefinfo{Fingler et al.}{FINGLER et al.}{2014}
-{FINGLER, H. et al. A cuda based solution to the multidimensional knapsack
-  problem using the ant colony optimization.
-\textbf{Procedia Computer Science}, v.~29, p. 84 -- 94, 2014.
-ISSN 1877-0509.
-2014 International Conference on Computational Science.
-Dispon{\'\i}vel em:
-  \url{http://www.sciencedirect.com/science/article/pii/S1877050914001859}.}
-
 \bibitem[Fran{\c c}a et al. 2017]{Franca2017}
 \abntrefinfo{Fran{\c c}a et al.}{FRAN{\c C}A et al.}{2017}
 {FRAN{\c C}A, T.~P. et al. A comparative analysis of moeas considering two
   discrete optimization problems. In:  \textbf{2017 Brazilian Conference on
   Intelligent Systems (BRACIS)}. [S.l.: s.n.], 2017. p. 402--407.}
+
+\bibitem[Fran{\c c}a, Martins e Oliveira 2018]{Franca2018}
+\abntrefinfo{Fran{\c c}a, Martins e Oliveira}{FRAN{\c C}A; MARTINS;
+  OLIVEIRA}{2018}
+{FRAN{\c C}A, T.~P.; MARTINS, L. G.~A.; OLIVEIRA, G. M.~B. de. Maco/nds:
+  Many-objective ant colony optimization based on non-dominated sets. In:
+  \textbf{2018 IEEE Congress on Evolutionary Computation (CEC)}. [S.l.: s.n.],
+  2018.}
 
 \bibitem[Goldberg 1989]{Goldberg1989}
 \abntrefinfo{Goldberg}{GOLDBERG}{1989}
@@ -129,11 +158,22 @@ Dispon{\'\i}vel em:
   algorithms.
 2013.}
 
+\bibitem[Hristakeva e Shrestha 2018]{KnapsackGreedy}
+\abntrefinfo{Hristakeva e Shrestha}{HRISTAKEVA; SHRESTHA}{2018}
+{\underline{\ \ \ \ \ \ \ \ }. Different approaches to solve the 0/1 knapsack
+  problem.
+04 2018.}
+
 \bibitem[Ishibuchi, Akedo e Nojima 2015]{Ishibuchi2015}
 \abntrefinfo{Ishibuchi, Akedo e Nojima}{ISHIBUCHI; AKEDO; NOJIMA}{2015}
 {ISHIBUCHI, H.; AKEDO, N.; NOJIMA, Y. Behavior of multiobjective evolutionary
   algorithms on many-objective knapsack problems.
 \textbf{Trans. Evol. Comput.}, v. 19(2), p. 264--283, 2015.}
+
+\bibitem[Kann 1992]{Viggo1992}
+\abntrefinfo{Kann}{KANN}{1992}
+{KANN, V. On the approximability of np-complete optimization problems.
+01 1992.}
 
 \bibitem[Ke et al. 2010]{Ke2010}
 \abntrefinfo{Ke et al.}{KE et al.}{2010}
@@ -149,12 +189,12 @@ v.~16, p. 65--83, 2010.}
   2013.
 ISSN 2168-2267.}
 
-\bibitem[Khuri, B{\"a}ck e Heitk{\"o}tter 1994]{Khuri1994}
-\abntrefinfo{Khuri, B{\"a}ck e Heitk{\"o}tter}{KHURI; B{\"A}CK;
-  HEITK{\"O}TTER}{1994}
-{KHURI, S.; B{\"A}CK, T.; HEITK{\"O}TTER, J. The zero/one multiple knapsack
-  problem and genetic algorithms. In:  \textbf{Symp. on Applied Computing}.
-  [S.l.: s.n.], 1994. p. 188--193.}
+\bibitem[Kong e Tian 2006]{baco2006}
+\abntrefinfo{Kong e Tian}{KONG; TIAN}{2006}
+{KONG, M.; TIAN, P. Introducing a binary ant colony optimization. In:  DORIGO,
+  M. et al. (Ed.). \textbf{Ant Colony Optimization and Swarm Intelligence}.
+  Berlin, Heidelberg: Springer Berlin Heidelberg, 2006. p. 444--451.
+ISBN 978-3-540-38483-0.}
 
 \bibitem[Kong, Tian e Kao 2008]{kong2008}
 \abntrefinfo{Kong, Tian e Kao}{KONG; TIAN; KAO}{2008}
@@ -166,11 +206,24 @@ Queues in Practice.
 Dispon{\'\i}vel em:
   \url{http://www.sciencedirect.com/science/article/pii/S0305054806003236}.}
 
+\bibitem[Lafet{\'a} 2016]{LafetaThesis}
+\abntrefinfo{Lafet{\'a}}{LAFET{\'A}}{2016}
+{LAFET{\'A}, T. F. d.~Q. \textbf{Algoritmos evolutivos many objectives
+  aplicados ao problema de roteamento Multicast com qualidade de serviço}.
+  2016.}
+
 \bibitem[Lafet{\'a} et al. 2016]{Lafeta2016}
 \abntrefinfo{Lafet{\'a} et al.}{LAFET{\'A} et al.}{2016}
 {LAFET{\'A}, T. F. d.~Q. et al. Many-objective evolutionary algorithms for
   multicast routing with quality of service problem. In:  \textbf{Braz. Conf.
   on Intelligent Systems}. [S.l.: s.n.], 2016. p. 187--192.}
+
+\bibitem[Lafet{\'{a}} et al. 2018]{Lafeta2017}
+\abntrefinfo{Lafet{\'{a}} et al.}{LAFET{\'{A}} et al.}{2018}
+{LAFET{\'{A}}, T.~F. de Q. et al. Meands: A many-objective evolutionary
+  algorithm based on non-dominated decomposed sets applied to multicast
+  routing.
+\textbf{Appl. Soft Comput.}, v.~62, p. 851--866, 2018.}
 
 \bibitem[Leguizamon e Michalewicz 1999]{Leguizamon1999}
 \abntrefinfo{Leguizamon e Michalewicz}{LEGUIZAMON; MICHALEWICZ}{1999}
@@ -187,16 +240,35 @@ Dispon{\'\i}vel em:
   348--365, June 2014.
 ISSN 1089-778X.}
 
-\bibitem[Martello e Toth 1990]{Martello1990}
-\abntrefinfo{Martello e Toth}{MARTELLO; TOTH}{1990}
-{MARTELLO, S.; TOTH, P. \textbf{Knapsack Problems: Algorithms and Computer
-  Implementations}. [S.l.]: John Wiley \& Sons, Inc., 1990.}
+\bibitem[Lust e Teghem 2010]{MTSP}
+\abntrefinfo{Lust e Teghem}{LUST; TEGHEM}{2010}
+{LUST, T.; TEGHEM, J. The multiobjective traveling salesman problem: A survey
+  and a new approach.
+In:  \underline{\ \ \ \ \ \ \ \ }. \textbf{Advances in Multi-Objective Nature
+  Inspired Computing}. Berlin, Heidelberg: Springer Berlin Heidelberg, 2010. p.
+  119--141.
+ISBN 978-3-642-11218-8.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/978-3-642-11218-8\_6}.}
 
-\bibitem[Pinto e Bar\'{a}n 2005]{Pinto2005}
-\abntrefinfo{Pinto e Bar\'{a}n}{PINTO; BAR\'{a}N}{2005}
-{PINTO, D.; BAR\'{a}N, B. Solving multiobjective multicast routing problem with
-  a new ant colony optimization approach. In:  \textbf{Int. Latin American
-  Conf. on Networking}. [S.l.: s.n.], 2005. p. 11--19.}
+\bibitem[Nria et al. 2013]{FiguraGA}
+\abntrefinfo{Nria et al.}{NRIA et al.}{2013}
+{NRIA, S. et al. Roteamento de veículos utilizando otimização por colônia
+  de formigas e algoritmo genético.
+p. 219--238, 05 2013.}
+
+\bibitem[Ombuki, Ross e Hanshar 2006]{VehicleRouting}
+\abntrefinfo{Ombuki, Ross e Hanshar}{OMBUKI; ROSS; HANSHAR}{2006}
+{OMBUKI, B.; ROSS, B.~J.; HANSHAR, F. Multi-objective genetic algorithms for
+  vehicle routing problem with time windows.
+\textbf{Applied Intelligence}, v.~24, n.~1, p. 17--30, Feb 2006.
+ISSN 1573-7497.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s10489-006-6926-z}.}
+
+\bibitem[Pinto e Baran 2005]{Pinto2005}
+\abntrefinfo{Pinto e Baran}{PINTO; BARAN}{2005}
+{PINTO, D.; BARAN, B. Solving multiobjective multicast routing problem with a
+  new ant colony optimization approach. In:  \textbf{Int. Latin American Conf.
+  on Networking}. [S.l.: s.n.], 2005. p. 11--19.}
 
 \bibitem[Prim 1957]{Prim1957}
 \abntrefinfo{Prim}{PRIM}{1957}
@@ -204,6 +276,15 @@ ISSN 1089-778X.}
 \textbf{The Bell System Technical Journal}, v.~36, n.~6, p. 1389--1401, Nov
   1957.
 ISSN 0005-8580.}
+
+\bibitem[Rai e Tyagi 2013]{BioInspiredOptimization}
+\abntrefinfo{Rai e Tyagi}{RAI; TYAGI}{2013}
+{RAI, D.; TYAGI, K. Bio-inspired optimization techniques: A critical
+  comparative study.
+\textbf{SIGSOFT Softw. Eng. Notes}, ACM, New York, NY, USA, v.~38, n.~4,
+  p.~1--7, jul. 2013.
+ISSN 0163-5948.
+Dispon{\'\i}vel em: \url{http://doi.acm.org/10.1145/2492248.2492271}.}
 
 \bibitem[Riveros et al. 2016]{Riveros2016}
 \abntrefinfo{Riveros et al.}{RIVEROS et al.}{2016}
@@ -228,6 +309,20 @@ ISSN 0005-8580.}
 {SRINIVAS, N.; DEB, K. Multiobjective optimization using nondominated sorting
   in genetic algorithms.
 \textbf{Trans. Evol. Comput.}, v.~2(3), p. 221--248, 1994.}
+
+\bibitem[Toth 1980]{KnapsackDynamic}
+\abntrefinfo{Toth}{TOTH}{1980}
+{TOTH, P. Dynamic programming algorithms for the zero-one knapsack problem.
+\textbf{Computing}, v.~25, n.~1, p. 29--45, Mar 1980.
+ISSN 1436-5057.
+Dispon{\'\i}vel em: \url{https://doi.org/10.1007/BF02243880}.}
+
+\bibitem[Uslu 2015]{KnapsackGA}
+\abntrefinfo{Uslu}{USLU}{2015}
+{USLU, F.~S. Solving knapsack problem with genetic algorithm. In:  \textbf{2015
+  23nd Signal Processing and Communications Applications Conference (SIU)}.
+  [S.l.: s.n.], 2015. p. 1062--1065.
+ISSN 2165-0608.}
 
 \bibitem[While, Bradstreet e Barone 2012]{Bradstreet2012}
 \abntrefinfo{While, Bradstreet e Barone}{WHILE; BRADSTREET; BARONE}{2012}

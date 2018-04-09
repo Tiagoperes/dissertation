@@ -50,6 +50,7 @@
 \usepackage[printonlyused]{acronym}
 \usepackage[table]{xcolor}
 \usepackage[table]{xcolor}
+\usepackage[section]{placeins}
 \definecolor{table-green}{HTML}{BEEFBE}
 \definecolor{table-red}{HTML}{F9C1B0}
 % ---
@@ -61,7 +62,7 @@
 % Título:
 %	1. Título em português
 %	2. Título em inglês
-\titulo{Algoritmos Genéticos e Colônias de Formigas Para otimização \textit{Many-objective} Aplicada aos Problemas da Mochila Multi-objetivo e do Roteamento Multicast}{Genetic Algorithms and Ant Colonies for Many-objective Optimization Applied to the Multi-objective Knapsack Problem and the Multicast Routing Problem}
+\titulo{Estratégias bioinspiradas aplicadas em problemas discretos com muitos objetivos}{Bio-inspired strategies applied to many-objective discrete problems}
 %
 % Autor:
 %	1. Nome completo do autor
@@ -171,13 +172,13 @@ Agradeço também a Fundação de Amparo à Pesquisa de Minas Gerais (FAPEMIG) q
 % ---
 
 % Resumo em português - as palavras entre chaves são as palavras-chave do trbalho
-\begin{resumo}{algoritmos multiobjetivos; algoritmos genéticos; otimização por colônia de formigas; roteamento multicast; problema da mochila multiobjetivo}
-	Problemas de otimização multiobjetivo são muito comuns no dia-a-dia e surgem em diversas áreas do conhecimento. Neste trabalho explora-se e compara-se várias estratégias de otimização multiobjetivo em dois problemas discretos bem conhecidos na computação: o problema da mochila e o problema do roteamento \textit{multicast}. Dentre as estratégias para solucionar problemas multiobjetivos, destacam-se os algoritmos genéticos e os algoritmos baseados em colônias de formigas, nesta pesquisa explora-se ambos os lados realizando diversos experimentos para 10 algoritmos diferentes. Através do estudo das vantagens e fraquezas de cada método, desenvolveu-se um novo algoritmo e propôs-se o \textit{Many-objective Ant Colony Optimization based on Decomposed Pheromone} (MACO/D), o qual foi testado contra todos os outros métodos e teve sua eficácia comprovada através de série de experimentos.
+\begin{resumo}{algoritmos many-objectives; algoritmos genéticos; otimização por colônia de formigas; problema do roteamento multicast; problema da mochila multiobjetivo}
+	Problemas de otimização multiobjetivo são muito comuns no dia-a-dia e surgem em diversas áreas do conhecimento. Neste trabalho explora-se e compara-se várias estratégias de otimização multiobjetivo em dois problemas discretos bem conhecidos na computação: o problema da mochila e o problema do roteamento \textit{multicast}. Dentre as estratégias para solucionar problemas multiobjetivos discretos, destacam-se os algoritmos genéticos (AGs) e os algoritmos baseados em colônias de formigas (ACOs), neste trabalho explora-se ambas as abordagens realizando diversos experimentos para 10 algoritmos diferentes. Através do estudo das vantagens e fraquezas de cada método, desenvolveu-se um novo algoritmo denominado \textit{Many-objective Ant Colony Optimization based on Decomposed Pheromone} (MACO/D), o qual foi avaliado e comparado com todos os outros métodos aqui investigados, considerando diferentes métricas de desempenho. A partir dos resultados experimentais, foi possível comprovar a eficiência e eficácia do método proposto. Ele foi capaz de encontrar um conjunto de soluções muito superior aos produzidos pelos AG's no problema da mochila, perdendo apenas para outro algoritmo baseado em formigas, o MOEA/D-ACO. No problema do roteamento, o MACO/D foi consideravelmente mais rápido e obteve resultados muito melhores que os AG's, sendo superado apenas pelo MOACS, outro ACO.
 \end{resumo}
 
 % Resumo em inglês
-\begin{abstract}{multi-objective algorithms; genetic algorithms; ant colony optimization; multicast routing; multi-objective knapsack problem}
-	Multi-objective optimization problems are very common in the day-to-day life and come up in many fields of knowledge. In this work, several strategies for multi-objective optimization have been explored and compared in two well known discrete problems in computer science: the knapsack problem and the multicast routing problem. Among all strategies to solve multi-objective problems, genetic algorithms and ant colony optimization are the ones who generally provide the best results. In this research both sides are explored through several experiments involving 10 different algorithms. As a consequence of studying the strengths and weaknesses of each method, a new algorithm has been proposed, the Many-objective Ant Colony Optimization based on Decomposed Pheromone (MACO/D), which has been tested against every one of the 9 other methods and had its effectiveness proven by a series of experiments.
+\begin{abstract}{many-objective algorithms; genetic algorithms; ant colony optimization; multicast routing problem; multi-objective knapsack problem}
+	Multi-objective optimization problems are very common in the day-to-day life and come up in many fields of knowledge. In this work, several strategies for multi-objective optimization have been explored and compared in two well known discrete problems in computer science: the knapsack problem and the multicast routing problem. Among all strategies to solve multi-objective discrete problems, genetic algorithms (GAs) and ant colony optimization (ACO) are the ones who generally provide the best results. In this work both approaches are explored through several experiments involving 10 different algorithms. As a consequence of studying the strengths and weaknesses of each method, a new algorithm has been proposed, the Many-objective Ant Colony Optimization based on Decomposed Pheromone (MACO/D), which has been evaluated and compared against all other methods investigated here, considering different performance metrics. It has been capable of finding much superior sets of solutions than the ones yielded by the GAs in the knapsack problem, losing only to another algorithm based on ant colonies, the MOEA/D-ACO. In the routing problem, MACO/D was considerably faster and obtained much better results than any GA, being surpassed only by MOACS, another ACO.
 \end{abstract}
 % ---
 

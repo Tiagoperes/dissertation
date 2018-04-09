@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  16 MAR 2018 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  2 APR 2018 11:59
 entering extended mode
 **./Abreviaturas.tex
 (Abreviaturas.tex
@@ -127,7 +127,7 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no o in font nullfont!
 ! Undefined control sequence.
 l.5 	\acrodefplural
-                   {AEMO}[AEMO's]{Algoritmos Evolutivos Multiobjetivos}
+                   {AEMO}[AEMOs]{Algoritmos Evolutivos Multiobjetivos}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -143,7 +143,6 @@ Missing character: There is no A in font nullfont!
 Missing character: There is no E in font nullfont!
 Missing character: There is no M in font nullfont!
 Missing character: There is no O in font nullfont!
-Missing character: There is no ' in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no A in font nullfont!
@@ -194,7 +193,7 @@ Missing character: There is no C in font nullfont!
 Missing character: There is no O in font nullfont!
 ! Undefined control sequence.
 l.7 	\acrodefplural
-                   {ACO}[ACO's]{\textit{Ant Colony Optimization algorithms}}
+                   {ACO}[ACOs]{\textit{Ant Colony Optimization Algorithms}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -208,7 +207,6 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no A in font nullfont!
 Missing character: There is no C in font nullfont!
 Missing character: There is no O in font nullfont!
-Missing character: There is no ' in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
@@ -225,7 +223,7 @@ Missing character: There is no S in font nullfont!
 Missing character: There is no O in font nullfont!
 ! Undefined control sequence.
 l.9 	\acrodefplural
-                   {PSO}[PSO's]{\textit{Particle Swarm Optimization algorith...
+                   {PSO}[PSOs]{\textit{Particle Swarm Optimization Algorithms}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -239,12 +237,11 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no P in font nullfont!
 Missing character: There is no S in font nullfont!
 Missing character: There is no O in font nullfont!
-Missing character: There is no ' in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.10 	\acro
-           {AG}{Algoritmo gen√©tico}
+           {AG}{Algoritmo Gen√©tico}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -262,7 +259,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no g in font nullfont!
+Missing character: There is no G in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no √ in font nullfont!
@@ -273,7 +270,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 ! Undefined control sequence.
 l.11 	\acrodefplural
-                    {AG}[AG's]{Algoritmos gen√©ticos}
+                    {AG}[AGs]{Algoritmos Gen√©ticos}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -285,7 +282,6 @@ Missing character: There is no G in font nullfont!
 Missing character: There is no [ in font nullfont!
 Missing character: There is no A in font nullfont!
 Missing character: There is no G in font nullfont!
-Missing character: There is no ' in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no A in font nullfont!
@@ -298,7 +294,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no g in font nullfont!
+Missing character: There is no G in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no √ in font nullfont!
@@ -505,8 +501,8 @@ Overfull \hbox (17.12212pt too wide) in paragraph at lines 3--15
  []
 
 
-Overfull \hbox (11.24437pt too wide) in paragraph at lines 3--15
-\OT1/cmr/m/it/10 al-
+Overfull \hbox (13.311pt too wide) in paragraph at lines 3--15
+\OT1/cmr/m/it/10 Al-
  []
 
 
@@ -600,8 +596,8 @@ Overfull \hbox (17.12212pt too wide) in paragraph at lines 3--15
  []
 
 
-Overfull \hbox (11.24437pt too wide) in paragraph at lines 3--15
-\OT1/cmr/m/it/10 al-
+Overfull \hbox (13.311pt too wide) in paragraph at lines 3--15
+\OT1/cmr/m/it/10 Al-
  []
 
 
@@ -677,7 +673,7 @@ Missing character: There is no G in font nullfont!
 Missing character: There is no D in font nullfont!
 ! Undefined control sequence.
 l.27 	\acro
-           {HV}{Hiper-volume}
+           {HV}{Hiper-Volume}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -692,7 +688,7 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no - in font nullfont!
-Missing character: There is no v in font nullfont!
+Missing character: There is no V in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no u in font nullfont!
@@ -715,7 +711,7 @@ Overfull \hbox (22.74426pt too wide) in paragraph at lines 25--29
 
 ! Undefined control sequence.
 l.37 	\acro
-           {MOEA/D}{\textit{Multiobjective evolutionary algorithm based on d...
+           {MOEA/D}{\textit{Multiobjective Evolutionary Algorithm Based on D...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -730,7 +726,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.37 	\acro{M
-             OEA/D}{\textit{Multiobjective evolutionary algorithm based on d...
+             OEA/D}{\textit{Multiobjective Evolutionary Algorithm Based on D...
 
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -757,7 +753,7 @@ Missing character: There is no C in font nullfont!
 Missing character: There is no S in font nullfont!
 ! Undefined control sequence.
 l.39 	\acro
-           {MOEA/D-ACO}{\textit{Multiobjective evolutionary algorithm based ...
+           {MOEA/D-ACO}{\textit{Multiobjective Evolutionary Algorithm Based ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -791,7 +787,7 @@ Missing character: There is no / in font nullfont!
 Missing character: There is no D in font nullfont!
 ! Undefined control sequence.
 l.42 	\acro
-           {NBR}{Denomina√ß√£o de norma da Associa√ß√£o Brasileira de Normas...
+           {NSGA}{\textit{Non-Dominated Sorting Genetic Algorithm}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -799,72 +795,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Missing character: There is no N in font nullfont!
-Missing character: There is no B in font nullfont!
-Missing character: There is no R in font nullfont!
-Missing character: There is no D in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no √ in font nullfont!
-Missing character: There is no ß in font nullfont!
-Missing character: There is no √ in font nullfont!
-Missing character: There is no £ in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no a in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no G in font nullfont!
 Missing character: There is no A in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no √ in font nullfont!
-Missing character: There is no ß in font nullfont!
-Missing character: There is no √ in font nullfont!
-Missing character: There is no £ in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no B in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no N in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no T in font nullfont!
-Missing character: There is no √ in font nullfont!
-Missing character: There is no © in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
 l.43 	\acro
-           {NSGA}{\textit{Non-dominated Sorting Genetic Algorithm}}
+           {NSGA-II}{\textit{Non-Dominated Sorting Genetic Algorithm II}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -875,25 +811,12 @@ Missing character: There is no N in font nullfont!
 Missing character: There is no S in font nullfont!
 Missing character: There is no G in font nullfont!
 Missing character: There is no A in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no I in font nullfont!
 ! Undefined control sequence.
 l.44 	\acro
-           {NSGA-II}{\textit{Non-dominated Sorting Genetic Algorithm II}}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-Missing character: There is no N in font nullfont!
-Missing character: There is no S in font nullfont!
-Missing character: There is no G in font nullfont!
-Missing character: There is no A in font nullfont!
-Missing character: There is no - in font nullfont!
-Missing character: There is no I in font nullfont!
-Missing character: There is no I in font nullfont!
-! Undefined control sequence.
-l.45 	\acro
-           {NSGA-III}{\textit{Non-dominated Sorting Genetic Algorithm III}}
+           {NSGA-III}{\textit{Non-Dominated Sorting Genetic Algorithm III}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -909,458 +832,453 @@ Missing character: There is no I in font nullfont!
 Missing character: There is no I in font nullfont!
 Missing character: There is no I in font nullfont!
 
-Overfull \hbox (80.33289pt too wide) in paragraph at lines 37--47
+Overfull \hbox (80.33289pt too wide) in paragraph at lines 37--46
 []\OT1/cmr/m/it/10 Multiobjective
  []
 
 
-Overfull \hbox (17.88875pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 evo-
+Overfull \hbox (20.07208pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Evo-
  []
 
 
-Overfull \hbox (11.49992pt too wide) in paragraph at lines 37--47
+Overfull \hbox (11.49992pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 lu-
  []
 
 
-Overfull \hbox (20.69986pt too wide) in paragraph at lines 37--47
+Overfull \hbox (20.69986pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 tion-
  []
 
 
-Overfull \hbox (14.18323pt too wide) in paragraph at lines 37--47
+Overfull \hbox (14.18323pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 ary
  []
 
 
-Overfull \hbox (11.24437pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 al-
- []
-
-
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 go-
- []
-
-
-Overfull \hbox (23.89429pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 rithm
- []
-
-
-Overfull \hbox (22.48871pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 based
- []
-
-
-Overfull \hbox (10.73328pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 on
- []
-
-
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 de-
- []
-
-
-Overfull \hbox (20.9554pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 com-
- []
-
-
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 po-
- []
-
-
-Overfull \hbox (10.73326pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 si-
- []
-
-
-Overfull \hbox (17.12212pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 tion
- []
-
-
-Overfull \hbox (26.85538pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 Multi-
- []
-
-
-Overfull \hbox (39.6108pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 Objective
- []
-
-
-Overfull \hbox (16.1221pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 Ant
- []
-
-
-Overfull \hbox (30.41092pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 Colony
- []
-
-
-Overfull \hbox (16.35545pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 Op-
- []
-
-
-Overfull \hbox (9.96658pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 ti-
- []
-
-
-Overfull \hbox (24.02208pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 miza-
- []
-
-
-Overfull \hbox (17.12212pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 tion
- []
-
-
-Overfull \hbox (13.311pt too wide) in paragraph at lines 37--47
+Overfull \hbox (13.311pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 Al-
  []
 
 
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--47
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 go-
  []
 
 
-Overfull \hbox (23.89429pt too wide) in paragraph at lines 37--47
+Overfull \hbox (23.89429pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 rithm
  []
 
 
-Overfull \hbox (20.46654pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 Mul-
- []
-
-
-Overfull \hbox (9.96658pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 ti-
- []
-
-
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 ob-
- []
-
-
-Overfull \hbox (15.33319pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 jec-
- []
-
-
-Overfull \hbox (15.58876pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 tive
- []
-
-
-Overfull \hbox (17.88875pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 evo-
- []
-
-
-Overfull \hbox (11.49992pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 lu-
- []
-
-
-Overfull \hbox (20.69986pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 tion-
- []
-
-
-Overfull \hbox (14.18323pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 ary
- []
-
-
-Overfull \hbox (11.24437pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 al-
- []
-
-
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 go-
- []
-
-
-Overfull \hbox (23.89429pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 rithm
- []
-
-
-Overfull \hbox (22.48871pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 based
- []
-
-
-Overfull \hbox (10.73328pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 on
- []
-
-
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 de-
- []
-
-
-Overfull \hbox (20.9554pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 com-
- []
-
-
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 po-
- []
-
-
-Overfull \hbox (10.73326pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 si-
- []
-
-
-Overfull \hbox (17.12212pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 tion
- []
-
-
-Overfull \hbox (15.84436pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 and
- []
-
-
-Overfull \hbox (21.99985pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 ACO
- []
-
-
-Overfull \hbox (28.13315pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 Many-
- []
-
-
-Overfull \hbox (39.6108pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 Objective
- []
-
-
-Overfull \hbox (16.1221pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 Ant
- []
-
-
-Overfull \hbox (30.41092pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 Colony
- []
-
-
-Overfull \hbox (16.35545pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 Op-
- []
-
-
-Overfull \hbox (9.96658pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 ti-
- []
-
-
-Overfull \hbox (24.02208pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 miza-
- []
-
-
-Overfull \hbox (17.12212pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 tion
- []
-
-
-Overfull \hbox (25.43872pt too wide) in paragraph at lines 37--47
+Overfull \hbox (25.43872pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 Based
  []
 
 
-Overfull \hbox (10.73328pt too wide) in paragraph at lines 37--47
+Overfull \hbox (10.73328pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 on
  []
 
 
-Overfull \hbox (15.72765pt too wide) in paragraph at lines 37--47
+Overfull \hbox (15.72765pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 De-
  []
 
 
-Overfull \hbox (20.9554pt too wide) in paragraph at lines 37--47
+Overfull \hbox (20.9554pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 com-
  []
 
 
-Overfull \hbox (22.99983pt too wide) in paragraph at lines 37--47
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 po-
+ []
+
+
+Overfull \hbox (10.73326pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 si-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (26.85538pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Multi-
+ []
+
+
+Overfull \hbox (39.6108pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Objective
+ []
+
+
+Overfull \hbox (16.1221pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Ant
+ []
+
+
+Overfull \hbox (30.41092pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Colony
+ []
+
+
+Overfull \hbox (16.35545pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Op-
+ []
+
+
+Overfull \hbox (9.96658pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 ti-
+ []
+
+
+Overfull \hbox (24.02208pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 miza-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (13.311pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Al-
+ []
+
+
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 go-
+ []
+
+
+Overfull \hbox (23.89429pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 rithm
+ []
+
+
+Overfull \hbox (20.46654pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Mul-
+ []
+
+
+Overfull \hbox (9.96658pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 ti-
+ []
+
+
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 ob-
+ []
+
+
+Overfull \hbox (15.33319pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 jec-
+ []
+
+
+Overfull \hbox (15.58876pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 tive
+ []
+
+
+Overfull \hbox (20.07208pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Evo-
+ []
+
+
+Overfull \hbox (11.49992pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 lu-
+ []
+
+
+Overfull \hbox (20.69986pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 tion-
+ []
+
+
+Overfull \hbox (14.18323pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 ary
+ []
+
+
+Overfull \hbox (13.311pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Al-
+ []
+
+
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 go-
+ []
+
+
+Overfull \hbox (23.89429pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 rithm
+ []
+
+
+Overfull \hbox (25.43872pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Based
+ []
+
+
+Overfull \hbox (10.73328pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 on
+ []
+
+
+Overfull \hbox (15.72765pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 De-
+ []
+
+
+Overfull \hbox (20.9554pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 com-
+ []
+
+
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 po-
+ []
+
+
+Overfull \hbox (10.73326pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 si-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (21.99985pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 ACO
+ []
+
+
+Overfull \hbox (28.13315pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Many-
+ []
+
+
+Overfull \hbox (39.6108pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Objective
+ []
+
+
+Overfull \hbox (16.1221pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Ant
+ []
+
+
+Overfull \hbox (30.41092pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Colony
+ []
+
+
+Overfull \hbox (16.35545pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Op-
+ []
+
+
+Overfull \hbox (9.96658pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 ti-
+ []
+
+
+Overfull \hbox (24.02208pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 miza-
+ []
+
+
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (25.43872pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Based
+ []
+
+
+Overfull \hbox (10.73328pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 on
+ []
+
+
+Overfull \hbox (15.72765pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 De-
+ []
+
+
+Overfull \hbox (20.9554pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 com-
+ []
+
+
+Overfull \hbox (22.99983pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 posed
  []
 
 
-Overfull \hbox (52.91077pt too wide) in paragraph at lines 37--47
+Overfull \hbox (52.91077pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 Pheromones
  []
 
 
-Overfull \hbox (21.74431pt too wide) in paragraph at lines 37--47
+Overfull \hbox (21.74431pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 Non-
  []
 
 
-Overfull \hbox (44.72194pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 dominated
+Overfull \hbox (47.1608pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Dominated
  []
 
 
-Overfull \hbox (21.84984pt too wide) in paragraph at lines 37--47
+Overfull \hbox (21.84984pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 Sort-
  []
 
 
-Overfull \hbox (13.2888pt too wide) in paragraph at lines 37--47
+Overfull \hbox (13.2888pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 ing
  []
 
 
-Overfull \hbox (15.91377pt too wide) in paragraph at lines 37--47
+Overfull \hbox (15.91377pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 Ge-
  []
 
 
-Overfull \hbox (21.21095pt too wide) in paragraph at lines 37--47
+Overfull \hbox (21.21095pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 netic
  []
 
 
-Overfull \hbox (13.311pt too wide) in paragraph at lines 37--47
+Overfull \hbox (13.311pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 Al-
  []
 
 
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--47
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 go-
  []
 
 
-Overfull \hbox (23.89429pt too wide) in paragraph at lines 37--47
+Overfull \hbox (23.89429pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 rithm
  []
 
 
-Overfull \hbox (21.74431pt too wide) in paragraph at lines 37--47
+Overfull \hbox (21.74431pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 Non-
  []
 
 
-Overfull \hbox (44.72194pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 dominated
+Overfull \hbox (47.1608pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Dominated
  []
 
 
-Overfull \hbox (21.84984pt too wide) in paragraph at lines 37--47
+Overfull \hbox (21.84984pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 Sort-
  []
 
 
-Overfull \hbox (13.2888pt too wide) in paragraph at lines 37--47
+Overfull \hbox (13.2888pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 ing
  []
 
 
-Overfull \hbox (15.91377pt too wide) in paragraph at lines 37--47
+Overfull \hbox (15.91377pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 Ge-
  []
 
 
-Overfull \hbox (21.21095pt too wide) in paragraph at lines 37--47
+Overfull \hbox (21.21095pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 netic
  []
 
 
-Overfull \hbox (13.311pt too wide) in paragraph at lines 37--47
+Overfull \hbox (13.311pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 Al-
  []
 
 
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--47
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 go-
  []
 
 
-Overfull \hbox (23.89429pt too wide) in paragraph at lines 37--47
+Overfull \hbox (23.89429pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 rithm
  []
 
 
-Overfull \hbox (7.71106pt too wide) in paragraph at lines 37--47
+Overfull \hbox (7.71106pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 II
  []
 
 
-Overfull \hbox (21.74431pt too wide) in paragraph at lines 37--47
+Overfull \hbox (21.74431pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 Non-
  []
 
 
-Overfull \hbox (44.72194pt too wide) in paragraph at lines 37--47
-\OT1/cmr/m/it/10 dominated
+Overfull \hbox (47.1608pt too wide) in paragraph at lines 37--46
+\OT1/cmr/m/it/10 Dominated
  []
 
 
-Overfull \hbox (21.84984pt too wide) in paragraph at lines 37--47
+Overfull \hbox (21.84984pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 Sort-
  []
 
 
-Overfull \hbox (13.2888pt too wide) in paragraph at lines 37--47
+Overfull \hbox (13.2888pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 ing
  []
 
 
-Overfull \hbox (15.91377pt too wide) in paragraph at lines 37--47
+Overfull \hbox (15.91377pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 Ge-
  []
 
 
-Overfull \hbox (21.21095pt too wide) in paragraph at lines 37--47
+Overfull \hbox (21.21095pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 netic
  []
 
 
-Overfull \hbox (13.311pt too wide) in paragraph at lines 37--47
+Overfull \hbox (13.311pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 Al-
  []
 
 
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--47
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 go-
  []
 
 
-Overfull \hbox (23.89429pt too wide) in paragraph at lines 37--47
+Overfull \hbox (23.89429pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 rithm
  []
 
 
-Overfull \hbox (13.14714pt too wide) in paragraph at lines 37--47
+Overfull \hbox (13.14714pt too wide) in paragraph at lines 37--46
 \OT1/cmr/m/it/10 III 
  []
 
 ! Undefined control sequence.
-l.49 	\acro
-           {PMO}{problema multiobjetivo}
+l.48 	\acro
+           {PMO}{Problema Multiobjetivo}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1374,15 +1292,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.49 	\acro{P
-             MO}{problema multiobjetivo}
+l.48 	\acro{P
+             MO}{Problema Multiobjetivo}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no P in font nullfont!
 Missing character: There is no M in font nullfont!
 Missing character: There is no O in font nullfont!
-Missing character: There is no p in font nullfont!
+Missing character: There is no P in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no b in font nullfont!
@@ -1390,7 +1308,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no m in font nullfont!
+Missing character: There is no M in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -1404,8 +1322,8 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no o in font nullfont!
 ! Undefined control sequence.
-l.50 	\acrodefplural
-                    {PMO}[PMO's]{problemas multiobjetivos}
+l.49 	\acrodefplural
+                    {PMO}[PMOs]{Problemas Multiobjetivos}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1419,10 +1337,9 @@ Missing character: There is no [ in font nullfont!
 Missing character: There is no P in font nullfont!
 Missing character: There is no M in font nullfont!
 Missing character: There is no O in font nullfont!
-Missing character: There is no ' in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no ] in font nullfont!
-Missing character: There is no p in font nullfont!
+Missing character: There is no P in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no b in font nullfont!
@@ -1431,7 +1348,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no m in font nullfont!
+Missing character: There is no M in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no t in font nullfont!
@@ -1446,7 +1363,7 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.51 	\acro
+l.50 	\acro
            {PM}{Problema da Mochila}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1474,7 +1391,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no a in font nullfont!
 ! Undefined control sequence.
-l.52 	\acro
+l.51 	\acro
            {PMM}{Problema da Mochila Multiobjetivo}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1516,7 +1433,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no o in font nullfont!
 ! Undefined control sequence.
-l.53 	\acro
+l.52 	\acro
            {PRM}{Problema do Roteamento Multicast}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1557,7 +1474,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.54 	\acro
+l.53 	\acro
            {PS}{\textit{Pareto Subset}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1568,28 +1485,28 @@ and I'll forget about whatever was undefined.
 Missing character: There is no P in font nullfont!
 Missing character: There is no S in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 49--56
+Overfull \hbox (20.0pt too wide) in paragraph at lines 48--55
 []
  []
 
 
-Overfull \hbox (28.63312pt too wide) in paragraph at lines 49--56
+Overfull \hbox (28.63312pt too wide) in paragraph at lines 48--55
 \OT1/cmr/m/it/10 Pareto
  []
 
 
-Overfull \hbox (19.16653pt too wide) in paragraph at lines 49--56
+Overfull \hbox (19.16653pt too wide) in paragraph at lines 48--55
 \OT1/cmr/m/it/10 Sub-
  []
 
 
-Overfull \hbox (12.95963pt too wide) in paragraph at lines 49--56
+Overfull \hbox (12.95963pt too wide) in paragraph at lines 48--55
 \OT1/cmr/m/it/10 set 
  []
 
 ! Undefined control sequence.
-l.60 	\acro
-           {SPEA}{\textit{Strength Pareto evolutionary algorithm}}
+l.59 	\acro
+           {SPEA}{\textit{Strength Pareto Evolutionary Algorithm}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1603,8 +1520,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.60 	\acro{S
-             PEA}{\textit{Strength Pareto evolutionary algorithm}}
+l.59 	\acro{S
+             PEA}{\textit{Strength Pareto Evolutionary Algorithm}}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1613,8 +1530,8 @@ Missing character: There is no P in font nullfont!
 Missing character: There is no E in font nullfont!
 Missing character: There is no A in font nullfont!
 ! Undefined control sequence.
-l.61 	\acro
-           {SPEA2}{\textit{Strength Pareto evolutionary algorithm 2}}
+l.60 	\acro
+           {SPEA2}{\textit{Strength Pareto Evolutionary Algorithm 2}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1627,7 +1544,7 @@ Missing character: There is no E in font nullfont!
 Missing character: There is no A in font nullfont!
 Missing character: There is no 2 in font nullfont!
 ! Undefined control sequence.
-l.62 	\acro
+l.61 	\acro
            {SPEA2-SDE}{\textit{SPEA2 with Shift-Based Density Estimation}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1645,7 +1562,7 @@ Missing character: There is no S in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no E in font nullfont!
 ! Undefined control sequence.
-l.63 	\acro
+l.62 	\acro
            {SDE}{\textit{Shift-Based Density Estimation}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1656,209 +1573,189 @@ and I'll forget about whatever was undefined.
 Missing character: There is no S in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no E in font nullfont!
-! Undefined control sequence.
-l.65 	\acro
-           {ESTE}{Lalalal}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-Missing character: There is no E in font nullfont!
-Missing character: There is no S in font nullfont!
-Missing character: There is no T in font nullfont!
-Missing character: There is no E in font nullfont!
-Missing character: There is no L in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-
-Overfull \hbox (55.90527pt too wide) in paragraph at lines 60--66
+Overfull \hbox (55.90527pt too wide) in paragraph at lines 59--64
 []\OT1/cmr/m/it/10 Strength
  []
 
 
-Overfull \hbox (28.63312pt too wide) in paragraph at lines 60--66
+Overfull \hbox (28.63312pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 Pareto
  []
 
 
-Overfull \hbox (17.88875pt too wide) in paragraph at lines 60--66
-\OT1/cmr/m/it/10 evo-
+Overfull \hbox (20.07208pt too wide) in paragraph at lines 59--64
+\OT1/cmr/m/it/10 Evo-
  []
 
 
-Overfull \hbox (11.49992pt too wide) in paragraph at lines 60--66
+Overfull \hbox (11.49992pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 lu-
  []
 
 
-Overfull \hbox (20.69986pt too wide) in paragraph at lines 60--66
+Overfull \hbox (20.69986pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 tion-
  []
 
 
-Overfull \hbox (14.18323pt too wide) in paragraph at lines 60--66
+Overfull \hbox (14.18323pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 ary
  []
 
 
-Overfull \hbox (11.24437pt too wide) in paragraph at lines 60--66
-\OT1/cmr/m/it/10 al-
+Overfull \hbox (13.311pt too wide) in paragraph at lines 59--64
+\OT1/cmr/m/it/10 Al-
  []
 
 
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 60--66
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 go-
  []
 
 
-Overfull \hbox (23.89429pt too wide) in paragraph at lines 60--66
+Overfull \hbox (23.89429pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 rithm
  []
 
 
-Overfull \hbox (35.90527pt too wide) in paragraph at lines 60--66
+Overfull \hbox (35.90527pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 Strength
  []
 
 
-Overfull \hbox (28.63312pt too wide) in paragraph at lines 60--66
+Overfull \hbox (28.63312pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 Pareto
  []
 
 
-Overfull \hbox (17.88875pt too wide) in paragraph at lines 60--66
-\OT1/cmr/m/it/10 evo-
+Overfull \hbox (20.07208pt too wide) in paragraph at lines 59--64
+\OT1/cmr/m/it/10 Evo-
  []
 
 
-Overfull \hbox (11.49992pt too wide) in paragraph at lines 60--66
+Overfull \hbox (11.49992pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 lu-
  []
 
 
-Overfull \hbox (20.69986pt too wide) in paragraph at lines 60--66
+Overfull \hbox (20.69986pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 tion-
  []
 
 
-Overfull \hbox (14.18323pt too wide) in paragraph at lines 60--66
+Overfull \hbox (14.18323pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 ary
  []
 
 
-Overfull \hbox (11.24437pt too wide) in paragraph at lines 60--66
-\OT1/cmr/m/it/10 al-
+Overfull \hbox (13.311pt too wide) in paragraph at lines 59--64
+\OT1/cmr/m/it/10 Al-
  []
 
 
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 60--66
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 go-
  []
 
 
-Overfull \hbox (23.89429pt too wide) in paragraph at lines 60--66
+Overfull \hbox (23.89429pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 rithm
  []
 
 
-Overfull \hbox (5.11108pt too wide) in paragraph at lines 60--66
+Overfull \hbox (5.11108pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 2
  []
 
 
-Overfull \hbox (31.73315pt too wide) in paragraph at lines 60--66
+Overfull \hbox (31.73315pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 SPEA2
  []
 
 
-Overfull \hbox (18.14433pt too wide) in paragraph at lines 60--66
+Overfull \hbox (18.14433pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 with
  []
 
 
-Overfull \hbox (23.76651pt too wide) in paragraph at lines 60--66
+Overfull \hbox (23.76651pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 Shift-
  []
 
 
-Overfull \hbox (25.43872pt too wide) in paragraph at lines 60--66
+Overfull \hbox (25.43872pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 Based
  []
 
 
-Overfull \hbox (21.34984pt too wide) in paragraph at lines 60--66
+Overfull \hbox (21.34984pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 Den-
  []
 
 
-Overfull \hbox (15.33322pt too wide) in paragraph at lines 60--66
+Overfull \hbox (15.33322pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 sity
  []
 
 
-Overfull \hbox (14.4499pt too wide) in paragraph at lines 60--66
+Overfull \hbox (14.4499pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 Es-
  []
 
 
-Overfull \hbox (9.96658pt too wide) in paragraph at lines 60--66
+Overfull \hbox (9.96658pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 ti-
  []
 
 
-Overfull \hbox (16.86656pt too wide) in paragraph at lines 60--66
+Overfull \hbox (16.86656pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 ma-
  []
 
 
-Overfull \hbox (17.12212pt too wide) in paragraph at lines 60--66
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 tion
  []
 
 
-Overfull \hbox (23.76651pt too wide) in paragraph at lines 60--66
+Overfull \hbox (23.76651pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 Shift-
  []
 
 
-Overfull \hbox (25.43872pt too wide) in paragraph at lines 60--66
+Overfull \hbox (25.43872pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 Based
  []
 
 
-Overfull \hbox (21.34984pt too wide) in paragraph at lines 60--66
+Overfull \hbox (21.34984pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 Den-
  []
 
 
-Overfull \hbox (15.33322pt too wide) in paragraph at lines 60--66
+Overfull \hbox (15.33322pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 sity
  []
 
 
-Overfull \hbox (14.4499pt too wide) in paragraph at lines 60--66
+Overfull \hbox (14.4499pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 Es-
  []
 
 
-Overfull \hbox (9.96658pt too wide) in paragraph at lines 60--66
+Overfull \hbox (9.96658pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 ti-
  []
 
 
-Overfull \hbox (16.86656pt too wide) in paragraph at lines 60--66
+Overfull \hbox (16.86656pt too wide) in paragraph at lines 59--64
 \OT1/cmr/m/it/10 ma-
  []
 
 
-Overfull \hbox (17.12212pt too wide) in paragraph at lines 60--66
-\OT1/cmr/m/it/10 tion
+Overfull \hbox (17.88925pt too wide) in paragraph at lines 59--64
+\OT1/cmr/m/it/10 tion 
  []
 
 
@@ -1869,7 +1766,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.66 
+l.64 
      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1877,7 +1774,7 @@ or  <return>  to continue without it.
 
 [1{C:/Users/tiago/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 ! Undefined control sequence.
-l.72 	\acro
+l.70 	\acro
            {VEGA}{Vector Evaluated Genetic Algorithm}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1892,7 +1789,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 	\acro{V
+l.70 	\acro{V
              EGA}{Vector Evaluated Genetic Algorithm}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1933,7 +1830,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no m in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 72--74
+Overfull \hbox (20.0pt too wide) in paragraph at lines 70--72
 []
  []
 
@@ -1944,7 +1841,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.79 \end{acronym}
+l.77 \end{acronym}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1964,5 +1861,5 @@ Here is how much of TeX's memory you used:
  3649 multiletter control sequences out of 15000+200000
  3986 words of font info for 15 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,4n,14p,134b,117s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 18i,4n,14p,131b,117s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

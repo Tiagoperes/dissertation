@@ -1,14 +1,14 @@
 \select@language {brazil}
-\contentsline {table}{\numberline {1}{\ignorespaces Defini\IeC {\c c}\IeC {\~o}es das redes utilizadas pelo PRM}}{58}{table.4.1}
-\contentsline {table}{\numberline {2}{\ignorespaces Cardinalidade dos Paretos encontrados para a primeira etapa de experimentos}}{80}{table.8.2}
-\contentsline {table}{\numberline {3}{\ignorespaces Par\IeC {\^a}metros utilizados pelos algoritmos no PRM e PMM na etapa 1 de experimentos.}}{81}{table.8.3}
-\contentsline {table}{\numberline {4}{\ignorespaces Resultados para as estrat\IeC {\'e}gias de constru\IeC {\c c}\IeC {\~a}o de solu\IeC {\c c}\IeC {\~a}o do PRM}}{91}{table.8.4}
-\contentsline {table}{\numberline {5}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre da estrat\IeC {\'e}gia 3 na t\IeC {\'e}cnica de amostragem}}{91}{table.8.5}
-\contentsline {table}{\numberline {6}{\ignorespaces Desempenho do AEMMD, MACO/D pr\IeC {\'e}-altera\IeC {\c c}\IeC {\~o}es e MACO/D final}}{92}{table.8.6}
-\contentsline {table}{\numberline {7}{\ignorespaces Cardinalidade dos Paretos encontrados para a primeira etapa de experimentos}}{93}{table.8.7}
-\contentsline {table}{\numberline {8}{\ignorespaces Par\IeC {\^a}metros utilizados para o PRM e o PMM na etapa 3 de experimentos.}}{94}{table.8.8}
-\contentsline {table}{\numberline {9}{\ignorespaces Testes de hip\IeC {\'o}tese para: MACO/D vs. AEMMT nos problemas PMM and PRM}}{100}{table.8.9}
-\contentsline {table}{\numberline {10}{\ignorespaces Testes de hip\IeC {\'o}tese para: MACO/D vs. AEMMD nos problemas PMM and PRM}}{101}{table.8.10}
-\contentsline {table}{\numberline {11}{\ignorespaces Par\IeC {\^a}metros utilizados para o PRM e o PMM na etapa 4 de experimentos.}}{102}{table.8.11}
-\contentsline {table}{\numberline {12}{\ignorespaces Ponto de refer\IeC {\^e}ncia e limita\IeC {\c c}\IeC {\~o}es no tamanho do Pareto usados para cada cen\IeC {\'a}rio de teste}}{103}{table.8.12}
-\contentsline {table}{\numberline {13}{\ignorespaces Tempos de execu\IeC {\c c}\IeC {\~a}o para o NSGA-III no PMM}}{104}{table.8.13}
+\contentsline {table}{\numberline {1}{\ignorespaces Defini\IeC {\c c}\IeC {\~o}es das redes utilizadas no PRM}}{65}{table.4.1}
+\contentsline {table}{\numberline {2}{\ignorespaces Cardinalidade dos Paretos encontrados para a primeira etapa de experimentos}}{90}{table.8.2}
+\contentsline {table}{\numberline {3}{\ignorespaces Par\IeC {\^a}metros utilizados pelos algoritmos no PRM e PMM na etapa 1 de experimentos.}}{91}{table.8.3}
+\contentsline {table}{\numberline {4}{\ignorespaces Resultados para as estrat\IeC {\'e}gias de constru\IeC {\c c}\IeC {\~a}o de solu\IeC {\c c}\IeC {\~a}o do PRM}}{101}{table.8.4}
+\contentsline {table}{\numberline {5}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre da estrat\IeC {\'e}gia 3 na t\IeC {\'e}cnica de amostragem}}{101}{table.8.5}
+\contentsline {table}{\numberline {6}{\ignorespaces Desempenho do AEMMD, MACO/D pr\IeC {\'e}-altera\IeC {\c c}\IeC {\~o}es e MACO/D final}}{103}{table.8.6}
+\contentsline {table}{\numberline {7}{\ignorespaces Cardinalidade dos Paretos encontrados para a primeira etapa de experimentos}}{103}{table.8.7}
+\contentsline {table}{\numberline {8}{\ignorespaces Par\IeC {\^a}metros utilizados para o PRM e o PMM na etapa 3 de experimentos.}}{104}{table.8.8}
+\contentsline {table}{\numberline {9}{\ignorespaces Testes de hip\IeC {\'o}tese para: MACO/D vs. AEMMT nos problemas PMM and PRM}}{110}{table.8.9}
+\contentsline {table}{\numberline {10}{\ignorespaces Testes de hip\IeC {\'o}tese para: MACO/D vs. AEMMD nos problemas PMM and PRM}}{111}{table.8.10}
+\contentsline {table}{\numberline {11}{\ignorespaces Par\IeC {\^a}metros utilizados para o PRM e o PMM na etapa 4 de experimentos.}}{112}{table.8.11}
+\contentsline {table}{\numberline {12}{\ignorespaces Ponto de refer\IeC {\^e}ncia e limita\IeC {\c c}\IeC {\~o}es no tamanho do Pareto usados para cada cen\IeC {\'a}rio de teste}}{113}{table.8.12}
+\contentsline {table}{\numberline {13}{\ignorespaces Tempos de execu\IeC {\c c}\IeC {\~a}o para o NSGA-III no PMM}}{114}{table.8.13}
