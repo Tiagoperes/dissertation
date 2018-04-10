@@ -39,11 +39,11 @@
 \contentsline {section}{\numberline {6.2}Inicializa\IeC {\c c}\IeC {\~a}o dos indiv\IeC {\'\i }duos}{72}{section.6.2}
 \contentsline {section}{\numberline {6.3}Cruzamento (AG)}{72}{section.6.3}
 \contentsline {section}{\numberline {6.4}Muta\IeC {\c c}\IeC {\~a}o (AG)}{73}{section.6.4}
-\contentsline {section}{\numberline {6.5}Constru\IeC {\c c}\IeC {\~a}o da solu\IeC {\c c}\IeC {\~a}o (ACO)}{75}{section.6.5}
+\contentsline {section}{\numberline {6.5}Constru\IeC {\c c}\IeC {\~a}o da solu\IeC {\c c}\IeC {\~a}o (ACO)}{74}{section.6.5}
 \contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Algoritmo proposto}}{79}{chapter.7}
 \contentsline {section}{\numberline {7.1}Vis\IeC {\~a}o geral do algoritmo}{79}{section.7.1}
 \contentsline {section}{\numberline {7.2}Constru\IeC {\c c}\IeC {\~a}o das solu\IeC {\c c}\IeC {\~o}es}{83}{section.7.2}
-\contentsline {section}{\numberline {7.3}Atualiza\IeC {\c c}\IeC {\~a}o dos ferom\IeC {\^o}nios}{84}{section.7.3}
+\contentsline {section}{\numberline {7.3}Atualiza\IeC {\c c}\IeC {\~a}o dos ferom\IeC {\^o}nios}{85}{section.7.3}
 \contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {Experimentos}}{87}{chapter.8}
 \contentsline {section}{\numberline {8.1}Etapa 1: AG's multiobjetivos}{90}{section.8.1}
 \contentsline {section}{\numberline {8.2}Etapa 2: MACO/D}{100}{section.8.2}

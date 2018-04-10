@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  9 APR 2018 11:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.10)  9 APR 2018 22:02
 entering extended mode
 **./main_ppgco_ufu.tex
 (main_ppgco_ufu.tex
@@ -1575,7 +1575,7 @@ although it is yet undefined on input line 34.
 
 
 ] [30]
-<cap_otimizacao-bio/figs/ga-flux.png, id=597, 284.39583pt x 213.46417pt>
+<cap_otimizacao-bio/figs/ga-flux.png, id=596, 284.39583pt x 213.46417pt>
 File: cap_otimizacao-bio/figs/ga-flux.png Graphic file (type png)
 
 <use cap_otimizacao-bio/figs/ga-flux.png>
@@ -1595,7 +1595,7 @@ name{figure.2.2}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.115 
-      ] <cap_otimizacao-bio/figs/aco-flux.png, id=646, 216.81pt x 220.15584pt>
+      ] <cap_otimizacao-bio/figs/aco-flux.png, id=645, 216.81pt x 220.15584pt>
 File: cap_otimizacao-bio/figs/aco-flux.png Graphic file (type png)
 
 <use cap_otimizacao-bio/figs/aco-flux.png>
@@ -1617,7 +1617,7 @@ l.125
 
 
 ] [41]
-<cap_otimizacao-multi/figs/pareto.png, id=684, 279.0425pt x 280.04625pt>
+<cap_otimizacao-multi/figs/pareto.png, id=683, 279.0425pt x 280.04625pt>
 File: cap_otimizacao-multi/figs/pareto.png Graphic file (type png)
 
 <use cap_otimizacao-multi/figs/pareto.png>
@@ -1665,7 +1665,7 @@ ML/lmm/m/it/12 novaPopula\OT1/lmr/m/n/12 Á„\OML/lmm/m/it/12 o\OT1/lmr/m/n/12 )$
 Package acronym Info: Label `acro:SDE' newly defined as it shall be overridden
 although it is yet undefined on input line 155.
  [49]
-<cap_otimizacao-multi/figs/aeemt-tabelas.png, id=766, 993.7125pt x 650.43pt>
+<cap_otimizacao-multi/figs/aeemt-tabelas.png, id=765, 993.7125pt x 650.43pt>
 File: cap_otimizacao-multi/figs/aeemt-tabelas.png Graphic file (type png)
 
 <use cap_otimizacao-multi/figs/aeemt-tabelas.png>
@@ -1673,7 +1673,7 @@ Package pdftex.def Info: cap_otimizacao-multi/figs/aeemt-tabelas.png used on in
 put line 169.
 (pdftex.def)             Requested size: 455.0pt x 297.82188pt.
 
-Underfull \vbox (badness 2229) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [50pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 5}) has been already used, duplicate ignored
@@ -1682,7 +1682,7 @@ Underfull \vbox (badness 2229) has occurred while \output is active []
                                                   \fi \fi 
 l.179 
        <./cap_otimizacao-multi/figs/aeemt-tabelas.png>]
-<cap_otimizacao-multi/figs/aeemd-tabelas.png, id=775, 993.7125pt x 387.4475pt>
+<cap_otimizacao-multi/figs/aeemd-tabelas.png, id=774, 993.7125pt x 387.4475pt>
 File: cap_otimizacao-multi/figs/aeemd-tabelas.png Graphic file (type png)
 
 <use cap_otimizacao-multi/figs/aeemd-tabelas.png>
@@ -1732,7 +1732,7 @@ although it is yet undefined on input line 297.
 Package acronym Info: Label `acro:PM' newly defined as it shall be overridden
 although it is yet undefined on input line 7.
  [59]
-<cap_problemas/figs/mochila.png, id=893, 1180.41pt x 685.56125pt>
+<cap_problemas/figs/mochila.png, id=892, 1180.41pt x 685.56125pt>
 File: cap_problemas/figs/mochila.png Graphic file (type png)
 
 <use cap_problemas/figs/mochila.png>
@@ -1745,7 +1745,7 @@ Package pdftex.def Info: cap_problemas/figs/mochila.png used on input line 13.
                                                   \fi \fi 
 l.24 
       <./cap_problemas/figs/mochila.png>] [61]
-<cap_problemas/figs/prm_grafo.png, id=932, 696.6025pt x 258.9675pt>
+<cap_problemas/figs/prm_grafo.png, id=931, 696.6025pt x 258.9675pt>
 File: cap_problemas/figs/prm_grafo.png Graphic file (type png)
 
 <use cap_problemas/figs/prm_grafo.png>
@@ -1753,7 +1753,7 @@ Package pdftex.def Info: cap_problemas/figs/prm_grafo.png used on input line 36
 .
 (pdftex.def)             Requested size: 455.0pt x 169.14877pt.
 
-<cap_problemas/figs/prm_mono.png, id=939, 583.17876pt x 613.29124pt>
+<cap_problemas/figs/prm_mono.png, id=938, 583.17876pt x 613.29124pt>
 File: cap_problemas/figs/prm_mono.png Graphic file (type png)
 
 <use cap_problemas/figs/prm_mono.png>
@@ -1761,7 +1761,7 @@ Package pdftex.def Info: cap_problemas/figs/prm_mono.png used on input line 44.
 
 (pdftex.def)             Requested size: 364.00139pt x 382.8101pt.
 
-<cap_problemas/figs/prm_multi.png, id=948, 429.73973pt x 225.05557pt>
+<cap_problemas/figs/prm_multi.png, id=947, 429.73973pt x 225.05557pt>
 File: cap_problemas/figs/prm_multi.png Graphic file (type png)
 
 <use cap_problemas/figs/prm_multi.png>
@@ -1819,7 +1819,7 @@ l.68 \section
 
 
 ]
-<cap_estrategias-prm/figs/prm-cruzamento-caminho.png, id=1071, 1346.02875pt x 6
+<cap_estrategias-prm/figs/prm-cruzamento-caminho.png, id=1070, 1346.02875pt x 6
 09.27625pt>
 File: cap_estrategias-prm/figs/prm-cruzamento-caminho.png Graphic file (type pn
 g)
@@ -1833,31 +1833,25 @@ ed on input line 30.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.69 \section
-             {Constru√ß√£o da solu√ß√£o (ACO)} <./cap_estrategias-prm/figs/prm-
-cruzamento-caminho.png>] [74] [75] [76] [77]) [78]
+l.68 
+      <./cap_estrategias-prm/figs/prm-cruzamento-caminho.png>] [74] [75]
+[76]) [77]
 \openout2 = `cap_algoritmo-proposto/algoritmo-proposto.aux'.
 
-
-(cap_algoritmo-proposto/algoritmo-proposto.tex [79
-
+ (cap_algoritmo-proposto/algoritmo-proposto.tex [78
 
 
-] [80]
-Overfull \hbox (16.82826pt too wide) in paragraph at lines 37--38
-[]\T1/lmr/m/n/12 O pri-meiro passo do MACO/D È criar as es-tru-tu-ras de fe-rom
-Ù-nio $\OML/lmm/m/it/12 P \OT1/lmr/m/n/12 = \OMS/lmsy/m/n/12 f\OML/lmm/m/it/12 
-p[]; p[]; :::; p[]; :::; p[]\OMS/lmsy/m/n/12 g$\T1/lmr/m/n/12 ,
- []
+
+] [79] [80]
+[81]
+
+LaTeX Warning: Command \' invalid in math mode on input line 75.
 
 
-Overfull \hbox (0.57877pt too wide) in paragraph at lines 49--50
-[]\T1/lmr/m/n/12 Inicialmente, os cinco sub-pro-ble-mas mais sim-ples s„o ati-v
-a-dos ($\OML/lmm/m/it/12 P[] \OT1/lmr/m/n/12 = \OMS/lmsy/m/n/12 f\OML/lmm/m/it/
-12 p[]; p[]; :::; p[]\OMS/lmsy/m/n/12 g$\T1/lmr/m/n/12 ).
- []
+Underfull \vbox (badness 2837) has occurred while \output is active []
 
-[81] [82] [83] [84]) [85]
+ [82]
+[83] [84]) [85]
 \openout2 = `cap_experimentos/experimentos.aux'.
 
  (cap_experimentos/experimentos.tex [86
@@ -1919,7 +1913,7 @@ Overfull \hbox (5.38641pt too wide) in paragraph at lines 46--47
                                                   \fi \fi 
 l.95 
      ]
-<cap_experimentos/figs/etapa1/er-mkp-30.pdf, id=1290, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/er-mkp-30.pdf, id=1288, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mkp-30.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mkp-30.pdf>
@@ -1927,7 +1921,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mkp-30.pdf used on inp
 ut line 99.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/gd-mkp-30.pdf, id=1291, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mkp-30.pdf, id=1289, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mkp-30.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mkp-30.pdf>
@@ -1935,7 +1929,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mkp-30.pdf used on inp
 ut line 100.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/ps-mkp-30.pdf, id=1292, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mkp-30.pdf, id=1290, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mkp-30.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mkp-30.pdf>
@@ -1943,7 +1937,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/ps-mkp-30.pdf used on inp
 ut line 101.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/er-mkp-50.pdf, id=1294, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/er-mkp-50.pdf, id=1292, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mkp-50.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mkp-50.pdf>
@@ -1951,7 +1945,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mkp-50.pdf used on inp
 ut line 109.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/gd-mkp-50.pdf, id=1295, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mkp-50.pdf, id=1293, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mkp-50.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mkp-50.pdf>
@@ -1959,7 +1953,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mkp-50.pdf used on inp
 ut line 110.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/ps-mkp-50.pdf, id=1296, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mkp-50.pdf, id=1294, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mkp-50.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mkp-50.pdf>
@@ -1976,7 +1970,7 @@ Underfull \vbox (badness 7613) has occurred while \output is active []
                                                   \fi \fi 
 l.115 
       ]
-<cap_experimentos/figs/etapa1/er-mkp-100.pdf, id=1302, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/er-mkp-100.pdf, id=1300, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mkp-100.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mkp-100.pdf>
@@ -1984,7 +1978,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mkp-100.pdf used on in
 put line 119.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/gd-mkp-100.pdf, id=1303, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mkp-100.pdf, id=1301, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mkp-100.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mkp-100.pdf>
@@ -1992,7 +1986,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mkp-100.pdf used on in
 put line 120.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/ps-mkp-100.pdf, id=1304, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mkp-100.pdf, id=1302, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mkp-100.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mkp-100.pdf>
@@ -2010,7 +2004,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 l.125 
        <./cap_experimentos/figs/etapa1/er-mkp-30.pdf> <./cap_experimentos/figs/
 etapa1/gd-mkp-30.pdf> <./cap_experimentos/figs/etapa1/ps-mkp-30.pdf>]
-<cap_experimentos/figs/etapa1/er-mkp-todos.pdf, id=1356, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/er-mkp-todos.pdf, id=1354, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mkp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mkp-todos.pdf>
@@ -2018,7 +2012,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mkp-todos.pdf used on
 input line 129.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/gd-mkp-todos.pdf, id=1357, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mkp-todos.pdf, id=1355, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mkp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mkp-todos.pdf>
@@ -2026,7 +2020,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mkp-todos.pdf used on
 input line 130.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/ps-mkp-todos.pdf, id=1358, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mkp-todos.pdf, id=1356, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mkp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mkp-todos.pdf>
@@ -2054,7 +2048,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 l.135 
        <./cap_experimentos/figs/etapa1/er-mkp-100.pdf> <./cap_experimentos/figs
 /etapa1/gd-mkp-100.pdf> <./cap_experimentos/figs/etapa1/ps-mkp-100.pdf>]
-<cap_experimentos/figs/etapa1/er-mrp-r1.pdf, id=1458, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/er-mrp-r1.pdf, id=1456, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mrp-r1.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mrp-r1.pdf>
@@ -2062,7 +2056,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mrp-r1.pdf used on inp
 ut line 139.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/gd-mrp-r1.pdf, id=1459, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mrp-r1.pdf, id=1457, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mrp-r1.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mrp-r1.pdf>
@@ -2070,7 +2064,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mrp-r1.pdf used on inp
 ut line 140.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/ps-mrp-r1.pdf, id=1460, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mrp-r1.pdf, id=1458, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mrp-r1.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mrp-r1.pdf>
@@ -2078,7 +2072,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/ps-mrp-r1.pdf used on inp
 ut line 141.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/er-mrp-r2.pdf, id=1462, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/er-mrp-r2.pdf, id=1460, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mrp-r2.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mrp-r2.pdf>
@@ -2086,7 +2080,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mrp-r2.pdf used on inp
 ut line 149.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/gd-mrp-r2.pdf, id=1463, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mrp-r2.pdf, id=1461, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mrp-r2.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mrp-r2.pdf>
@@ -2094,7 +2088,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mrp-r2.pdf used on inp
 ut line 150.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/ps-mrp-r2.pdf, id=1464, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mrp-r2.pdf, id=1462, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mrp-r2.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mrp-r2.pdf>
@@ -2112,7 +2106,7 @@ Underfull \vbox (badness 6978) has occurred while \output is active []
 l.155 
        <./cap_experimentos/figs/etapa1/er-mkp-todos.pdf> <./cap_experimentos/fi
 gs/etapa1/gd-mkp-todos.pdf> <./cap_experimentos/figs/etapa1/ps-mkp-todos.pdf>]
-<cap_experimentos/figs/etapa1/er-mrp-r3.pdf, id=1516, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/er-mrp-r3.pdf, id=1514, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mrp-r3.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mrp-r3.pdf>
@@ -2120,7 +2114,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mrp-r3.pdf used on inp
 ut line 159.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/gd-mrp-r3.pdf, id=1517, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mrp-r3.pdf, id=1515, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mrp-r3.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mrp-r3.pdf>
@@ -2128,7 +2122,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mrp-r3.pdf used on inp
 ut line 160.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/ps-mrp-r3.pdf, id=1518, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mrp-r3.pdf, id=1516, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mrp-r3.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mrp-r3.pdf>
@@ -2136,7 +2130,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/ps-mrp-r3.pdf used on inp
 ut line 161.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/er-mrp-todos.pdf, id=1520, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/er-mrp-todos.pdf, id=1518, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/er-mrp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/er-mrp-todos.pdf>
@@ -2144,7 +2138,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/er-mrp-todos.pdf used on
 input line 169.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/gd-mrp-todos.pdf, id=1521, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/gd-mrp-todos.pdf, id=1519, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/gd-mrp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/gd-mrp-todos.pdf>
@@ -2152,7 +2146,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa1/gd-mrp-todos.pdf used on
 input line 170.
 (pdftex.def)             Requested size: 455.0pt x 151.66487pt.
 
-<cap_experimentos/figs/etapa1/ps-mrp-todos.pdf, id=1522, 2409.0pt x 803.0pt>
+<cap_experimentos/figs/etapa1/ps-mrp-todos.pdf, id=1520, 2409.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa1/ps-mrp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa1/ps-mrp-todos.pdf>
@@ -2236,7 +2230,7 @@ Overfull \hbox (35.89569pt too wide) in paragraph at lines 330--347
  [] 
  []
 
-<cap_experimentos/figs/etapa3/er-mkp-30.pdf, id=1767, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/er-mkp-30.pdf, id=1765, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mkp-30.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mkp-30.pdf>
@@ -2244,7 +2238,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mkp-30.pdf used on inp
 ut line 355.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mkp-30.pdf, id=1768, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mkp-30.pdf, id=1766, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mkp-30.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mkp-30.pdf>
@@ -2252,7 +2246,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mkp-30.pdf used on inp
 ut line 356.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mkp-30.pdf, id=1769, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mkp-30.pdf, id=1767, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mkp-30.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mkp-30.pdf>
@@ -2260,7 +2254,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mkp-30.pdf used on inp
 ut line 357.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mkp-30.pdf, id=1770, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mkp-30.pdf, id=1768, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mkp-30.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mkp-30.pdf>
@@ -2292,7 +2286,7 @@ l.362
        <./cap_experimentos/figs/etapa3/er-mkp-30.pdf> <./cap_experimentos/figs/
 etapa3/gd-mkp-30.pdf> <./cap_experimentos/figs/etapa3/ps-mkp-30.pdf> <./cap_exp
 erimentos/figs/etapa3/time-mkp-30.pdf>]
-<cap_experimentos/figs/etapa3/er-mkp-40.pdf, id=1836, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/er-mkp-40.pdf, id=1834, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mkp-40.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mkp-40.pdf>
@@ -2300,7 +2294,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mkp-40.pdf used on inp
 ut line 366.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mkp-40.pdf, id=1837, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mkp-40.pdf, id=1835, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mkp-40.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mkp-40.pdf>
@@ -2308,7 +2302,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mkp-40.pdf used on inp
 ut line 367.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mkp-40.pdf, id=1838, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mkp-40.pdf, id=1836, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mkp-40.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mkp-40.pdf>
@@ -2316,7 +2310,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mkp-40.pdf used on inp
 ut line 368.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mkp-40.pdf, id=1839, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mkp-40.pdf, id=1837, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mkp-40.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mkp-40.pdf>
@@ -2333,7 +2327,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 366--370
 [] [] 
  []
 
-<cap_experimentos/figs/etapa3/er-mkp-50.pdf, id=1841, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/er-mkp-50.pdf, id=1839, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mkp-50.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mkp-50.pdf>
@@ -2341,7 +2335,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mkp-50.pdf used on inp
 ut line 377.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mkp-50.pdf, id=1842, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mkp-50.pdf, id=1840, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mkp-50.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mkp-50.pdf>
@@ -2349,7 +2343,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mkp-50.pdf used on inp
 ut line 378.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mkp-50.pdf, id=1843, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mkp-50.pdf, id=1841, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mkp-50.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mkp-50.pdf>
@@ -2357,7 +2351,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mkp-50.pdf used on inp
 ut line 379.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mkp-50.pdf, id=1844, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mkp-50.pdf, id=1842, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mkp-50.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mkp-50.pdf>
@@ -2374,7 +2368,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 377--381
 [] [] 
  []
 
-<cap_experimentos/figs/etapa3/er-mkp-todos.pdf, id=1846, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/er-mkp-todos.pdf, id=1844, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mkp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mkp-todos.pdf>
@@ -2382,7 +2376,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mkp-todos.pdf used on
 input line 388.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mkp-todos.pdf, id=1847, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mkp-todos.pdf, id=1845, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mkp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mkp-todos.pdf>
@@ -2390,7 +2384,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mkp-todos.pdf used on
 input line 389.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mkp-todos.pdf, id=1848, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mkp-todos.pdf, id=1846, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mkp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mkp-todos.pdf>
@@ -2398,7 +2392,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mkp-todos.pdf used on
 input line 390.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mkp-todos.pdf, id=1849, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mkp-todos.pdf, id=1847, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mkp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mkp-todos.pdf>
@@ -2441,7 +2435,7 @@ etapa3/gd-mkp-50.pdf> <./cap_experimentos/figs/etapa3/ps-mkp-50.pdf> <./cap_exp
 erimentos/figs/etapa3/time-mkp-50.pdf> <./cap_experimentos/figs/etapa3/er-mkp-t
 odos.pdf> <./cap_experimentos/figs/etapa3/gd-mkp-todos.pdf> <./cap_experimentos
 /figs/etapa3/ps-mkp-todos.pdf> <./cap_experimentos/figs/etapa3/time-mkp-todos.p
-df>] <cap_experimentos/figs/etapa3/er-mrp-r1.pdf, id=2039, 1606.0pt x 803.0pt>
+df>] <cap_experimentos/figs/etapa3/er-mrp-r1.pdf, id=2037, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mrp-r1.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mrp-r1.pdf>
@@ -2449,7 +2443,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mrp-r1.pdf used on inp
 ut line 399.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mrp-r1.pdf, id=2040, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mrp-r1.pdf, id=2038, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mrp-r1.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mrp-r1.pdf>
@@ -2457,7 +2451,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mrp-r1.pdf used on inp
 ut line 400.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mrp-r1.pdf, id=2041, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mrp-r1.pdf, id=2039, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mrp-r1.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mrp-r1.pdf>
@@ -2465,7 +2459,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mrp-r1.pdf used on inp
 ut line 401.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mrp-r1.pdf, id=2042, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mrp-r1.pdf, id=2040, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mrp-r1.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mrp-r1.pdf>
@@ -2482,7 +2476,7 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 399--403
 [] [] 
  []
 
-<cap_experimentos/figs/etapa3/er-mrp-r2.pdf, id=2044, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/er-mrp-r2.pdf, id=2042, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mrp-r2.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mrp-r2.pdf>
@@ -2490,7 +2484,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mrp-r2.pdf used on inp
 ut line 410.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mrp-r2.pdf, id=2045, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mrp-r2.pdf, id=2043, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mrp-r2.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mrp-r2.pdf>
@@ -2498,7 +2492,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mrp-r2.pdf used on inp
 ut line 411.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mrp-r2.pdf, id=2046, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mrp-r2.pdf, id=2044, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mrp-r2.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mrp-r2.pdf>
@@ -2506,7 +2500,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mrp-r2.pdf used on inp
 ut line 412.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mrp-r2.pdf, id=2047, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mrp-r2.pdf, id=2045, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mrp-r2.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mrp-r2.pdf>
@@ -2532,7 +2526,7 @@ l.417
        <./cap_experimentos/figs/etapa3/er-mrp-r1.pdf> <./cap_experimentos/figs/
 etapa3/gd-mrp-r1.pdf> <./cap_experimentos/figs/etapa3/ps-mrp-r1.pdf> <./cap_exp
 erimentos/figs/etapa3/time-mrp-r1.pdf>]
-<cap_experimentos/figs/etapa3/er-mrp-r3.pdf, id=2114, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/er-mrp-r3.pdf, id=2112, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mrp-r3.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mrp-r3.pdf>
@@ -2540,7 +2534,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mrp-r3.pdf used on inp
 ut line 421.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mrp-r3.pdf, id=2115, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mrp-r3.pdf, id=2113, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mrp-r3.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mrp-r3.pdf>
@@ -2548,7 +2542,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mrp-r3.pdf used on inp
 ut line 422.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mrp-r3.pdf, id=2116, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mrp-r3.pdf, id=2114, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mrp-r3.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mrp-r3.pdf>
@@ -2556,7 +2550,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mrp-r3.pdf used on inp
 ut line 423.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mrp-r3.pdf, id=2117, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mrp-r3.pdf, id=2115, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mrp-r3.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mrp-r3.pdf>
@@ -2590,7 +2584,7 @@ etapa3/gd-mrp-r2.pdf> <./cap_experimentos/figs/etapa3/ps-mrp-r2.pdf> <./cap_exp
 erimentos/figs/etapa3/time-mrp-r2.pdf> <./cap_experimentos/figs/etapa3/er-mrp-r
 3.pdf> <./cap_experimentos/figs/etapa3/gd-mrp-r3.pdf> <./cap_experimentos/figs/
 etapa3/ps-mrp-r3.pdf> <./cap_experimentos/figs/etapa3/time-mrp-r3.pdf>]
-<cap_experimentos/figs/etapa3/er-mrp-todos.pdf, id=2243, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/er-mrp-todos.pdf, id=2241, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/er-mrp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/er-mrp-todos.pdf>
@@ -2598,7 +2592,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/er-mrp-todos.pdf used on
 input line 432.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/gd-mrp-todos.pdf, id=2244, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/gd-mrp-todos.pdf, id=2242, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/gd-mrp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/gd-mrp-todos.pdf>
@@ -2606,7 +2600,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/gd-mrp-todos.pdf used on
 input line 433.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/ps-mrp-todos.pdf, id=2245, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/ps-mrp-todos.pdf, id=2243, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/ps-mrp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/ps-mrp-todos.pdf>
@@ -2614,7 +2608,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa3/ps-mrp-todos.pdf used on
 input line 434.
 (pdftex.def)             Requested size: 227.5pt x 113.74252pt.
 
-<cap_experimentos/figs/etapa3/time-mrp-todos.pdf, id=2246, 1606.0pt x 803.0pt>
+<cap_experimentos/figs/etapa3/time-mrp-todos.pdf, id=2244, 1606.0pt x 803.0pt>
 File: cap_experimentos/figs/etapa3/time-mrp-todos.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa3/time-mrp-todos.pdf>
@@ -2665,7 +2659,7 @@ able.8.12}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.557 
       ]
-<cap_experimentos/figs/etapa4/i50o4.pdf, id=2346, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/i50o4.pdf, id=2344, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/i50o4.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/i50o4.pdf>
@@ -2673,7 +2667,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa4/i50o4.pdf used on input l
 ine 581.
 (pdftex.def)             Requested size: 455.0pt x 162.48714pt.
 
-<cap_experimentos/figs/etapa4/i50o5.pdf, id=2347, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/i50o5.pdf, id=2345, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/i50o5.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/i50o5.pdf>
@@ -2681,7 +2675,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa4/i50o5.pdf used on input l
 ine 587.
 (pdftex.def)             Requested size: 455.0pt x 162.48714pt.
 
-<cap_experimentos/figs/etapa4/i50o6.pdf, id=2348, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/i50o6.pdf, id=2346, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/i50o6.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/i50o6.pdf>
@@ -2689,7 +2683,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa4/i50o6.pdf used on input l
 ine 593.
 (pdftex.def)             Requested size: 455.0pt x 162.48714pt.
 
-<cap_experimentos/figs/etapa4/i100o4.pdf, id=2349, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/i100o4.pdf, id=2347, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/i100o4.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/i100o4.pdf>
@@ -2697,7 +2691,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa4/i100o4.pdf used on input
 line 599.
 (pdftex.def)             Requested size: 455.0pt x 162.48714pt.
 
-<cap_experimentos/figs/etapa4/i100o5.pdf, id=2350, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/i100o5.pdf, id=2348, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/i100o5.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/i100o5.pdf>
@@ -2705,7 +2699,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa4/i100o5.pdf used on input
 line 605.
 (pdftex.def)             Requested size: 455.0pt x 162.48714pt.
 
-<cap_experimentos/figs/etapa4/i100o6.pdf, id=2351, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/i100o6.pdf, id=2349, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/i100o6.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/i100o6.pdf>
@@ -2713,7 +2707,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa4/i100o6.pdf used on input
 line 611.
 (pdftex.def)             Requested size: 455.0pt x 162.48714pt.
 
-<cap_experimentos/figs/etapa4/i200o4.pdf, id=2352, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/i200o4.pdf, id=2350, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/i200o4.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/i200o4.pdf>
@@ -2721,7 +2715,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa4/i200o4.pdf used on input
 line 617.
 (pdftex.def)             Requested size: 455.0pt x 162.48714pt.
 
-<cap_experimentos/figs/etapa4/i200o5.pdf, id=2353, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/i200o5.pdf, id=2351, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/i200o5.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/i200o5.pdf>
@@ -2729,7 +2723,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa4/i200o5.pdf used on input
 line 623.
 (pdftex.def)             Requested size: 455.0pt x 162.48714pt.
 
-<cap_experimentos/figs/etapa4/i200o6.pdf, id=2354, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/i200o6.pdf, id=2352, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/i200o6.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/i200o6.pdf>
@@ -2789,7 +2783,7 @@ l.633
 l.633 
        <./cap_experimentos/figs/etapa4/i100o5.pdf> <./cap_experimentos/figs/eta
 pa4/i100o6.pdf> <./cap_experimentos/figs/etapa4/i200o4.pdf>]
-<cap_experimentos/figs/etapa4/r3o4.pdf, id=2474, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/r3o4.pdf, id=2472, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/r3o4.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/r3o4.pdf>
@@ -2810,7 +2804,7 @@ l.641
 l.641 
        <./cap_experimentos/figs/etapa4/i200o5.pdf> <./cap_experimentos/figs/eta
 pa4/i200o6.pdf>]
-<cap_experimentos/figs/etapa4/r3o5.pdf, id=2509, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/r3o5.pdf, id=2507, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/r3o5.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/r3o5.pdf>
@@ -2818,7 +2812,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa4/r3o5.pdf used on input li
 ne 645.
 (pdftex.def)             Requested size: 455.0pt x 162.48714pt.
 
-<cap_experimentos/figs/etapa4/r3o6.pdf, id=2510, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/r3o6.pdf, id=2508, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/r3o6.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/r3o6.pdf>
@@ -2839,7 +2833,7 @@ l.657
 l.657 
        <./cap_experimentos/figs/etapa4/r3o4.pdf> <./cap_experimentos/figs/etapa
 4/r3o5.pdf>]
-<cap_experimentos/figs/etapa4/r4o4.pdf, id=2545, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/r4o4.pdf, id=2543, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/r4o4.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/r4o4.pdf>
@@ -2847,7 +2841,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa4/r4o4.pdf used on input li
 ne 661.
 (pdftex.def)             Requested size: 455.0pt x 162.48714pt.
 
-<cap_experimentos/figs/etapa4/r4o5.pdf, id=2546, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/r4o5.pdf, id=2544, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/r4o5.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/r4o5.pdf>
@@ -2855,7 +2849,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa4/r4o5.pdf used on input li
 ne 669.
 (pdftex.def)             Requested size: 455.0pt x 162.48714pt.
 
-<cap_experimentos/figs/etapa4/r4o6.pdf, id=2547, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/r4o6.pdf, id=2545, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/r4o6.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/r4o6.pdf>
@@ -2876,7 +2870,7 @@ l.681
 l.681 
        <./cap_experimentos/figs/etapa4/r3o6.pdf> <./cap_experimentos/figs/etapa
 4/r4o4.pdf>]
-<cap_experimentos/figs/etapa4/r5o4.pdf, id=2583, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/r5o4.pdf, id=2581, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/r5o4.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/r5o4.pdf>
@@ -2903,7 +2897,7 @@ l.689
 l.689 
        <./cap_experimentos/figs/etapa4/r4o5.pdf> <./cap_experimentos/figs/etapa
 4/r4o6.pdf> <./cap_experimentos/figs/etapa4/r5o4.pdf>]
-<cap_experimentos/figs/etapa4/r5o5.pdf, id=2633, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/r5o5.pdf, id=2631, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/r5o5.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/r5o5.pdf>
@@ -2911,7 +2905,7 @@ Package pdftex.def Info: cap_experimentos/figs/etapa4/r5o5.pdf used on input li
 ne 693.
 (pdftex.def)             Requested size: 455.0pt x 162.48714pt.
 
-<cap_experimentos/figs/etapa4/r5o6.pdf, id=2634, 2810.5pt x 1003.75pt>
+<cap_experimentos/figs/etapa4/r5o6.pdf, id=2632, 2810.5pt x 1003.75pt>
 File: cap_experimentos/figs/etapa4/r5o6.pdf Graphic file (type pdf)
 
 <use cap_experimentos/figs/etapa4/r5o6.pdf>
@@ -2991,10 +2985,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 330.
  ) 
 Here is how much of TeX's memory you used:
- 16406 strings out of 493323
- 246168 string characters out of 3139066
- 497297 words of memory out of 3000000
- 19053 multiletter control sequences out of 15000+200000
+ 16409 strings out of 493323
+ 246231 string characters out of 3139066
+ 497277 words of memory out of 3000000
+ 19056 multiletter control sequences out of 15000+200000
  84619 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,18n,45p,2510b,660s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3016,9 +3010,9 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/zapfdi
 ng/uzdr.pfb>
-Output written on main_ppgco_ufu.pdf (132 pages, 2164303 bytes).
+Output written on main_ppgco_ufu.pdf (132 pages, 2166344 bytes).
 PDF statistics:
- 3076 PDF objects out of 3580 (max. 8388607)
+ 3074 PDF objects out of 3580 (max. 8388607)
  424 named destinations out of 1000 (max. 500000)
  990 words of extra memory for PDF output out of 10000 (max. 10000000)
 

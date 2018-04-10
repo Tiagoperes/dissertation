@@ -49,13 +49,13 @@ O fluxo de funcionamento do NSGA-II inicia-se com a geração aleatória dos ind
 	\caption{Processo iterativo do NSGA-II}
 	\label{alg_nsgaii}
 	\begin{algorithmic}[1]
-		\While {número máximo de gerações não for atingido}
-		\State selecione os pares de pais para o crossover
-		\State efetue o cruzamento para cada par de pais, gerando os filhos
-		\State combine a população de pais com a população de filhos
-		\State classifique todas as soluções em fronteiras (\textit{ranks}) de dominância 
-		\State calcule a \textit{crowding distance} para cada uma das soluções
-		\State aplique a seleção natural sobre a totalidade da população, preservando os indivíduos de melhor \textit{rank} e, em segundo lugar, \textit{crowding distance}.
+		\While {critério de parada não for atingido}
+		\State $Pais \gets selecao(Pop_{atual}, TX_{cross})$
+		\State $Filhos \gets crossover(Pais)$
+		\State $Pop_{nova} \gets Pop_{atual} \cup Filhos$
+		\State $ranks \gets ranking(P_{nova})$
+		\State $crowdingDistance(P_{nova})$
+		\State $Pop_{atual} \gets reinsecao(ranks, tam_{populacao})$
 		\EndWhile
 	\end{algorithmic}
 \end{algorithm}
@@ -66,9 +66,9 @@ Na linha 3 do pseudo-código, através dos pares de pais, gera-se os filhos com 
 
 A classificação em \textit{ranks} de dominância recebe um conjunto de soluções e verifica quais dentre elas não são dominadas. O conjunto de soluções não-dominadas forma o primeiro \textit{rank} de dominância. Do conjunto restante (excluindo o primeiro \textit{rank}), retira-se as soluções não dominadas para formar o segundo \textit{rank}. Esse processo se repete até que todos os indivíduos tenham sido classificados.
 
-Após toda a população ter sido classificada em \textit{ranks},o algoritmo calcula a distância de aglomeração (\textit{crowding distance}) dos indivíduos em cada \textit{rank} de dominância. O cálculo da distância, considerando cada objetivo avaliado, ordena o conjunto de soluções e faz uma relação entre as distâncias de cada indivíduo para os vizinhos adjacentes (que estão imediatamente antes ou depois). A distância de aglomeração de cada indivíduo é resultado da somatória das distâncias resultantes em cada objetivo.  Quanto maior o valor, maior é a diferença entre o indivíduo e seus pares dentro do \textit{rank}. Essa métrica é usada para manter a diversidade das soluções entre as gerações do algoritmo.
+Após toda a população ter sido classificada em \textit{ranks}, na linha 6, o algoritmo calcula a distância de aglomeração (\textit{crowding distance}) dos indivíduos em cada \textit{rank} de dominância. O cálculo da distância, considerando cada objetivo avaliado, ordena o conjunto de soluções e faz uma relação entre as distâncias de cada indivíduo para os vizinhos adjacentes (que estão imediatamente antes ou depois). A distância de aglomeração de cada indivíduo é resultado da somatória das distâncias resultantes em cada objetivo.  Quanto maior o valor, maior é a diferença entre o indivíduo e seus pares dentro do \textit{rank}. Essa métrica é usada para manter a diversidade das soluções entre as gerações do algoritmo.
 
-Com toda a população classificada em \textit{ranks} (ou fronteiras) e todas as distâncias calculadas, uma nova população é escolhida com base nos melhores indivíduos entre pais e filhos. Para isso, analisa-se fronteira a fronteira, da melhor para a pior, até que o tamanho máximo da população seja atingido. Para cada fronteira aplica-se o seguinte processo de decisão:
+Com toda a população classificada em \textit{ranks} (ou fronteiras) e todas as distâncias calculadas, na linha 7, uma nova população é escolhida com base nos melhores indivíduos entre pais e filhos. Para isso, analisa-se fronteira a fronteira, da melhor para a pior, até que o tamanho máximo da população seja atingido. Para cada fronteira aplica-se o seguinte processo de decisão:
 
 \begin{itemize}  
 	\item Se $tamanho(rank) + tamanho(novaPopulação) < tamPop$: adiciona-se todos os membros do \textit{rank} à nova população.

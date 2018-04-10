@@ -45,26 +45,26 @@ A mutação em uma árvore que representa uma solução para o PRM consiste em r
 	\caption{Mutação para uma árvore $(A, G, qte_{arestas}, r, D)$}
 	\label{alg_prm_mutacao}
 	\begin{algorithmic}[1]
-		\State Selecione aleatoriamente $qte_{arestas}$ e remova-as de $A$
-		\State Retire de $A$ a componente conexa que contém a raiz e chame-a de $C$
-		\State Crie um grafo vazio $M$ para guardar o resultado da mutação
-		\State Adicione todas as arestas de $C$ a $M$
+		\State desconectar($A$, $qte_{arestas}$)
+		\State $C \gets extraiComponente(A, r)$
+		\State $M \gets novoGrafo()$
+		\State $M \gets mesclar(M, C)$
 		\While{$|D| > 0$}
-			\State Selecione aleatoriamente um destino $d \in D$ e remova-o da lista $D$
-			\State Remova de $A$ a componente conexa correspondente ao destino $d$ e coloque-a em $C$
-			\If{$M$ não possui o vértice $d$}
-				\State Tendo $G$ como referência, crie um caminho aleatório $P$ entre $M$ e a componente conexa $C$
-				\State Adicione todas as arestas de $P$ a $M$
-			\EndIf
-			\State Adicione todas as arestas de $C$ a $M$
+		\State $d \gets removeAleatorio(D)$
+		\State $C \gets extraiComponente(A, d)$
+		\If{$d \notin V(M)$}
+		\State $P \gets caminhoAlearorio(C, M, G)$
+		\State $M \gets mesclar(M, P)$
+		\EndIf
+		\State $M \gets mesclar(M, C)$
 		\EndWhile
-		\State Remova os ciclos em $M$, caso existam
-		\State Pode a árvore $M$, removendo todos os nós folhas que não são destinos
+		\State $removerCiclos(M)$
+		\State $podarArvore(M)$
 		\State \Return $M$
 	\end{algorithmic}
 \end{algorithm}
 
-O algoritmo recebe como entrada a árvore que sofrerá mutação ($A$), o grafo da rede ($G$), a quantidade de arestas a se remover na mutação ($qte_{arestas}$), o vértice raiz ($r$), e o conjunto de destinos ($D$). Na linha 1, desconecta-se a árvore através da remoção aleatória de arestas. Entre as linhas 2 e 4, cria-se a estrutura para a construção da árvore. A partir da linha 5 começa o laço para reconectar todos os nós destinos à arvore. A linha 6 seleciona um destino aleatório $d$ para reconectar. Na linha 7, a componente conexa contendo $d$ é extraída de $A$ e chamada de $C$. Se não existe componente conexa com o vértice $d$, $C$ será um grafo com um único nó ($d$) e nenhuma aresta. Caso o nó $d$ não exista na componente conexa $M$, cria-se um caminho aleatório em $M$ que a conecta a $C$ (linhas 8 a 10). A construção do caminho aleatório é feita nó a nó até se encontrar uma sequência de arestas entre as duas componentes. Na linha 11, inclui-se em $M$ todas as arestas de $C$. Ao final, o mesmo pós-processamento do cruzamento por caminho é realizado: remoção de ciclos e poda da árvore (linhas 14 e 15).
+O algoritmo recebe como entrada a árvore que sofrerá mutação ($A$), o grafo da rede ($G$), a quantidade de arestas a se remover na mutação ($qte_{arestas}$), o vértice raiz ($r$), e o conjunto de destinos ($D$). Na linha 1, desconecta-se a árvore através da remoção aleatória de $qte_{arestas}$ arestas. Entre as linhas 2 e 4, cria-se a estrutura para a construção da árvore. A partir da linha 5 começa o laço para reconectar todos os nós destinos à arvore. A linha 6 seleciona um destino aleatório $d$ para reconectar. Na linha 7, a componente conexa contendo $d$ é extraída de $A$ e chamada de $C$. Se não existe componente conexa com o vértice $d$, $C$ será um grafo com um único nó ($d$) e nenhuma aresta. Caso o vértice $d$ não exista na componente conexa $M$, cria-se um caminho aleatório em $M$ (com base no grafo $G$) que a conecta a $C$ (linhas 8 a 10). A construção do caminho aleatório é feita nó a nó até se encontrar uma sequência de arestas entre as duas componentes. Na linha 11, inclui-se em $M$ todas as arestas de $C$. Ao final, o mesmo pós-processamento do cruzamento por caminho é realizado: remoção de ciclos e poda da árvore (linhas 14 e 15).
 
 \section{Construção da solução (ACO)}
 \label{section_estrategias_prm_aco}
