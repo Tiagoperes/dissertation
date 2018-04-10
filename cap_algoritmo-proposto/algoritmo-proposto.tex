@@ -4,14 +4,109 @@
 O algoritmo proposto neste trabalho é baseado em colônia de formigas (ACO) e foi chamado de \textit{Many-objective Ant Colony Optimization based on Non-Dominated Sets} (MACO/NDS), em português, otimização em colônia de formigas para muitos objetivos baseada em decomposição de feromônios \cite{Franca2018}. A proposição envolve os seguintes módulos:
 
 \begin{itemize}
-	\item \textit{Framework} ACO: algoritmo geral desenvolvido para se trabalhar com qualquer problema discreto.
-	\item Modelo PMM: construção da solução para o problema da mochila multiobjetivo, apresentado na seção \ref{section_estrategias_pmm_aco}.
-	\item Modelo PRM: construção da solução para o problema do roteamento multicast, apresentado na seção \ref{section_estrategias_prm_aco}.
+	\item Modelo PMM: construção da solução para o problema da mochila multiobjetivo, apresentado na seção \ref{section_algoritmo_pmm}.
+	\item Modelo PRM: construção da solução para o problema do roteamento multicast, apresentado na seção \ref{section_algoritmo_prm}.
+	\item \textit{Framework} ACO: algoritmo geral desenvolvido para se trabalhar com qualquer problema discreto, apresentado na seção \ref{section_algoritmo_framework}.
 \end{itemize}
 
-Este capítulo apresenta o módulo principal do algoritmo, o \textit{framework}. framework. Nela são discutidos alguns conceitos gerais sobre a implementação multiobjetivo do ACO, bem como uma descrição mais detalhada das etapas de construção das soluções e atualização dos feromônios.
+Este capítulo apresenta a construção da solução no ACO para ambos os problemas (PMM e PRM). Os modelos de construção, apesar de terem sido propostos para o MACO/NDS, podem ser utilizados em qualquer algoritmo ACO. O \textit{framework} MACO/NDS, componente principal do algoritmo, é descrito em seguida na seção \ref{section_algoritmo_framework}. Nela são discutidos alguns conceitos gerais sobre a implementação multiobjetivo do ACO, bem como uma descrição mais detalhada das etapas de construção das soluções e atualização dos feromônios.
 
-\section{Visão geral do algoritmo}
+\section{Construção da solução para o PMM}
+\label{section_algoritmo_pmm}
+
+Como mostrado na seção \ref{section_representacao_pmm}, os AGs utilizam vetores binários para representar as soluções do PMM. Nos ACOs, é possível utilizar a mesma representação, entretanto, deve-se desenvolver um algoritmo que constrói a solução a partir de uma estrutura de feromônios e uma heurística. O processo de gerar as soluções é simples nos AGs, pois basta efetuar as operações de \textit{crossover} e mutação sobre os vetores binários. No entanto, a implementação de um ACO para o PMM pode ser desafiadora, já que as colônias de formigas esperam trabalhar com grafos e não vetores de bits. Um estudo extensivo relativo aos trabalhos encontrados na literatura que adotam ACOs para a resolução do problema da mochila foi realizado em \cite{Ke2010,kong2008,changdar2013,Alaya2004,Alaya2007}.
+
+As colônias de formigas foram propostas inicialmente para problemas em grafos, e, portanto, não é intuitivo sua adaptação para outros tipos de problemas, como o problema do mochila. Entretanto, como mostrado em \cite{Ke2010}, não é necessário ter um grafo para se utilizar a técnica, sendo possível manipular os feromônios de diversas outras formas. Foram encontradas na literatura três diferentes formas de lidar com os feromônios para o problema da mochila multiobjetivo (PMM). A primeira abordagem consiste em depositar feromônios em cada um dos itens \cite{Leguizamon1999}. Sempre que um item é escolhido para compor a solução, incrementa-se a quantidade de feromônios presente no item. Dessa forma, a quantidade de feromônio em cada item representa sua preferência em relação aos demais. A segunda abordagem propõe a criação de um grafo direcionado que representa a preferência em incluir um item $b$ após a inclusão do item $a$ \cite{Fidanova2003}. Dessa forma, sempre que se escolher um item $a$ e posteriormente um $b$, deposita-se feromônio na aresta $(a,b)$ do grafo. Ao construir uma solução, analisa-se o último item selecionado e todas as arestas no grafo que partem dele. O destino com a maior quantidade de feromônios representa o item preferível. A terceira estratégia foi proposta por \cite{Alaya2004} utiliza um conceito semelhante a abordagem anterior. Entretanto, ao invés de depositar feromônios apenas em pares consecutivos, eles são depositados para todos os pares de objetos existentes na solução. Por exemplo, se na solução os itens $a$, $d$ e $f$ estão na mochila e no passo atual adiciona-se o item $c$, o depósito de feromônios é feito nas arestas $(a,c)$, $(d,c)$ e $(f,c)$, de forma que o grafo represente a preferência de se escolher um item dado que algum outro item já tenha sido selecionado. Assim, ao construir a solução, deve-se analisar todas as arestas com origem em algum item já presente na solução, o destino da aresta com maior quantidade de feromônios representa o item mais desejável. Neste trabalho utilizou-se a primeira estratégia que deposita os feromônios diretamente nos itens.
+
+Além dos feromônios, outra importante fonte de informação para se construir uma solução no ACO é a heurística. Ela é responsável por estimar o quão vantajoso é escolher um item em relação a outro. Tomando como inspiração o estudo de \cite{Ke2010}, nossas implementações do ACO utilizam como heurísticas o seguinte modelo de funções:
+
+\begin{itemize}
+	\item Para cada objetivo $k$ (lucro do item), cria-se uma função de heurística $h_k$ que recebe dois parâmetros, a capacidade restante ($cr$) e o item que se deseja incluir. A capacidade restante é a diferença entre a capacidade da mochila e a soma dos pesos dos itens que já foram incluídos. A heurística é então dada por: \[h_k(item, cr) = lucro_k(item) \times (1 - \frac{peso(item)}{cr})\]
+	\item Uma heurística extra é usada exclusivamente para se referir ao peso do item, a qual é dada por: \[h_{peso}(item) = 1 - \frac{peso(item)}{peso\_maximo}\]
+\end{itemize}
+
+Logo, o número de heurísticas no PMM é sempre o número de objetivos + 1. Tendo definido a estrutura de feromônios e as heurísticas, para construir uma solução, o algoritmo recebe a função heurística ($h$) e um vetor de feromônios ($\tau$). Inicialmente, a lista de exploração $Exp$ contém todos os itens possíveis, a probabilidade $p$ de cada item $exp_i \in Exp$ é calculada de acordo com a heurística de $exp_i$ ($h(exp_i)$) e a quantidade de feromônios no item $tau_i$, como na fórmula seguinte:
+
+\[p(exp_i) = \frac{\tau_i^\alpha + h(exp_i)^\beta}{\sum_{j \gets 0}^{tamanho(Exp)} \tau_j^\alpha + h(exp_j)^\beta}\]
+
+O próximo item na solução é escolhido de acordo com as probabilidades calculadas em uma espécie de roleta, onde, quanto maior o valor de probabilidade ($p(exp_i)$), maior a chance do item ser escolhido. Após ter selecionado um item, recalcula-se a lista $Exp$ para que contenha apenas itens válidos para a solução, isto é, remove-se qualquer elemento de $Exp$ que, se incluído na solução, excede a capacidade da mochila. O processo é repetido até que $Exp$ seja uma lista vazia.
+
+A fim de reduzir a complexidade do algoritmo de construção da solução para o PMM, ao invés de se utilizar a lista completa de itens possíveis ($Exp$), utiliza-se uma amostra desse conjunto ($Exp'$). $Exp$ é calculado normalmente, mas ao submeter-se o conjunto para o cálculo de probabilidades e roleta, no lugar de $Exp$, é utilizado $Exp'$, uma amostra aleatória de tamanho fixo $Exp'_{size}$ (parâmetro do algoritmo) da lista completa $Exp$.
+
+\section{Construção da solução para o PRM}
+\label{section_algoritmo_prm}
+
+A modelagem de um algoritmo genético para o problema do roteamento multicast não é trivial, pois deve-se representar os caminhos entre o servidor e os múltiplos destinos em uma rede de computadores, ou seja, uma árvore. Em contrapartida, o PRM se aproxima da definição original do ACO, pois trabalha com grafos. Dessa forma, a modelagem de um ACO para o PRM é mais natural que a modelagem de um AG.
+
+O processo de construção da solução por um ACO no PRM deve gerar a árvore \textit{multicast} com base no grafo da rede, da estrutura de feromônios e da heurística. Existem diversas maneiras de se criar tal árvore. A fim de estudar o comportamento das diferentes estratégias possíveis, aprimorá-las e determinar o melhor modelo para se utilizar no PRM, analisou-se o comportamento de cada ideia no caso mais básico possível: o PRM mono-objetivo. As ideias consideradas neste trabalho são listadas a seguir:
+
+\begin{enumerate}
+	\item A primeira estratégia, apresentada em \cite{Pinto2005}, pode ser vista como uma formiga que caminha pelo grafo até encontrar todos os destinos. A análise é feita passo a passo, considerando apenas a vizinhança do vértice corrente como possibilidades para compor a solução. O processo inicia com uma lista de exploração ($Exp$) que contém um único elemento: a raiz. Sorteia-se um vértice $i \in Exp$ e atribui-se probabilidades a todas as arestas $(i, j)$, onde $j$ é qualquer vértice não-visitado na adjacência de $i$. $i$ é removido de $Exp$ caso não possua vizinhos factíveis. Um vértice $v$ é escolhido de acordo com as probabilidades calculadas (conforme à seção \ref{section_otimizacao_aco_construcao}), a aresta $(i, v)$ é adicionada à solução e $v$ é inserido na lista de exploração $Exp$. O processo é repetido até que todos os destinos tenham sido alcançados. Como etapa final, poda-se a árvore, eliminando as folhas que não representam destinos.
+	\item Uma solução pode ser vista como os caminhos entre a raiz e cada um dos destinos. Portanto, outra estratégia é imaginar que $|D|$ formigas partirão da raiz e cada uma deve encontrar um vértice $d \in D$ diferente, sendo $D$ o conjunto de nós destinos. Com os caminhos para todos os nós destinos definidos, monta-se a árvore evitando a ocorrência de ciclos. Por fim, realiza-se a poda da árvore para excluir qualquer vértice folha que não seja um destino. %mants
+	\item Uma terceira estratégia é proposta neste trabalho. Ela adota uma representação de formiga fictícia que pode estar em vários locais do grafo ao mesmo tempo (formiga com sobreposição quântica). Dessa forma, é possível analisar as probabilidades de todas as arestas factíveis ao mesmo tempo, ao invés de sempre escolher a composição da solução de acordo com uma vizinhança local. Ao considerar todas as possibilidades ao mesmo tempo, obtém-se um processo melhor de decisão que não apresenta qualquer tendência (viés) para algum dos ramos da árvore, já que a todo momento, qualquer vértice factível pode ser incluído no resultado. O processo é iniciado a partir de uma lista de exploração ($Exp$) que contém todas as arestas conectadas ao nó raiz. A cada passo, calcula-se as probabilidades para toda aresta de $Exp$ e, de acordo com os valores obtidos, escolhe-se $exp_i \in Exp$ para compor a solução. $exp_i$ é então removida de $Exp$, adicionada à solução e tem todas suas arestas adicionadas à lista de exploração, desde que ainda não tenham sido incluídas. O processo é repetido até que todos os destinos sejam atingidos. Uma poda é realizada ao final do processo.
+	\item A última estratégia consiste em construir a solução de forma inversa. Ao invés de partir da raiz e chegar aos destinos, este modelo propõe que se utilize $|D|$ formigas, onde cada uma tem como posição inicial um nó destino $d \in D$ diferente. A ideia é que as formigas escolham seus caminhos localmente com base nas probabilidades das arestas em suas vizinhanças. Sempre que uma formiga encontrar o caminho que já foi explorado por outra formiga, ela para de explorar e segue os mesmos passos realizados pelo outro agente. O processo termina quando o nó raiz foi encontrado por alguma formiga e todas as formigas tiverem se encontrado em algum vértice. Em outras palavras, o processo inicia com uma componente conexa para cada $d \in D$. Em todo passo do algoritmo, cada componente conexa é explorada a partir do último nó adicionado. Nesse processo, calcula-se as probabilidades das arestas na vizinhança do nó explorado e escolhe-se, de acordo com os valores obtidos, um novo vértice $v$ para ser adicionado à componente. Se não há arestas factíveis na vizinhança, deve-se retroceder para um vértice anterior. Caso o nó incluído $v$ pertença a uma outra componente conexa, elas se unem. O processo termina quando existe apenas uma componente conexa e o vértice raiz foi encontrado. Por fim, uma poda é realizada como pós-processamento da árvore. 
+\end{enumerate}
+
+Cada uma das estratégias mencionadas foi implementada e testada a fim de determinar aquela que produz as soluções de melhor qualidade para o PRM. Para obter um valor como parâmetro de qualidade, também foi implementada uma versão modificada do algoritmo de Prim \cite{Prim1957} que aproxima a árvore \textit{multicast} de menor custo. Como esperado, o algoritmo de Prim é uma opção melhor que o ACO quando se trata do PRM mono-objetivo. Entretanto, a intenção deste estudo não é produzir um algoritmo melhor para o problema, mas avaliar as estratégias de construção de solução com o objetivo de escolher aquela que será empregada em versões mais complexas (multiobjetivo) do PRM.
+
+Os resultados dos testes, que podem ser encontrados no capítulo de experimentos (seção \ref{section_experimentos_etapa2}), mostram que nossa estratégia (formiga com sobreposição quântica) representa a melhor relação entre qualidade do resultado e tempo de execução. Portanto, para todos os demais experimentos no PRM, foi o método de construção da solução utilizado.
+
+Durante a implementação da estratégia, foram adotadas algumas técnicas de amostragem a fim de agilizar o algoritmo, sem afetar significativamente a qualidade das soluções. A descrição detalhada dessa implementação é apresentada no Algoritmo \ref{alg_aco_prm_construir_solucao}, que recebe como parâmetros de entrada:
+
+\begin{itemize}
+	\item $G$: o grafo que representa a rede;
+	\item $r$: o nó raiz, servidor de onde parte a mensagem;
+	\item $D$: conjunto de nós destinos;
+	\item $\tau$: estrutura de feromônios;
+	\item $h$: função heurística;
+	\item $Exp'_{size}$: tamanho da amostra.
+\end{itemize}
+
+\begin{algorithm}
+	\caption{Geração de solução no ACO $(G, r, D, \tau, h, Exp'_{size})$}
+	\label{alg_aco_prm_construir_solucao}
+	\begin{algorithmic}[1]
+		\State Inicie uma árvore vazia $T$
+		\State Inicie $Exp$ com todas as arestas que possuem alguma extremidade em $r$
+		\State Marque $r$ como visitado
+		\While{$T$ não incluir todos os vértices em $D$}
+		\State Crie uma amostra aleatória $Exp'$ a partir da lista $Exp$ com $Exp'_{size}$ elementos
+		\State Calcule as probabilidades de todas as arestas em $Exp'$ de acordo com $\tau$ e $h$
+		\State Escolha uma aresta $e=(i,j) \in Exp'$ de acordo com as probabilidades
+		\State Inclua $e$ em $T$
+		\State Marque $j$ como visitado
+		\State Calcule a vizinhança $V$ do vértice $j$
+		\For{$v \in V$}
+		\If{já existe aresta $a$ em $Exp$ que leva a $v$}
+		\State Remova $a$ de $Exp$
+		\State Calcule as probabilidades de $a$ e de $(j, v)$ de acordo com $\tau$ e $h$
+		\State Sorteie uma das duas arestas de acordo com as probabilidades e adicione a vencedora em $Exp$
+		\ElsIf{$v$ não tiver sido visitado}
+		\State Inclua $(j, v)$ em $Exp$
+		\EndIf
+		\EndFor
+		\EndWhile
+		\State Pode a árvore $T$
+		\State \Return $T$
+	\end{algorithmic}
+\end{algorithm}
+
+Trabalhar com todas as arestas possíveis é demasiadamente caro e inviável para um algoritmo em que se deseja bom desempenho em termos de tempo de execução. Por isso, trabalha-se com uma amostra da lista de exploração (linha 5 do algoritmo). Outro processo de simplificação também é empregado para evitar o crescimento exagerado de $Exp$ durante a etapa de exploração, nas linhas 12 a 16. Nesse processo, caso um novo vértice descoberto já seja atingível a partir de alguma aresta em $Exp$, mantém-se em $Exp$ apenas uma das arestas. Para escolher qual das arestas manter, calcula-se as probabilidades de acordo com os feromônios ($\tau$) e a heurística ($h$).
+
+Com relação às heurísticas no PRM, uma função é construída para cada métrica de rede presente na formulação de objetivos. Por exemplo, no problema $P_4$, cujos objetivos envolvem as métricas custo, \textit{delay}, tráfego e capacidade, quatro heurísticas são criadas:
+
+\[ \begin{cases} 
+h_1(e) = 1 - custo(e) \\
+h_2(e) = 1 - delay(e) \\
+h_3(e) = 1 - trafego(e) \\
+h_4(e) = capacidade(e)
+\end{cases}
+\]
+
+Onde $custo(e)$, $delay(e)$, $trafego(e)$ e $capacidade(e)$ correspondem, respectivamente, ao valor normalizado entre 0 e 1 para o custo, \textit{delay}, tráfego e capacidade da aresta $e$. Na heurística $h_4$ não é feito o complemento da função, pois essa é a única métrica que deve ser maximizada.
+
+\section{\textit{Framework} MACO/NDS}
+\label{section_algoritmo_framework}
 
 O MACO/NDS se baseia na ideia do AEMMD de se criar tabelas de dominância para diferentes combinações possíveis de objetivos, adaptando-na para um modelo de colônia de formigas.
 
@@ -95,7 +190,7 @@ O processo de se atualizar as estruturas de feromônio a partir das soluções n
 
 O Algoritmo \ref{alg_macod_dist} mostra a atualização das estruturas de feromônios no MACO/NDS. O processo iterativo (linha 1) passa por todas as estruturas em $P_{ativo}$. Nas linhas 2 a 5, a estrutura atual é chamada de $a$ e seu arquivo é atualizado de acordo com as soluções no conjunto $S_{nd}$. Além disso, todas as soluções adicionadas ao arquivo são guardadas na lista $A$, enquanto todas as removidas são colocadas em $R$. As linhas 7, 8 e 9 são executadas apenas se o arquivo de $a$ foi atualizado. Na linha 7, o valor $beta$ de $a$ é reinicializado para o valor original (parâmetro $\beta$ do algoritmo); na linha 8, os valores de feromônio de $a$ são incrementados de acordo com as soluções em $A$; e na linha 9, os valores de feromônios de $a$ são decrementados de acordo com as soluções em $R$. As operações das linhas 8 e 9 são detalhadas na seção \ref{section_macod_pheromones}, sobre a atualização dos feromônios. Os valores de feromônios são alterados apenas se o arquivos tiver sido modificado, por outro lado, caso o arquivo não tenha sofrido atualização, as linhas 11 a 16 são executadas. Na linha 11, a convergência de $a$ é incrementada em 1. Na linha 12, o valor $\beta$ de $a$ é modificado de acordo com a constante pré-definida $\beta_{inc}$, a intenção é que se diminua a importância das heurísticas sempre que a busca parecer estagnada. Assim que novas soluções são encontradas, o valor $\beta$ de $a$ volta ao normal (linha 7). No caso da implementação utilizada neste trabalho, para diminuir a importância da heurística, deve-se aumentar o valor de $\beta$. A quantidade em que se deve alterar esse valor dependerá do problema. Nos nossos experimentos (descritos no capítulo \ref{chapter_experimentos}), o valor de $\beta$ aumenta em 10\% tanto no PMM quanto no PRM. Por último, nas linhas 14 e 15, se a convergência de $a$ atingiu o limite máximo $MAX_{convergencia}$, substitui-se a estrutura $a$ em $P_{ativo}$ pelo próximo $p_i \in P$, reiniciando o valor da convergência de $a$ para caso seja necessário utilizá-la novamente no decorrer do algoritmo. O valor da constante $MAX_{convergencia}$ utilizado neste trabalho foi 10.
 
-\section{Construção das soluções}
+\subsection{Construção das soluções}
 \label{section_macod_solutions}
 
 As soluções em colônias de formigas são construídas a partir do grupo de feromônios ativo ($P_{ativo}$), das heurísticas ($H$) e dos valores de $\alpha$ e $\beta$. Os feromônios são criados e atualizados no decorrer do algoritmo, enquanto os demais são parâmetros de entrada. A heurística é uma função que estima a qualidade de uma parcela da solução, ex: arestas em problemas que envolvam grafos, como o PRM, e itens em problemas representados por vetores, como o PMM. Enquanto o parâmetro $\alpha$ determina a importância do feromônio ao tomar uma decisão a respeito da composição da solução, $\beta$ representa a importância da heurística.
@@ -129,9 +224,9 @@ O processo geral para se construir as soluções é exposto no Algoritmo \ref{al
 
 O Algoritmo \ref{alg_macod_solucao} apresenta o processo geral para se construir um conjunto de soluções. Na linha 1, $S$ é inicializado como um conjunto vazio. A partir da linha 2, um laço é executado para gerar todas as soluções necessárias. Nas linhas 3 a 6, $|H|$ valores entre 0 e 2 (inclusive) são sorteados para um vetor $W$. Na linha 7, é criada a função heurística correspondente à combinação de todas as heurísticas de acordo com as importâncias sorteadas. Na linha 8, chama-se de $p$ a estrutura de feromônio atual. A nova solução é criada na linha 9 de acordo com os feromônios de $p$, a função heurística $h$, o parâmetro do $\alpha$ do algoritmo e o valor $\beta$ de $p$. Na linha 10, a nova solução é incluída no conjunto de soluções $S$. Por fim, na linha 12, retorna-se o conjunto $S$ de soluções.
 
-Na linha 6 do algoritmo \ref{alg_macod_solucao} constrói-se a solução em si. Esse processo depende exclusivamente do problema em questão e representa a principal parte na elaboração do modelo para um algoritmo baseado em colônia de formigas. No caso do problema da mochila multiobjetivo, a estratégia utilizada é aquela descrita em \ref{section_estrategias_pmm_aco}. Para o problema do roteamento multicast, a estratégia de construção da solução foi apresentada em \ref{section_estrategias_prm_aco}.
+Na linha 6 do algoritmo \ref{alg_macod_solucao} constrói-se a solução em si. Esse processo depende exclusivamente do problema em questão e representa a principal parte na elaboração do modelo para um algoritmo baseado em colônia de formigas. No caso do problema da mochila multiobjetivo, a estratégia utilizada é aquela descrita em \ref{section_algoritmo_pmm}. Para o problema do roteamento multicast, a estratégia de construção da solução foi apresentada em \ref{section_algoritmo_prm}.
 
-\section{Atualização dos feromônios}
+\subsection{Atualização dos feromônios}
 \label{section_macod_pheromones}
 
 A atualização dos feromônios no MACO/NDS pode ser de dois tipos:
