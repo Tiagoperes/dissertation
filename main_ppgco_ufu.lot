@@ -1,14 +1,14 @@
 \select@language {brazil}
 \contentsline {table}{\numberline {1}{\ignorespaces Defini\IeC {\c c}\IeC {\~o}es das redes utilizadas no PRM}}{66}{table.4.1}
-\contentsline {table}{\numberline {2}{\ignorespaces Cardinalidade dos Paretos encontrados para a primeira etapa de experimentos}}{88}{table.6.2}
-\contentsline {table}{\numberline {3}{\ignorespaces Par\IeC {\^a}metros utilizados pelos algoritmos no PRM e PMM na etapa 1 de experimentos.}}{89}{table.6.3}
-\contentsline {table}{\numberline {4}{\ignorespaces Resultados para as estrat\IeC {\'e}gias de constru\IeC {\c c}\IeC {\~a}o de solu\IeC {\c c}\IeC {\~a}o do PRM}}{101}{table.6.4}
-\contentsline {table}{\numberline {5}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre da estrat\IeC {\'e}gia 3 na t\IeC {\'e}cnica de amostragem}}{101}{table.6.5}
-\contentsline {table}{\numberline {6}{\ignorespaces Desempenho do AEMMD, MACO/NDS pr\IeC {\'e}-altera\IeC {\c c}\IeC {\~o}es e MACO/NDS final}}{102}{table.6.6}
-\contentsline {table}{\numberline {7}{\ignorespaces Cardinalidade dos Paretos encontrados para a primeira etapa de experimentos}}{103}{table.6.7}
-\contentsline {table}{\numberline {8}{\ignorespaces Par\IeC {\^a}metros utilizados para o PRM e o PMM na etapa 3 de experimentos.}}{103}{table.6.8}
-\contentsline {table}{\numberline {9}{\ignorespaces Testes de hip\IeC {\'o}tese para: MACO/NDS vs. AEMMT nos problemas PMM and PRM}}{110}{table.6.9}
-\contentsline {table}{\numberline {10}{\ignorespaces Testes de hip\IeC {\'o}tese para: MACO/NDS vs. AEMMD nos problemas PMM and PRM}}{110}{table.6.10}
-\contentsline {table}{\numberline {11}{\ignorespaces Par\IeC {\^a}metros utilizados para o PRM e o PMM na etapa 4 de experimentos.}}{112}{table.6.11}
-\contentsline {table}{\numberline {12}{\ignorespaces Ponto de refer\IeC {\^e}ncia e limita\IeC {\c c}\IeC {\~o}es no tamanho do Pareto usados para cada cen\IeC {\'a}rio de teste}}{112}{table.6.12}
-\contentsline {table}{\numberline {13}{\ignorespaces Tempos de execu\IeC {\c c}\IeC {\~a}o para o NSGA-III no PMM}}{114}{table.6.13}
+\contentsline {table}{\numberline {2}{\ignorespaces Fronteira de Pareto estabelecida para os cen\IeC {\'a}rios investigados na primeira etapa de experimentos}}{88}{table.6.2}
+\contentsline {table}{\numberline {3}{\ignorespaces Par\IeC {\^a}metros utilizados pelos AEMOs na 1\IeC {\textordfeminine } etapa, de acordo com o problema tratado.}}{89}{table.6.3}
+\contentsline {table}{\numberline {4}{\ignorespaces Desempenho em fun\IeC {\c c}\IeC {\~a}o da estrat\IeC {\'e}gia de constru\IeC {\c c}\IeC {\~a}o de uma solu\IeC {\c c}\IeC {\~a}o para o PRM}}{102}{table.6.4}
+\contentsline {table}{\numberline {5}{\ignorespaces Resultados obtidos a partir da estrat\IeC {\'e}gia 3 de acordo com o espa\IeC {\c c}o de explora\IeC {\c c}\IeC {\~a}o considerado (com e sem amostragem)}}{103}{table.6.5}
+\contentsline {table}{\numberline {6}{\ignorespaces An\IeC {\'a}lise comparativa entre as implementa\IeC {\c c}\IeC {\~o}es do MACO/NDS e o AEMMD no PRM multiobjetivo}}{104}{table.6.6}
+\contentsline {table}{\numberline {7}{\ignorespaces Fronteira de Pareto estabelecida para os cen\IeC {\'a}rios investigados na 3\IeC {\textordfeminine } etapa de experimentos}}{105}{table.6.7}
+\contentsline {table}{\numberline {8}{\ignorespaces Par\IeC {\^a}metros utilizados pelos AEMOs na 3\IeC {\textordfeminine } etapa, de acordo com o problema tratado}}{105}{table.6.8}
+\contentsline {table}{\numberline {9}{\ignorespaces Testes de hip\IeC {\'o}tese entre o MACO/NDS e o AEMMT para os problemas investigados}}{112}{table.6.9}
+\contentsline {table}{\numberline {10}{\ignorespaces Testes de hip\IeC {\'o}tese entre o MACO/NDS e o AEMMD para os problemas investigados}}{113}{table.6.10}
+\contentsline {table}{\numberline {11}{\ignorespaces Par\IeC {\^a}metros utilizados para o PRM e o PMM na etapa 4 de experimentos.}}{114}{table.6.11}
+\contentsline {table}{\numberline {12}{\ignorespaces Ponto de refer\IeC {\^e}ncia e limita\IeC {\c c}\IeC {\~o}es no tamanho do Pareto usados para cada cen\IeC {\'a}rio de teste}}{115}{table.6.12}
+\contentsline {table}{\numberline {13}{\ignorespaces Tempos de execu\IeC {\c c}\IeC {\~a}o para o NSGA-III no PMM}}{116}{table.6.13}
