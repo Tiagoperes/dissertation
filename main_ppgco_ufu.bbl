@@ -252,6 +252,12 @@ In:  \underline{\ \ \ \ \ \ \ \ }. \textbf{Advances in Multi-Objective Nature
 ISBN 978-3-642-11218-8.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1007/978-3-642-11218-8\_6}.}
 
+\bibitem[Murata e Ishibuchi 1995]{MOGA}
+\abntrefinfo{Murata e Ishibuchi}{MURATA; ISHIBUCHI}{1995}
+{MURATA, T.; ISHIBUCHI, H. Moga: multi-objective genetic algorithms. In:
+  \textbf{Proceedings of 1995 IEEE International Conference on Evolutionary
+  Computation}. [S.l.: s.n.], 1995. v.~1, p. 289--.}
+
 \bibitem[Nria et al. 2013]{FiguraGA}
 \abntrefinfo{Nria et al.}{NRIA et al.}{2013}
 {NRIA, S. et al. Roteamento de veículos utilizando otimização por colônia
