@@ -38,18 +38,18 @@ A fim de reduzir a complexidade do algoritmo de construção da solução para o
 \section{Construção da solução para o PRM}
 \label{section_algoritmo_prm}
 
-A modelagem de um algoritmo genético para o problema do roteamento multicast não é trivial, pois deve-se representar os caminhos entre o servidor e os múltiplos destinos em uma rede de computadores, ou seja, uma árvore. Em contrapartida, o PRM se aproxima da definição original do ACO, pois trabalha com grafos. Dessa forma, a modelagem de um ACO para o PRM é mais natural que a modelagem de um AG.
+A modelagem de um algoritmo genético para o problema do roteamento multicast não é trivial, pois deve-se representar os caminhos entre o servidor e os múltiplos destinos em uma rede de computadores, ou seja, uma árvore. Em contrapartida, o PRM se aproxima da definição original do ACO, pois trabalha com grafos. Dessa forma, a modelagem para o ACO do PRM é mais natural que a modelagem para o AG.
 
-O processo de construção da solução por um ACO no PRM deve gerar a árvore \textit{multicast} com base no grafo da rede, da estrutura de feromônios e da heurística. Existem diversas maneiras de se criar tal árvore. A fim de estudar o comportamento das diferentes estratégias possíveis, aprimorá-las e determinar o melhor modelo para se utilizar no PRM, analisou-se o comportamento de cada ideia no caso mais básico possível: o PRM mono-objetivo. As ideias consideradas neste trabalho são listadas a seguir:
+O processo de construção da solução para um ACO do PRM deve gerar a árvore \textit{multicast} com base no grafo da rede, da estrutura de feromônios e da heurística. Existem diversas maneiras de se criar tal árvore. A fim de estudar o comportamento das diferentes estratégias possíveis, aprimorá-las e determinar o melhor modelo para se utilizar no PRM, analisou-se o comportamento de cada ideia no caso mais básico possível: o PRM mono-objetivo. As ideias consideradas neste trabalho são listadas a seguir:
 
 \begin{enumerate}
-	\item A primeira estratégia, apresentada em \cite{Pinto2005}, pode ser vista como uma formiga que caminha pelo grafo até encontrar todos os destinos. A análise é feita passo a passo, considerando apenas a vizinhança do vértice corrente como possibilidades para compor a solução. O processo inicia com uma lista de exploração ($Exp$) que contém um único elemento: a raiz. Sorteia-se um vértice $i \in Exp$ e atribui-se probabilidades a todas as arestas $(i, j)$, onde $j$ é qualquer vértice não-visitado na adjacência de $i$. $i$ é removido de $Exp$ caso não possua vizinhos factíveis. Um vértice $v$ é escolhido de acordo com as probabilidades calculadas (conforme à seção \ref{section_otimizacao_aco_construcao}), a aresta $(i, v)$ é adicionada à solução e $v$ é inserido na lista de exploração $Exp$. O processo é repetido até que todos os destinos tenham sido alcançados. Como etapa final, poda-se a árvore, eliminando as folhas que não representam destinos.
-	\item Uma solução pode ser vista como os caminhos entre a raiz e cada um dos destinos. Portanto, outra estratégia é imaginar que $|D|$ formigas partirão da raiz e cada uma deve encontrar um vértice $d \in D$ diferente, sendo $D$ o conjunto de nós destinos. Com os caminhos para todos os nós destinos definidos, monta-se a árvore evitando a ocorrência de ciclos. Por fim, realiza-se a poda da árvore para excluir qualquer vértice folha que não seja um destino. %mants
+	\item A primeira estratégia, apresentada em \cite{Pinto2005}, pode ser vista como uma formiga que caminha pelo grafo até encontrar todos os destinos. A análise é feita passo a passo, considerando apenas a vizinhança do vértice corrente como possibilidades para compor a solução. O processo inicia com uma lista de exploração ($Exp$) que contém um único elemento: a raiz. Sorteia-se um vértice $i \in Exp$ e atribui-se probabilidades a todas as arestas $(i, j)$, onde $j$ é qualquer vértice não-visitado na adjacência de $i$, sendo que $i$ é removido de $Exp$ caso não possua vizinhos factíveis. Um vértice $v$ é escolhido de acordo com as probabilidades calculadas (conforme à seção \ref{section_otimizacao_aco_construcao}), a aresta $(i, v)$ é adicionada à solução e $v$ é inserido na lista de exploração $Exp$. O processo é repetido até que todos os destinos tenham sido alcançados. Como etapa final, poda-se a árvore, eliminando as folhas que não representam destinos.
+	\item A segunda estratégia, até onde se sabe, proposta neste trabalho, manipula de forma independente os caminhos entre a raiz e cada um dos destinos. Portanto, nessa estratégia, $|D|$ formigas partem da raiz e cada uma deve encontrar um vértice $d \in D$ diferente, sendo $D$ o conjunto de nós destinos. Com os caminhos para todos os nós destinos definidos, monta-se a árvore evitando a ocorrência de ciclos. Por fim, realiza-se a poda da árvore para excluir qualquer vértice folha que não seja um destino. %mants
 	\item Uma terceira estratégia é proposta neste trabalho. Ela adota uma representação de formiga fictícia que pode estar em vários locais do grafo ao mesmo tempo (formiga com sobreposição quântica). Dessa forma, é possível analisar as probabilidades de todas as arestas factíveis ao mesmo tempo, ao invés de sempre escolher a composição da solução de acordo com uma vizinhança local. Ao considerar todas as possibilidades ao mesmo tempo, obtém-se um processo melhor de decisão que não apresenta qualquer tendência (viés) para algum dos ramos da árvore, já que a todo momento, qualquer vértice factível pode ser incluído no resultado. O processo é iniciado a partir de uma lista de exploração ($Exp$) que contém todas as arestas conectadas ao nó raiz. A cada passo, calcula-se as probabilidades para toda aresta de $Exp$ e, de acordo com os valores obtidos, escolhe-se $exp_i \in Exp$ para compor a solução. $exp_i$ é então removida de $Exp$, adicionada à solução e tem todas suas arestas adicionadas à lista de exploração, desde que ainda não tenham sido incluídas. O processo é repetido até que todos os destinos sejam atingidos. Uma poda é realizada ao final do processo.
-	\item A última estratégia consiste em construir a solução de forma inversa. Ao invés de partir da raiz e chegar aos destinos, este modelo propõe que se utilize $|D|$ formigas, onde cada uma tem como posição inicial um nó destino $d \in D$ diferente. A ideia é que as formigas escolham seus caminhos localmente com base nas probabilidades das arestas em suas vizinhanças. Sempre que uma formiga encontrar o caminho que já foi explorado por outra formiga, ela para de explorar e segue os mesmos passos realizados pelo outro agente. O processo termina quando o nó raiz foi encontrado por alguma formiga e todas as formigas tiverem se encontrado em algum vértice. Em outras palavras, o processo inicia com uma componente conexa para cada $d \in D$. Em todo passo do algoritmo, cada componente conexa é explorada a partir do último nó adicionado. Nesse processo, calcula-se as probabilidades das arestas na vizinhança do nó explorado e escolhe-se, de acordo com os valores obtidos, um novo vértice $v$ para ser adicionado à componente. Se não há arestas factíveis na vizinhança, deve-se retroceder para um vértice anterior. Caso o nó incluído $v$ pertença a uma outra componente conexa, elas se unem. O processo termina quando existe apenas uma componente conexa e o vértice raiz foi encontrado. Por fim, uma poda é realizada como pós-processamento da árvore. 
+	\item A última estratégia, também proposta e avaliada neste trabalho, consiste em construir a solução de forma inversa. Ao invés de partir da raiz e chegar aos destinos, este modelo propõe que se utilize $|D|$ formigas, onde cada uma tem como posição inicial um nó destino $d \in D$ diferente. A ideia é que as formigas escolham seus caminhos localmente com base nas probabilidades das arestas em suas vizinhanças. Sempre que uma formiga encontrar o caminho que já foi explorado por outra formiga, ela para de explorar e segue os mesmos passos realizados pelo outro agente. O processo termina quando o nó raiz foi encontrado por alguma formiga e todas as formigas tiverem se encontrado em algum vértice. Em outras palavras, o processo inicia com uma componente conexa para cada $d \in D$. Em todo passo do algoritmo, cada componente conexa é explorada a partir do último nó adicionado. Nesse processo, calcula-se as probabilidades das arestas na vizinhança do nó explorado e escolhe-se, de acordo com os valores obtidos, um novo vértice $v$ para ser adicionado à componente. Se não há arestas factíveis na vizinhança, deve-se retroceder para um vértice anterior. Caso o nó incluído $v$ pertença a uma outra componente conexa, elas se unem. O processo termina quando existe apenas uma componente conexa e o vértice raiz foi encontrado. Por fim, uma poda é realizada como pós-processamento da árvore. 
 \end{enumerate}
 
-Cada uma das estratégias mencionadas foi implementada e testada a fim de determinar aquela que produz as soluções de melhor qualidade para o PRM. Para obter um valor como parâmetro de qualidade, também foi implementada uma versão modificada do algoritmo de Prim \cite{Prim1957} que aproxima a árvore \textit{multicast} de menor custo. Como esperado, o algoritmo de Prim é uma opção melhor que o ACO quando se trata do PRM mono-objetivo. Entretanto, a intenção deste estudo não é produzir um algoritmo melhor para o problema, mas avaliar as estratégias de construção de solução com o objetivo de escolher aquela que será empregada em versões mais complexas (multiobjetivo) do PRM.
+Cada uma das estratégias mencionadas foi implementada e testada a fim de determinar aquela que produz as soluções de melhor qualidade para o PRM. Para obter um valor como referência de qualidade, também foi implementada uma versão modificada do algoritmo de Prim \cite{Prim1957} que aproxima a árvore \textit{multicast} de menor custo. Como esperado, o algoritmo de Prim modificado, apesar de nem sempre conseguir os melhores resultados, é a opção mais rápida. Entretanto, a intenção deste estudo não é produzir um algoritmo melhor para o problema mono-objetivo, mas avaliar as estratégias de construção de solução com o objetivo de escolher aquela que será empregada em versões mais complexas (multiobjetivo) do PRM.
 
 Os resultados dos testes, que podem ser encontrados no capítulo de experimentos (seção \ref{section_experimentos_etapa2}), mostram que nossa estratégia (formiga com sobreposição quântica) representa a melhor relação entre qualidade do resultado e tempo de execução. Portanto, para todos os demais experimentos no PRM, foi o método de construção da solução utilizado.
 
@@ -110,7 +110,7 @@ Onde $custo(e)$, $delay(e)$, $trafego(e)$ e $capacidade(e)$ correspondem, respec
 \section{\textit{Framework} MACO/NDS}
 \label{section_algoritmo_framework}
 
-O MACO/NDS se baseia na ideia do AEMMD de se criar tabelas de dominância para diferentes combinações possíveis de objetivos, adaptando-na para um modelo de colônia de formigas.
+O MACO/NDS se baseia na ideia do AEMMD de se criar conjuntos de soluções não dominadas para diferentes combinações possíveis de objetivos, adaptando-na para um modelo de colônia de formigas.
 
 A multiplicidade de objetivos impõe que algumas mudanças sejam feitas na ideia original do ACO. Isso envolve responder as seguintes perguntas:
 
@@ -123,87 +123,61 @@ De acordo com \cite{Alaya2007}, essas questões podem ser resolvidas através de
 
 \begin{itemize}
 	\item \textbf{Várias colônias e múltiplos feromônios $(m+1, m)$:} considerando $m$ o número de objetivos, esse modelo utiliza $m + 1$ colônias de formigas e $m$ estruturas de feromônios. Cada colônia é associada a um único objetivo e otimiza apenas esse objetivo através de sua própria estrutura de feromônios. Uma colônia adicional, que representa o conjunto de todos os objetivos, utiliza os feromônios das outras colônias de forma aleatória. Ao criar uma solução, sorteia-se alguma das estruturas de feromônios para se utilizar a cada passo. Outra proposta, no modelo $(m+1, m)$ é utilizar a soma de todas as estruturas de feromônios ao criar uma solução na colônia extra. Quanto as heurísticas, cada colônia utiliza a função referente a seu objetivo, enquanto a colônia extra utiliza o somatório de todas as funções de heurística.
-	\item \textbf{Colônia e feromônio únicos $(1,1)$:} este modelo utiliza apenas uma colônia de formigas e uma estrutura de feromônios. Assim como no modelo anterior, as heurísticas são somadas para montar uma solução. A única estrutura de feromônios representa todos os objetivos. A atualização dos feromônios se dá através de um arquivo que mantém todas as soluções não-dominadas encontradas. Toda solução não-dominada contribui com a mesma quantidade de feromônios, já que, de fato, são indiferenciáveis em termos de qualidade.
+	\item \textbf{Colônia e feromônio únicos $(1,1)$:} este modelo utiliza apenas uma colônia de formigas e uma estrutura de feromônios. Assim como no modelo anterior, as heurísticas são somadas para montar uma solução. A estrutura única de feromônios representa todos os objetivos. A atualização dos feromônios se dá através de um arquivo que mantém todas as soluções não-dominadas encontradas. Toda solução não-dominada contribui com a mesma quantidade de feromônios, já que, de fato, são indiferenciáveis em termos de qualidade.
 	\item \textbf{Única colônia e vários feromônios $(1,m)$:} considerando $m$ o número de objetivos, esse modelo utiliza uma colônia de formigas e $m$ estruturas de feromônios. Assim como nos demais modelos, as heurísticas são somadas para montar uma solução. A cada passo da construção da solução, sorteia-se aleatoriamente a estrutura de feromônios a se utilizar. Cada estrutura de feromônios representa um objetivo e sua atualização é feita a cada iteração do algoritmo, de acordo com a melhor solução encontrada considerando aquele objetivo.
 \end{itemize}
 
-Em \cite{Alaya2007}, os experimentos mostraram que o terceiro modelo ($1,m$) gera os melhores resultados quando aplicado ao problema da mochila multiobjetivo. Dentre os ACOs multiobjetivos investigados, o MOACS se encaixa na segunda abordagem (1,1), adaptando apenas o modo de lidar com a heurística, enquanto o MOEA/D-ACO adota a primeira estratégia (m,m), pois trabalha com múltiplas formigas e várias estruturas de feromônios, apesar da quantidade exata de formigas e tabelas de feromônios não ser ditada pelo número de objetivos.
+Em \cite{Alaya2007}, os experimentos mostraram que o terceiro modelo ($1,m$) gera os melhores resultados quando aplicado ao problema da mochila multiobjetivo. Dentre os ACOs multiobjetivos investigados, o MOACS se encaixa na segunda abordagem (1,1), adaptando apenas o modo de lidar com a heurística (soma ponderada com pesos aleatórios), enquanto o MOEA/D-ACO adota a primeira estratégia (m,m), pois trabalha com múltiplas formigas e várias estruturas de feromônios, apesar da quantidade exata de formigas e tabelas de feromônios não ser ditada pelo número de objetivos.
 
-Nosso algoritmo (MACO/NDS), não pertence a nenhuma das categorias apresentadas por \cite{Alaya2007}, mas se aproxima da estratégia (1,m), pois lida com uma única colônia e múltiplos feromônios. A grande diferença é que o número de estruturas de feromônio não é igual a quantidade de objetivos, mas ao número de possíveis combinações entre os objetivos, de forma semelhante ao que ocorre no AEMMD \cite{Lafeta2017}. Além disso, o processo de cálculo da heurística e de atualização dos feromônios se difere substancialmente da ideia original do modelo $(1,m)$. O MACO/NDS, se baseia na ideia de decomposição, ou seja, ao invés de trabalhar diretamente com todos os objetivos, o problema é atacado em várias frentes com quantidades reduzidas de funções. Desta forma, evita-se o problema onde não é possível classificar a população devido ao alto número de soluções não-dominadas em espaços de dimensionalidade alta \cite{Deb2014}. O Algoritmo \ref{alg_macod_geral} apresenta uma visão em alto nível do MACO/NDS.
+Nosso algoritmo (MACO/NDS), não pertence a nenhuma das categorias apresentadas por \cite{Alaya2007}, mas se aproxima da estratégia (1,m), pois lida com uma única colônia e múltiplos feromônios. A grande diferença é que o número de estruturas de feromônio não é igual à quantidade de objetivos, mas ao número de possíveis combinações entre os objetivos, de forma semelhante ao que ocorre no AEMMD \cite{Lafeta2017}. Na verdade o modelo é (1, $|P|$), onde $P$ é o conjunto de subproblemas e $|P| = \sum_{i = 2}^m C_m^i$. Além disso, o processo de cálculo da heurística e de atualização dos feromônios se difere substancialmente da ideia original do modelo $(1,m)$. O MACO/NDS, se baseia na ideia de decomposição, ou seja, ao invés de trabalhar diretamente com todos os objetivos, o problema é atacado em várias frentes com quantidades reduzidas de funções. Desta forma, evita-se o problema onde não é possível classificar a população devido ao alto número de soluções não-dominadas em espaços de dimensionalidade alta \cite{Deb2014}. Os feromônios no MACO/NDS são encapsulados por uma estrutura chamada ``subproblema'', que contém as seguintes propriedades: 
+
+\begin{itemize}
+	\item \textbf{Objetivos:} determina os objetivos do subproblema em questão. É um vetor binário de tamanho $m$ (número de objetivos), onde cada o bit 1 representa um objetivo que faz parte do problema e o bit 0 indica aqueles que não pertencem ao problema.
+	\item \textbf{Feromônios:} corresponde aos valores dos feromônios em si, os quais são inicializados com o menor valor possível (parâmetro de entrada).
+	\item \textbf{Arquivo:} conjunto de soluções não-dominadas que apareceram até o momento para o subproblema em questão.
+	\item \textbf{Convergência:} indica a convergência do arquivo. Começa em 0 e incrementa em 1 sempre que o arquivo sofre alterações durante uma iteração (época).
+	\item \textbf{$\beta$:} importância da heurística no cálculo de probabilidades ao construir uma solução. Sempre inicializado com o valor $\beta$, que é parâmetro de entrada do MACO/NDS e representa o valor inicial de $\beta$ em cada subproblema.
+\end{itemize}
+
+Cada subproblema é responsável por uma combinação de objetivos. O Algoritmo \ref{alg_macod_geral} apresenta uma visão em alto nível do MACO/NDS.
 
 \begin{algorithm}[!htbp]
 	\caption{Algoritmo geral do MACO/NDS}
 	\label{alg_macod_geral}
 	\begin{algorithmic}[1]
-		\State $P \gets criarEstruturasDeFeromonios()$
+		\State $P \gets criarSubproblemas()$
 		\State $P_{ativo} \gets \{P[0], P[1], ..., P[4]\}$
+		\State $sgi \gets tamanho(P) - 1$ // índice do subproblema geral
 		\While{condição de parada não for atingida}
 		\State $S \gets criarSolucoes(P_{ativo})$
-		\State $atualizarArquivo(P[tamanho(P) - 1].arquivo, S)$
-		\State $S_{nd} \gets P[tamanho(P) - 1].arquivo$
-		\State $atualizarEstruturasDeFeromonios(P_{ativo}, S_{nd})$
+		\State $atualizarArquivo(P[sgi], S)$
+		\State $S_{nd} \gets P[sgi].arquivo$
+		\State $atualizarSubproblemas(P_{ativo}, S_{nd})$
 		\EndWhile
 		\State \Return $S_{nd}$
 	\end{algorithmic}
 \end{algorithm}
 
-O primeiro passo do MACO/NDS (linha 1 do Algoritmo \ref{alg_macod_geral}) é criar as estruturas de feromônio $P = \{p_1, p_2, ..., p_i, ..., p_n\}$, uma para cada combinação possível de objetivos (análogo ao processo do AEMMD apresentado na seção \ref{section_aemmd}). Para um problema de seis objetivos, por exemplo, são criadas 57 estruturas ($|P| = 57$). Cada $p_i \in P$ é responsável por um subproblema e guarda as seguintes informações:
+O primeiro passo do MACO/NDS (linha 1 do Algoritmo \ref{alg_macod_geral}) é criar as estruturas de dados para os subproblemas $P = \{p_1, p_2, ..., p_i, ..., p_n\}$, uma para cada combinação possível de objetivos (análogo ao processo do AEMMD apresentado na seção \ref{section_aemmd}). Para um problema de seis objetivos ($m = 6$), por exemplo, são criados 57 subproblemas que decompõem o problema principal. São 57 subproblemas, pois, se $m = 6$, $|P| = \sum_{i = 2}^m C_m^i = 15 + 20 + 15 + 6 + 1 = 57$.
 
-\begin{itemize}
-	\item \textbf{Valores:} corresponde aos valores dos feromônios em si, os quais são inicializados com o menor valor possível.
-	\item \textbf{Objetivos:} determina os objetivos do subproblema em questão. É um vetor binário de tamanho $m$ (número de objetivos), onde cada o bit 1 representa um objetivo que faz parte do problema e o bit 0 indica aqueles que não pertencem ao problema.
-	\item \textbf{Arquivo:} conjunto de soluções não-dominadas que apareceram até o momento para o subproblema em questão.
-	\item \textbf{Convergência:} indica a convergência do arquivo. Começa em 0 e incrementa em 1 sempre que o arquivo sofre alterações durante uma iteração (época).
-	\item \textbf{$\beta$:} importância da heurística no cálculo de probabilidades ao construir uma solução. Sempre inicializado com o valor do parâmetro $\beta$ passado ao MACO/NDS.
-\end{itemize}
+Os subproblemas são utilizados no processo de construção da solução e devem ser atualizadas em toda iteração do algoritmo. Manipular todos os elementos de $P$ (57 subproblemas, no caso de seis objetivos) é computacionalmente caro e inviável. Por essa razão, define-se um número máximo de subproblemas para se trabalhar em um dado momento. Em ambos os problemas utilizados neste trabalho (PMM e PRM), foi utilizado um limite de cinco subproblemas ativos simultaneamente. A ordem de ativação dos elementos de $P$ é determinada pela sua ordem em $P$. Por isso, é importante a sequência em que as estruturas são criadas: os primeiros subproblemas instanciados são aqueles que representam um menor número de  objetivos, ou seja, combinações 2 a 2. Em seguida, instancia-se os subproblemas de 3 objetivos e, assim por diante, até que o último subproblema com o número total de objetivos seja criado.
 
-As estruturas de feromônios são utilizadas no processo de construção da solução e devem ser atualizadas em toda iteração do algoritmo. Manipular todas as estruturas de feromônios de $P$ (57 estruturas, no caso de seis objetivos) é computacionalmente caro e inviável. Por essa razão, define-se um número máximo de estruturas para se trabalhar em um dado momento. Em ambos os problemas utilizados neste trabalho (PMM e PRM), foi utilizado um limite de cinco estruturas de feromônios ativas simultaneamente. A ordem de ativação dos elementos de $P$ é determinada pela sua ordem em $P$. Por isso, é importante a sequência em que as estruturas são criadas: os primeiros subproblemas instanciados são aqueles que representam um menor número de  objetivos, ou seja, combinações 2 a 2. Em seguida, instancia-se os subproblemas de 3 objetivos e, assim por diante, até que a última estrutura de feromônios com o número total de objetivos seja criada.
+Na linha 2 do Algoritmo \ref{alg_macod_geral}, os cinco subproblemas mais simples são ativados (ou seja, as 5 primeiras combinações de objetivos). No processo de atualização (linha 8), assim que algum dos subproblemas passa a não contribuir satisfatoriamente para o conjunto de soluções, esse é desativado em favor do próximo subproblema mais complexo. Dessa forma, o conjunto de soluções do MACO/NDS cresce gradualmente, partindo das decomposições mais simples, que utilizam um número menor de objetivos, em direção às mais complexas, que utilizam um número maior até que seja ativado o subproblema que lida com todos os $m$ objetivos.
 
-Na linha 2 do Algoritmo \ref{alg_macod_geral}, os cinco subproblemas mais simples são ativados. Na atualização dos feromônios, assim que algum dos subproblemas passa a não contribuir satisfatoriamente para o conjunto de soluções, é desativado em favor do próximo problema mais complexo ainda não utilizado. Dessa forma, o conjunto de soluções do MACO/NDS cresce gradualmente, partindo das decomposições mais simples em direção às mais complexas.
-
-O laço principal do ACO, iniciado na linha 3 do algoritmo, consiste em gerar soluções e atualizar as estruturas de feromônios ativas. Na linha 4, é construído o conjunto de soluções $S$ de acordo com os feromônios em $P_{ativo}$, esse processo é detalhado na seção \ref{section_macod_solutions}. Nas linha 5 e 6, o arquivo de soluções não dominadas geral (considerando todos os objetivos) é atualizado e chamado de $S_{nd}$. Por último, na linha 7, as soluções de $S_{nd}$ são utilizadas para atualizar cada uma das estruturas em $P_{ativo}$. Após o término do laço principal, o algoritmo MACO/NDS retorna todas as soluções não dominadas encontradas ($S_{nd}$).
-
-O processo de se atualizar as estruturas de feromônio a partir das soluções não dominadas encontradas (linha 7) é mostrado com mais detalhes no Algoritmo \ref{alg_macod_dist}, que recebe como entrada o conjunto $P_{ativo}$ e o conjunto de soluções $S_{nd}$
-
-\begin{algorithm}[!htbp]
-	\caption{Atualização das estruturas de feromônios}
-	\label{alg_macod_dist}
-	\begin{algorithmic}[1]
-		\For{$i \gets 0 até tamanho(P_{ativo})$}
-		\State $a \gets P_{ativo}[i]$
-		\State $dif = atualizarArquivo(a, S_{nd})$
-		\State $A \gets dif.added$
-		\State $R \gets dif.removed$
-		\If{|A| > 0}
-		\State $a.\beta \gets \beta$
-		\State $depositarFeromonios(a, A)$
-		\State $evaporarFeromonios(a, R)$
-		\Else
-		\State $a.convergencia \gets a.convergencia + 1$
-		\State $a.\beta \gets a.\beta \times \beta_{inc}$
-		\If{$a.convergencia > MAX_{convergencia}$}
-		\State $P_{ativo}[i] \gets proxima\_estrura\_feromonios$,
-		\State $a.convergencia \gets 0$
-		\EndIf
-		\EndIf
-		\EndFor
-	\end{algorithmic}
-\end{algorithm}
-
-O Algoritmo \ref{alg_macod_dist} mostra a atualização das estruturas de feromônios no MACO/NDS. O processo iterativo (linha 1) passa por todas as estruturas em $P_{ativo}$. Nas linhas 2 a 5, a estrutura atual é chamada de $a$ e seu arquivo é atualizado de acordo com as soluções no conjunto $S_{nd}$. Além disso, todas as soluções adicionadas ao arquivo são guardadas na lista $A$, enquanto todas as removidas são colocadas em $R$. As linhas 7, 8 e 9 são executadas apenas se o arquivo de $a$ foi atualizado. Na linha 7, o valor $beta$ de $a$ é reinicializado para o valor original (parâmetro $\beta$ do algoritmo); na linha 8, os valores de feromônio de $a$ são incrementados de acordo com as soluções em $A$; e na linha 9, os valores de feromônios de $a$ são decrementados de acordo com as soluções em $R$. As operações das linhas 8 e 9 são detalhadas na seção \ref{section_macod_pheromones}, sobre a atualização dos feromônios. Os valores de feromônios são alterados apenas se o arquivos tiver sido modificado, por outro lado, caso o arquivo não tenha sofrido atualização, as linhas 11 a 16 são executadas. Na linha 11, a convergência de $a$ é incrementada em 1. Na linha 12, o valor $\beta$ de $a$ é modificado de acordo com a constante pré-definida $\beta_{inc}$, a intenção é que se diminua a importância das heurísticas sempre que a busca parecer estagnada. Assim que novas soluções são encontradas, o valor $\beta$ de $a$ volta ao normal (linha 7). No caso da implementação utilizada neste trabalho, para diminuir a importância da heurística, deve-se aumentar o valor de $\beta$. A quantidade em que se deve alterar esse valor dependerá do problema. Nos nossos experimentos (descritos no capítulo \ref{chapter_experimentos}), o valor de $\beta$ aumenta em 10\% tanto no PMM quanto no PRM. Por último, nas linhas 14 e 15, se a convergência de $a$ atingiu o limite máximo $MAX_{convergencia}$, substitui-se a estrutura $a$ em $P_{ativo}$ pelo próximo $p_i \in P$, reiniciando o valor da convergência de $a$ para caso seja necessário utilizá-la novamente no decorrer do algoritmo. O valor da constante $MAX_{convergencia}$ utilizado neste trabalho foi 10.
+Na linha 3, é criada a variável $sgi$ com o índice do último subproblema, com todos os objetivos. O laço principal do ACO, iniciado na linha 4 do algoritmo, consiste em gerar soluções e atualizar as estruturas de subproblema. Na linha 5, é construído o conjunto de soluções $S$ de acordo com os feromônios dos subproblemas em $P_{ativo}$, esse processo é detalhado na seção \ref{section_macod_solutions}. Na linha 6, o arquivo do último subproblema (com todos os objetivos) é atualizado com as soluções em $S$. Na linha 7, esse arquivo é guardado na variável $S_{nd}$, como referência ao arquivo principal com todas as soluções não dominadas envolvendo o problema original (todos os objetivos). Por último, na linha 8, as soluções de $S_{nd}$ são utilizadas para atualizar cada uma das estruturas de subproblema em $P_{ativo}$. Após o término do laço principal, o algoritmo MACO/NDS retorna todas as soluções não dominadas encontradas ($S_{nd}$).
 
 \subsection{Construção das soluções}
 \label{section_macod_solutions}
 
-As soluções em colônias de formigas são construídas a partir do grupo de feromônios ativo ($P_{ativo}$), das heurísticas ($H$) e dos valores de $\alpha$ e $\beta$. Os feromônios são criados e atualizados no decorrer do algoritmo, enquanto os demais são parâmetros de entrada. A heurística é uma função que estima a qualidade de uma parcela da solução, ex: arestas em problemas que envolvam grafos, como o PRM, e itens em problemas representados por vetores, como o PMM. Enquanto o parâmetro $\alpha$ determina a importância do feromônio ao tomar uma decisão a respeito da composição da solução, $\beta$ representa a importância da heurística.
+As soluções em colônias de formigas são construídas a partir dos feromônios do subproblema ativo ($P_{ativo}$), das heurísticas ($H$) e dos valores de $\alpha$ e $\beta$. Os feromônios são criados e atualizados no decorrer do algoritmo, enquanto os demais são parâmetros de entrada. A heurística é uma função que estima a qualidade de uma parcela da solução, ex: arestas em problemas que envolvam grafos, como o PRM, e itens em problemas representados por vetores, como o PMM. Enquanto o parâmetro $\alpha$ determina a importância do feromônio ao tomar uma decisão a respeito da composição da solução, $\beta$ representa a importância da heurística.
 
-No MACO/NDS existem múltiplas estruturas de feromônios e heurísticas. Portanto, para que se possa construir uma solução, é necessário antes escolher quais valores de feromônio e qual função de heurística serão utilizados. 
+No MACO/NDS existem múltiplos feromônios (encapsulados pelas estruturas de subproblema) e heurísticas. Portanto, para que se possa construir uma solução, é necessário antes escolher quais valores de feromônio e qual função de heurística serão utilizados. 
 
-As estruturas de feromônios são recebidas pelo processo de construção das soluções através da lista de estruturas ativas do MACO/NDS ($P_{ativo}$), ou seja, 5 conjuntos de feromônios são utilizados por vez. De maneira circular, cada solução utiliza uma única estrutura de feromônios para ser construída, ou seja, a primeira solução é criada a partir da primeira estrutura de $P_{ativo}$, a segunda a partir da segunda e, assim por diante, até a sexta solução que utiliza novamente a primeira estrutura de $P_{ativo}$.
+Os subproblemas são utilizados no processo de construção das soluções pelas formigas, através da lista de subproblemas ativos do MACO/NDS ($P_{ativo}$). Ou seja, 5 subproblemas são utilizados por vez. De maneira circular, cada formiga utiliza um único subproblema para construir uma solução. Isto é, a primeira solução é criada por uma formiga que utiliza o primeiro subproblema de $P_{ativo}$, a segunda solução a partir do segundo subproblema e, assim por diante, até a sexta solução, na qual uma formiga utiliza novamente a primeira estrutura de $P_{ativo}$.
 
 Com relação às heurísticas, o MACO/NDS utiliza o mesmo processo proposto em \cite{Riveros2016}. Admite-se um grau de importância para cada função: 0 (não importante), 1 (importante) ou 2 (muito importante). O valor de importância é sorteado para cada heurística e funciona como um peso. A função única utilizada para construir a solução é a soma ponderada das heurísticas considerando os pesos sorteados.
 
-O processo geral para se construir as soluções é exposto no Algoritmo \ref{alg_macod_solucao}.
+O processo geral para a construção das soluções pelas formigas é exposto no Algoritmo \ref{alg_macod_solucao}.
 
 \begin{algorithm}
 	\caption{Construção das soluções}
@@ -224,32 +198,61 @@ O processo geral para se construir as soluções é exposto no Algoritmo \ref{al
 	\end{algorithmic}
 \end{algorithm}
 
-O Algoritmo \ref{alg_macod_solucao} apresenta o processo geral para se construir um conjunto de soluções. Na linha 1, $S$ é inicializado como um conjunto vazio. A partir da linha 2, um laço é executado para gerar todas as soluções necessárias. Nas linhas 3 a 6, $|H|$ valores entre 0 e 2 (inclusive) são sorteados para um vetor $W$. Na linha 7, é criada a função heurística correspondente à combinação de todas as heurísticas de acordo com as importâncias sorteadas. Na linha 8, chama-se de $p$ a estrutura de feromônio atual. A nova solução é criada na linha 9 de acordo com os feromônios de $p$, a função heurística $h$, o parâmetro do $\alpha$ do algoritmo e o valor $\beta$ de $p$. Na linha 10, a nova solução é incluída no conjunto de soluções $S$. Por fim, na linha 12, retorna-se o conjunto $S$ de soluções.
+O Algoritmo \ref{alg_macod_solucao} apresenta o processo geral para se construir um conjunto de soluções. Na linha 1, $S$ é inicializado como um conjunto vazio. A partir da linha 2, um laço é executado para gerar todas as soluções necessárias. Nas linhas 3 a 6, $|H|$ valores entre 0 e 2 (inclusive) são sorteados para um vetor $W$. Na linha 7, é criada a função heurística correspondente à combinação de todas as heurísticas de acordo com as importâncias sorteadas. Na linha 8, chama-se de $p$ o subproblema atual. A nova solução é criada por uma formiga na linha 9 de acordo com os feromônios de $p$, a função heurística $h$, o parâmetro do $\alpha$ do algoritmo e o valor $\beta$ de $p$. Na linha 10, a nova solução é incluída no conjunto de soluções $S$. Por fim, na linha 12, retorna-se o conjunto $S$ de soluções.
 
-Na linha 6 do algoritmo \ref{alg_macod_solucao} constrói-se a solução em si. Esse processo depende exclusivamente do problema em questão e representa a principal parte na elaboração do modelo para um algoritmo baseado em colônia de formigas. No caso do problema da mochila multiobjetivo, a estratégia utilizada é aquela descrita em \ref{section_algoritmo_pmm}. Para o problema do roteamento multicast, a estratégia de construção da solução foi apresentada em \ref{section_algoritmo_prm}.
+Na linha 9 do algoritmo \ref{alg_macod_solucao} constrói-se a solução em si. Esse processo depende exclusivamente do problema em questão e representa a principal parte na elaboração do modelo para um algoritmo baseado em colônia de formigas. No caso do problema da mochila multiobjetivo, a estratégia utilizada é aquela descrita em \ref{section_algoritmo_pmm}. Para o problema do roteamento multicast, a estratégia de construção da solução foi apresentada em \ref{section_algoritmo_prm}.
+
+\subsection{Atualização das estruturas de subproblemas}
+
+O processo de atualizar as estruturas de subproblema a partir das novas soluções não dominadas encontradas (linha 8 do Algoritmo \ref{alg_macod_geral}) é mostrado com mais detalhes no Algoritmo \ref{alg_macod_dist}, que recebe como entrada o conjunto $P_{ativo}$ e o conjunto de soluções $S_{nd}$
+
+\begin{algorithm}[!htbp]
+	\caption{Atualização dos subproblemas}
+	\label{alg_macod_dist}
+	\begin{algorithmic}[1]
+		\For{$i \gets 0$ até $tamanho(P_{ativo})$}
+		\State $a \gets P_{ativo}[i]$
+		\State $dif = atualizarArquivo(a, S_{nd})$
+		\State $A \gets dif.added$
+		\State $R \gets dif.removed$
+		\If{|A| > 0}
+		\State $a.\beta \gets \beta$
+		\State $depositarFeromonios(a, A)$
+		\State $evaporarFeromonios(a, R)$
+		\Else
+		\State $a.convergencia \gets a.convergencia + 1$
+		\State $a.\beta \gets a.\beta \times \beta_{inc}$
+		\If{$a.convergencia > MAX_{convergencia}$}
+		\State $P_{ativo}[i].convergencia \gets 0$
+		\State $P_{ativo}[i] \gets proxima\_estrura\_feromonios$,
+		\EndIf
+		\EndIf
+		\EndFor
+	\end{algorithmic}
+\end{algorithm}
+
+O Algoritmo \ref{alg_macod_dist} mostra a atualização das estruturas de subproblema no MACO/NDS. O processo iterativo (linha 1) passa por todas as estruturas em $P_{ativo}$. Nas linhas 2 a 5, a estrutura atual é chamada de $a$ e seu arquivo é atualizado de acordo com as soluções no conjunto $S_{nd}$. Além disso, todas as soluções adicionadas ao arquivo são guardadas na lista $A$, enquanto todas as removidas são colocadas em $R$. As linhas 7, 8 e 9 são executadas apenas se o arquivo de $a$ foi atualizado. Na linha 7, o valor $beta$ de $a$ é reinicializado para o valor original (parâmetro $\beta$ do algoritmo); na linha 8, os valores de feromônio de $a$ são incrementados de acordo com as soluções em $A$; e na linha 9, os valores de feromônios de $a$ são decrementados de acordo com as soluções em $R$. As operações das linhas 8 e 9 são detalhadas na seção \ref{section_macod_pheromones}, sobre a atualização dos feromônios. Os valores de feromônios são alterados apenas se o arquivo relacionado ao subproblema corrente ($a = P_{ativo}[i]$) tiver sido modificado. Por outro lado, caso o arquivo não tenha sofrido atualização, as linhas 11 a 16 são executadas. Na linha 11, a convergência de $a$ é incrementada em 1. Na linha 12, o valor $\beta$ de $a$ é modificado de acordo com a constante pré-definida $\beta_{inc}$. Como temos $\beta_{inc} > 1$, o valor de $\beta$ atual correspondente ao subproblema corrente é aumentado. A ideia é que se diminua a importância das heurísticas sempre que a busca parecer estagnada. Como na implementação utilizada neste trabalho os valores das heurísticas são normalizadas entre 0 e 1, para diminuir a importância da heurística, deve-se aumentar o valor de $\beta$, por isso $\beta_{inc} > 1$. O valor de $\beta_{inc}$ é um parâmetro que depende do problema. Nos nossos experimentos (descritos no capítulo \ref{chapter_experimentos}), o valor de $\beta$ aumenta em 10\% tanto no PMM quanto no PRM, ou seja, $\beta_{inc} = 1,1$. Caso novas soluções sejam encontradas, o valor $\beta$ associado ao subproblema corrente ($a.\beta$) volta ao valor inicial de $\beta$ (linha 7). Por último, nas linhas 14 e 15, se a convergência de $a$ atingiu o limite máximo $MAX_{convergencia}$, substitui-se a estrutura $a$ em $P_{ativo}$ pelo próximo $p_i \in P$, reiniciando o valor da convergência de $a$ para caso seja necessário utilizá-la novamente no decorrer do algoritmo. O valor da constante $MAX_{convergencia}$ utilizado neste trabalho foi 10.
 
 \subsection{Atualização dos feromônios}
 \label{section_macod_pheromones}
 
-A atualização dos feromônios no MACO/NDS pode ser de dois tipos:
+A atualização dos valores de feromônio em um subproblema no MACO/NDS pode ser de dois tipos:
 
 \begin{enumerate}
-	\item \textbf{Depósito:} a partir de uma solução, adiciona-se uma quantidade $\delta$ ao feromônio correspondente à cada partícula da solução. No caso de um problema em grafos, por exemplo, para cada aresta da solução, incrementa-se em $\delta$ o feromônio daquela aresta.
-	\item \textbf{Evaporação:} similar ao depósito, mais ao invés de incrementar o feromônio em $\delta$, decrementa-se.
+	\item \textbf{Depósito:} a partir de uma nova solução construída, adiciona-se uma quantidade $\delta$ ao feromônio correspondente à cada parcela da solução. No caso de um problema em grafos, por exemplo, para cada aresta da solução, incrementa-se em $\delta$ o feromônio daquela aresta. O depósito de feromônio ocorre quando novas soluções não-dominadas são encontradas.
+	\item \textbf{Evaporação:} similar ao depósito, mais ao invés de incrementar o feromônio em $\delta$, decrementa-se. Ocorre quando uma solução é removida do arquivo em decorrência de uma nova solução melhor.
 \end{enumerate}
 
-O depósito de feromônio ocorre quando novas soluções não-dominadas são encontradas. A evaporação no MACO/NDS, diferentemente da maioria dos algoritmos baseados em ACO, não ocorre para todos os feromônios em todas as iterações. Ao invés disso, o feromônio só é decrementado quando uma solução deixa de ser não-dominada (ver algoritmo \ref{alg_macod_geral}).
+A evaporação no MACO/NDS, diferentemente da maioria dos algoritmos baseados em ACO, não ocorre para todas as arestas (parcelas da solução) em todas as iterações. Ao invés disso, o feromônio só é decrementado quando uma solução passa a ser dominada (linha 9 do Algoritmo \ref{alg_macod_dist}).
 
-Dada uma solução $s$ do problema do roteamento multicast (PRM), se $s$ deve ser reforçada (depósito), cada aresta $e$ da árvore $s$ incrementa o valor correspondente na estrutura de feromônios em um fator $\delta$. Matematicamente, esse processo de depósito é definido por:
+Dada uma solução $s$ do problema do roteamento multicast (PRM), se $s$ deve ser reforçada (depósito), cada aresta $e$ da árvore $s$ incrementa o valor correspondente na matriz de feromônios em um fator $\delta$. Matematicamente, o valor de $\delta$ é definido por:
 
 \[\delta(e) = (1 - pesos(e)) \times \rho\]
 
-Sendo, $pesos(e)$ é a média dos pesos normalizados na aresta $e$, e $\rho$ é a taxa de evaporação (parâmetro do MACO/NDS). Se $s$ deve ser desencorajada (evaporação), os valores na matriz de feromônios correspondentes às arestas de $s$ devem ser decrementados em $\delta$.
+Sendo, $pesos(e)$ a média dos pesos normalizados na aresta $e$ e $\rho$ a taxa de evaporação (parâmetro do MACO/NDS). Por outro lado, se $s$ se tornou uma solução dominada (saiu do arquivo) e, por isso, deve ser desencorajada (evaporação), os valores na matriz de feromônios correspondentes às arestas de $s$ devem ser decrementados em $\delta$.
 
-Dada uma solução $s$ do problema da mochila multiobjetivo (PMM), se $s$ deve ser reforçada (depósito), cada item $i$ de $s$ incrementa o valor correspondente na estrutura de feromônios em um fator $\delta$. O cálculo do depósito no PMM é dado por:
+Dada uma solução $s$ do problema da mochila multiobjetivo (PMM), se $s$ deve ser reforçada (depósito), cada item $i$ de $s$ incrementa o valor correspondente no vetor de feromônios em um fator $\delta$. O cálculo de $\delta$ no PMM é dado por:
 
 \[\delta(i) = lucros(i) \times (1 - peso(i) / peso\_{max}) \times \rho\]
 
-Onde $lucros(i)$ é a média dos valores normalizados de lucro do item $i$, e $peso\_{max}$ é o maior peso dentre todos os itens. Se $s$ deve ser desencorajada (evaporação), os valores no vetor de feromônios correspondentes aos itens de $s$ devem ser decrementados em $\delta$.
-
-%O fator de incremento de feromônio em ACOs multiobjetivos é normalmente fixo e independente tanto da solução quanto da partícula (aresta ou item). A ideia de se basear a quantidade de feromônios na qualidade da partícula é utilizada em nosso modelo devido aos experimentos realizados mais a frente no texto, na etapa 2 do capítulo \ref{chapter_experimentos} (seção \ref{section_experimentos_etapa2}).
+Onde, $lucros(i)$ é a média dos valores normalizados de lucro do item $i$, e $peso\_{max}$ é o maior peso dentre todos os itens. Se $s$ deve ser desencorajada (evaporação), os valores no vetor de feromônios correspondentes aos itens de $s$ devem ser decrementados em $\delta$.
