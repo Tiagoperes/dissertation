@@ -106,7 +106,7 @@ Dado que se deseja transmitir um conteúdo via uma rede de computadores, o probl
 	\caption{\label{fig_prm_grafo}Exemplo de uma rede de comunicação. Retirado de \cite{BuenoThesis}.}
 \end{figure}
 
-Na \autoref{fig_prm_mono} são apresentados alguns exemplos de árvores multicast criadas a partir do grafo mostrado na figura \autoref{fig_prm_grafo}. O custo de cada árvore é dado pela soma dos custos de suas arestas. Dentre os exemplos, a árvore mais à direita possui o menor custo total: 65.
+Na \autoref{fig_prm_mono}, são apresentados alguns exemplos de árvores multicast criadas a partir do grafo mostrado na figura \autoref{fig_prm_grafo}. O custo de cada árvore é dado pela soma dos custos de suas arestas. Dentre os exemplos, a árvore mais à direita possui o menor custo total: 65.
 
 \begin{figure}[!htbp]
 	\centering
@@ -131,8 +131,10 @@ Neste trabalho considera-se até quatro valores de peso para um enlace da rede: 
 	\item \textbf{Delay fim-a-fim médio:} média da soma dos \textit{delays} em cada ramo da árvore. Em outras palavras, média do atraso em cada uma das comunicações cliente-servidor.
 	\item \textbf{Delay fim-a-fim máximo:} maior valor para a soma de \textit{delays} dentre todos os ramos da árvore, ou seja, o maior atraso dentre todas as comunicações cliente-servidor.
 	\item \textbf{\textit{Hops count}}: número de vértices na árvore.
-	\item \textbf{Utilização máxima de enlaces:} considerando todas as arestas na árvore, qual delas atinge a maior utilização de banda? Matematicamente, considerando $E$ o conjunto de arestas da árvore e $\phi$ o tamanho da mensagem, essa métrica é dada por: \[\max_{e \in E} \frac{t(e) + \phi}{z(e)}\]
-	\item \textbf{Utilização média dos enlaces:} média da utilização de banda entre todas as arestas da árvore. Seu cálculo é similar ao da métrica anterior (utilização máxima de enlaces) e é dado por: \[\frac{\sum_{e \in E} \frac{t(e) + \phi}{z(e)}}{|E|}\]
+	\item \textbf{Utilização máxima de enlaces:} considerando todas as arestas na árvore, qual delas atinge a maior utilização de banda? Matematicamente, considerando $E$ o conjunto de arestas da árvore e $\phi$ o tamanho da mensagem, essa métrica é dada por:
+	\begin{equation}\max_{e \in E} \frac{t(e) + \phi}{z(e)}\end{equation}
+	\item \textbf{Utilização média dos enlaces:} média da utilização de banda entre todas as arestas da árvore. Seu cálculo é similar ao da métrica anterior (utilização máxima de enlaces) e é dado por:
+	\begin{equation}\frac{\sum_{e \in E} \frac{t(e) + \phi}{z(e)}}{|E|}\end{equation}
 \end{enumerate}
 
 A fim de possibilitar diversos cenários de teste para o PRM, os objetivos acima podem ser combinados de diversas maneiras, criando várias instâncias multi-objetivos do problema. Neste trabalho foram utilizadas 5 formulações (combinações) desses objetivos:
@@ -227,4 +229,3 @@ A mutação em uma árvore que representa uma solução para o PRM consiste em r
 O algoritmo recebe como entrada a árvore que sofrerá mutação ($A$), o grafo da rede ($G$), a quantidade de arestas a se remover na mutação ($qte_{arestas}$), o vértice raiz ($r$), e o conjunto de destinos ($D$). Na linha 1, desconecta-se a árvore através da remoção aleatória de $qte_{arestas}$ arestas. Entre as linhas 2 e 4, cria-se a estrutura para a construção da árvore. A partir da linha 5 começa o laço para reconectar todos os nós destinos à arvore. A linha 6 seleciona um destino aleatório $d$ para reconectar. Na linha 7, a componente conexa contendo $d$ é extraída de $A$ e chamada de $C$. Se não existe componente conexa com o vértice $d$, $C$ será um grafo com um único nó ($d$) e nenhuma aresta. Caso o vértice $d$ não exista na componente conexa $M$, cria-se um caminho aleatório em $M$ (com base no grafo $G$) que a conecta a $C$ (linhas 8 a 10). A construção do caminho aleatório é feita nó a nó até se encontrar uma sequência de arestas entre as duas componentes. Na linha 11, inclui-se em $M$ todas as arestas de $C$. Ao final, o mesmo pós-processamento do cruzamento por caminho é realizado: remoção de ciclos e poda da árvore (linhas 14 e 15).
 
 Em relação à proposta utilizada em \cite{LafetaThesis}, destacam-se como diferenças a geração da população inicial e o cruzamento. Com relação à população inicial, os indivíduos gerados através do método apresentado neste trabalho, apresenta diversidade um pouco maior. No que diz repeito ao cruzamento, aqui se utiliza apenas o \textit{crossover} por caminho, enquanto no trabalho anterior se utilizava também um outro tipo de cruzamento, o \textit{crossover} por similaridade.
-[]

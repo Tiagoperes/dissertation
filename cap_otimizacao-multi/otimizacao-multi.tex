@@ -11,7 +11,7 @@ A dominância de Pareto estabelece que uma solução $A$ é melhor que uma solu�
 
 Considerando-se um problema de minimização e $F$ como o conjunto de funções objetivo, tem-se, matematicamente:
 
-\[A \prec B \Leftrightarrow (\forall(f \in F) f(A) \leq f(B)) \land (\exists (f \in F) f(A) < f(B))\]
+\begin{equation}A \prec B \Leftrightarrow (\forall(f \in F) f(A) \leq f(B)) \land (\exists (f \in F) f(A) < f(B))\end{equation}
 
 Em problemas de otimização multiobjetivo, geralmente o objetivo está em encontrar a fronteira de Pareto, ou seja, o conjunto de todas as soluções do espaço de busca que não são dominadas por nenhuma outra. Graficamente, a fronteira de Pareto representa a linha formada pelas soluções não-dominadas existentes para o problema. Na \autoref{fig_pareto} apresenta-se um exemplo da fronteira de Pareto para um problema de minimização com dois objetivos ($F1$ e $F2$). Nesse exemplo, os pontos pertencentes à fronteira de Pareto estão destacados em vermelho. Observe que, todas as soluções pertencentes à fronteira de Pareto são não dominadas, ou seja, nenhum ponto da fronteira possui ambos valores menores que alguma outra solução em ambas as funções ($F1$ e $F2$). Em contrapartida, toda solução acima da fronteira (pontos em cinza) é dominada, pois existe alguma solução em vermelho que possui ambos valores de F1 e F2 menores.
 
@@ -85,20 +85,20 @@ Os indivíduos mais aptos no SPEA2 são aqueles dominados pela menor quantidade 
 
 A força de um indivíduo $i$ ($s(i)$) é o número de soluções que ele domina, ou seja, considerando $A$ o arquivo e $P$ a população:
 
-\[ s(i) = |j|: j \in P \cup A \land i \prec j \]
+\begin{equation}s(i) = |j|: j \in P \cup A \land i \prec j\end{equation}
 
 Uma vez calculada a força de cada indivíduo, parte-se para o cálculo do \textit{raw fitness}. O \textit{raw fitness} de um indivíduo $i$ ($r(i)$) é dado pela soma das forças de cada elemento que o domina, como segue:
 
-\[ r(i) = \sum_{j \in A \cup P | j \prec i} s(j) \]
+\begin{equation}r(i) = \sum_{j \in A \cup P | j \prec i} s(j)\end{equation}
 
 Observe que, caso o indivíduo seja não-dominado, seu \textit{raw fitness} será o menor possível (zero). Para finalizar o cálculo de aptidão, é definida a densidade de cada indivíduo ($d(i)$). Essa densidade é computada de acordo com a distância da solução para seus vizinhos e é dada por:
 
-\[ d(i) = \frac{1}{\sigma_i^k + 2} \]
+\begin{equation}d(i) = \frac{1}{\sigma_i^k + 2}\end{equation}
 
 Sendo, $\sigma_i^k$ a $k$-ésima menor distância entre o indivíduo $i$ e o restante da população; e $k$ a raiz quadrada do tamanho do conjunto de soluções em avaliação, i.e. $k = \sqrt{|P \cup A|}$. O valor de $d(i)$ sempre está no intervalo (0,1).
 
 Finalmente, a aptidão do indivíduo ($f(i)$) é dada pela soma do \textit{raw fitness} e a densidade: 
-\[f(i) = r(i) + d(i)\]
+\begin{equation}f(i) = r(i) + d(i)\end{equation}
 
 Note que, se a solução $i$ é não-dominada, $f(i) < 1$. Isso ocorre dado que $d(i) < 1$ para qualquer solução e, quando $i$ é não-dominada, $r(i) = 0$.
 
@@ -196,11 +196,11 @@ Em resumo, O NSGA-III é caracterizado pelo processo de atribuição de nicho ch
 
 O \textit{SPEA2 with Shift-Based Density Estimation} (SPEA2-SDE) \cite{Spea2SDE} é uma pequena alteração no algoritmo SPEA2 que possibilita lidar com problemas que envolvam 4 ou mais objetivos de uma forma muito mais eficiente. A única alteração está no cálculo de distância entre duas soluções. Suponha que $s_1$ e $s_2$ sejam dois indivíduos na população e que seus valores no espaço de objetivo sejam, respectivamente, $[5, 10, 351, 7, 15]$ e $[6, 8, 15, 9, 14]$. No SPEA2, a distância entre $s_1$ e $s_2$ é dada pela distância euclidiana dos dois vetores ($dist$), ou seja:
 
-\[dist(s_1, s_2) = \sqrt{(5-6)^2 + (10-8)^2 + (351-15)^2 + (7-9)^2 + (15-14)^2} = 336,0148\]
+\begin{equation}dist(s_1, s_2) = \sqrt{(5-6)^2 + (10-8)^2 + (351-15)^2 + (7-9)^2 + (15-14)^2} = 336,0148\end{equation}
 
 As duas soluções são bem próximas, pois só estão distantes em uma das 5 coordenadas. Entretanto, o cálculo de distância do SPEA2 não reflete isso, o que é prejudicial em problemas com muitos objetivos. A fim de resolver esse problema, \cite{Spea2SDE} introduziram o cálculo de distância \ac{SDE}, que nada mais faz do que transladar a coordenada mais distante do segundo ponto para o mesmo valor no primeiro ponto. Isto é, antes de calcular a distância euclidiana, identifica-se a coordenada que exibe maior diferença entre os dois pontos. No caso de $s_1$ e $s_2$, a terceira coordenada é a que possui esse comportamento. Em seguida, é realizada a translação do segundo ponto na coordenada identificada para que seja igual ao primeiro ponto, no exemplo, ($s_2' = [6, 8, \textbf{351}, 9, 14]$). A distância SDE é, então, determinada pela distância euclidiana entre o primeiro ponto ($s_1$) e o segundo ponto transladado ($s_2'$). No exemplo, a distância SDE obtida é: 
 
-\[dist_{SDE}(s_1, s_2') = \sqrt{(5-6)^2 + (10-8)^2 + (351-351)^2 + (7-9)^2 + (15-14)^2} = 3,1622\]
+\begin{equation}dist_{SDE}(s_1, s_2') = \sqrt{(5-6)^2 + (10-8)^2 + (351-351)^2 + (7-9)^2 + (15-14)^2} = 3,1622\end{equation}
 
 A distância SDE descarta a coordenada mais distante ao calcular as distâncias, permitindo assim que pontos distantes em apenas uma coordenada ainda sejam considerados próximos. Todo o restante do processo do SPEA2-SDE segue os mesmos passos do algoritmo original.
 
@@ -275,13 +275,13 @@ O processo de construção de uma solução depende do problema investigado. No 
 
 Ao construir uma solução, utiliza-se o mesmo processo de decisão do ACO original, explicado na seção \ref{section_construcao_solucao}. A única diferença é que as múltiplas heurísticas do MOACS ($H$) são unificadas em uma única função $h(x)$, por meio de uma média ponderada. Nesse processo, utiliza-se o vetor de pesos $W$ para definir o fator de ponderação de cada heurística. Dessa forma, a função h(x) é dada por:
 
-\[h(x) = \frac{\sum_{i \gets 0}^{size(H)}\ H_i(x) \times W_i}{\sum_{w \in W} w}\]
+\begin{equation}h(x) = \frac{\sum_{i \gets 0}^{size(H)}\ H_i(x) \times W_i}{\sum_{w \in W} w}\end{equation}
 
 Em cada época (iteração do ACO), atualiza-se o arquivo de soluções não dominadas com as novas soluções geradas. Se o arquivo foi atualizado após criar-se todas as soluções, reinicia-se as informações de feromônio, redefinindo todos os valores na estrutura $\tau_{ij}$ para o valor inicial de feromônio $\tau_0$. Caso o arquivo tenha se mantido estável, ou seja, nenhuma das novas soluções é não-dominada, atualiza-se as quantidades de feromônio na estrutura de acordo com as soluções no arquivo.
 
-Considerando um problema em grafos, para atualizar a estrutura $\tau_{ij}$ com uma solução $s$, faz-se:
+Considerando-se um problema em grafos, para atualizar a estrutura $\tau_{ij}$ com uma solução $s$, faz-se:
 
-\[\tau_{ij} = (1 - \rho) \times \tau_{ij} + \rho \times \Delta\tau(s) \qquad \forall(i,j) \in s\]
+\begin{equation}\tau_{ij} = (1 - \rho) \times \tau_{ij} + \rho \times \Delta\tau(s) \qquad \forall(i,j) \in s\end{equation}
 
 Sendo:
 \begin{itemize} 
@@ -289,7 +289,7 @@ Sendo:
 	\item $\Delta\tau(s)$: Quantidade de feromônios depositados pela solução $s$, que por sua vez é definida por:
 \end{itemize}
 
-\[\Delta\tau(s) = \frac{1}{performance(s)}\]
+\begin{equation}\Delta\tau(s) = \frac{1}{performance(s)}\end{equation}
 
 Na fórmula anterior, $performance(s)$ é dado pela soma dos valores de $s$ no espaço de objetivos. Neste caso, considera-se um problema de minimização. Por exemplo, se os objetivos são reduzir o custo, o tráfego e o atraso (\textit{delay}) de uma rede, então, $performance(s) = custo(s) + trafego(s) + delay(s)$. Para problemas de maximização, basta inverter a equação.
 
@@ -304,19 +304,19 @@ Com respeito às duas principais estruturas de um ACO, heurística e feromônios
 
 O processo iterativo (evolução) do MOEA/D-ACO consiste em gerar as soluções, atualizar o conjunto de soluções não-dominadas $ND$, distribuir as novas soluções entre as formigas e atualizar as estruturas de feromônio. Primeiramente, para cada grupo $G$, gera-se as soluções para cada formiga $f \in G$. A solução é gerada com base nos feromônios de $G$, na heurística de $f$ e na solução atual de $f$. Tendo gerado todas as soluções para um grupo, atualiza-se o arquivo de soluções não-dominadas $ND$. Para cada nova solução $S$ que entrou no arquivo, modifica-se a estrutura de feromônios $\tau$ de $G$. Assim, o cálculo do feromônio de uma partícula $e$ na iteração $i+1$ ($\tau_{i+1}(e)$) é obtida a partir do seu feromônio atual ($\tau_i(e)$), como segue:
 
-\[
+\begin{equation}
 \tau_{i+1}(e)= 
 \begin{cases}
 \rho \times \tau_i(e) + \delta,& \text{se } e \in S\\
 \rho \times \tau_i(e),              & \text{caso contrário}
 \end{cases}
-\]
+\end{equation}
 
 \vspace{4mm} %4mm vertical space
 
 Onde $e$ é uma possível partícula de uma solução para o problema investigado (qualquer aresta, no caso do PRM, ou item, para o PMM) da tabela de feromônios; $\rho$ é a taxa de evaporação; e $\delta$ é dado pelo inverso da soma dos valores da função de escalarização aplicada sobre cada solução não dominada de $G$ em relação ao vetor de pesos de $G$.
 
-\[\delta = \frac{1}{\sum_{s \in S_{nd}f(s, W)}}\]
+\begin{equation}\delta = \frac{1}{\sum_{s \in S_{nd}f(s, W)}}\end{equation}
 	
 Sendo, $S_{nd}$ o conjunto de soluções não dominadas de $G$, $f$ a função de escalarização, e $W$ o vetor pesos de $G$. Caso o problema seja de maximização, $\delta$ seria a soma dos valores, ao invés do inverso dela. 
 
@@ -336,9 +336,4 @@ Outros algoritmos multiobjetivos mais citados na literatura, mas que não foram 
 
 \textit{Vector Evaluated Genetic Algorithm} (VEGA) \cite{Schaffer1985} e \ac{MOGA} \cite{MOGA} foram os primeiros algoritmos multiobjetivos a aparecerem na literatura. Posteriormente, os algoritmos \ac{NSGA} \cite{Srinivas1994} e \ac{SPEA} \cite{Zitzler1999} foram propostos e são considerados os mais eficientes da segunda geração de \acp{AEMO}. Em problemas \textit{many-objective}, uma das principais dificuldades encontradas é o excesso de soluções não-dominadas, o que dificulta a identificação de melhores indivíduos e prejudica a convergência. Para lidar com esse problema, \cite{Aguirre2009} apresentam um conceito menos rigoroso de dominância, dando origem ao algoritmo $\epsilon$-MOEA. Por sua vez, a fim de reclassificar as soluções não dominadas e resolver o mesmo problema, \cite{Beume2007} propõem o algoritmo SMS-EMOA, no qual a evolução da população ocorre de acordo com indicadores de qualidade do conjunto de soluções. Nesse algoritmo, os autores usam o hipervolume para avaliar soluções consideradas igualmente boas pela dominância de Pareto. \cite{Bader2011} utilizam uma ideia parecida ao propor o algoritmo Hype. Esse algoritmo também utiliza o hiper-volume como parâmetro para guiar a evolução da população. 
 
-%Em \cite{Ishibuchi2015} Ishibuchi apresenta uma comparação entre os principais métodos de otimização aplicados ao PMM e em \cite{Franca2017}, artigo resultante deste trabalho, estende-se a comparação para métodos mais recentes (como o AEMMT) e um novo problema discreto, o PRM.
-
-%Sobre os algoritmos de otimização multiobjetivos baseados em colônias de formigas, em 2004 Alaya et al. aplica o \textit{MIN-MAX Ant System} no problema da mochila com múltiplos objetivos e múltiplas restrições \cite{Alaya2004}. Outras aplicações de ACOs no problema da mochila podem ser encontradas em \cite{changdar2013,Ke2010,Fingler2014,kong2008,Fidanova2003}. 
-
-Em relação aos algoritmos de inteligência coletiva, o algoritmo MOEA/D-BACO foi proposto em \cite{SouzaPozo2015} e aplica uma variação do MOEA/D-ACO no problema de programação binária quadrática irrestrito (UBQP). Como para o UBQP as estruturas de feromônio crescem de forma exponencial em relação ao tamanho da entrada, o método MOEA/D-ACO original se torna inviável. A variação proposta pelos autores, algoritmo MOEA/D-BACO, visa solucionar esse problema através da substituição do ACO, no MOEA/D-ACO, pelo \ac{BACO} \cite{baco2006}, que é um algoritmo mais simples e promete menor tempo de execução em relação ao algoritmo original. Em 20xx, xxxx propôs o algoritmo Bi-Criterion yyy para o problema zzzz com dois objetivos. O algoritmo usa uma colônia para cada um dos objetivos e (...). Um dos grandes desafios ao elaborar um ACO é definir os valores dos parâmetros de entrada do algoritmo, por esse motivo, é proposto em xxxxx uma estratégia para se encontrar tais valores de maneira automática.
-!todo!
+Em relação aos algoritmos de inteligência coletiva, o algoritmo MOEA/D-BACO foi proposto em \cite{SouzaPozo2015} e aplica uma variação do MOEA/D-ACO no \ac{UBQP}. Como para o UBQP as estruturas de feromônio crescem de forma exponencial em relação ao tamanho da entrada, o método MOEA/D-ACO original se torna inviável. A variação proposta pelos autores, algoritmo MOEA/D-BACO, visa solucionar esse problema através da substituição do ACO, no MOEA/D-ACO, pelo \ac{BACO} \cite{baco2006}, que é um algoritmo mais simples e promete menor tempo de execução em relação ao algoritmo original. Em 2001, Iredi, Merkle e Middendorf propuseram o algoritmo \textit{Bi-Criterion Optimization with Multi Colony Ant Algorithms} para o problema \ac{SMTTP} com dois objetivos \cite{BiCriterionAnt}. O algoritmo usa duas tabelas de feromônios (uma para cada objetivo) e cada formiga recebe dois valores de peso que são distribuídos uniformemente entre a colônia, esses valores representam o peso de cada objetivo nas decisões da formiga. A atualização dos feromônios é realizada com base nas formigas que geraram soluções não dominadas na geração corrente. O trabalho de Iredi et. al. também propõe um método com múltiplas colônias, onde cada colônia trabalha com duas tabelas de feromônios, mas, através da atribuição de pesos aos objetivos, pesquisam em regiões diferentes do espaço de busca. Outro trabalho importante, publicado em 2012 por Lopez-Ibanez e Stutzle, afirma que os algoritmos \acp{MACO} seguem todos uma mesma formulação e que podem ser modelados como um único \textit{framework}, diferenciando apenas em algumas decisões de projeto, que seriam parâmetros desse \textit{framework} geral capaz de gerar qualquer MACO. Nesse trabalho, os autores classificam diversos MACOs na literatura e destacam onde se diferem, mostrando as estratégias que podem ser adotadas ao elaborar um algoritmo ACO multiobjetivo. Além disso, o artigo propõe uma forma de gerar automaticamente os parâmetros de um MACO a fim de obter os melhores valores possíveis para um determinado problema sem que se seja necessário testar manualmente diversas configurações \cite{Ibanez2012}.

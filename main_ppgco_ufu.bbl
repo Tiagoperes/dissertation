@@ -92,6 +92,12 @@ Dispon{\'\i}vel em:
   Dispon{\'\i}vel em:
   \url{https://search.library.wisc.edu/catalog/9934839413602122}.}
 
+\bibitem[Chu e Beasley 1998]{Chu1998}
+\abntrefinfo{Chu e Beasley}{CHU; BEASLEY}{1998}
+{CHU, P.~C.; BEASLEY, J.~E. A genetic algorithm for the multidimensional
+  knapsack problem.
+\textbf{J. heuristics}, v.~4(1), p. 63--86, 1998.}
+
 \bibitem[Cormen Leiserson e Stein 2009]{GreedyAlgorithms}
 \abntrefinfo{Cormen Leiserson e Stein}{CORMEN LEISERSON; STEIN}{2009}
 {CORMEN LEISERSON, R.; STEIN. Greedy algorithms. In:  FAGERBERG, J.; MOWERY,
@@ -165,11 +171,25 @@ ISBN 978-3-540-36487-0.}
   problem.
 04 2018.}
 
+\bibitem[Iredi, Merkle e Middendorf 2001]{BiCriterionAnt}
+\abntrefinfo{Iredi, Merkle e Middendorf}{IREDI; MERKLE; MIDDENDORF}{2001}
+{IREDI, S.; MERKLE, D.; MIDDENDORF, M. Bi-criterion optimization with multi
+  colony ant algorithms. In:  ZITZLER, E. et al. (Ed.). \textbf{Evolutionary
+  Multi-Criterion Optimization}. Berlin, Heidelberg: Springer Berlin
+  Heidelberg, 2001. p. 359--372.}
+
 \bibitem[Ishibuchi, Akedo e Nojima 2015]{Ishibuchi2015}
 \abntrefinfo{Ishibuchi, Akedo e Nojima}{ISHIBUCHI; AKEDO; NOJIMA}{2015}
 {ISHIBUCHI, H.; AKEDO, N.; NOJIMA, Y. Behavior of multiobjective evolutionary
   algorithms on many-objective knapsack problems.
 \textbf{Trans. Evol. Comput.}, v. 19(2), p. 264--283, 2015.}
+
+\bibitem[Ishibuchi et al. 2014]{IGD}
+\abntrefinfo{Ishibuchi et al.}{ISHIBUCHI et al.}{2014}
+{ISHIBUCHI, H. et al. Difficulties in specifying reference points to calculate
+  the inverted generational distance for many-objective optimization problems.
+  In:  \textbf{2014 IEEE Symposium on Computational Intelligence in
+  Multi-Criteria Decision-Making (MCDM)}. [S.l.: s.n.], 2014. p. 170--177.}
 
 \bibitem[Kann 1992]{Viggo1992}
 \abntrefinfo{Kann}{KANN}{1992}
@@ -240,6 +260,14 @@ Dispon{\'\i}vel em:
   algorithms in many-objective optimization.
 \textbf{IEEE Transactions on Evolutionary Computation}, v.~18, n.~3, p.
   348--365, June 2014.
+ISSN 1089-778X.}
+
+\bibitem[Lopez-Ibanez e Stutzle 2012]{Ibanez2012}
+\abntrefinfo{Lopez-Ibanez e Stutzle}{LOPEZ-IBANEZ; STUTZLE}{2012}
+{LOPEZ-IBANEZ, M.; STUTZLE, T. The automatic design of multiobjective ant
+  colony optimization algorithms.
+\textbf{IEEE Transactions on Evolutionary Computation}, v.~16, n.~6, p.
+  861--875, Dec 2012.
 ISSN 1089-778X.}
 
 \bibitem[Lust e Teghem 2010]{MTSP}

@@ -140,7 +140,7 @@ Independentemente da representação escolhida, deve ser possível relacionar ca
 
 Além dos feromônios, as formigas ainda utilizam as informações de heurística para decidir o próximo passo. Uma heurística é uma função que estima a qualidade do caminho e normalmente representa o peso de uma aresta. Estando em um vértice $i$ de um grafo $G$, uma formiga tem probabilidade $p(i,j)$ de escolher a aresta que leva ao vértice adjacente $j$. Essa probabilidade é calculada pela seguinte equação:
 
-\[ p(i,j) = \frac{\tau_{i,j}^\alpha * \eta_{i,j}^\beta}{\sum_{v \in adj(i)} \tau_{i,v}^\alpha * \eta_{i,v}^\beta} \]
+\begin{equation}p(i,j) = \frac{\tau_{i,j}^\alpha * \eta_{i,j}^\beta}{\sum_{v \in adj(i)} \tau_{i,v}^\alpha * \eta_{i,v}^\beta}\end{equation}
 
 Sendo:
 
@@ -155,7 +155,7 @@ O número de iterações (épocas), a quantidade de soluções geradas por itera
 \subsection{Atualização dos feromônios}
 Existem duas ocasiões onde o feromônio de uma aresta pode ser atualizado: no momento em que a formiga passa pela aresta e no fim de cada iteração. A maioria das implementações considera apenas o segundo caso, pois assim, é possível avaliar as soluções e incrementar os feromônios de acordo com os desempenhos obtidos. Ao fim de cada época, a quantidade de feromônio existente na aresta que liga os vértices i e j ($\tau_{i,j}$) é atualizada por:
 
-\[ \tau_{i,j} = (1 - \rho) * \tau_{i,j} + \sum_{k \in formigas} \Delta\tau_{i,j}(k)\]
+\begin{equation}\tau_{i,j} = (1 - \rho) * \tau_{i,j} + \sum_{k \in formigas} \Delta\tau_{i,j}(k)\end{equation}
 
 Sendo:
 
@@ -167,7 +167,7 @@ Sendo:
 
 A quantidade de feromônio depositada por uma formiga $k$ em uma aresta entre os vértices $i$ e $j$ é dada por:
 
-\[ \Delta\tau_{i,j}(k) = \begin{cases} \frac{Q}{L_k},& \text{se } x\geq 1\\ 0,& \text{caso contrário} \end{cases} \]
+\begin{equation}\Delta\tau_{i,j}(k) = \begin{cases} \frac{Q}{L_k},& \text{se } x\geq 1\\ 0,& \text{caso contrário} \end{cases}\end{equation}
 
 Sendo:
 
