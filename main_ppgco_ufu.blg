@@ -20,6 +20,7 @@ Warning--entry type for "LafetaThesis" isn't style-file defined
 Warning--entry type for "BuenoThesis" isn't style-file defined
 --line 792 of file bib/abntex2-modelo-references.bib
 Warning--I didn't find a database entry for "abnt-year-extra-label=yes"
+Warning--I didn't find a database entry for "Alaya200007"
 Name 1 in "Cormen, Leiserson, Rivest, and Stein" has a comma at the end for entry GreedyAlgorithms
 while executing---line 2091 of file abntex2-alf.bst
 Name 1 in "Cormen, Leiserson, Rivest, and Stein" has a comma at the end for entry GreedyAlgorithms

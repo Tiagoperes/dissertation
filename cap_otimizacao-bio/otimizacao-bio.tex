@@ -109,6 +109,8 @@ Num algoritmo genético, cada iteração do laço principal é chamada de geraç
 	\caption{\label{fig_cross_ponto_unico}Exemplo de \textit{crossover} com cruzamento de ponto único, onde o ponto de cruzamento está na metade do material genético.}
 \end{figure}
 
+Esses operadores genéticos foram propostos inicialmente para indivíduos binários. Para outros tipos de representação de indivíduos (não binários), foram necessários outros tipos de cruzamento mais apropriados a essas representações (número reais, números inteiros, árvores, etc).
+
 A fim de melhorar a diversidade entre as soluções avaliadas, uma pertubação nos genes dos indivíduos é gerada durante a busca, possibilitando a exploração de elementos ausentes na população atual. Para isso, após gerar o cromossomo de cada filho, é preciso permitir que ocorra uma mutação, ou seja, uma mudança aleatória no material genético. A chance de uma mutação ocorrer depende de um parâmetro do AG chamado de ``taxa de mutação''. O processo de alteração genética aleatória depende da representação do indivíduo. No caso de uma cadeia binária, por exemplo, é simples, basta sortear um bit e invertê-lo. Em árvores, a mutação pode consistir na eliminação de algum vértice e na reconexão aleatória. Em grafos ponderados, alterar os pesos de uma aresta pode ser uma boa ideia. A definição do processo de mutação dependerá do problema e pode ser feita de várias maneiras diferentes, desde que produza uma pequena diferença no indivíduo e que ele continue representando uma solução válida.
 
 O cruzamento normalmente gera um ou dois filhos para cada pai. Em todos os métodos descritos anteriormente é possível obter um segundo filho com o material genético não utilizado.
