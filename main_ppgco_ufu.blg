@@ -10,36 +10,10 @@ A level-1 auxiliary file: ape_tabelas/tabelas.aux
 The style file: abntex2-alf.bst
 Database file #1: abntex2-options.bib
 Database file #2: bib/abntex2-modelo-references.bib
-I was expecting a `,' or a `}'---line 618 of file bib/abntex2-modelo-references.bib
- :    
- :    url = "http://gdzdoc.sub.uni-goettingen.de/sub/digbib/loader?did=D196313",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--entry type for "LafetaThesis" isn't style-file defined
---line 785 of file bib/abntex2-modelo-references.bib
-Warning--entry type for "BuenoThesis" isn't style-file defined
---line 792 of file bib/abntex2-modelo-references.bib
 Warning--I didn't find a database entry for "abnt-year-extra-label=yes"
-Warning--I didn't find a database entry for "Alaya200007"
-Name 1 in "Cormen, Leiserson, Rivest, and Stein" has a comma at the end for entry GreedyAlgorithms
-while executing---line 2091 of file abntex2-alf.bst
-Name 1 in "Cormen, Leiserson, Rivest, and Stein" has a comma at the end for entry GreedyAlgorithms
-while executing---line 2091 of file abntex2-alf.bst
-Name 1 in "Cormen, Leiserson, Rivest, and Stein" has a comma at the end for entry GreedyAlgorithms
-while executing---line 2091 of file abntex2-alf.bst
-Name 1 in "Cormen, Leiserson, Rivest, and Stein" has a comma at the end for entry GreedyAlgorithms
-while executing---line 2091 of file abntex2-alf.bst
-Name 1 in "Cormen, Leiserson, Rivest, and Stein" has a comma at the end for entry GreedyAlgorithms
-while executing---line 2091 of file abntex2-alf.bst
-Name 1 in "Cormen, Leiserson, Rivest, and Stein" has a comma at the end for entry GreedyAlgorithms
-while executing---line 2146 of file abntex2-alf.bst
-Name 1 in "Cormen, Leiserson, Rivest, and Stein" has a comma at the end for entry GreedyAlgorithms
-while executing---line 2146 of file abntex2-alf.bst
-Name 1 in "Cormen, Leiserson, Rivest, and Stein" has a comma at the end for entry GreedyAlgorithms
-while executing---line 2146 of file abntex2-alf.bst
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-(There were 9 error messages)
+(There was 1 warning)
