@@ -198,9 +198,18 @@ ISSN 1089-778X.}
   Multi-Criterion Optimization}. Berlin, Heidelberg: Springer Berlin
   Heidelberg, 2001. p. 359--372.}
 
+\bibitem[Ishibuchi, Akedo e Nojima 2013]{ScalarizationFunctionsIshibuchi}
+\abntrefinfo{Ishibuchi, Akedo e Nojima}{ISHIBUCHI; AKEDO; NOJIMA}{2013}
+{ISHIBUCHI, H.; AKEDO, N.; NOJIMA, Y. A study on the specification of a
+  scalarizing function in moea/d for many-objective knapsack problems. In:
+  NICOSIA, G.; PARDALOS, P. (Ed.). \textbf{Learning and Intelligent
+  Optimization}. Berlin, Heidelberg: Springer Berlin Heidelberg, 2013. p.
+  231--246.
+ISBN 978-3-642-44973-4.}
+
 \bibitem[Ishibuchi, Akedo e Nojima 2015]{Ishibuchi2015}
 \abntrefinfo{Ishibuchi, Akedo e Nojima}{ISHIBUCHI; AKEDO; NOJIMA}{2015}
-{ISHIBUCHI, H.; AKEDO, N.; NOJIMA, Y. Behavior of multiobjective evolutionary
+{\underline{\ \ \ \ \ \ \ \ }. Behavior of multiobjective evolutionary
   algorithms on many-objective knapsack problems.
 \textbf{Trans. Evol. Comput.}, v. 19(2), p. 264--283, 2015.}
 

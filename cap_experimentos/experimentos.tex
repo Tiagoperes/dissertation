@@ -30,7 +30,7 @@ Parte das métricas utilizadas para avaliar os algoritmos são paramétricas, ou
 Considerando as quatro etapas de experimentos, foram usadas 4 métricas multiobjetivo para se avaliar o desempenho dos algoritmos, além do tempo de execução. São elas:
 
 \begin{itemize}
-	\item \textbf{\ac{ER}}: sendo $S$ o conjunto de soluções encontrado pelo algoritmo e P a fronteira de Pareto aproximada. A taxa de erro é porcentagem de soluções que aparecem em ambos os conjuntos S e P, como mostra a fórmula a seguir.
+	\item \textbf{\ac{ER}}: sendo $S$ o conjunto de soluções encontrado pelo algoritmo e $P$ a fronteira de Pareto aproximada. A taxa de erro é porcentagem das soluções de $S$ que não aparecem em P, como mostra a fórmula a seguir.
 	\begin{equation}
 		ER = \frac{\sum\limits_{s \in S} e(s)}{|S|}, \quad
 		e(s) = 
@@ -39,9 +39,11 @@ Considerando as quatro etapas de experimentos, foram usadas 4 métricas multiobj
 			1 & s \notin P
 		\end{cases}
 	\end{equation}
+	Por exemplo, tome $S=\{A, B, C, D, F\}$ e $P=\{A,D\}$. Como 3 das soluções de $S$ não estão em $P$, a taxa de erro é $3/5=0,6$, ou seja, 60\%.
 	\item \textbf{\ac{GD}}: mede a distância das soluções no conjunto encontrado pelo algoritmo (S) para as soluções mais próximas na fronteira de Pareto aproximada (P). A distância euclidiana ($dist$) de cada $s \in S$ é medida em relação a cada $p \in P$, a menor distância para $p$ de cada $s$ é então elevada ao quadrado e adicionada à soma. Ao final, retorna-se o valor da raiz quadrada do somatório dividido pela quantidade de elementos em $S$. A fórmula a seguir ilustra o processo.
-	\begin{equation}GDp = \frac{\sqrt{\sum\limits_{s \in S} \min\limits_{p \in P} dist(s, p)^2}}{|S|}\end{equation}
-	\item \textbf{\ac{GDp}}: similar à definição anterior, mas ao invés de considerar todas as soluções no cálculo de distância, considera apenas aquelas que não fazem parte do Pareto aproximado, ou seja, elimina do cálculo as distâncias que valem 0.
+	\begin{equation}GD = \frac{\sqrt{\sum\limits_{s \in S} \min\limits_{p \in P} dist(s, p)^2}}{|S|}\end{equation}
+	Por exemplo. Tome um problema bi-dimensional, onde o $S$ encontrado é $\{(1,2), (5,2), (3,7)\}$ e o Pareto aproximado $P$ vale $\{(2,3), (5,2)\}$. O primeiro passo é encontrar as menores distâncias de cada elemento de $S$ para $P$. Tomando o primeiro elemento de $S$, $s_1=(1,2)$, calcula-se as distâncias para $p_1$ e $p_2$. $dist(s_1, p_1)=\sqrt{(1-2)^2 + (2-3)^2}=\sqrt{2}$ e $dist(s_1, p_2)=\sqrt{(1-5)^2 + (2-2)^2}=4$. Portanto, a menor distância de $s_1$ para $P$ é $\sqrt{2}$. O mesmo cálculo é feito para $s_2$ e $s_3$, onde obtém-se que a menor distância de $s_2$ para $P$ é 0 e a menor distância de $s_3$ para $P$ é $\sqrt{17}$. Logo, a distância $GD$ é dada por $\frac{\sqrt{\sqrt{2} + 0 + \sqrt{17}}}{3}=0,78$.
+	\item \textbf{\ac{GDp}}: similar à definição anterior, mas ao invés de considerar todas as soluções no cálculo de distância, considera apenas aquelas que não fazem parte do Pareto aproximado, ou seja, elimina do cálculo as distâncias que valem 0. No exemplo dado para o $GD$, o valor de $GDp$ seria dado por $\frac{\sqrt{\sqrt{2} + \sqrt{17}}}{2}=1,18$.
 	\item \textbf{\ac{PS}}: número absoluto de soluções encontradas (S) que fazem parte do Pareto aproximado (P). Como mostra a fórmula a seguir.
 	\begin{equation}
 		PS = \sum\limits_{s \in S} a(s), \quad
@@ -51,7 +53,14 @@ Considerando as quatro etapas de experimentos, foram usadas 4 métricas multiobj
 			0 & s \notin P
 		\end{cases}
 	\end{equation}
-	\item \textbf{\ac{HV}}: \cite{Bradstreet2012}: métrica multiobjetivo que independe do conhecimento prévio da fronteira de Pareto. Mede o volume da figura geométrica $m$-dimensional (sendo $m$ o número de objetivos) formada pelas distâncias entre as soluções encontradas e um ponto de referência $p_{ref}$. As coordenadas de $p_{ref}$ são diferentes para cada cenário (problema, formulação de objetivos e instância) e são determinadas pelo pior valor encontrado em cada um dos objetivos considerando a união das soluções dos Paretos obtidos em cada execução. Se o PMM de 5 objetivos e 100 itens é executado 10 vezes, por exemplo, extraem-se os 10 resultados e colocam-se as soluções em um único conjunto $S_{todos}$. Varre-se $S_{todos}$ procurando pelo pior valor em cada uma das 5 coordenadas e cria-se uma solução fictícia para os valores encontrados. Essa solução fictícia é então utilizada como ponto de referência ($p_{ref}$) para o PMM de 5 objetivos e 100 itens. Em nossos experimentos, foi utilizada a implementação do cálculo de hipervolume descrito em \citeonline{Bradstreet2012}.
+	Por exemplo, tome $S=\{A, B, C, D, F\}$ e $P=\{A,D\}$. Como 2 das soluções de $S$ estão em $P$, o valor do $PS$ é 2.
+	\item \textbf{\ac{HV}}: \cite{Bradstreet2012}: métrica multiobjetivo que independe do conhecimento prévio da fronteira de Pareto. Mede o volume da figura geométrica $m$-dimensional (sendo $m$ o número de objetivos) formada pelas soluções encontradas considerando a origem do sistema de coordenadas como um ponto arbitrário $p_{ref}$ chamado de ponto de referência. As coordenadas de $p_{ref}$ são diferentes para cada cenário (problema, formulação de objetivos e instância) e são determinadas pelo pior valor encontrado em cada um dos objetivos considerando a união das soluções dos Paretos obtidos em cada execução. Se o PMM de 5 objetivos e 100 itens é executado 10 vezes, por exemplo, extraem-se os 10 resultados e colocam-se as soluções em um único conjunto $S_{todos}$. Varre-se $S_{todos}$ procurando pelo pior valor em cada uma das 5 coordenadas e cria-se uma solução fictícia para os valores encontrados. Essa solução fictícia é então utilizada como ponto de referência ($p_{ref}$) para o PMM de 5 objetivos e 100 itens. Em nossos experimentos, foi utilizada a implementação do cálculo de hipervolume descrito em \citeonline{Bradstreet2012}.
+	Por exemplo, considere um problema de minimização bi-dimensional e tome $S=\{(6,3), (9,2), (4,5), (5,4), (3,6)\}$ como o conjunto de soluções encontradas. O ponto de referência será dado pelo ponto formado pelo pior valor obtido na primeira coordenada e pelo pior valor obtido na segunda, ou seja, $p_{ref}=(9,6)$. A \autoref{fig_hipervolume} mostra a representação gráfica de $S$ e $p_{ref}$. Neste exemplo, o valor do hipervolume é dado pelo volume da forma geométrica destacada em cinza ($F$), ou seja, $hv=13$. Dessa forma, é fácil visualizar que quanto mais representativo e distribuído o conjunto de soluções, maior o volume da forma geométrica, ou seja, o hipervolume deve ser maximizado.
+	\begin{figure*}[!htbp]
+		\centering
+		\includegraphics[width=0.8\textwidth]{cap_experimentos/figs/hipervolume}
+		\caption{\label{fig_hipervolume}Exemplo de hipervolume}
+	\end{figure*}
 	\item Tempo: tempo médio, em segundos, necessário para a execução do algoritmo. Foi aferido a partir das diferenças de tempo entre o momento em que o algoritmo inicia a execução até o momento quando retorna o conjunto de soluções encontradas. O valor final do tempo é obtido através da média entre três execuções.
 \end{itemize}
 
