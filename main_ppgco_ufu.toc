@@ -1,6 +1,6 @@
 \changetocdepth {4}
 \changetocdepth {2}
-\select@language {brazil}
+\babel@toc {brazil}{}
 \contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{23}{chapter.1}
 \contentsline {section}{\numberline {1.1}Objetivos}{26}{section.1.1}
 \contentsline {section}{\numberline {1.2}Contribui\IeC {\c c}\IeC {\~o}es}{27}{section.1.2}
@@ -42,22 +42,22 @@
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Algoritmo proposto}}{77}{chapter.5}
 \contentsline {section}{\numberline {5.1}Constru\IeC {\c c}\IeC {\~a}o da solu\IeC {\c c}\IeC {\~a}o para o PMM}{77}{section.5.1}
 \contentsline {section}{\numberline {5.2}Constru\IeC {\c c}\IeC {\~a}o da solu\IeC {\c c}\IeC {\~a}o para o PRM}{79}{section.5.2}
-\contentsline {section}{\numberline {5.3}\textit {Framework} MACO/NDS}{83}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Constru\IeC {\c c}\IeC {\~a}o das solu\IeC {\c c}\IeC {\~o}es}{86}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Atualiza\IeC {\c c}\IeC {\~a}o das estruturas de subproblemas}{88}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Atualiza\IeC {\c c}\IeC {\~a}o dos ferom\IeC {\^o}nios}{89}{subsection.5.3.3}
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Experimentos}}{91}{chapter.6}
-\contentsline {section}{\numberline {6.1}Ambiente de teste}{91}{section.6.1}
-\contentsline {section}{\numberline {6.2}Etapa 1: An\IeC {\'a}lise Comparativa dos Algoritmos Evolutivos}{96}{section.6.2}
-\contentsline {section}{\numberline {6.3}Etapa 2: An\IeC {\'a}lise das estrat\IeC {\'e}gias e configura\IeC {\c c}\IeC {\~o}es para o MACO/NDS}{109}{section.6.3}
-\contentsline {section}{\numberline {6.4}Etapa 3: An\IeC {\'a}lise comparativa entre o MACO/NDS e os AEMOs \textit {many-objective}}{114}{section.6.4}
-\contentsline {section}{\numberline {6.5}Etapa 4: An\IeC {\'a}lise baseada no hipervolume}{123}{section.6.5}
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{139}{chapter.7}
-\contentsline {section}{\numberline {7.1}Trabalhos Futuros}{141}{section.7.1}
-\contentsline {section}{\numberline {7.2}Contribui\IeC {\c c}\IeC {\~o}es em Produ\IeC {\c c}\IeC {\~a}o Bibliogr\IeC {\'a}fica}{143}{section.7.2}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{145}{section*.58}
+\contentsline {section}{\numberline {5.3}\textit {Framework} MACO/NDS}{85}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Constru\IeC {\c c}\IeC {\~a}o das solu\IeC {\c c}\IeC {\~o}es}{88}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Atualiza\IeC {\c c}\IeC {\~a}o das estruturas de subproblemas}{89}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Atualiza\IeC {\c c}\IeC {\~a}o dos ferom\IeC {\^o}nios}{90}{subsection.5.3.3}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Experimentos}}{93}{chapter.6}
+\contentsline {section}{\numberline {6.1}Ambiente de teste}{93}{section.6.1}
+\contentsline {section}{\numberline {6.2}Etapa 1: An\IeC {\'a}lise Comparativa dos Algoritmos Evolutivos}{98}{section.6.2}
+\contentsline {section}{\numberline {6.3}Etapa 2: An\IeC {\'a}lise das estrat\IeC {\'e}gias e configura\IeC {\c c}\IeC {\~o}es para o MACO/NDS}{111}{section.6.3}
+\contentsline {section}{\numberline {6.4}Etapa 3: An\IeC {\'a}lise comparativa entre o MACO/NDS e os AEMOs \textit {many-objective}}{116}{section.6.4}
+\contentsline {section}{\numberline {6.5}Etapa 4: An\IeC {\'a}lise baseada no hipervolume}{125}{section.6.5}
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{141}{chapter.7}
+\contentsline {section}{\numberline {7.1}Trabalhos Futuros}{143}{section.7.1}
+\contentsline {section}{\numberline {7.2}Contribui\IeC {\c c}\IeC {\~o}es em Produ\IeC {\c c}\IeC {\~a}o Bibliogr\IeC {\'a}fica}{145}{section.7.2}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{147}{section*.58}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{151}{section*.59}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Tabelas de resultados}}{153}{appendix.A}
+\contentsline {part}{\uppercase {Ap\^endices}}{153}{section*.59}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Tabelas de resultados}}{155}{appendix.A}

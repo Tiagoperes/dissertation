@@ -1,4 +1,4 @@
-\select@language {brazil}
+\babel@toc {brazil}{}
 \contentsline {figure}{\numberline {1}{\ignorespaces Fluxograma de um AG. Retirado de \cite {FiguraGA}}}{32}{figure.2.1}
 \contentsline {figure}{\numberline {2}{\ignorespaces Exemplo de \textit {crossover} com cruzamento de ponto \IeC {\'u}nico, onde o ponto de cruzamento est\IeC {\'a} na metade do material gen\IeC {\'e}tico.}}{35}{figure.2.2}
 \contentsline {figure}{\numberline {3}{\ignorespaces Fluxograma de um ACO.}}{37}{figure.2.3}
@@ -16,26 +16,27 @@
 \contentsline {figure}{\numberline {15}{\ignorespaces Exemplos de \IeC {\'a}rvores multicast relativos ao grafo da figura \autoref {fig_prm_grafo}. Retirado do trabalho de \cite {LafetaThesis}}}{71}{figure.4.15}
 \contentsline {figure}{\numberline {16}{\ignorespaces Exemplo de \IeC {\'a}rvore multicast no PRM multiobjetivo.}}{71}{figure.4.16}
 \contentsline {figure}{\numberline {17}{\ignorespaces Exemplo de cruzamento por caminho, onde o n\IeC {\'o} raiz \IeC {\'e} 0 e os destinos s\IeC {\~a}o \{1, 8, 11\}. Retirado de \cite {LafetaThesis}}}{75}{figure.4.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces Exemplo de hipervolume}}{95}{figure.6.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces Desempenho dos algoritmos na 1\IeC {\textordfeminine } etapa para o PMM com 30 itens}}{99}{figure.6.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Desempenho dos algoritmos na 1\IeC {\textordfeminine } etapa para o PMM com 50 itens}}{100}{figure.6.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces Desempenho dos algoritmos na 1\IeC {\textordfeminine } etapa para o PMM com 100 itens}}{102}{figure.6.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces Resultado consolidado da 1\IeC {\textordfeminine } etapa considerando o PMM com 30, 50 e 100 itens}}{103}{figure.6.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces Desempenho dos algoritmos na 1\IeC {\textordfeminine } etapa para o PRM na rede 1}}{105}{figure.6.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Desempenho dos algoritmos na 1\IeC {\textordfeminine } etapa para o PRM na rede 2}}{106}{figure.6.24}
-\contentsline {figure}{\numberline {25}{\ignorespaces Desempenho dos algoritmos na 1\IeC {\textordfeminine } etapa para o PRM na rede 3}}{107}{figure.6.25}
-\contentsline {figure}{\numberline {26}{\ignorespaces Resultado consolidado da 1\IeC {\textordfeminine } etapa considerando o PRM nas redes 1, 2, e 3}}{108}{figure.6.26}
-\contentsline {figure}{\numberline {27}{\ignorespaces Desempenho dos algoritmos na 3\IeC {\textordfeminine } etapa para o PMM com 30 itens}}{116}{figure.6.27}
-\contentsline {figure}{\numberline {28}{\ignorespaces Desempenho dos algoritmos na 3\IeC {\textordfeminine } etapa para o PMM com 40 itens}}{117}{figure.6.28}
-\contentsline {figure}{\numberline {29}{\ignorespaces Desempenho dos algoritmos na 3\IeC {\textordfeminine } etapa para o PMM com 50 itens}}{117}{figure.6.29}
-\contentsline {figure}{\numberline {30}{\ignorespaces Resultado consolidado da 3\IeC {\textordfeminine } etapa considerando o PMM com 30, 40 e 50 itens}}{118}{figure.6.30}
-\contentsline {figure}{\numberline {31}{\ignorespaces Desempenho dos algoritmos na 3\IeC {\textordfeminine } etapa para o PRM na rede 1}}{119}{figure.6.31}
-\contentsline {figure}{\numberline {32}{\ignorespaces Desempenho dos algoritmos na 3\IeC {\textordfeminine } etapa para o PRM na rede 2}}{120}{figure.6.32}
-\contentsline {figure}{\numberline {33}{\ignorespaces Desempenho dos algoritmos na 3\IeC {\textordfeminine } etapa para o PRM na rede 3}}{120}{figure.6.33}
-\contentsline {figure}{\numberline {34}{\ignorespaces Resultado consolidado da 3\IeC {\textordfeminine } etapa considerando o PRM nas redes 1, 2 e 3}}{121}{figure.6.34}
-\contentsline {figure}{\numberline {35}{\ignorespaces Resultados dos algoritmos \textit {many-objective} no PMM com 4 objetivos}}{128}{figure.6.35}
-\contentsline {figure}{\numberline {36}{\ignorespaces Resultados dos algoritmos \textit {many-objective} no PMM com 5 objetivos}}{129}{figure.6.36}
-\contentsline {figure}{\numberline {37}{\ignorespaces Resultados dos algoritmos \textit {many-objective} no PMM com 6 objetivos}}{130}{figure.6.37}
-\contentsline {figure}{\numberline {38}{\ignorespaces Resultados dos algoritmos \textit {many-objective} no PRM com 4 objetivos}}{132}{figure.6.38}
-\contentsline {figure}{\numberline {39}{\ignorespaces Resultados dos algoritmos \textit {many-objective} no PRM com 5 objetivos}}{133}{figure.6.39}
-\contentsline {figure}{\numberline {40}{\ignorespaces Resultados dos algoritmos \textit {many-objective} no PRM com 6 objetivos}}{135}{figure.6.40}
+\contentsline {figure}{\numberline {18}{\ignorespaces Exemplo de como construir uma solu\IeC {\c c}\IeC {\~a}o para o PRM}}{84}{figure.5.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Exemplo de hipervolume}}{97}{figure.6.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Desempenho dos algoritmos na 1\IeC {\textordfeminine } etapa para o PMM com 30 itens}}{101}{figure.6.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Desempenho dos algoritmos na 1\IeC {\textordfeminine } etapa para o PMM com 50 itens}}{102}{figure.6.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Desempenho dos algoritmos na 1\IeC {\textordfeminine } etapa para o PMM com 100 itens}}{104}{figure.6.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Resultado consolidado da 1\IeC {\textordfeminine } etapa considerando o PMM com 30, 50 e 100 itens}}{105}{figure.6.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces Desempenho dos algoritmos na 1\IeC {\textordfeminine } etapa para o PRM na rede 1}}{107}{figure.6.24}
+\contentsline {figure}{\numberline {25}{\ignorespaces Desempenho dos algoritmos na 1\IeC {\textordfeminine } etapa para o PRM na rede 2}}{108}{figure.6.25}
+\contentsline {figure}{\numberline {26}{\ignorespaces Desempenho dos algoritmos na 1\IeC {\textordfeminine } etapa para o PRM na rede 3}}{109}{figure.6.26}
+\contentsline {figure}{\numberline {27}{\ignorespaces Resultado consolidado da 1\IeC {\textordfeminine } etapa considerando o PRM nas redes 1, 2, e 3}}{110}{figure.6.27}
+\contentsline {figure}{\numberline {28}{\ignorespaces Desempenho dos algoritmos na 3\IeC {\textordfeminine } etapa para o PMM com 30 itens}}{118}{figure.6.28}
+\contentsline {figure}{\numberline {29}{\ignorespaces Desempenho dos algoritmos na 3\IeC {\textordfeminine } etapa para o PMM com 40 itens}}{119}{figure.6.29}
+\contentsline {figure}{\numberline {30}{\ignorespaces Desempenho dos algoritmos na 3\IeC {\textordfeminine } etapa para o PMM com 50 itens}}{119}{figure.6.30}
+\contentsline {figure}{\numberline {31}{\ignorespaces Resultado consolidado da 3\IeC {\textordfeminine } etapa considerando o PMM com 30, 40 e 50 itens}}{120}{figure.6.31}
+\contentsline {figure}{\numberline {32}{\ignorespaces Desempenho dos algoritmos na 3\IeC {\textordfeminine } etapa para o PRM na rede 1}}{121}{figure.6.32}
+\contentsline {figure}{\numberline {33}{\ignorespaces Desempenho dos algoritmos na 3\IeC {\textordfeminine } etapa para o PRM na rede 2}}{122}{figure.6.33}
+\contentsline {figure}{\numberline {34}{\ignorespaces Desempenho dos algoritmos na 3\IeC {\textordfeminine } etapa para o PRM na rede 3}}{122}{figure.6.34}
+\contentsline {figure}{\numberline {35}{\ignorespaces Resultado consolidado da 3\IeC {\textordfeminine } etapa considerando o PRM nas redes 1, 2 e 3}}{123}{figure.6.35}
+\contentsline {figure}{\numberline {36}{\ignorespaces Resultados dos algoritmos \textit {many-objective} no PMM com 4 objetivos}}{130}{figure.6.36}
+\contentsline {figure}{\numberline {37}{\ignorespaces Resultados dos algoritmos \textit {many-objective} no PMM com 5 objetivos}}{131}{figure.6.37}
+\contentsline {figure}{\numberline {38}{\ignorespaces Resultados dos algoritmos \textit {many-objective} no PMM com 6 objetivos}}{132}{figure.6.38}
+\contentsline {figure}{\numberline {39}{\ignorespaces Resultados dos algoritmos \textit {many-objective} no PRM com 4 objetivos}}{134}{figure.6.39}
+\contentsline {figure}{\numberline {40}{\ignorespaces Resultados dos algoritmos \textit {many-objective} no PRM com 5 objetivos}}{135}{figure.6.40}
+\contentsline {figure}{\numberline {41}{\ignorespaces Resultados dos algoritmos \textit {many-objective} no PRM com 6 objetivos}}{137}{figure.6.41}
