@@ -53,7 +53,7 @@ Cada uma das estratégias mencionadas foi implementada e testada a fim de determ
 
 Os resultados dos experimentos, que podem ser encontrados na seção \ref{section_experimentos_etapa2}, mostram que nossa estratégia (formiga com sobreposição quântica) representa a melhor relação entre qualidade do resultado e tempo de execução. Portanto, para todos os demais experimentos no PRM, foi o método de construção da solução utilizado.
 
-Durante a implementação da estratégia, foram adotadas algumas técnicas de amostragem a fim de agilizar o algoritmo, sem afetar significativamente a qualidade das soluções. A descrição detalhada dessa implementação é apresentada no Algoritmo \ref{alg_aco_prm_construir_solucao}, que recebe como parâmetros de entrada:
+Durante a implementação da estratégia, foram adotadas algumas técnicas de amostragem a fim de agilizar o algoritmo, sem afetar significativamente a qualidade das soluções. O fluxograma apresentado na \autoref{fig_fuxo_construcao_solucao} mostra, de maneira geral, o funcionamento do algoritmo. A descrição detalhada dessa implementação é apresentada no Algoritmo \ref{alg_aco_prm_construir_solucao}, que recebe como parâmetros de entrada:
 
 \begin{itemize}
 	\item $G$: o grafo que representa a rede;
@@ -63,6 +63,11 @@ Durante a implementação da estratégia, foram adotadas algumas técnicas de am
 	\item $h$: função heurística;
 	\item $Exp'_{size}$: tamanho da amostra.
 \end{itemize}
+
+\begin{figure*}[!htbp]	
+	\includegraphics[width=1\textwidth]{cap_algoritmo-proposto/figs/fluxo-construcao-solucao}
+	\caption{\label{fig_fuxo_construcao_solucao}Fluxograma correspondente à construção de soluções para o PRM}
+\end{figure*}
 
 \begin{algorithm}
 	\caption{Geração de solução no ACO $(G, r, D, \tau, h, Exp'_{size})$}
@@ -146,7 +151,12 @@ O algoritmo proposto nesta dissertação (MACO/NDS), não pertence a nenhuma das
 	\item \textbf{$\beta$:} importância da heurística no cálculo de probabilidades ao construir uma solução. Sempre inicializado com o valor $\beta$, que é parâmetro de entrada do MACO/NDS e representa o valor inicial de $\beta$ em cada subproblema.
 \end{itemize}
 
-Cada subproblema é responsável por uma combinação de objetivos. O Algoritmo \ref{alg_macod_geral} apresenta uma visão em alto nível do MACO/NDS.
+Cada subproblema é responsável por uma combinação de objetivos. O fluxograma da \autoref{img_fluxo_maconds} e o Algoritmo \ref{alg_macod_geral} apresentam uma visão em alto nível do MACO/NDS.
+
+\begin{figure*}[!htbp]	
+	\includegraphics[width=1\textwidth]{cap_algoritmo-proposto/figs/fluxo-algoritmo-geral}
+	\caption{\label{img_fluxo_maconds}Fluxograma correspondente ao algoritmo geral do MACO/NDS}
+\end{figure*}
 
 \begin{algorithm}[!htbp]
 	\caption{Algoritmo geral do MACO/NDS}

@@ -29,9 +29,9 @@
 \contentsline {subsection}{\numberline {3.2.2}MOEA/D-ACO}{60}{subsection.3.2.2}
 \contentsline {section}{\numberline {3.3}Outros algoritmos multiobjetivos}{62}{section.3.3}
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Problemas de teste}}{65}{chapter.4}
-\contentsline {section}{\numberline {4.1}Problema da mochila multiobjetivo}{65}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Defini\IeC {\c c}\IeC {\~a}o do problema}{65}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Representa\IeC {\c c}\IeC {\~a}o da solu\IeC {\c c}\IeC {\~a}o e gera\IeC {\c c}\IeC {\~a}o da popula\IeC {\c c}\IeC {\~a}o inicial}{67}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.1}Problema da mochila multiobjetivo}{66}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Defini\IeC {\c c}\IeC {\~a}o do problema}{66}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Representa\IeC {\c c}\IeC {\~a}o da solu\IeC {\c c}\IeC {\~a}o e gera\IeC {\c c}\IeC {\~a}o da popula\IeC {\c c}\IeC {\~a}o inicial}{68}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Cruzamento e muta\IeC {\c c}\IeC {\~a}o}{68}{subsection.4.1.3}
 \contentsline {section}{\numberline {4.2}Problema do roteamento multicast}{69}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Defini\IeC {\c c}\IeC {\~a}o do problema}{69}{subsection.4.2.1}
@@ -43,9 +43,9 @@
 \contentsline {section}{\numberline {5.1}Constru\IeC {\c c}\IeC {\~a}o da solu\IeC {\c c}\IeC {\~a}o para o PMM}{77}{section.5.1}
 \contentsline {section}{\numberline {5.2}Constru\IeC {\c c}\IeC {\~a}o da solu\IeC {\c c}\IeC {\~a}o para o PRM}{79}{section.5.2}
 \contentsline {section}{\numberline {5.3}\textit {Framework} MACO/NDS}{85}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Constru\IeC {\c c}\IeC {\~a}o das solu\IeC {\c c}\IeC {\~o}es}{88}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Atualiza\IeC {\c c}\IeC {\~a}o das estruturas de subproblemas}{89}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Atualiza\IeC {\c c}\IeC {\~a}o dos ferom\IeC {\^o}nios}{90}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.1}Constru\IeC {\c c}\IeC {\~a}o das solu\IeC {\c c}\IeC {\~o}es}{89}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Atualiza\IeC {\c c}\IeC {\~a}o das estruturas de subproblemas}{90}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Atualiza\IeC {\c c}\IeC {\~a}o dos ferom\IeC {\^o}nios}{91}{subsection.5.3.3}
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Experimentos}}{93}{chapter.6}
 \contentsline {section}{\numberline {6.1}Ambiente de teste}{93}{section.6.1}
 \contentsline {section}{\numberline {6.2}Etapa 1: An\IeC {\'a}lise Comparativa dos Algoritmos Evolutivos}{98}{section.6.2}
@@ -54,7 +54,7 @@
 \contentsline {section}{\numberline {6.5}Etapa 4: An\IeC {\'a}lise baseada no hipervolume}{125}{section.6.5}
 \contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{141}{chapter.7}
 \contentsline {section}{\numberline {7.1}Trabalhos Futuros}{143}{section.7.1}
-\contentsline {section}{\numberline {7.2}Contribui\IeC {\c c}\IeC {\~o}es em Produ\IeC {\c c}\IeC {\~a}o Bibliogr\IeC {\'a}fica}{145}{section.7.2}
+\contentsline {section}{\numberline {7.2}Contribui\IeC {\c c}\IeC {\~o}es em Produ\IeC {\c c}\IeC {\~a}o Bibliogr\IeC {\'a}fica}{146}{section.7.2}
 \contentsline {chapter}{\uppercase {Refer\^encias}}{147}{section*.58}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
