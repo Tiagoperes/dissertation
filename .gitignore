@@ -1,0 +1,11 @@
+*.log
+*.aux
+*.bbl
+*.blg
+*.idx
+*.lof
+*.lot
+*.nlo
+*.synctex.gz
+*.toc
+main_ppgco_ufu.pdf
