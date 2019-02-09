@@ -1,0 +1,6 @@
+*.log
+*.aux
+*.bbl
+*.syntex.gz
+*.syntex(busy)
+main_ppgco_ufu.pdf
