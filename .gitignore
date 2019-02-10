@@ -1,6 +1,13 @@
 *.log
 *.aux
 *.bbl
-*.syntex.gz
 *.syntex(busy)
+*.blg
+*.idx
+*.lof
+*.lot
+*.nlo
+*.synctex.gz
+*.toc
+
 main_ppgco_ufu.pdf
