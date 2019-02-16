@@ -7,7 +7,7 @@ A fim de avaliar o desempenho de algoritmos de otimização, é comum que sejam 
 
 \subsection{Definição do problema}
 
-O \ac{PM} é um problema muito comum na computação e possui um caráter teórico. Entretanto, existem problemas reais equivalentes que podem ser resolvidos com as mesmas técnicas, como o escalonamento de tarefas realizado por um sistema operacional em uma arquitetura com múltiplos processadores ou núcleos.
+O \ac{PM} é um problema muito comum na computação e possui um caráter teórico. Entretanto, existem problemas reais equivalentes que podem ser resolvidos com as mesmas técnicas, como o escalonamento de tarefas entre as várias linhas de produção de uma fábrica.
 
 O problema consiste em arranjar um conjunto de itens em uma mochila de forma a não exceder sua capacidade e, ao mesmo tempo, maximizar o valor (lucro) dos objetos carregados. Matematicamente, dada uma mochila de capacidade $C$ e um conjunto de itens $O$, onde cada $o_i \in O$ possui um peso $peso(o_i)$ e um lucro $lucro(o_i)$, deseja-se encontrar o conjunto $S \subset O$, tal que $\sum_{o \in S} peso(o) \leq C$ e $\sum_{o \in S} lucro(o)$ seja o maior possível. A \autoref{fig_knapsack} mostra uma instância do problema da mochila mono-objetivo e três soluções possíveis.
 
